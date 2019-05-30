@@ -1,0 +1,336 @@
+%% Select the dissertation mode on
+%
+% See the documentation for more information about the available class options 
+% ('math', 'vertlayout', 'pdfa', ...)
+% If you give option 'draft' or 'draft*', the draft mode is turned on
+% NOTE if you want to generate abstracts for the publication platform, use
+% the option 'abstracts'!
+% The pdfa option is experimental, but give it a try -- your doc will be better archivable
+%
+\documentclass[dissertation,math,vertlayout,pdfa,colorlinks]{aaltoseries}
+
+% Kludge to make sure we have utf8 input (check that this file is utf8!)
+\makeatletter
+\@ifpackageloaded{inputenc}{%
+  \inputencoding{utf8}}{%
+  \usepackage[utf8]{inputenc}}
+\makeatother
+
+% for live links. Takes the above option 'colorlinks' (use 'hidelinks' if you want them black for print).
+\usepackage{hyperref} 
+
+% Lipsum package generates quasi latin filler text
+\usepackage{lipsum}
+% Set the document languages used
+\usepackage[english]{babel}
+% more math symbols and environments if needed
+\usepackage{amsmath,amssymb,amsthm} 
+% after amsmath to restore bad page breaks in the middle of equations... only for those in the know
+\interdisplaylinepenalty=2500 
+% Adjust math line spacing
+\renewcommand*{\arraystretch}{1.2} % for array/matrix environments
+\setlength{\jot}{8pt} % for split environment
+
+\usepackage{listings} % neat printing of source code
+\usepackage[indentfirst=false,vskip=3mm]{quoting} % flexible quotes and quotations
+% Enable the following to suppress page headers and numbers on 
+% content-less left (even-numbered) pages. Fixes a bug in aaltoseries
+\usepackage{emptypage}
+\usepackage[nobiblatex]{xurl}
+
+%%
+%% There's a HUGE number of LaTeX packages. Whatever it is you need, search for a package first before rolling your own!
+%%
+
+% This is the way you may input and separately develop your individual chapters. Write, e.g., 
+%
+%	%\input{Ch1}
+%	%\input{Ch2}
+%	\input{Ch3}
+%	%\input{Ch4}
+%	%\input{Ch5}
+%
+% ...when editing only the third chapter. Compilation with pdflatex ('pdflatex dissertation') will then only output
+% a thin dissertation containing only the third chapter, but properly formatted.
+%
+% You may leave of the .tex extension here...
+\input{dummymathcode/testmathcommand.tex}
+
+% The author of the dissertation
+\author{Pedram Daee}
+% The title of the thesis
+\title{Probabilistic user modelling methods for improving human-in-the-loop machine learning}
+
+%Keywords: Interactive intent modelling, User modelling, Interactive knowledge elicitation, Active elicitation of knowledge, Sequential probabilistic inference, high dimensional prediction.
+%1.	Probabilistic User Modelling in Interactive Machine Learning for Prediction
+%2.	Machine learning methods for user modelling for improved prediction.
+%3.	Interactive user/expert modelling for improved prediction 
+%4.	Machine Learning Methods for Improved Prediction through Probabilistic User Modelling
+%5.	Improved Prediction through Interactive Probabilistic User Modelling
+%6.	Probabilistic user modelling methods for improving human-in-the-loop machine learning.
+
+%Other comments: I do not like knowledge elicitation since it seems like a term that may become obsolete through time
+
+\begin{document}
+
+%% The abstract of the dissertation in English
+% Use this command!
+%\draftabstract{\lipsum[1-2]}%
+%\draftabstract[english]{\hspace{-2pt} My abstract in English}
+% Let's add another one in Finnish
+%\draftabstract[finnish]{\hspace{-2pt} En puhu suomea1
+
+%}%
+
+
+% And yet another one in Swedish
+%\draftabstract[swedish]{\lipsum[7-9]}
+%%---------------------
+
+%% The abstract of the dissertation in English
+% Use this command!
+%\begin{abstract}\lipsum[1-3]\end{abstract}%
+% Let's add another one in Finnish
+\begin{abstract}[english]
+\end{abstract}
+1. What is the bigger picture?
+2. Dissertation purpose
+3. Research method
+4. Key results
+5. Practical Implications
+
+Typically 3 paragraphs: 1. the introduction of the challenge problem, 2. thesis, 3. contribution
+
+ 
+\begin{abstract}%[finnish]
+En puhu suomea!
+\end{abstract}
+
+
+% And yet another one in Swedish
+%\begin{abstract}[swedish]\lipsum[7-9]\end{abstract}
+
+
+%% Preface
+% If you write this somewhere else than in Helsinki, use the optional location.
+\begin{preface}[Espoo]
+TO fill.
+
+
+\end{preface}
+
+%% Table of contents of the dissertation
+\clearpage
+\tableofcontents
+
+% To be defined before generating list of publications. Leave off if no acknowledgement
+%\languagecheck{the Institute of Language Checks}
+
+%% This is for article dissertations. Remove if you write a monograph dissertation.
+% The actual publications are entered manually one by one as shown further down:
+% use \addpublication, \addcontribution, \adderrata, and addpublicationpdf.
+% The last adds the actual article, the other three enter related information
+% that will be collected in lists -- like this one.
+\listofpublications
+
+%% Add lists of figures and tables as you usually do (\listoffigures, \listoftables)
+
+%%%%%%%%%%%%%%%%%%%%%%% TODO: do I want to have the followings? Fig, table, Abb, sym? others did not have it.
+%\listoffigures
+%\listoftables
+
+%\abbreviations
+%\begin{description}
+%\item[PDF] Probability Density Function
+%\end{description}
+
+%\symbols
+%\begin{description}
+%\item[$p(\theta|y)$] Conditional distribution
+%\end{description}
+
+
+%% The main matter, one can obviously use \input or \include
+\chapter{Introduction}
+
+\begin{itemize}
+	\item We can keep this empty and start from next. Alternatively we can write some stuff here and have only one section as "Contributions and organization of the thesis". See which one works better for you
+	%\item TODO: To get ideas for presentation of the story, look at Sami's coffee seminar slides from 4th of Feb 2019.
+\end{itemize}
+
+\paragraph{Description of the Problem.}
+Whether it is an everyday user searching for an application in her mobile phone or a doctor working with a cancer diagnostic system, humans and machines are increasingly interacting with each other. The goal of my thesis is to improve this interaction by incorporating a model of the human user in the system they are interacting with. In particular, I consider the family of problems where the human and machine interact to solve a prediction problem. Such problems can include personalized search activity of a user or medical prediction about the response of a cancer drug. An important common factor in both these scenarios is that the number of labeled data (training data) that the machine can use to make predictions, is usually very few compared to the dimension of search space. This results in ill-posed statistical learning since there are limits in how low in sample size statistical methods can go. 
+
+\paragraph{Objective.}
+The objective of the thesis is to tackle the limited data problem by directly integrating a model of the human user into the modelling loop. The user can then provide more information about the problem (for example by giving feedback in response to the machine's query) that can help to improve the prediction performance. For example, in precision medicine obtaining additional data can be extremely costly or even impossible but the human knowledge, e.g., practitioners feedback, can be available and used to improve the prediction. My thesis proposes new probabilistic machine learning models to learn the human intent in interaction, new user models to learn about the knowledge of the human and accounting for common human biases, and new prediction models to employ and extract human knowledge to improve a task.
+
+
+\paragraph{Methodology.}
+
+I design probabilistic machine learning models to tie the data model (prediction model from the training data) to the user model (the model of the human) in a unified way. After doing so, we use Bayesian inference to find the posterior, i.e, distribution of the unknown parameters related to data and user, giving the training data and user interaction. The posterior inference, in most cases, does not have an analytical solution. We use different approximation methods, such as expectation propagation and variational inference, to handle the computation. 
+A core characteristic of the formulation is that the model adapts to the feedback obtained from the user and it sequentially integrates every piece of information before deciding on the next query for the user. This is important as humans can only answer limited number of queries (out of several thousands). The query selection is naturally formulated as experimental design problem, aiming at maximizing the most information gained, or multi-armed bandit problem, aiming at finding the most important piece of information, depending on the targeted task. For evaluation and testing, we conduct carefully designed user studies with real human.  
+
+
+
+\section{Motivation}
+
+\begin{itemize}
+	\item Thinking back, I think my main motivation should be on how to tackled limited interaction problem. In iui2016 we did it by adding new likelihoods, in JASIS by implicit interaction, in ML and IUI 18 by assuming strong priors.
+	\item A) Small number of data ->add users
+	\item B) user is the source of data
+	\item Limited interaction: 1) need to be smart about what question to ask from the user 2) Should be able to consider all potential sources of feedback on different components of the interaction framework.
+\end{itemize}
+
+ 
+\section{Research questions and contributions}
+
+
+This thesis investigates methods to tackle the limited interaction challenge in interactive machine learning scenarios where there is few labeled data available compared to the dimension of the problem, or a human user is provider of the labeled data.  \\
+
+\noindent \textbf{RQ1 --} \textit{Can we exploit new sources of interaction as new learning signals from the human user to improve interactive intent modelling?}
+
+Publications I and V contribute to this research question by proposing models to incorporate new types of user feedback to amend the limited feedback in exploratory information seeking tasks. The information seeking tasks considered are document search scenarios where a user needs to sequentially provide relevance feedback to suggested keywords in order to find the targeted document. The problem is usually modelled as a multi-armed bandit problem with the goal of finding the most relevant document with minimum interaction. In particular, Publication I proposes methods to additionally account for user relevance feedback on documents and couples relevance feedback on both keywords and documents by assuming a shared underlying latent model connected through a probabilistic model of the relationship between keywords and documents. Thompson sampling on the posterior of the latent intent was then used to recommend new documents and keywords in the next iteration. Publication V investigates the use of implicit relevance feedback from neurophysiology signals for effortless information seeking. The work contributes by demonstrating how to integrate this inherently noisy implicit relevance feedback combined with scarce explicit feedback. In particular, a parameter for controlling the accuracy of the feedback was introduced in the likelihood function which would have different prior based on the nature of the feedback (implicit or explicit). Similar to Publication I, Thompson sampling was used to control the exploration and exploitation balance of the recommendations. Both publications were evaluated by user studies in realistic information seeking tasks. 
+
+
+\noindent \textbf{RQ2 --} \textit{Can human knowledge about the underlying data model be elicited to improve the prediction performance in "small $n$ large $p$" tasks?}
+
+Publications II and III contribute to this research question. Publication II proposes a framework for user knowledge elicitation as a probabilistic inference process, where the user knowledge is sequentially queried to improve predictions. In particular, sparse linear regression is considered as the data model with access to only few high-dimensional training data. It is assumed that there are human experts who have knowledge about the relevance of the covariates, or of values of the regression coefficients and can provide this information to the data model if queried. The work contributes by an algorithm and computational approximation for fast and efficient interaction, which sequentially identifies the most informative queries to ask from the user. Publication III, builds on Publication II by adding user knowledge about direction of relevance of covariates and applying the method in important applications of precision medicine with the goals of predicting the efficacies of different treatments using high-dimensional genomic measurements. Both publications were evaluated by extensive simulations and user studies. 
+Source codes for methods presented in Publications II and III, and user study data from Publication II are available at \\ \texttt{https://github.com/HIIT/knowledge-elicitation-for-linear-regression} and \\ \texttt{https://github.com/AaltoPML/knowledge-elicitation-for-precision-medicine}.
+
+
+
+
+\noindent \textbf{RQ3 --} \textit{Is it enough to incorporate human knowledge directly in the model as explained in RQ2, or could it be beneficial to account for underlying cognitive procedures [TODO: rational knowledge updates?] that humans undergo during the interaction?}
+
+Publication IV contributes to this research question by modelling the knowledge provider, here the human user, as a rational agent that updates its knowledge about the underlying prediction task during the interaction. The design of the system is then critical, since the elicited user knowledge cannot be assumed to be independent from the data model knowledge coming from the training data. If not accounted properly, knowledge elicitation can then lead to double use of data and overfitting, if the user reinforces noisy patterns in the data. We propose a user modelling methodology, by assuming simple rational behaviour, to correct the problem and evaluate the method in a user study. 
+Source code and user study data are available at \texttt{https://github.com/HIIT/human-overfitting-in-IML}.
+
+\section{Organization of the thesis}
+
+The organization of the thesis is as follows. Chapter 2 provides an overview of probabilistic modelling and introduces our approach of modelling the user and data as a joint probabilistic model. Chapter three investigates the purpose of interactions and utility functions that need to be used for efficient interaction to minimize the effort of the human user. The fourth chapter summarizes Publications I-IV. Chapter five concludes the thesis and provides discussions for future works.
+
+\chapter{Probabilistic modelling}
+
+\begin{itemize}
+	\item Explain general Bayesian modeling (posterior, likelihood, prior). represent uncertainty using probability distribution and then using Bayesian theorem for the inference, finding the distribution of the parameters of interest (unknown parameters), giving the observed variables and model assumptions.
+	
+	\item Our approach, throughout this thesis is to model both data and user as a joint probabilistic models (figure XXX).... The role of model (prior) assumptions is crucial then since in all scenarios considered in this thesis there are only few observed data available which is usually smaller than the dimension of the problem (e.g., feature dimension)...
+	
+	\item Idea: Have a picture per section where there is a cloud on top of user and system head and in it there is the plate diagram of the particular model. Then talk about the interaction. 
+	In the first introduction section have the same figure but just write down (or explain) user probabilistic model and data probabilistic model (priors) and arrows for interactions? and then refer to later chapters for the type of interaction
+	
+	\item Then explain the two possible likelihoods and show a diagram where there is a section for data modeling and there is a section for user modeling that are connected through a shared latent parameter and then each have their own models. Then explain that we will go through details of the data and user model in the next two subsections. My contribution comes from adding data likelihoods and user priors and having interaction.
+	
+	
+	
+	
+\end{itemize}
+
+ 
+
+
+\section{Modelling the data}
+
+\begin{itemize}
+	\item Defining appropriate likelihood and defining appropriate priors
+	
+\end{itemize}
+
+
+
+\subsection{Bayesian Linear regression}
+
+TODO: maybe start from this section
+\section{Modelling the user}
+
+\begin{itemize}
+	\item Our general approach is to consider new likelihood function for the user feedback and put appropriate priors on top of that. Explain the feedback likelihoods?
+\end{itemize}
+
+
+
+\chapter{User interaction with the probabilistic model}
+
+\begin{itemize}
+	\item Here have the same figure, explain how user feedback is gathered. explain that we consider two sets of works. One where there is external data other than user feedback and one where the user feedback IS the data. Then explain our interaction goals and acquisition functions and experimental design.
+\end{itemize}
+
+\chapter{Applications and results OR Summary of the Publications }
+
+\begin{itemize}
+	\item Go through the papers and tasks. 
+\end{itemize}
+
+
+\chapter{Discussion}
+
+\begin{itemize}
+	\item Motivate future works such as next level of user modelling. Similar to overfitting work, but assuming a more active version of the user -> ATOM
+\end{itemize}
+
+
+ % Refer to the Journal paper 1 of this example document
+%\citepub{j1} \& \cpub{j1} \& \cp{j1} \& \pageref{j1} \& \ref{j1}
+% Refer to the Conference paper of this example document
+%\citepub[p.~2]{c1} \& \cpub[Sec.~ 1]{c1} \&  \cp[pp.~1--2]{c1} \& \pageref{c1} \& \ref{c1} 
+
+
+\renewcommand{\bibname}{References}
+\bibliographystyle{plain} % Change as required
+\LARGE\bibliography{references}  % remember to edit the file name
+
+
+
+
+%% The following commands are for article dissertations, remove them if you write a monograph dissertation.
+
+% Errata list, if you have errors in the publications.
+%\errata
+
+%% The first publication (journal article)
+% Set the publication information.
+% This command musts to be the first!
+\addpublication[conference]{\underline{Pedram Daee}, Joel Pyykk\"o, Dorota G\l{}owacka, and Samuel Kaski}{Interactive Intent Modeling from Multiple Feedback Domains}{Proceedings of the 21st International Conference on Intelligent User Interfaces}{Sonoma, California, USA, 71--75}{March}{2016}{ACM}{c1}
+
+%\addpublication{Journal Paper Authors}{Journal Paper Title}{Journal Name}{Volume, issue, pages, and other detailed information}{Month}{Year}{Copyright Holder}{j1}
+%\addpublication[conference]{Conference Paper Authors}{Conference Paper Title}{Conference Name}{Location, pages, and other detailed information}{Month}{Year}{Copyright Holder}{c1}
+%\addpublication[accepted]{Journal Paper 2 Authors}{Journal Paper 2 Title}{Journal Name 2}{}{Month}{Year}{Copyright Holder}{j2}
+%\addpublication[submitted]{Journal Paper 3 Authors}{Journal Paper 3 Title}{Journal Name 3}{}{Submission date}{Year}{No copyright holder at this moment}{j3}
+% Add the dissertation author's contribution to that publication (the order can be interchanged with \adderrata).
+\addcontribution{The author had the main responsiblity in problem formulation and modeling. The author designed and implemented the simulation experiment. Joel Pyykk\"o and the author built the system for user studies and conducted them together. The author wrote the initial draft of the manuscript, after which all co-authors joined for revisions.}
+% Add the errata of the publication, remove if there are none (the order can be interchanged with \addauthorscontribution).
+%\adderrata{j1 I This is wrong}
+% Add the publication pdf file, the filename is the parameter (must be the last).
+\addpublicationpdf{Articles/IUI16.pdf}
+
+
+
+\addpublication[journal]{\underline{Pedram Daee}$^*$, Tomi Peltola$^*$, Marta Soare$^*$, and Samuel Kaski}{Knowledge elicitation via sequential probabilistic inference for high-dimensional prediction}{Machine Learning}{106, 9-10, 1599--1620}{}{2017}{}{j1}
+\addcontribution{The ideas and experiments in this article were designed jointly (the first three authors contributed equally). The author had the main responsibility in the derivation of the sequential experimental design and implementation of the experiments. Dr. Tomi Peltola derived and implemented the posterior approximation. The manuscript was written jointly.}
+\addpublicationpdf{Articles/ML17.pdf}
+
+
+
+\addpublication[journal]{ Iiris Sundin$^*$, Tomi Peltola$^*$, Luana Micallef, Homayun Afrabandpey, Marta Soare, Muntasir Mamun Majumder, \underline{Pedram Daee}, Chen He, Baris Serim, Aki Havulinna, Caroline Heckman, Giulio Jacucci, Pekka Marttinen, and Samuel Kaski}{Improving genomics-based predictions for precision medicine through active elicitation of expert knowledge}{Bioinformatics}{34, 13, i395–i403}{}{2018}{}{j2}
+\addcontribution{The author contributed on formulation of the sequential experimental design and implementation of a portion of the early version of the experiments. The author made comments to the manuscript in preparation.}
+\addpublicationpdf{Articles/Bio18.pdf}
+
+
+\addpublication[conference]{\underline{Pedram Daee}$^*$, Tomi Peltola$^*$, Aki Vehtari, and Samuel Kaski}{User Modelling for Avoiding Overfitting in Interactive Knowledge Elicitation for Prediction}{Proceedings of the 23rd International Conference on Intelligent User Interfaces}{Tokyo, Japan, 305--310}{March}{2018}{ACM}{c2}
+\addcontribution{The ideas and experiments in this article were designed jointly (the first two authors contributed equally). The author designed and implemented the user study. Dr. Tomi Peltola had the main responsibility of the model formulation. The first two authors wrote the initial draft of the manuscript, after which all co-authors joined for revisions.}
+\addpublicationpdf{Articles/IUI18.pdf}
+
+
+\addpublication[journal]{Giulio Jacucci, Oswald Barral, \underline{Pedram Daee}, Markus Wenzel, Baris Serim, Tuukka Ruotsalo, Patrik Pluchino, Jonathan Freeman, Luciano Gamberini, Samuel Kaski, Benjamin Blankertz}{Integrating Neurophysiological Relevance Feedback in Intent Modeling for Information Retrieval}{Journal of the Association for Information Science and Technology}{}{}{2019}{}{j3}
+\addcontribution{The author had the main responsibility in design and implementation of the interactive intent modelling and information retrieval system, and writing of the correspnding sections. All the authors contributed to paper revisions.}
+\addpublicationpdf{Articles/JASIST19.pdf}
+
+%% The fourth publication (yet another journal paper, submitted for publication, note the optional parameter)
+%% Note that you are allowed to use this option only when submitting the dissertation for pre-examination!
+% Set the publication information, detailed information is not printed
+%\addpublication[submitted]{Salvatore Andolina$^*$, \underline{Pedram Daee}$^*$, Tung Vuong$^*$, Tuukka Ruotsalo, Khalil Klouche, Mats Sj\"oberg, Samuel Kaski, and Giulio Jacucci}{Proactive Entity Recommendation in Everyday Digital Tasks}{journal}{}{}{2019}{No copyright holder at this moment}{j4}
+%\addcontribution{The ideas and experiments in this article were designed jointly (the first three authors contributed equally). The author had the main responsibility in design and implementation of the interactive intent modelling and entity recommendation system, and writing of the correspnding sections. All the authors contributed to paper revisions.}
+% Add the publication pdf file, the filename is the parameter.
+%\addpublicationpdf{Articles/XXX.pdf}
+
+\end{document}

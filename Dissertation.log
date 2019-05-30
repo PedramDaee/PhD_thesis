@@ -1,0 +1,2719 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.9.7)  11 APR 2019 17:46
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Dissertation.tex
+(./Dissertation.tex
+LaTeX2e <2018-04-01> patch level 5
+(./aaltoseries.cls
+Document Class: aaltoseries 2017/03/01 v1.2Aalto University series class file
+(c:/texlive/2018/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+(c:/texlive/2018/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(c:/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (./aaltologo.sty
+Package: aaltologo 2011/02/19 v1.1.2 Package for drawing Aalto University logos
+
+
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks14
+\pgfutil@tempdima=\dimen103
+\pgfutil@tempdimb=\dimen104
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
+) (c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box26
+
+(c:/texlive/2018/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen105
+\Gin@req@width=\dimen106
+)
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks16
+\pgfkeys@temptoks=\toks17
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks18
+))
+\pgf@x=\dimen107
+\pgf@y=\dimen108
+\pgf@xa=\dimen109
+\pgf@ya=\dimen110
+\pgf@xb=\dimen111
+\pgf@yb=\dimen112
+\pgf@xc=\dimen113
+\pgf@yc=\dimen114
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count89
+\c@pgf@countb=\count90
+\c@pgf@countc=\count91
+\c@pgf@countd=\count92
+\t@pgf@toka=\toks19
+\t@pgf@tokb=\toks20
+\t@pgf@tokc=\toks21
+ (c:/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count93
+\pgfsyssoftpath@bigbuffer@items=\count94
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (c:/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen115
+\pgfmath@count=\count95
+\pgfmath@box=\box27
+\pgfmath@toks=\toks22
+\pgfmath@stack@operand=\toks23
+\pgfmath@stack@operation=\toks24
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
+x)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+.code.tex)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
+ex)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
+de.tex)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
+x)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
+etics.code.tex)))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count96
+))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen116
+\pgf@picmaxx=\dimen117
+\pgf@picminy=\dimen118
+\pgf@picmaxy=\dimen119
+\pgf@pathminx=\dimen120
+\pgf@pathmaxx=\dimen121
+\pgf@pathminy=\dimen122
+\pgf@pathmaxy=\dimen123
+\pgf@xx=\dimen124
+\pgf@xy=\dimen125
+\pgf@yx=\dimen126
+\pgf@yy=\dimen127
+\pgf@zx=\dimen128
+\pgf@zy=\dimen129
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
+e.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen130
+\pgf@path@lasty=\dimen131
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
+x
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen132
+\pgf@shorten@start@additional=\dimen133
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box28
+\pgf@hbox=\box29
+\pgf@layerbox@main=\box30
+\pgf@picture@serial@count=\count97
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
+.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen134
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
+ode.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen135
+\pgf@pt@y=\dimen136
+\pgf@pt@temp=\dimen137
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
+de.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen138
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen139
+\pgf@sys@shading@range@num=\count98
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box31
+))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
+.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box32
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
+y
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen140
+\pgf@nodesepend=\dimen141
+)
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
+y
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+)) (c:/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen142
+\pgffor@skip=\dimen143
+\pgffor@stack=\toks25
+\pgffor@toks=\toks26
+))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
+de.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count99
+\pgfplotmarksize=\dimen144
+)
+\tikz@lastx=\dimen145
+\tikz@lasty=\dimen146
+\tikz@lastxsaved=\dimen147
+\tikz@lastysaved=\dimen148
+\tikzleveldistance=\dimen149
+\tikzsiblingdistance=\dimen150
+\tikz@figbox=\box33
+\tikz@figbox@bg=\box34
+\tikz@tempbox=\box35
+\tikz@tempbox@bg=\box36
+\tikztreelevel=\count100
+\tikznumberofchildren=\count101
+\tikznumberofcurrentchild=\count102
+\tikz@fig@count=\count103
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count104
+\pgfmatrixcurrentcolumn=\count105
+\pgf@matrix@numberofcolumns=\count106
+)
+\tikz@expandcount=\count107
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+))) (c:/texlive/2018/texmf-dist/tex/latex/lcg/lcg.sty
+Package: lcg 2013/08/09 v1.3 generating random numbers
+\f@rst=\count108
+\l@st=\count109
+\cr@nd=\count110
+\c@rand=\count111
+
+Smallest possible random number: 1
+Largest possible random number: 2147483647
+The pseudo random numbers will be stored in the LaTeX counter `rand'
+) (c:/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+(c:/texlive/2018/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(c:/texlive/2018/texmf-dist/tex/latex/psnfss/newcent.sty
+Package: newcent 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(c:/texlive/2018/texmf-dist/tex/latex/psnfss/helvet.sty
+Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(c:/texlive/2018/texmf-dist/tex/latex/bera/beramono.sty
+Package: beramono 2004/01/31 (WaS)
+)
+Random number generator initialized to 0
+
+Package lcg Warning: Using an already existing counter rand on input line 532.
+
+Smallest possible random number: 1
+Largest possible random number: 3
+The pseudo random numbers will be stored in the LaTeX counter `rand'
+\c@aaltologo_color=\count112
+\c@aaltologo_mark=\count113
+\c@aaltologo_linecount=\count114
+) (c:/texlive/2018/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2018/01/14 v2.7a Micro-typographical refinements (RS)
+\MT@toks=\toks27
+\MT@count=\count115
+LaTeX Info: Redefining \textls on input line 793.
+\MT@outer@kern=\dimen151
+LaTeX Info: Redefining \textmicrotypecontext on input line 1339.
+\MT@listname@count=\count116
+
+(c:/texlive/2018/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2018/01/14 v2.7a Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 913.
+LaTeX Info: Redefining \lslig on input line 913.
+\MT@outer@space=\skip43
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(c:/texlive/2018/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2018/01/14 v2.7a microtype main configuration file (RS)
+))
+(./fouriernc2.sty
+
+LaTeX Warning: You have requested package `fouriernc2',
+               but the package provides `fouriernc'.
+
+Package: fouriernc 2005/12/20 1.0 fouriernc package
+(./fourier2.sty
+
+LaTeX Warning: You have requested package `fourier2',
+               but the package provides `fourier'.
+
+Package: fourier 2005/01/01 1.4 fourier-GUTenberg package
+Now handling font encoding FML ...
+... no UTF-8 mapping file for font encoding FML
+Now handling font encoding FMS ...
+... no UTF-8 mapping file for font encoding FMS
+(c:/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+(c:/texlive/2018/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(c:/texlive/2018/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+(c:/texlive/2018/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+(c:/texlive/2018/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+FEFF (decimal 65279)
+))
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+(c:/texlive/2018/texmf-dist/tex/latex/fourier/fourier-orns.sty
+Package: fourier-orns 2004/01/30 1.1 fourier-ornaments package
+)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 50.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 50.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> T1/futs/m/n on input line 50.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 50.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> T1/futs/m/n on input line 50.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  T1/futs/m/n --> T1/futs/b/n on input line 51.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 59.
+LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
+(Font)              `letters' in the math version `normal' on input line 59.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> FML/futmi/m/it on input line 59.
+LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
+(Font)              `letters' in the math version `bold' on input line 59.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> FML/futmi/m/it on input line 59.
+\symotherletters=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  FML/futmi/m/it --> FML/futmi/b/it on input line 61.
+LaTeX Font Info:    Overwriting symbol font `otherletters' in version `bold'
+(Font)                  FML/futm/m/it --> FML/futm/b/it on input line 62.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 63.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 64.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 67.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 68.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 69.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 72.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 73.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 113.
+LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 113.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> FMS/futm/m/n on input line 113.
+LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 113.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> FMS/futm/m/n on input line 113.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 115.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> T1/futs/bx/n on input line 115.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> T1/futs/bx/n on input line 115.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 116.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 117.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> T1/futs/m/it on input line 117.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> T1/futs/m/it on input line 117.
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 118.
+LaTeX Font Info:    Redeclaring math symbol \parallel on input line 134.
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 186.
+LaTeX Font Info:    Redeclaring math symbol \varvarrho on input line 187.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 196.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 197.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 198.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 199.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 200.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 201.
+LaTeX Font Info:    Redeclaring math accent \check on input line 202.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 203.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 204.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 205.
+\symUfutm=\mathgroup5
+)
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 16.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  FML/futmi/m/it --> FML/fncmi/m/it on input line 16.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  FML/futmi/b/it --> FML/fncmi/m/it on input line 16.
+LaTeX Font Info:    Redeclaring symbol font `otherletters' on input line 17.
+LaTeX Font Info:    Overwriting symbol font `otherletters' in version `normal'
+(Font)                  FML/futm/m/it --> FML/fncm/m/it on input line 17.
+LaTeX Font Info:    Overwriting symbol font `otherletters' in version `bold'
+(Font)                  FML/futm/b/it --> FML/fncm/m/it on input line 17.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  FML/fncmi/m/it --> FML/fncmi/b/it on input line 18.
+LaTeX Font Info:    Overwriting symbol font `otherletters' in version `bold'
+(Font)                  FML/fncm/m/it --> FML/fncm/b/it on input line 19.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 32.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  T1/futs/m/n --> T1/fnc/m/n on input line 32.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  T1/futs/b/n --> T1/fnc/m/n on input line 32.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  T1/fnc/m/n --> T1/fnc/b/n on input line 33.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 34.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  FMS/futm/m/n --> FMS/fncm/m/n on input line 34.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  FMS/futm/m/n --> FMS/fncm/m/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  T1/futs/bx/n --> T1/fnc/b/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  T1/futs/bx/n --> T1/fnc/b/n on input line 35.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  T1/futs/m/n --> T1/fnc/m/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  T1/futs/m/n --> T1/fnc/m/n on input line 36.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  T1/futs/m/it --> T1/fnc/m/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  T1/futs/m/it --> T1/fnc/m/it on input line 37.
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 38.
+LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `normal'
+(Font)                  FMS/futm/m/n --> FMS/fncm/m/n on input line 38.
+LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `bold'
+(Font)                  FMS/futm/m/n --> FMS/fncm/m/n on input line 38.
+)
+(c:/texlive/2018/texmf-dist/tex/latex/pdfx/pdfx.sty
+Package: pdfx 2017/05/18 v1.5.84 PDF/X and PDF/A support (CVR/HTH/RRM/PS)
+
+(c:/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+){c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+(c:/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+\inpenc@prehook=\toks28
+\inpenc@posthook=\toks29
+)
+(c:/texlive/2018/texmf-dist/tex/latex/pdfx/l8uenc.def
+File: l8uenc.def 2017/03/18 v0.7 Custom LaTeX file, for UTF8 encoded letters an
+d symbols
+)
+\pdfxsafeforxmp@toks=\toks30
+
+(c:/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(c:/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(c:/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen152
+\Hy@linkcounter=\count117
+\Hy@pagecounter=\count118
+
+(c:/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count119
+
+(c:/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `pdfa' set `true' on input line 4383.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4383.
+Package hyperref Info: Option `pdfa' set `true' on input line 4383.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count120
+
+(c:/texlive/2018/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen153
+\Fld@menulength=\count121
+\Field@Width=\dimen154
+\Fld@charsize=\dimen155
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring ON on input line 6387.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode ON on input line 6397.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count122
+\c@Item=\count123
+\c@Hfootnote=\count124
+)
+Package hyperref Info: Driver: hpdftex.
+
+(c:/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+Package hyperref Info: \pdfminorversion:=4 on input line 217.
+\Fld@listcount=\count125
+\c@bookmark@seq@number=\count126
+
+(c:/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip44
+)
+Package hyperref Info: Option `unicode' set `true' on input line 811.
+
+(c:/texlive/2018/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2018/02/06 v6.86b Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/stringenc.sty
+Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
+)
+)
+Package hyperref Info: Option `psdextra' set `true' on input line 813.
+
+(c:/texlive/2018/texmf-dist/tex/latex/hyperref/psdextra.def
+File: psdextra.def 2018/02/06 v6.86b Hyperref: Additions to PDF string support
+)
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/se-pdfdoc.def
+File: se-pdfdoc.def 2016/05/16 v1.11 stringenc: PDFDocEncoding
+)
+(c:/texlive/2018/texmf-dist/tex/latex/pdfx/AdobeColorProfiles.tex)
+(c:/texlive/2018/texmf-dist/tex/latex/pdfx/8bit.def
+File: 8bit.def 2008/03/30 v1.1d Input encoding file
+)
+** pdfx: No file Dissertation.xmpdata . Metadata will be incomplete!
+<<sRGB_IEC61966-2-1_black_scaled.icc>>
+(c:/texlive/2018/texmf-dist/tex/latex/pdfx/8bit.def
+File: 8bit.def 2008/03/30 v1.1d Input encoding file
+)
+Package hyperref Info: Option `unicode' set `true' on input line 1496.
+Package hyperref Info: Option `unicode' set `true' on input line 1497.
+
+(c:/texlive/2018/texmf-dist/tex/generic/pdftex/glyphtounicode.tex)
+(c:/texlive/2018/texmf-dist/tex/latex/pdfx/glyphtounicode-cmr.tex)
+(c:/texlive/2018/texmf-dist/tex/latex/xmpincl/xmpincl.sty
+Package: xmpincl 2008/05/10 v2.2 Include XMP data in pdflatex
+)
+(c:/texlive/2018/texmf-dist/tex/latex/pdfx/8bit.def
+File: 8bit.def 2008/03/30 v1.1d Input encoding file
+)
+Using XMP template file: pdfa.xmp
+\xmpinclWrite=\write4
+\xmpinclRead=\read2
+\openout4 = `pdfa.xmpi'.
+
+<<pdfa.xmpi>>) (c:/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+\Gm@cnth=\count127
+\Gm@cntv=\count128
+\c@Gm@tempcnt=\count129
+\Gm@bindingoffset=\dimen156
+\Gm@wd@mp=\dimen157
+\Gm@odd@mp=\dimen158
+\Gm@even@mp=\dimen159
+\Gm@layoutwidth=\dimen160
+\Gm@layoutheight=\dimen161
+\Gm@layouthoffset=\dimen162
+\Gm@layoutvoffset=\dimen163
+\Gm@dimlist=\toks31
+)
+\aaltoseriestmplength=\skip45
+\AaltoSeriesChapterHeadHeight=\skip46
+
+(c:/texlive/2018/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip47
+\cftbeforetoctitleskip=\skip48
+\cftaftertoctitleskip=\skip49
+\cftbeforepartskip=\skip50
+\cftpartnumwidth=\skip51
+\cftpartindent=\skip52
+\cftbeforechapskip=\skip53
+\cftchapindent=\skip54
+\cftchapnumwidth=\skip55
+\cftbeforesecskip=\skip56
+\cftsecindent=\skip57
+\cftsecnumwidth=\skip58
+\cftbeforesubsecskip=\skip59
+\cftsubsecindent=\skip60
+\cftsubsecnumwidth=\skip61
+\cftbeforesubsubsecskip=\skip62
+\cftsubsubsecindent=\skip63
+\cftsubsubsecnumwidth=\skip64
+\cftbeforeparaskip=\skip65
+\cftparaindent=\skip66
+\cftparanumwidth=\skip67
+\cftbeforesubparaskip=\skip68
+\cftsubparaindent=\skip69
+\cftsubparanumwidth=\skip70
+\cftbeforeloftitleskip=\skip71
+\cftafterloftitleskip=\skip72
+\cftbeforefigskip=\skip73
+\cftfigindent=\skip74
+\cftfignumwidth=\skip75
+\c@lofdepth=\count130
+\c@lotdepth=\count131
+\cftbeforelottitleskip=\skip76
+\cftafterlottitleskip=\skip77
+\cftbeforetabskip=\skip78
+\cfttabindent=\skip79
+\cfttabnumwidth=\skip80
+)
+\AaltoSeriesListSep=\skip81
+\c@AaltoSeriesItemizeScope=\count132
+\c@AaltoSeriesEnumerateScope=\count133
+
+(c:/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2018/05/01 v3.3-147 Customizing captions (AR)
+
+(c:/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2018/05/27 v1.8a caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen164
+\captionmargin@=\dimen165
+\captionwidth=\dimen166
+\caption@tempdima=\dimen167
+\caption@indent=\dimen168
+\caption@parindent=\dimen169
+\caption@hangindent=\dimen170
+)
+\c@ContinuedFloat=\count134
+Package caption Info: hyperref package is loaded.
+)
+\widefigurewidth=\skip82
+\widetablewidth=\skip83
+\widefloatwidth=\skip84
+\overwidefloatshift=\skip85
+\AaltoSeriesTMPLength=\skip86
+\c@aaltoserieswidefloat=\count135
+
+(c:/texlive/2018/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has chapter divisions on input line 50.
+
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) (c:/texlive/2018/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
+
+(c:/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count136
+\calc@Bcount=\count137
+\calc@Adimen=\dimen171
+\calc@Bdimen=\dimen172
+\calc@Askip=\skip87
+\calc@Bskip=\skip88
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count138
+\calc@Cskip=\skip89
+)
+(c:/texlive/2018/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+)
+\AM@pagewidth=\dimen173
+\AM@pageheight=\dimen174
+
+(c:/texlive/2018/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box37
+\AM@global@opts=\toks32
+\AM@toc@title=\toks33
+\c@AM@survey=\count139
+\AM@templatesizebox=\box38
+)
+(c:/texlive/2018/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
+Package: mfirstuc 2017/11/14 v2.06 (NLCT)
+
+(c:/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count140
+)
+\@glsmfirst=\toks34
+\@glsmrest=\toks35
+)
+\c@aaltoseriesdissertationpublication=\count141
+)
+(c:/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+)
+(c:/texlive/2018/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count142
+)
+(c:/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2018/09/02 3.23 The Babel package
+
+(c:/texlive/2018/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/09/02 3.23 Babel switching mechanism
+)
+(c:/texlive/2018/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+(c:/texlive/2018/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2018/09/02 3.23 Babel common definitions
+\babel@savecnt=\count143
+\U@D=\dimen175
+
+(c:/texlive/2018/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count144
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip90
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks36
+\ex@=\dimen176
+))
+(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen177
+)
+(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count145
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count146
+\leftroot@=\count147
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count148
+\DOTSCASE@=\count149
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box39
+\strutbox@=\box40
+\big@size=\dimen178
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count150
+\c@MaxMatrixCols=\count151
+\dotsspace@=\muskip11
+\c@parentequation=\count152
+\dspbrk@lvl=\count153
+\tag@help=\toks37
+\row@=\count154
+\column@=\count155
+\maxfields@=\count156
+\andhelp@=\toks38
+\eqnshift@=\dimen179
+\alignsep@=\dimen180
+\tagshift@=\dimen181
+\tagwidth@=\dimen182
+\totwidth@=\dimen183
+\lineht@=\dimen184
+\@envbody=\toks39
+\multlinegap=\skip91
+\multlinetaggap=\skip92
+\mathdisplay@stack=\toks40
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(c:/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup6
+\symAMSb=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+LaTeX Font Info:    Redeclaring math symbol \square on input line 141.
+)
+LaTeX Font Info:    Redeclaring math symbol \blacksquare on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \vDash on input line 60.
+LaTeX Font Info:    Redeclaring math symbol \leftleftarrows on input line 63.
+LaTeX Font Info:    Redeclaring math symbol \rightrightarrows on input line 64.
+
+LaTeX Font Info:    Redeclaring math symbol \leqslant on input line 101.
+LaTeX Font Info:    Redeclaring math symbol \geqslant on input line 108.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleright on input line 1
+20.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleleft on input line 12
+1.
+LaTeX Font Info:    Redeclaring math symbol \complement on input line 165.
+LaTeX Font Info:    Redeclaring math symbol \intercal on input line 166.
+LaTeX Font Info:    Redeclaring math symbol \nleqslant on input line 181.
+LaTeX Font Info:    Redeclaring math symbol \ngeqslant on input line 182.
+LaTeX Font Info:    Redeclaring math symbol \varsubsetneq on input line 203.
+LaTeX Font Info:    Redeclaring math symbol \subsetneqq on input line 207.
+LaTeX Font Info:    Redeclaring math symbol \nparallel on input line 215.
+LaTeX Font Info:    Redeclaring math symbol \nvDash on input line 221.
+LaTeX Font Info:    Redeclaring math symbol \nexists on input line 235.
+LaTeX Font Info:    Redeclaring math symbol \smallsetminus on input line 251.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowleft on input line 257.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowright on input line 258.
+
+LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 260.
+LaTeX Font Info:    Redeclaring math symbol \hslash on input line 262.
+)
+(c:/texlive/2018/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks41
+\thm@bodyfont=\toks42
+\thm@headfont=\toks43
+\thm@notefont=\toks44
+\thm@headpunct=\toks45
+\thm@preskip=\skip93
+\thm@postskip=\skip94
+\thm@headsep=\skip95
+\dth@everypar=\toks46
+)
+(c:/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count157
+\lst@gtempboxa=\box41
+\lst@token=\toks47
+\lst@length=\count158
+\lst@currlwidth=\dimen185
+\lst@column=\count159
+\lst@pos=\count160
+\lst@lostspace=\dimen186
+\lst@width=\dimen187
+\lst@newlines=\count161
+\lst@lineno=\count162
+\lst@maxwidth=\dimen188
+
+(c:/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
+\c@lstnumber=\count163
+\lst@skipnumbers=\count164
+\lst@framebox=\box42
+)
+(c:/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2018/09/02 1.7 listings configuration
+))
+Package: listings 2018/09/02 1.7 (Carsten Heinz)
+
+(c:/texlive/2018/texmf-dist/tex/latex/quoting/quoting.sty
+Package: quoting 2014/01/28 v0.1c Consolidated environment for displayed text
+\quo@toppartop=\skip96
+)
+(c:/texlive/2018/texmf-dist/tex/latex/emptypage/emptypage.sty
+Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty 
+pages
+)
+(c:/texlive/2018/texmf-dist/tex/latex/xurl/xurl.sty
+Package: xurl 2018/06/02 v 0.04 modify URL breaks
+)
+(./dummymathcode/testmathcommand.tex
+\c@thm=\count165
+\c@ax=\count166
+\c@defn=\count167
+\c@rem=\count168
+) (./Dissertation.aux)
+\openout1 = `Dissertation.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 74.
+LaTeX Font Info:    Try loading font information for FML+fncmi on input line 74
+.
+
+(c:/texlive/2018/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
+File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
+)
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 74.
+LaTeX Font Info:    Try loading font information for FMS+fncm on input line 74.
+
+
+(c:/texlive/2018/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
+File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
+)
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 74.
+
+(c:/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Try loading font information for T1+fnc on input line 74.
+
+(c:/texlive/2018/texmf-dist/tex/latex/fouriernc/t1fnc.fd
+File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
+)
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 10.18341pt on input line 74.
+
+ABD: EveryShipout initializing macros
+(c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count169
+\scratchdimen=\dimen189
+\scratchbox=\box43
+\nofMPsegments=\count170
+\nofMParguments=\count171
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count172
+\MPscratchDim=\dimen190
+\MPnumerator=\count173
+\makeMPintoPDFobject=\count174
+\everyMPtoPDFconversion=\toks49
+) (c:/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(c:/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(c:/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Info: Redefining \microtypecontext on input line 74.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+Package microtype Info: Redefining babel's language switching commands.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `fnc' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+\AtBeginShipoutBox=\box44
+Package hyperref Info: Link coloring ON on input line 74.
+
+(c:/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count175
+)
+LaTeX Info: Redefining \ref on input line 74.
+LaTeX Info: Redefining \pageref on input line 74.
+LaTeX Info: Redefining \nameref on input line 74.
+
+(./Dissertation.out) (./Dissertation.out)
+\@outlinefile=\write5
+\openout5 = `Dissertation.out'.
+
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(156.49014pt, 369.88585pt, 71.13188pt)
+* v-part:(T,H,B)=(85.35826pt, 660.10394pt, 99.58464pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=369.88585pt
+* \textheight=660.10394pt
+* \oddsidemargin=84.22015pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-12.51903pt
+* \headheight=8.0pt
+* \headsep=17.6073pt
+* \topskip=11.0pt
+* \footskip=34.14322pt
+* \marginparwidth=113.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+(c:/texlive/2018/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 74.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 74.
+
+
+Package hyperref Warning: Option `colorlinks' has already been used,
+(hyperref)                setting the option has no effect on input line 74.
+
+Package hyperref Info: Option `plainpages' set `false' on input line 74.
+\c@lstlisting=\count176
+LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 94.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 10.18341pt on input line 94.
+LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <12> not available
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 94.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 11.15991pt on input line 94.
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 10.18341pt on input line 94.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 7.43994pt on input line 116.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 10.22992pt on input line 116.
+[1
+
+] [2
+
+]
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 18.59985pt on input line 116.
+LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <20> not available
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 116.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 18.59985pt on input line 116.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 116.
+ (c:/texlive/2018/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 116.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 18.99994pt on input line 116.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `phv' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 7.71893pt on input line 116.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 5.57996pt on input line 116.
+LaTeX Font Info:    Try loading font information for FML+fncm on input line 116
+.
+
+(c:/texlive/2018/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
+File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
+)
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 116.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 116.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 116.
+LaTeX Font Info:    Try loading font information for U+msa on input line 116.
+
+(c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(c:/texlive/2018/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 116.
+
+(c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(c:/texlive/2018/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+) [3] [4
+
+
+]
+(./Dissertation.toc)
+\tf@toc=\write6
+\openout6 = `Dissertation.toc'.
+
+ [5] [6
+
+]
+\aspread=\read3
+ (./Dissertation.asp)
+\tf@asp=\write7
+\openout7 = `Dissertation.asp'.
+
+ [7] [8
+
+] (./Dissertation.asc
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.40245pt on input line 2.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 11.39996pt on input line 2.
+
+[9])
+\tf@asc=\write8
+\openout8 = `Dissertation.asc'.
+
+ [10]
+LaTeX Font Info:    Try loading font information for TS1+fnc on input line 157.
+
+ (c:/texlive/2018/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
+File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
+)
+LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
+(Font)              scaled to size 10.18341pt on input line 157.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `fnc' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [11
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
+
+ []
+
+[12]
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 198.
+ (c:/texlive/2018/texmf-dist/tex/latex/bera/t1fvm.fd
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 8.2125pt on input line 198.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `fvm' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [13] [14]
+LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <11> not available
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 241.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 10.22992pt on input line 241.
+ [15
+
+]
+[16] [17
+
+] [18
+
+] [19] [20
+
+]
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 16.07027pt on input line 278.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 9.29993pt on input line 278.
+ [21] [22
+
+] (./Dissertation.bbl
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 7.06795pt on input line 1.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 1.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 1.
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 9.29993pt on input line 5.
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 7.5pt on input line 11.
+) [23
+
+] [24
+
+]
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 11.15991pt on input line 291.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 8.36993pt on input line 291.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 15.89755pt on input line 291.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 11.03998pt on input line 291.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 291.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 16.41594pt on input line 291.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 11.39996pt on input line 291.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 6.50995pt on input line 291.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 291.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 291.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 11.39996pt on input line 291.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 10.44997pt on input line 291.
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 291.
+
+
+(c:/texlive/2018/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 10.44997pt on input line 291.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `phv' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI16.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI16.pdf, id=235, 614.295pt x 794.97pt>
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf>
+Package pdftex.def Info: Articles/IUI16.pdf  used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI16.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf>
+Package pdftex.def Info: Articles/IUI16.pdf  used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI16.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI16.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI16.pdf, id=238, page=1, 614.295pt x 794.97pt>
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 1>
+Package pdftex.def Info: Articles/IUI16.pdf , page1 used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[25
+
+]
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 1>
+Package pdftex.def Info: Articles/IUI16.pdf , page1 used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 1>
+Package pdftex.def Info: Articles/IUI16.pdf , page1 used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [26]
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 1>
+Package pdftex.def Info: Articles/IUI16.pdf , page1 used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 1>
+Package pdftex.def Info: Articles/IUI16.pdf , page1 used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 1>
+Package pdftex.def Info: Articles/IUI16.pdf , page1 used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [27 <./Articles/IUI16.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI16.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI16.pdf, id=295, page=2, 614.295pt x 794.97pt>
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 2>
+Package pdftex.def Info: Articles/IUI16.pdf , page2 used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 2>
+Package pdftex.def Info: Articles/IUI16.pdf , page2 used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 2>
+Package pdftex.def Info: Articles/IUI16.pdf , page2 used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[28 <./Articles/IUI16.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI16.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI16.pdf, id=300, page=3, 614.295pt x 794.97pt>
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 3>
+Package pdftex.def Info: Articles/IUI16.pdf , page3 used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 3>
+Package pdftex.def Info: Articles/IUI16.pdf , page3 used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 3>
+Package pdftex.def Info: Articles/IUI16.pdf , page3 used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[29 <./Articles/IUI16.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI16.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI16.pdf, id=316, page=4, 614.295pt x 794.97pt>
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 4>
+Package pdftex.def Info: Articles/IUI16.pdf , page4 used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 4>
+Package pdftex.def Info: Articles/IUI16.pdf , page4 used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 4>
+Package pdftex.def Info: Articles/IUI16.pdf , page4 used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[30 <./Articles/IUI16.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI16.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI16.pdf, id=321, page=5, 614.295pt x 794.97pt>
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 5>
+Package pdftex.def Info: Articles/IUI16.pdf , page5 used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 5>
+Package pdftex.def Info: Articles/IUI16.pdf , page5 used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 5>
+Package pdftex.def Info: Articles/IUI16.pdf , page5 used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[31 <./Articles/IUI16.pdf>] [32
+
+]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=331, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf>
+Package pdftex.def Info: Articles/ML17.pdf  used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf>
+Package pdftex.def Info: Articles/ML17.pdf  used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=334, page=1, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 1>
+Package pdftex.def Info: Articles/ML17.pdf , page1 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[33
+
+]
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 1>
+Package pdftex.def Info: Articles/ML17.pdf , page1 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 1>
+Package pdftex.def Info: Articles/ML17.pdf , page1 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+ [34]
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 1>
+Package pdftex.def Info: Articles/ML17.pdf , page1 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 1>
+Package pdftex.def Info: Articles/ML17.pdf , page1 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 1>
+Package pdftex.def Info: Articles/ML17.pdf , page1 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+ [35 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1076, page=2, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 2>
+Package pdftex.def Info: Articles/ML17.pdf , page2 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 2>
+Package pdftex.def Info: Articles/ML17.pdf , page2 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 2>
+Package pdftex.def Info: Articles/ML17.pdf , page2 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[36 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1082, page=3, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 3>
+Package pdftex.def Info: Articles/ML17.pdf , page3 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 3>
+Package pdftex.def Info: Articles/ML17.pdf , page3 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 3>
+Package pdftex.def Info: Articles/ML17.pdf , page3 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[37 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1088, page=4, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 4>
+Package pdftex.def Info: Articles/ML17.pdf , page4 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 4>
+Package pdftex.def Info: Articles/ML17.pdf , page4 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 4>
+Package pdftex.def Info: Articles/ML17.pdf , page4 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[38 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1098, page=5, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 5>
+Package pdftex.def Info: Articles/ML17.pdf , page5 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 5>
+Package pdftex.def Info: Articles/ML17.pdf , page5 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 5>
+Package pdftex.def Info: Articles/ML17.pdf , page5 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[39 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1129, page=6, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 6>
+Package pdftex.def Info: Articles/ML17.pdf , page6 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 6>
+Package pdftex.def Info: Articles/ML17.pdf , page6 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 6>
+Package pdftex.def Info: Articles/ML17.pdf , page6 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[40 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1151, page=7, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 7>
+Package pdftex.def Info: Articles/ML17.pdf , page7 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 7>
+Package pdftex.def Info: Articles/ML17.pdf , page7 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 7>
+Package pdftex.def Info: Articles/ML17.pdf , page7 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[41 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1156, page=8, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 8>
+Package pdftex.def Info: Articles/ML17.pdf , page8 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 8>
+Package pdftex.def Info: Articles/ML17.pdf , page8 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 8>
+Package pdftex.def Info: Articles/ML17.pdf , page8 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[42 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1165, page=9, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 9>
+Package pdftex.def Info: Articles/ML17.pdf , page9 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 9>
+Package pdftex.def Info: Articles/ML17.pdf , page9 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 9>
+Package pdftex.def Info: Articles/ML17.pdf , page9 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[43 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1171, page=10, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 10>
+Package pdftex.def Info: Articles/ML17.pdf , page10 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 10>
+Package pdftex.def Info: Articles/ML17.pdf , page10 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 10>
+Package pdftex.def Info: Articles/ML17.pdf , page10 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[44 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1204, page=11, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 11>
+Package pdftex.def Info: Articles/ML17.pdf , page11 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 11>
+Package pdftex.def Info: Articles/ML17.pdf , page11 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 11>
+Package pdftex.def Info: Articles/ML17.pdf , page11 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[45 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1217, page=12, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 12>
+Package pdftex.def Info: Articles/ML17.pdf , page12 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 12>
+Package pdftex.def Info: Articles/ML17.pdf , page12 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 12>
+Package pdftex.def Info: Articles/ML17.pdf , page12 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[46 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1222, page=13, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 13>
+Package pdftex.def Info: Articles/ML17.pdf , page13 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 13>
+Package pdftex.def Info: Articles/ML17.pdf , page13 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 13>
+Package pdftex.def Info: Articles/ML17.pdf , page13 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[47 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1231, page=14, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 14>
+Package pdftex.def Info: Articles/ML17.pdf , page14 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 14>
+Package pdftex.def Info: Articles/ML17.pdf , page14 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 14>
+Package pdftex.def Info: Articles/ML17.pdf , page14 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[48 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1236, page=15, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 15>
+Package pdftex.def Info: Articles/ML17.pdf , page15 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 15>
+Package pdftex.def Info: Articles/ML17.pdf , page15 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 15>
+Package pdftex.def Info: Articles/ML17.pdf , page15 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[49 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1242, page=16, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 16>
+Package pdftex.def Info: Articles/ML17.pdf , page16 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 16>
+Package pdftex.def Info: Articles/ML17.pdf , page16 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 16>
+Package pdftex.def Info: Articles/ML17.pdf , page16 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[50 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1255, page=17, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 17>
+Package pdftex.def Info: Articles/ML17.pdf , page17 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 17>
+Package pdftex.def Info: Articles/ML17.pdf , page17 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 17>
+Package pdftex.def Info: Articles/ML17.pdf , page17 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[51 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1262, page=18, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 18>
+Package pdftex.def Info: Articles/ML17.pdf , page18 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 18>
+Package pdftex.def Info: Articles/ML17.pdf , page18 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 18>
+Package pdftex.def Info: Articles/ML17.pdf , page18 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[52 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1267, page=19, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 19>
+Package pdftex.def Info: Articles/ML17.pdf , page19 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 19>
+Package pdftex.def Info: Articles/ML17.pdf , page19 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 19>
+Package pdftex.def Info: Articles/ML17.pdf , page19 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[53 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1272, page=20, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 20>
+Package pdftex.def Info: Articles/ML17.pdf , page20 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 20>
+Package pdftex.def Info: Articles/ML17.pdf , page20 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 20>
+Package pdftex.def Info: Articles/ML17.pdf , page20 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[54 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1277, page=21, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 21>
+Package pdftex.def Info: Articles/ML17.pdf , page21 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 21>
+Package pdftex.def Info: Articles/ML17.pdf , page21 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 21>
+Package pdftex.def Info: Articles/ML17.pdf , page21 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[55 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1283, page=22, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 22>
+Package pdftex.def Info: Articles/ML17.pdf , page22 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 22>
+Package pdftex.def Info: Articles/ML17.pdf , page22 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 22>
+Package pdftex.def Info: Articles/ML17.pdf , page22 used on input line 308.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[56 <./Articles/ML17.pdf>]
+<Articles/Bio18.pdf, id=1288, 614.57909pt x 793.83177pt>
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf>
+Package pdftex.def Info: Articles/Bio18.pdf  used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf>
+Package pdftex.def Info: Articles/Bio18.pdf  used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+<Articles/Bio18.pdf, id=1291, page=1, 614.57909pt x 793.83177pt>
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 1>
+Package pdftex.def Info: Articles/Bio18.pdf , page1 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [57
+
+
+]
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 1>
+Package pdftex.def Info: Articles/Bio18.pdf , page1 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 1>
+Package pdftex.def Info: Articles/Bio18.pdf , page1 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [58]
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 1>
+Package pdftex.def Info: Articles/Bio18.pdf , page1 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 1>
+Package pdftex.def Info: Articles/Bio18.pdf , page1 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 1>
+Package pdftex.def Info: Articles/Bio18.pdf , page1 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [59 <./Articles/Bio18.pdf>]
+<Articles/Bio18.pdf, id=1344, page=2, 614.57909pt x 793.83177pt>
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 2>
+Package pdftex.def Info: Articles/Bio18.pdf , page2 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 2>
+Package pdftex.def Info: Articles/Bio18.pdf , page2 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 2>
+Package pdftex.def Info: Articles/Bio18.pdf , page2 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [60 <./Articles/Bio18.pdf>]
+<Articles/Bio18.pdf, id=1374, page=3, 614.57909pt x 793.83177pt>
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 3>
+Package pdftex.def Info: Articles/Bio18.pdf , page3 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 3>
+Package pdftex.def Info: Articles/Bio18.pdf , page3 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 3>
+Package pdftex.def Info: Articles/Bio18.pdf , page3 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [61 <./Articles/Bio18.pdf>]
+<Articles/Bio18.pdf, id=1396, page=4, 614.57909pt x 793.83177pt>
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 4>
+Package pdftex.def Info: Articles/Bio18.pdf , page4 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 4>
+Package pdftex.def Info: Articles/Bio18.pdf , page4 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 4>
+Package pdftex.def Info: Articles/Bio18.pdf , page4 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [62 <./Articles/Bio18.pdf>]
+<Articles/Bio18.pdf, id=1404, page=5, 614.57909pt x 793.83177pt>
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 5>
+Package pdftex.def Info: Articles/Bio18.pdf , page5 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 5>
+Package pdftex.def Info: Articles/Bio18.pdf , page5 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 5>
+Package pdftex.def Info: Articles/Bio18.pdf , page5 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [63 <./Articles/Bio18.pdf>]
+<Articles/Bio18.pdf, id=1416, page=6, 614.57909pt x 793.83177pt>
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 6>
+Package pdftex.def Info: Articles/Bio18.pdf , page6 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 6>
+Package pdftex.def Info: Articles/Bio18.pdf , page6 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 6>
+Package pdftex.def Info: Articles/Bio18.pdf , page6 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [64 <./Articles/Bio18.pdf>]
+<Articles/Bio18.pdf, id=1421, page=7, 614.57909pt x 793.83177pt>
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 7>
+Package pdftex.def Info: Articles/Bio18.pdf , page7 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 7>
+Package pdftex.def Info: Articles/Bio18.pdf , page7 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 7>
+Package pdftex.def Info: Articles/Bio18.pdf , page7 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [65 <./Articles/Bio18.pdf>]
+<Articles/Bio18.pdf, id=1430, page=8, 614.57909pt x 793.83177pt>
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 8>
+Package pdftex.def Info: Articles/Bio18.pdf , page8 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 8>
+Package pdftex.def Info: Articles/Bio18.pdf , page8 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 8>
+Package pdftex.def Info: Articles/Bio18.pdf , page8 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+
+[66 <./Articles/Bio18.pdf>]
+<Articles/Bio18.pdf, id=1435, page=9, 614.57909pt x 793.83177pt>
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 9>
+Package pdftex.def Info: Articles/Bio18.pdf , page9 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 9>
+Package pdftex.def Info: Articles/Bio18.pdf , page9 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 9>
+Package pdftex.def Info: Articles/Bio18.pdf , page9 used on input line 314.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [67 <./Articles/Bio18.pdf>] [68
+
+]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI18.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI18.pdf, id=1445, 614.295pt x 794.97pt>
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf>
+Package pdftex.def Info: Articles/IUI18.pdf  used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI18.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf>
+Package pdftex.def Info: Articles/IUI18.pdf  used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI18.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI18.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI18.pdf, id=1448, page=1, 614.295pt x 794.97pt>
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 1>
+Package pdftex.def Info: Articles/IUI18.pdf , page1 used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[69
+
+]
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 1>
+Package pdftex.def Info: Articles/IUI18.pdf , page1 used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 1>
+Package pdftex.def Info: Articles/IUI18.pdf , page1 used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [70]
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 1>
+Package pdftex.def Info: Articles/IUI18.pdf , page1 used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 1>
+Package pdftex.def Info: Articles/IUI18.pdf , page1 used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 1>
+Package pdftex.def Info: Articles/IUI18.pdf , page1 used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [71 <./Articles/IUI18.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI18.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI18.pdf, id=1542, page=2, 614.295pt x 794.97pt>
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 2>
+Package pdftex.def Info: Articles/IUI18.pdf , page2 used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 2>
+Package pdftex.def Info: Articles/IUI18.pdf , page2 used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 2>
+Package pdftex.def Info: Articles/IUI18.pdf , page2 used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[72 <./Articles/IUI18.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI18.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI18.pdf, id=1590, page=3, 614.295pt x 794.97pt>
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 3>
+Package pdftex.def Info: Articles/IUI18.pdf , page3 used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 3>
+Package pdftex.def Info: Articles/IUI18.pdf , page3 used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 3>
+Package pdftex.def Info: Articles/IUI18.pdf , page3 used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[73 <./Articles/IUI18.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI18.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI18.pdf, id=1614, page=4, 614.295pt x 794.97pt>
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 4>
+Package pdftex.def Info: Articles/IUI18.pdf , page4 used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 4>
+Package pdftex.def Info: Articles/IUI18.pdf , page4 used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 4>
+Package pdftex.def Info: Articles/IUI18.pdf , page4 used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[74 <./Articles/IUI18.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI18.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI18.pdf, id=1638, page=5, 614.295pt x 794.97pt>
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 5>
+Package pdftex.def Info: Articles/IUI18.pdf , page5 used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 5>
+Package pdftex.def Info: Articles/IUI18.pdf , page5 used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 5>
+Package pdftex.def Info: Articles/IUI18.pdf , page5 used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[75 <./Articles/IUI18.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI18.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI18.pdf, id=1656, page=6, 614.295pt x 794.97pt>
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 6>
+Package pdftex.def Info: Articles/IUI18.pdf , page6 used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 6>
+Package pdftex.def Info: Articles/IUI18.pdf , page6 used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 6>
+Package pdftex.def Info: Articles/IUI18.pdf , page6 used on input line 319.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[76 <./Articles/IUI18.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=1674, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf>
+Package pdftex.def Info: Articles/JASIST19.pdf  used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf>
+Package pdftex.def Info: Articles/JASIST19.pdf  used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=1677, page=1, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 1>
+Package pdftex.def Info: Articles/JASIST19.pdf , page1 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[77
+
+
+]
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 1>
+Package pdftex.def Info: Articles/JASIST19.pdf , page1 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 1>
+Package pdftex.def Info: Articles/JASIST19.pdf , page1 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [78]
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 1>
+Package pdftex.def Info: Articles/JASIST19.pdf , page1 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 1>
+Package pdftex.def Info: Articles/JASIST19.pdf , page1 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 1>
+Package pdftex.def Info: Articles/JASIST19.pdf , page1 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [79 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=1720, page=2, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 2>
+Package pdftex.def Info: Articles/JASIST19.pdf , page2 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 2>
+Package pdftex.def Info: Articles/JASIST19.pdf , page2 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 2>
+Package pdftex.def Info: Articles/JASIST19.pdf , page2 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[80 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=1725, page=3, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 3>
+Package pdftex.def Info: Articles/JASIST19.pdf , page3 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 3>
+Package pdftex.def Info: Articles/JASIST19.pdf , page3 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 3>
+Package pdftex.def Info: Articles/JASIST19.pdf , page3 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[81 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=1730, page=4, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 4>
+Package pdftex.def Info: Articles/JASIST19.pdf , page4 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 4>
+Package pdftex.def Info: Articles/JASIST19.pdf , page4 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 4>
+Package pdftex.def Info: Articles/JASIST19.pdf , page4 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[82 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=1739, page=5, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 5>
+Package pdftex.def Info: Articles/JASIST19.pdf , page5 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 5>
+Package pdftex.def Info: Articles/JASIST19.pdf , page5 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 5>
+Package pdftex.def Info: Articles/JASIST19.pdf , page5 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[83 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=1761, page=6, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 6>
+Package pdftex.def Info: Articles/JASIST19.pdf , page6 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 6>
+Package pdftex.def Info: Articles/JASIST19.pdf , page6 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 6>
+Package pdftex.def Info: Articles/JASIST19.pdf , page6 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[84 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=1766, page=7, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 7>
+Package pdftex.def Info: Articles/JASIST19.pdf , page7 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 7>
+Package pdftex.def Info: Articles/JASIST19.pdf , page7 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 7>
+Package pdftex.def Info: Articles/JASIST19.pdf , page7 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[85 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=1773, page=8, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 8>
+Package pdftex.def Info: Articles/JASIST19.pdf , page8 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 8>
+Package pdftex.def Info: Articles/JASIST19.pdf , page8 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 8>
+Package pdftex.def Info: Articles/JASIST19.pdf , page8 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[86 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=1779, page=9, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 9>
+Package pdftex.def Info: Articles/JASIST19.pdf , page9 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 9>
+Package pdftex.def Info: Articles/JASIST19.pdf , page9 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 9>
+Package pdftex.def Info: Articles/JASIST19.pdf , page9 used on input line 324.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[87 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=1789, page=10, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 10>
+Package pdftex.def Info: Articles/JASIST19.pdf , page10 used on input line 324.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 10>
+Package pdftex.def Info: Articles/JASIST19.pdf , page10 used on input line 324.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 10>
+Package pdftex.def Info: Articles/JASIST19.pdf , page10 used on input line 324.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[88 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=1795, page=11, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 11>
+Package pdftex.def Info: Articles/JASIST19.pdf , page11 used on input line 324.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 11>
+Package pdftex.def Info: Articles/JASIST19.pdf , page11 used on input line 324.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 11>
+Package pdftex.def Info: Articles/JASIST19.pdf , page11 used on input line 324.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[89 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=1801, page=12, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 12>
+Package pdftex.def Info: Articles/JASIST19.pdf , page12 used on input line 324.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 12>
+Package pdftex.def Info: Articles/JASIST19.pdf , page12 used on input line 324.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 12>
+Package pdftex.def Info: Articles/JASIST19.pdf , page12 used on input line 324.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[90 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=1806, page=13, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 13>
+Package pdftex.def Info: Articles/JASIST19.pdf , page13 used on input line 324.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 13>
+Package pdftex.def Info: Articles/JASIST19.pdf , page13 used on input line 324.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 13>
+Package pdftex.def Info: Articles/JASIST19.pdf , page13 used on input line 324.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[91 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=1812, page=14, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 14>
+Package pdftex.def Info: Articles/JASIST19.pdf , page14 used on input line 324.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 14>
+Package pdftex.def Info: Articles/JASIST19.pdf , page14 used on input line 324.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 14>
+Package pdftex.def Info: Articles/JASIST19.pdf , page14 used on input line 324.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[92 <./Articles/JASIST19.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 334.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 334.
+ (./Dissertation.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 334.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 334.
+Package rerunfilecheck Info: File `Dissertation.out' has not changed.
+(rerunfilecheck)             Checksum: C6778E92ED32FE8775D18298821660AB;1495.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 334.
+ ) 
+Here is how much of TeX's memory you used:
+ 30583 strings out of 492641
+ 512515 string characters out of 6133117
+ 1095742 words of memory out of 5000000
+ 33545 multiletter control sequences out of 15000+600000
+ 89443 words of font info for 278 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 69i,18n,58p,1692b,2069s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2018/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr6.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c
+:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive
+/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2018/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2018/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2018/texmf-dist/fonts/type1/p
+ublic/fourier/fourier-ms.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/ber
+a/fvmr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/marvosym/marvosym.p
+fb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
+c:/texlive/2018/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><c:/texlive/2018/
+texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb><c:/texlive/2018/texmf-dist/fo
+nts/type1/public/txfonts/t1xtt.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/
+helvetic/uhvb8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvr8a
+.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texli
+ve/2018/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb><c:/texlive/2018/texmf-d
+ist/fonts/type1/urw/ncntrsbk/uncr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1
+/urw/ncntrsbk/uncri8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/symbol/us
+yr.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/
+2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2018/texmf-dist/fo
+nts/type1/urw/times/utmr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/time
+s/utmri8a.pfb>
+Output written on Dissertation.pdf (92 pages, 4264443 bytes).
+PDF statistics:
+ 1908 PDF objects out of 2073 (max. 8388607)
+ 134 named destinations out of 1000 (max. 500000)
+ 39980 words of extra memory for PDF output out of 42996 (max. 10000000)
+
