@@ -1,13 +1,9 @@
 \begin{thebibliography}{1}
 
-\bibitem{Knuth1984:The-TeXbook}
-Donald~E. Knuth.
-\newblock {\em The {\TeX}book}.
-\newblock Addison-Wesley, 1984.
-
-\bibitem{WikiBooks2008:LaTeX}
-WikiBooks.
-\newblock {\LaTeX}.
-\newblock \texttt{http://en.wikibooks.org/wiki/LaTeX/}, 2008.
+\bibitem{Gelman2013}
+Andrew Gelman, John~B Carlin, Hal~S Stern, David~B Dunson, Aki Vehtari, and
+  Donald~B Rubin.
+\newblock {\em Bayesian data analysis}.
+\newblock Chapman \& Hall/CRC, 3rd edition, 2014.
 
 \end{thebibliography}

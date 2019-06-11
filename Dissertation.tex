@@ -91,19 +91,21 @@
 % Use this command!
 %\begin{abstract}\lipsum[1-3]\end{abstract}%
 % Let's add another one in Finnish
+
 \begin{abstract}[english]
 \end{abstract}
-1. What is the bigger picture?
-2. Dissertation purpose
-3. Research method
-4. Key results
-5. Practical Implications
 
-Typically 3 paragraphs: 1. the introduction of the challenge problem, 2. thesis, 3. contribution
+%1. What is the bigger picture?
+%2. Dissertation purpose
+%3. Research method
+%4. Key results
+%5. Practical Implications
+
+%Typically 3 paragraphs: 1. the introduction of the challenge problem, 2. thesis, 3. contribution
 
  
 \begin{abstract}%[finnish]
-En puhu suomea!
+En puhu suomea.
 \end{abstract}
 
 
@@ -114,7 +116,7 @@ En puhu suomea!
 %% Preface
 % If you write this somewhere else than in Helsinki, use the optional location.
 \begin{preface}[Espoo]
-TO fill.
+To fill.
 
 
 \end{preface}
@@ -153,120 +155,130 @@ TO fill.
 %% The main matter, one can obviously use \input or \include
 \chapter{Introduction}
 
-\begin{itemize}
-	\item We can keep this empty and start from next. Alternatively we can write some stuff here and have only one section as "Contributions and organization of the thesis". See which one works better for you
-	%\item TODO: To get ideas for presentation of the story, look at Sami's coffee seminar slides from 4th of Feb 2019.
-\end{itemize}
-
-\paragraph{Description of the Problem.}
-Whether it is an everyday user searching for an application in her mobile phone or a doctor working with a cancer diagnostic system, humans and machines are increasingly interacting with each other. The goal of my thesis is to improve this interaction by incorporating a model of the human user in the system they are interacting with. In particular, I consider the family of problems where the human and machine interact to solve a prediction problem. Such problems can include personalized search activity of a user or medical prediction about the response of a cancer drug. An important common factor in both these scenarios is that the number of labeled data (training data) that the machine can use to make predictions, is usually very few compared to the dimension of search space. This results in ill-posed statistical learning since there are limits in how low in sample size statistical methods can go. 
-
-\paragraph{Objective.}
-The objective of the thesis is to tackle the limited data problem by directly integrating a model of the human user into the modelling loop. The user can then provide more information about the problem (for example by giving feedback in response to the machine's query) that can help to improve the prediction performance. For example, in precision medicine obtaining additional data can be extremely costly or even impossible but the human knowledge, e.g., practitioners feedback, can be available and used to improve the prediction. My thesis proposes new probabilistic machine learning models to learn the human intent in interaction, new user models to learn about the knowledge of the human and accounting for common human biases, and new prediction models to employ and extract human knowledge to improve a task.
+%We can keep this empty and start from next. Alternatively we can write some stuff here and have only one section as "Contributions and organization of the thesis". See which one works better for you
 
 
-\paragraph{Methodology.}
 
-I design probabilistic machine learning models to tie the data model (prediction model from the training data) to the user model (the model of the human) in a unified way. After doing so, we use Bayesian inference to find the posterior, i.e, distribution of the unknown parameters related to data and user, giving the training data and user interaction. The posterior inference, in most cases, does not have an analytical solution. We use different approximation methods, such as expectation propagation and variational inference, to handle the computation. 
-A core characteristic of the formulation is that the model adapts to the feedback obtained from the user and it sequentially integrates every piece of information before deciding on the next query for the user. This is important as humans can only answer limited number of queries (out of several thousands). The query selection is naturally formulated as experimental design problem, aiming at maximizing the most information gained, or multi-armed bandit problem, aiming at finding the most important piece of information, depending on the targeted task. For evaluation and testing, we conduct carefully designed user studies with real human.  
+%\paragraph{Description of the Problem.}
+%Whether it is an everyday user searching for an application in her mobile phone or a doctor working with a cancer diagnostic system, humans and machines are increasingly interacting with each other. The goal of my thesis is to improve this interaction by incorporating a model of the human user in the system they are interacting with. In particular, I consider the family of problems where the human and machine interact to solve a prediction problem. Such problems can include personalized search activity of a user or medical prediction about the response of a cancer drug. An important common factor in both these scenarios is that the number of labeled data (training data) that the machine can use to make predictions, is usually very few compared to the dimension of search space. This results in ill-posed statistical learning since there are limits in how low in sample size statistical methods can go. 
+
+%\paragraph{Objective.}
+%The objective of the thesis is to tackle the limited data problem by directly integrating a model of the human user into the modelling loop. The user can then provide more information about the problem (for example by giving feedback in response to the machine's query) that can help to improve the prediction performance. For example, in precision medicine obtaining additional data can be extremely costly or even impossible but the human knowledge, e.g., practitioners feedback, can be available and used to improve the prediction. My thesis proposes new probabilistic machine learning models to learn the human intent in interaction, new user models to learn about the knowledge of the human and accounting for common human biases, and new prediction models to employ and extract human knowledge to improve a task.
+
+
+%\paragraph{Methodology.}
+%I design probabilistic machine learning models to tie the data model (prediction model from the training data) to the user model (the model of the human) in a unified way. After doing so, we use Bayesian inference to find the posterior, i.e, distribution of the unknown parameters related to data and user, giving the training data and user interaction. The posterior inference, in most cases, does not have an analytical solution. We use different approximation methods, such as expectation propagation and variational inference, to handle the computation. 
+%A core characteristic of the formulation is that the model adapts to the feedback obtained from the user and it sequentially integrates every piece of information before deciding on the next query for the user. This is important as humans can only answer limited number of queries (out of several thousands). The query selection is naturally formulated as experimental design problem, aiming at maximizing the most information gained, or multi-armed bandit problem, aiming at finding the most important piece of information, depending on the targeted task. For evaluation and testing, we conduct carefully designed user studies with real human.  
 
 
 
 \section{Motivation}
 
-\begin{itemize}
-	\item Thinking back, I think my main motivation should be on how to tackled limited interaction problem. In iui2016 we did it by adding new likelihoods, in JASIS by implicit interaction, in ML and IUI 18 by assuming strong priors.
-	\item A) Small number of data ->add users
-	\item B) user is the source of data
-	\item Limited interaction: 1) need to be smart about what question to ask from the user 2) Should be able to consider all potential sources of feedback on different components of the interaction framework.
-\end{itemize}
+%Thinking back, I think my main motivation should be on how to tackled limited interaction problem. In iui2016 we did it by adding new likelihoods, in JASIS by implicit interaction, in ML and IUI 18 by assuming strong priors.
+
+%A) Small number of data ->add users
+
+%B) user is the source of data
+
+%Limited interaction: 1) need to be smart about what question to ask from the user 2) Should be able to consider all potential sources of feedback on different components of the interaction framework.
+
 
  
 \section{Research questions and contributions}
 
 
-This thesis investigates methods to tackle the limited interaction challenge in interactive machine learning scenarios where there is few labeled data available compared to the dimension of the problem, or a human user is provider of the labeled data.  \\
+This thesis investigates methods to tackle the limited user interaction challenge in interactive machine learning for prediction. The thesis focuses on scenarios where there is few labeled data available compared to the dimension of the problem, or when a human user is provider of the labeled data.\\
 
-\noindent \textbf{RQ1 --} \textit{Can we exploit new sources of interaction as new learning signals from the human user to improve interactive intent modelling?}
+\noindent \textbf{RQ1 --} \textit{Can we exploit new sources of interaction as additional learning signals from human user to improve interactive intent modelling?}
 
-Publications I and V contribute to this research question by proposing models to incorporate new types of user feedback to amend the limited feedback in exploratory information seeking tasks. The information seeking tasks considered are document search scenarios where a user needs to sequentially provide relevance feedback to suggested keywords in order to find the targeted document. The problem is usually modelled as a multi-armed bandit problem with the goal of finding the most relevant document with minimum interaction. In particular, Publication I proposes methods to additionally account for user relevance feedback on documents and couples relevance feedback on both keywords and documents by assuming a shared underlying latent model connected through a probabilistic model of the relationship between keywords and documents. Thompson sampling on the posterior of the latent intent was then used to recommend new documents and keywords in the next iteration. Publication V investigates the use of implicit relevance feedback from neurophysiology signals for effortless information seeking. The work contributes by demonstrating how to integrate this inherently noisy implicit relevance feedback combined with scarce explicit feedback. In particular, a parameter for controlling the accuracy of the feedback was introduced in the likelihood function which would have different prior based on the nature of the feedback (implicit or explicit). Similar to Publication I, Thompson sampling was used to control the exploration and exploitation balance of the recommendations. Both publications were evaluated by user studies in realistic information seeking tasks. 
+Publications I and V contribute to this research question by proposing models to incorporate new types of user feedback to amend the limited feedback in exploratory information seeking tasks. The tasks considered are document search scenarios where a user needs to sequentially provide relevance feedback to suggested keywords in order to find the targeted document. This is modelled as a multi-armed bandit problem with the goal of finding the most relevant document with minimum interaction. In particular, Publication I couples user relevance feedback on both documents and keywords by assuming a shared underlying latent model connected through a probabilistic model of the relationship between keywords and documents. Thompson sampling on the posterior of the latent intent was then used to recommend new documents and keywords in each iteration. Publication V investigates the use of implicit relevance feedback from neurophysiology signals for effortless information seeking. The work contributes by demonstrating how to integrate this inherently noisy and implicit feedback source with scarce explicit interaction. A model for controlling the accuracy of the feedback given its nature (implicit or explicit) was introduced. Similar to Publication I, Thompson sampling was used to control the exploration and exploitation balance of the recommendations. Both publications were evaluated by user studies in realistic information seeking tasks. 
 
 
-\noindent \textbf{RQ2 --} \textit{Can human knowledge about the underlying data model be elicited to improve the prediction performance in "small $n$ large $p$" tasks?}
+\noindent \textbf{RQ2 --} \textit{Can expert knowledge about high dimensional data models be elicited to improve the prediction performance?}
 
-Publications II and III contribute to this research question. Publication II proposes a framework for user knowledge elicitation as a probabilistic inference process, where the user knowledge is sequentially queried to improve predictions. In particular, sparse linear regression is considered as the data model with access to only few high-dimensional training data. It is assumed that there are human experts who have knowledge about the relevance of the covariates, or of values of the regression coefficients and can provide this information to the data model if queried. The work contributes by an algorithm and computational approximation for fast and efficient interaction, which sequentially identifies the most informative queries to ask from the user. Publication III, builds on Publication II by adding user knowledge about direction of relevance of covariates and applying the method in important applications of precision medicine with the goals of predicting the efficacies of different treatments using high-dimensional genomic measurements. Both publications were evaluated by extensive simulations and user studies. 
+Publications II and III contribute to this research question. Publication II proposes a framework for user knowledge elicitation as a probabilistic inference process, where the user knowledge is sequentially queried to improve predictions. In particular, sparse linear regression is considered as the data model with access to only few high-dimensional training data. It is assumed that there are experts who have knowledge about the relevance of the covariates, or of values of the regression coefficients and can provide this information to the data model if queried. The work contributes by an algorithm and computational approximation for fast and efficient interaction, which sequentially identifies the most informative queries to ask from the user. Publication III, builds on Publication II by adding user knowledge about direction of relevance of covariates and applying the method in important applications of precision medicine with the goal of predicting the effects of different treatments using high-dimensional genomic measurements. Both publications were evaluated by extensive simulations and user studies. 
 Source codes for methods presented in Publications II and III, and user study data from Publication II are available at \\ \texttt{https://github.com/HIIT/knowledge-elicitation-for-linear-regression} and \\ \texttt{https://github.com/AaltoPML/knowledge-elicitation-for-precision-medicine}.
 
 
 
 
-\noindent \textbf{RQ3 --} \textit{Is it enough to incorporate human knowledge directly in the model as explained in RQ2, or could it be beneficial to account for underlying cognitive procedures [TODO: rational knowledge updates?] that humans undergo during the interaction?}
+\noindent \textbf{RQ3 --} \textit{Is it enough to incorporate human knowledge directly in the data model as explained in RQ2, or could it be beneficial to account for rational knowledge updates that humans may undergo during the interaction?}
 
-Publication IV contributes to this research question by modelling the knowledge provider, here the human user, as a rational agent that updates its knowledge about the underlying prediction task during the interaction. The design of the system is then critical, since the elicited user knowledge cannot be assumed to be independent from the data model knowledge coming from the training data. If not accounted properly, knowledge elicitation can then lead to double use of data and overfitting, if the user reinforces noisy patterns in the data. We propose a user modelling methodology, by assuming simple rational behaviour, to correct the problem and evaluate the method in a user study. 
+Publication IV contributes to this research question by modelling the knowledge provider, here the human user, as a rational agent that updates its knowledge about the underlying prediction task during the interaction. In particular, certain aspects of training data may be revealed to the user during knowledge elicitation. The design of the system is then critical, since the elicited user knowledge cannot be assumed to be independent from the data model knowledge coming from the training data. If not accounted properly, knowledge elicitation can lead to double use of data and overfitting, if the user reinforces noisy patterns in the data. We propose a user modelling methodology, by assuming simple rational behaviour, to correct the problem and evaluate the method in a user study. 
 Source code and user study data are available at \texttt{https://github.com/HIIT/human-overfitting-in-IML}.
 
 \section{Organization of the thesis}
 
-The organization of the thesis is as follows. Chapter 2 provides an overview of probabilistic modelling and introduces our approach of modelling the user and data as a joint probabilistic model. Chapter three investigates the purpose of interactions and utility functions that need to be used for efficient interaction to minimize the effort of the human user. The fourth chapter summarizes Publications I-IV. Chapter five concludes the thesis and provides discussions for future works.
+The organization of the thesis is as follows. Chapter 2 provides an overview of probabilistic modelling and introduces our approach of modelling the user and data as a joint probabilistic model. Chapter three investigates the purpose of interactions and reviews different utility functions designed to minimize the effort of the user. The fourth chapter summarizes Publications I-IV. Chapter five concludes the thesis and provides discussions for future works.
 
-\chapter{Probabilistic modelling}
+\chapter{Probabilistic modelling of data and user}
 
-\begin{itemize}
-	\item Explain general Bayesian modeling (posterior, likelihood, prior). represent uncertainty using probability distribution and then using Bayesian theorem for the inference, finding the distribution of the parameters of interest (unknown parameters), giving the observed variables and model assumptions.
+
+
+%\item Explain general Bayesian modeling (posterior, likelihood, prior). represent uncertainty using probability distribution and then using Bayesian theorem for the inference, finding the distribution of the parameters of interest (unknown parameters), giving the observed variables and model assumptions. \cite{Gelman2013}
 	
-	\item Our approach, throughout this thesis is to model both data and user as a joint probabilistic models (figure XXX).... The role of model (prior) assumptions is crucial then since in all scenarios considered in this thesis there are only few observed data available which is usually smaller than the dimension of the problem (e.g., feature dimension)...
+%\item Our approach, throughout this thesis is to model both data and user as a joint probabilistic models (figure XXX).... The role of model (prior) assumptions is crucial then since in all scenarios considered in this thesis there are only few observed data available which is usually smaller than the dimension of the problem (e.g., feature dimension)...
 	
-	\item Idea: Have a picture per section where there is a cloud on top of user and system head and in it there is the plate diagram of the particular model. Then talk about the interaction. 
-	In the first introduction section have the same figure but just write down (or explain) user probabilistic model and data probabilistic model (priors) and arrows for interactions? and then refer to later chapters for the type of interaction
+%\item Idea: Have a picture per section where there is a cloud on top of user and system head and in it there is the plate diagram of the particular model. Then talk about the interaction. 
+%In the first introduction section have the same figure but just write down (or explain) user probabilistic model and data probabilistic model (priors) and arrows for interactions? and then refer to later chapters for the type of interaction
 	
-	\item Then explain the two possible likelihoods and show a diagram where there is a section for data modeling and there is a section for user modeling that are connected through a shared latent parameter and then each have their own models. Then explain that we will go through details of the data and user model in the next two subsections. My contribution comes from adding data likelihoods and user priors and having interaction.
-	
-	
+%\item Then explain the two possible likelihoods and show a diagram where there is a section for data modeling and there is a section for user modeling that are connected through a shared latent parameter and then each have their own models. Then explain that we will go through details of the data and user model in the next two subsections. My contribution comes from adding data likelihoods and user priors and having interaction.
 	
 	
-\end{itemize}
 
  
 
 
-\section{Modelling the data}
+\section{Modelling the high-dimensional data}
 
-\begin{itemize}
-	\item Defining appropriate likelihood and defining appropriate priors
+
+%Defining appropriate likelihood and defining appropriate priors
 	
-\end{itemize}
+
 
 
 
 \subsection{Bayesian Linear regression}
+% Here we want to start with linear regression (ridge) and then talk about sparsifying priors and maybe automatic relevance models? (relevant thesis: Tomi and Juho)
+\subsection{Sparse priors}
 
-TODO: maybe start from this section
 \section{Modelling the user}
 
-\begin{itemize}
-	\item Our general approach is to consider new likelihood function for the user feedback and put appropriate priors on top of that. Explain the feedback likelihoods?
-\end{itemize}
+%Our general approach is to consider new likelihood function for the user feedback and put appropriate priors on top of that. Explain the feedback likelihoods?
+
 
 
 
 \chapter{User interaction with the probabilistic model}
 
-\begin{itemize}
-	\item Here have the same figure, explain how user feedback is gathered. explain that we consider two sets of works. One where there is external data other than user feedback and one where the user feedback IS the data. Then explain our interaction goals and acquisition functions and experimental design.
-\end{itemize}
+%Here have the same figure, explain how user feedback is gathered. explain that we consider two sets of works. One where there is external data other than user feedback and one where the user feedback IS the data. Then explain our interaction goals and acquisition functions and experimental design.
 
-\chapter{Applications and results OR Summary of the Publications }
+\section{Active learning and experimental design}
 
-\begin{itemize}
-	\item Go through the papers and tasks. 
-\end{itemize}
+\section{Multi-armed bandits and Bayesian optimization}
+
+\chapter{Summary of the Contributions}
+%Applications and results OR Summary of the Publications
+%Go through the papers and tasks. 
+This chapter briefly summarizes the contributions of Publications I-V with emphasize on answering the research questions of the thesis. 
+
+\section{Interactive intent modelling from multiple feedback domains (Publications I and V)}
+
+\section{Expert knowledge elicitation for high-dimensional prediction (Publications II and III)}
+
+\section{User modelling for avoiding overfitting in knowledge elicitation (Publication IV)}
 
 
 \chapter{Discussion}
 
-\begin{itemize}
-	\item Motivate future works such as next level of user modelling. Similar to overfitting work, but assuming a more active version of the user -> ATOM
-\end{itemize}
+
+%Motivate future works such as next level of user modelling. Similar to overfitting work, but assuming a more active version of the user -> ATOM
+
+
+
+
+
+%--------------------------------END--------------------------%
 
 
  % Refer to the Journal paper 1 of this example document
