@@ -38,6 +38,15 @@
 \usepackage{emptypage}
 \usepackage[nobiblatex]{xurl}
 
+
+%Mathematical notations used 
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{bm}
+
+\newcommand{\bD}{\mathcal{D}}
+
 %%
 %% There's a HUGE number of LaTeX packages. Whatever it is you need, search for a package first before rolling your own!
 %%
@@ -54,14 +63,22 @@
 % a thin dissertation containing only the third chapter, but properly formatted.
 %
 % You may leave of the .tex extension here...
-\input{dummymathcode/testmathcommand.tex}
+%\input{dummymathcode/testmathcommand.tex}
 
 % The author of the dissertation
 \author{Pedram Daee}
 % The title of the thesis
-\title{Probabilistic user modelling methods for improving human-in-the-loop machine learning}
+\title{Interactive user modelling for human-in-the-loop machine learning} % This is the title of our line of work as a group.
+
+%Comments from meeting with Sami on 15.07.2019:
+% "user modelling" may not be the best term as people may perceive it as a statitstic UM. But "probabilistic user modelling" in a good context may be OK.
+%  We want to have User + probabilistic in the title.
+% Alternatives for user could be human-in-the-loop or user interaction or HCI or modellign of the user or interactive user modelling
+% an alternative title could be to directly mention what I did: knowledge elicitation or multi source feedback. Or use these as subtitles?
+
 
 %Keywords: Interactive intent modelling, User modelling, Interactive knowledge elicitation, Active elicitation of knowledge, Sequential probabilistic inference, high dimensional prediction.
+%0. Probabilistic user modelling methods for improving human-in-the-loop machine learning
 %1.	Probabilistic User Modelling in Interactive Machine Learning for Prediction
 %2.	Machine learning methods for user modelling for improved prediction.
 %3.	Interactive user/expert modelling for improved prediction 
@@ -93,6 +110,8 @@
 % Let's add another one in Finnish
 
 \begin{abstract}[english]
+	Ongoing title: \\
+	\textbf{Interactive user modelling for human-in-the-loop machine learning}
 \end{abstract}
 
 %1. What is the bigger picture?
@@ -117,7 +136,8 @@ En puhu suomea.
 % If you write this somewhere else than in Helsinki, use the optional location.
 \begin{preface}[Espoo]
 To fill.
-
+%Maybe consider whom you should acknowledge. 
+% at the very least, all the co-authors, group members who have worked in this or have acknowledge you in their theses, and the funding agencies (reknow, MindSee, WAI?)
 
 \end{preface}
 
@@ -154,20 +174,26 @@ To fill.
 
 %% The main matter, one can obviously use \input or \include
 \chapter{Introduction}
+%Comments from meeting with Sami on 15.07.2019:
+% I need to tie to non-ML related works somewhere in the paper. This can include HCI related works or knowledge elicitation or multi agent? I need to either list them here and give a short descriotion or put them inside the next two chapters. In any case, I need to refer back to these in the Discussion section and mention how we improved the fields (and how we benefited from these).
+% I need to also explain why probabilistic modelling is good 
+
+
+
 
 %We can keep this empty and start from next. Alternatively we can write some stuff here and have only one section as "Contributions and organization of the thesis". See which one works better for you
 
 
+Whether it is an everyday user searching for an application in her mobile phone or a doctor working with a cancer diagnostic system, humans and machines are increasingly interacting with each other. The goal of the thesis is to improve this interaction by incorporating a model of the human user in the system they are interacting with. In particular, the thesis considers the family of problems where the human and machine interact to solve a prediction problem. Such problems can include personalized search activity or medical prediction about the response of a cancer drug. An important common factor in both these scenarios is that the number of labeled data (training data) that the machine can use to make predictions, is usually very few compared to the dimension of search space. This results in ill-posed statistical learning since there are limits in how low in sample size statistical methods can go \cite{Donoho2009observed}. 
 
-%\paragraph{Description of the Problem.}
-%Whether it is an everyday user searching for an application in her mobile phone or a doctor working with a cancer diagnostic system, humans and machines are increasingly interacting with each other. The goal of my thesis is to improve this interaction by incorporating a model of the human user in the system they are interacting with. In particular, I consider the family of problems where the human and machine interact to solve a prediction problem. Such problems can include personalized search activity of a user or medical prediction about the response of a cancer drug. An important common factor in both these scenarios is that the number of labeled data (training data) that the machine can use to make predictions, is usually very few compared to the dimension of search space. This results in ill-posed statistical learning since there are limits in how low in sample size statistical methods can go. 
 
 %\paragraph{Objective.}
 %The objective of the thesis is to tackle the limited data problem by directly integrating a model of the human user into the modelling loop. The user can then provide more information about the problem (for example by giving feedback in response to the machine's query) that can help to improve the prediction performance. For example, in precision medicine obtaining additional data can be extremely costly or even impossible but the human knowledge, e.g., practitioners feedback, can be available and used to improve the prediction. My thesis proposes new probabilistic machine learning models to learn the human intent in interaction, new user models to learn about the knowledge of the human and accounting for common human biases, and new prediction models to employ and extract human knowledge to improve a task.
 
 
 %\paragraph{Methodology.}
-%I design probabilistic machine learning models to tie the data model (prediction model from the training data) to the user model (the model of the human) in a unified way. After doing so, we use Bayesian inference to find the posterior, i.e, distribution of the unknown parameters related to data and user, giving the training data and user interaction. The posterior inference, in most cases, does not have an analytical solution. We use different approximation methods, such as expectation propagation and variational inference, to handle the computation. 
+%USED FOR CHAPTER 2: I design probabilistic machine learning models to tie the data model (prediction model from the training data) to the user model (the model of the human) in a unified way. After doing so, we use Bayesian inference to find the posterior, i.e, distribution of the unknown parameters related to data and user, giving the training data and user interaction. The posterior inference, in most cases, does not have an analytical solution. We use different approximation methods, such as expectation propagation and variational inference, to handle the computation. 
+
 %A core characteristic of the formulation is that the model adapts to the feedback obtained from the user and it sequentially integrates every piece of information before deciding on the next query for the user. This is important as humans can only answer limited number of queries (out of several thousands). The query selection is naturally formulated as experimental design problem, aiming at maximizing the most information gained, or multi-armed bandit problem, aiming at finding the most important piece of information, depending on the targeted task. For evaluation and testing, we conduct carefully designed user studies with real human.  
 
 
@@ -187,7 +213,7 @@ To fill.
 \section{Research questions and contributions}
 
 
-This thesis investigates methods to tackle the limited user interaction challenge in interactive machine learning for prediction. The thesis focuses on scenarios where there is few labeled data available compared to the dimension of the problem, or when a human user is provider of the labeled data.\\
+This thesis investigates methods to tackle the limited user interaction challenge in interactive machine learning for prediction. The thesis focuses on scenarios where there is few labeled data available compared to the dimension of the problem, or when a human user is provider of the labeled data. The core idea of the thesis is to jointly model the human user with the data as part of a unified probabilistic model and use the model to improve the interaction.\\
 
 \noindent \textbf{RQ1 --} \textit{Can we exploit new sources of interaction as additional learning signals from human user to improve interactive intent modelling?}
 
@@ -204,16 +230,47 @@ Source codes for methods presented in Publications II and III, and user study da
 
 \noindent \textbf{RQ3 --} \textit{Is it enough to incorporate human knowledge directly in the data model as explained in RQ2, or could it be beneficial to account for rational knowledge updates that humans may undergo during the interaction?}
 
-Publication IV contributes to this research question by modelling the knowledge provider, here the human user, as a rational agent that updates its knowledge about the underlying prediction task during the interaction. In particular, certain aspects of training data may be revealed to the user during knowledge elicitation. The design of the system is then critical, since the elicited user knowledge cannot be assumed to be independent from the data model knowledge coming from the training data. If not accounted properly, knowledge elicitation can lead to double use of data and overfitting, if the user reinforces noisy patterns in the data. We propose a user modelling methodology, by assuming simple rational behaviour, to correct the problem and evaluate the method in a user study. 
+Publication IV contributes to this research question by modelling the knowledge provider, here the human user, as a rational agent that updates its knowledge about the underlying prediction task during the interaction. In particular, certain aspects of training data may be revealed to the user during knowledge elicitation. \textcolor{red}{The design of the system is then critical, since the elicited user knowledge cannot be assumed to be independent from the data model knowledge coming from the training data. If not accounted properly, knowledge elicitation can lead to double use of data and overfitting, if the user reinforces noisy patterns in the data. We propose a user modelling methodology, by assuming simple rational behaviour, to correct the problem and evaluate the method in a user study.} 
 Source code and user study data are available at \texttt{https://github.com/HIIT/human-overfitting-in-IML}.
 
 \section{Organization of the thesis}
 
-The organization of the thesis is as follows. Chapter 2 provides an overview of probabilistic modelling and introduces our approach of modelling the user and data as a joint probabilistic model. Chapter three investigates the purpose of interactions and reviews different utility functions designed to minimize the effort of the user. The fourth chapter summarizes Publications I-IV. Chapter five concludes the thesis and provides discussions for future works.
+The organization of the thesis is as follows. Chapter 2 provides an overview of probabilistic modelling and introduces our approach of modelling the user and \textcolor{red}{data} as a joint probabilistic model. Chapter three investigates the purpose of interactions and reviews different utility functions designed to minimize the effort of the user. The fourth chapter summarizes Publications I-IV. Chapter five concludes the thesis and provides discussions for future works.
+
+
+%Comments from meeting with Sami on 15.07.2019:
+% "data" usage is a bit awkward here as we are also modelling user interaction as new data. Maybe try to fine a better term?
 
 \chapter{Probabilistic modelling of data and user}
+% Sami's comments 15.07.2019: I need to also explain why probabilistic modelling is good and our approach for modelling the world. 
 
+This chapter provides a brief introduction to probabilistic modelling as the main statistical framework that is used through the thesis. 
 
+The core idea of probabilistic modelling is to describe all the unobserved parameters and observed data as random variables with their  probability distributions. The unobserved parameters include the unknown quantity of interest or other parameters that affect the data or the quantity of interest. Bayesian inference provides a powerful framework to fit the described probabilistic model to observational data \cite{Gelman2013}. A core feature of Bayesian inference is that it provides probability distributions as the solution, compared to deterministic methods which provide a single outcome. This uncertainty quantification is particularly of high interest in cases where few observational data are available or when the data acquisition scheme is controlled by the model; both  scenarios are the main focuses of this thesis.
+
+We follow the notation of \cite{Gelman2013} and use $p(.)$ to denote a probability distribution and $p(.|.)$ a conditional distribution. Consider the case where there are a set of observations $x_1,...,x_n$ that are generated from a probabilistic model with an unobserved parameter of interest $\theta$. This observational model, also called likelihood, \textcolor{red}{can be written as $x_1,...,x_n \sim p(x_1,...,x_n \mid \theta)$} or by summarizing the observations in $\bD=\{x_1,...,x_n\}$ as $p(\bD \mid \theta)$. One of the core questions in statistical inference is to estimate the parameter of interest $\theta$ based on the observations $\bD$ and the likelihood assumption. Bayesian inference answers this question by computing the conditional distribution of $\theta$ given $\bD$ which is known as the posterior
+
+\begin{equation}
+p(\theta \mid \bD) = \frac{p(\bD \mid \theta)p(\theta)}{p(\bD)}.
+\end{equation}  
+
+Where $p(\theta)$ represents the prior belief about $p(\theta)$ and $p(\bD)= \int_{\theta} p(\bD \mid \theta)p(\theta) d\theta$ \footnote{Using marginalization. The integral turns to summation in case $\theta$ is discrete.} is called the marginal likelihood or the evidence and acts as a normalization factor as it does not depend on $\theta$. The uncertainty in the posterior of $\theta$ represents the lack of knowledge that the model has about the true value of $\theta$ after propagating the knowledge in data (through the likelihood) to the prior assumptions about $\theta$ (i.e., the prior distribution).  
+
+\textcolor{red}{The uncertainties represented by the probability distributions then correspond to the lack of knowledge about the true values}
+
+\textcolor{red}{Let $y$ and $x$ denote the outputs (target variables) and inputs (covariates), and $\theta$ and $\phi_y$ the model parameters. Let $f$ encode input (\textit{feedback}) from the user, presumably a domain expert, and $\phi_f$ be model parameters related to the user input. We identify the following key components:
+%
+\begin{enumerate}%[leftmargin=*,noitemsep,topsep=0pt]
+	\item An observation model $p(y\mid x,\theta,\phi_y)$ for $y$. %data model
+	\item A feedback model $p(f\mid\theta, \phi_f)$ for the expert's knowledge. % user model
+	\item A prior model $p(\theta, \phi_y, \phi_f)$ completing the hierarchical model description.
+	\item A query algorithm and user interface that facilitate gathering $f$ iteratively from the expert.
+	\item Update process of the model after user interaction.
+\end{enumerate}
+%
+The observation model can be any appropriate probability model. It is assumed that there is some parameter $\theta$, possibly high-dimensional, that the expert has knowledge about. The expert's knowledge is encoded as (possibly partial) feedback $f$ that is transformed into information about $\theta$ via the feedback model. Of course, there could be a more complex hierarchy tying the observation and feedback models, and the feedback model can also be used to model more user-centric issues, such as the quality of or uncertainty in the knowledge or user's interests.}
+
+%I design probabilistic machine learning models to tie the data model (prediction model from the training data) to the user model (the model of the human) in a unified way. After doing so, we use Bayesian inference to find the posterior, i.e, distribution of the unknown parameters related to data and user, giving the training data and user interaction. The posterior inference, in most cases, does not have an analytical solution. We use different approximation methods, such as expectation propagation and variational inference, to handle the computation.
 
 %\item Explain general Bayesian modeling (posterior, likelihood, prior). represent uncertainty using probability distribution and then using Bayesian theorem for the inference, finding the distribution of the parameters of interest (unknown parameters), giving the observed variables and model assumptions. \cite{Gelman2013}
 	
@@ -319,23 +376,27 @@ This chapter briefly summarizes the contributions of Publications I-V with empha
 
 \addpublication[journal]{\underline{Pedram Daee}$^*$, Tomi Peltola$^*$, Marta Soare$^*$, and Samuel Kaski}{Knowledge elicitation via sequential probabilistic inference for high-dimensional prediction}{Machine Learning}{106, 9-10, 1599--1620}{}{2017}{}{j1}
 \addcontribution{The ideas and experiments in this article were designed jointly (the first three authors contributed equally). The author had the main responsibility in the derivation of the sequential experimental design and implementation of the experiments. Dr. Tomi Peltola derived and implemented the posterior approximation. The manuscript was written jointly.}
-\addpublicationpdf{Articles/ML17.pdf}
+%TODO: uncomment the following in the final version (now commented to increase speed)
+%\addpublicationpdf{Articles/ML17.pdf}
 
 
 
 \addpublication[journal]{ Iiris Sundin$^*$, Tomi Peltola$^*$, Luana Micallef, Homayun Afrabandpey, Marta Soare, Muntasir Mamun Majumder, \underline{Pedram Daee}, Chen He, Baris Serim, Aki Havulinna, Caroline Heckman, Giulio Jacucci, Pekka Marttinen, and Samuel Kaski}{Improving genomics-based predictions for precision medicine through active elicitation of expert knowledge}{Bioinformatics}{34, 13, i395–i403}{}{2018}{}{j2}
 \addcontribution{The author contributed on formulation of the sequential experimental design and implementation of a portion of the early version of the experiments. The author made comments to the manuscript in preparation.}
-\addpublicationpdf{Articles/Bio18.pdf}
+%TODO: uncomment the following in the final version (now commented to increase speed)
+%\addpublicationpdf{Articles/Bio18.pdf}
 
 
 \addpublication[conference]{\underline{Pedram Daee}$^*$, Tomi Peltola$^*$, Aki Vehtari, and Samuel Kaski}{User Modelling for Avoiding Overfitting in Interactive Knowledge Elicitation for Prediction}{Proceedings of the 23rd International Conference on Intelligent User Interfaces}{Tokyo, Japan, 305--310}{March}{2018}{ACM}{c2}
 \addcontribution{The ideas and experiments in this article were designed jointly (the first two authors contributed equally). The author designed and implemented the user study. Dr. Tomi Peltola had the main responsibility of the model formulation. The first two authors wrote the initial draft of the manuscript, after which all co-authors joined for revisions.}
-\addpublicationpdf{Articles/IUI18.pdf}
+%TODO: uncomment the following in the final version (now commented to increase speed)
+%\addpublicationpdf{Articles/IUI18.pdf}
 
 
 \addpublication[journal]{Giulio Jacucci, Oswald Barral, \underline{Pedram Daee}, Markus Wenzel, Baris Serim, Tuukka Ruotsalo, Patrik Pluchino, Jonathan Freeman, Luciano Gamberini, Samuel Kaski, Benjamin Blankertz}{Integrating Neurophysiological Relevance Feedback in Intent Modeling for Information Retrieval}{Journal of the Association for Information Science and Technology}{}{}{2019}{}{j3}
 \addcontribution{The author had the main responsibility in design and implementation of the interactive intent modelling and information retrieval system, and writing of the correspnding sections. All the authors contributed to paper revisions.}
-\addpublicationpdf{Articles/JASIST19.pdf}
+%TODO: uncomment the following in the final version (now commented to increase speed)
+%\addpublicationpdf{Articles/JASIST19.pdf}
 
 %% The fourth publication (yet another journal paper, submitted for publication, note the optional parameter)
 %% Note that you are allowed to use this option only when submitting the dissertation for pre-examination!

@@ -1,5 +1,12 @@
 \begin{thebibliography}{1}
 
+\bibitem{Donoho2009observed}
+David Donoho and Jared Tanner.
+\newblock Observed universality of phase transitions in high-dimensional
+  geometry, with implications for modern data analysis and signal processing.
+\newblock {\em Philosophical Transactions of the Royal Society A: Mathematical,
+  Physical and Engineering Sciences}, 367(1906):4273--4293, 2009.
+
 \bibitem{Gelman2013}
 Andrew Gelman, John~B Carlin, Hal~S Stern, David~B Dunson, Aki Vehtari, and
   Donald~B Rubin.
