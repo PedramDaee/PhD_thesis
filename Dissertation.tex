@@ -241,72 +241,82 @@ The organization of the thesis is as follows. Chapter 2 provides an overview of 
 %Comments from meeting with Sami on 15.07.2019:
 % "data" usage is a bit awkward here as we are also modelling user interaction as new data. Maybe try to fine a better term?
 
-\chapter{Probabilistic modelling of data and user}
+\chapter{Probabilistic modelling of data and user} \label{prob_model_data_user}
 % Sami's comments 15.07.2019: I need to also explain why probabilistic modelling is good and our approach for modelling the world. 
 
-This chapter provides a brief introduction to probabilistic modelling as the main statistical framework that is used through the thesis. 
+This chapter provides a brief introduction to probabilistic modelling as the main statistical framework that is used through the thesis. After some preliminaries,  Section \ref{prob_model_data} investigates the models that are commonly used for data modelling for prediction. Section \ref{prob_model_user} introduces different types of user interaction with the linear model and how they can be tied to a joint model as observational feedback. Finally, the key components for modelling observational data and user feedback as a joint probabilistic model is introduced in Section \ref{key_comp}.
 
-The core idea of probabilistic modelling is to describe all the unobserved parameters and observed data as random variables with their  probability distributions. The unobserved parameters include the unknown quantity of interest or other parameters that affect the data or the quantity of interest. Bayesian inference provides a powerful framework to fit the described probabilistic model to observational data \cite{Gelman2013}. A core feature of Bayesian inference is that it provides probability distributions as the solution, compared to deterministic methods which provide a single outcome. This uncertainty quantification is particularly of high interest in cases where few observational data are available or when the data acquisition scheme is controlled by the model; both  scenarios are the main focuses of this thesis.
+\section{Preliminaries}
+The core idea of probabilistic modelling is to describe all the unobserved parameters and observed data as random variables from probability distributions. The unobserved parameters include the unknown quantity of interest or other parameters that affect the data or the quantity of interest. Bayesian inference provides a powerful framework to fit the described probabilistic model to observational data \cite{Gelman2013}. A core feature of Bayesian inference is that it provides probability distributions as the solution, compared to deterministic methods which provide a single outcome. This uncertainty quantification is of particularly high interest in cases where few observational data are available or when the data acquisition scheme is controlled by the model. Both of these constrains are prominently present in the tasks investigated by this thesis.
 
-We follow the notation of \cite{Gelman2013} and use $p(.)$ to denote a probability distribution and $p(.|.)$ a conditional distribution. Consider the case where there are a set of observations $x_1,...,x_n$ that are generated from a probabilistic model with an unobserved parameter of interest $\theta$. This observational model, also called likelihood, \textcolor{red}{can be written as $x_1,...,x_n \sim p(x_1,...,x_n \mid \theta)$} or by summarizing the observations in $\bD=\{x_1,...,x_n\}$ as $p(\bD \mid \theta)$. One of the core questions in statistical inference is to estimate the parameter of interest $\theta$ based on the observations $\bD$ and the likelihood assumption. Bayesian inference answers this question by computing the conditional distribution of $\theta$ given $\bD$ which is known as the posterior
+We follow the notation of \cite{Gelman2013} and use $p(.)$ to denote a probability distribution and $p(.|.)$ a conditional distribution. Consider the case where there are a set of observations $\bD= \{x_1,...,x_n\}$ generated from a probabilistic model with an unobserved parameter of interest $\theta$. It is usually assumed that the observations are conditionally independent given $\theta$, therefore, the  observational model for an observation $x$ can be described as $x \sim p(x \mid \theta)$ and for all the observations as $p(\bD \mid \theta) =  \prod_{i=1}^{n} p(x_i \mid \theta)$. The observational model expresses the conditional density of $\bD$ given the parameter $\theta$. The observational model is called likelihood function if perceived as a function of $\theta$ with fixed observations $\bD$. One of the core questions in statistical inference is to estimate the parameter of interest $\theta$ based on observations $\bD$. % and the likelihood assumption. 
+Bayesian inference answers this question by computing the conditional distribution of $\theta$ given $\bD$ following the Bayes rule
+
 
 \begin{equation}
 p(\theta \mid \bD) = \frac{p(\bD \mid \theta)p(\theta)}{p(\bD)}.
 \end{equation}  
 
-Where $p(\theta)$ represents the prior belief about $p(\theta)$ and $p(\bD)= \int_{\theta} p(\bD \mid \theta)p(\theta) d\theta$ \footnote{Using marginalization. The integral turns to summation in case $\theta$ is discrete.} is called the marginal likelihood or the evidence and acts as a normalization factor as it does not depend on $\theta$. The uncertainty in the posterior of $\theta$ represents the lack of knowledge that the model has about the true value of $\theta$ after propagating the knowledge in data (through the likelihood) to the prior assumptions about $\theta$ (i.e., the prior distribution).  
+Where $p(\theta)$ represents the prior belief about $\theta$ and $p(\bD)$ is called the marginal likelihood and acts as a normalization factor as it does not depend on $\theta$. The marginal likelihood can be computed using the marginalization rule, i.e., $p(\bD)= \int_{\theta} p(\bD, \theta)d\theta= \int_{\theta} p(\bD \mid \theta)p(\theta) d\theta$ \footnote{The integral turns to summation for discrete $\theta$.}. $p(\theta \mid \bD)$ is called the posterior and it expresses the uncertainty surrounding the true value of $\theta$, after updating the prior assumptions about $\theta$ (i.e., the prior distribution) with the knowledge coming from the observations through the likelihood.  
 
-\textcolor{red}{The uncertainties represented by the probability distributions then correspond to the lack of knowledge about the true values}
+In many cases, we may be more interested to make a prediction about an unknown observable data point $\hat{x}$ rather than the parameter $\theta$. Bayesian inference  allows us to compute the conditional distribution of this unknown observable data given the observed data point as 
 
-\textcolor{red}{Let $y$ and $x$ denote the outputs (target variables) and inputs (covariates), and $\theta$ and $\phi_y$ the model parameters. Let $f$ encode input (\textit{feedback}) from the user, presumably a domain expert, and $\phi_f$ be model parameters related to the user input. We identify the following key components:
-%
-\begin{enumerate}%[leftmargin=*,noitemsep,topsep=0pt]
-	\item An observation model $p(y\mid x,\theta,\phi_y)$ for $y$. %data model
-	\item A feedback model $p(f\mid\theta, \phi_f)$ for the expert's knowledge. % user model
-	\item A prior model $p(\theta, \phi_y, \phi_f)$ completing the hierarchical model description.
-	\item A query algorithm and user interface that facilitate gathering $f$ iteratively from the expert.
-	\item Update process of the model after user interaction.
-\end{enumerate}
-%
-The observation model can be any appropriate probability model. It is assumed that there is some parameter $\theta$, possibly high-dimensional, that the expert has knowledge about. The expert's knowledge is encoded as (possibly partial) feedback $f$ that is transformed into information about $\theta$ via the feedback model. Of course, there could be a more complex hierarchy tying the observation and feedback models, and the feedback model can also be used to model more user-centric issues, such as the quality of or uncertainty in the knowledge or user's interests.}
+\begin{equation}
+p(\hat{x} \mid\bD ) = \int_{\theta} p(\hat{x}  \mid \theta)p(\theta \mid \bD)d\theta. 
+\end{equation}
 
-%I design probabilistic machine learning models to tie the data model (prediction model from the training data) to the user model (the model of the human) in a unified way. After doing so, we use Bayesian inference to find the posterior, i.e, distribution of the unknown parameters related to data and user, giving the training data and user interaction. The posterior inference, in most cases, does not have an analytical solution. We use different approximation methods, such as expectation propagation and variational inference, to handle the computation.
+$p(\hat{x} \mid \bD)$ is known as the posterior predictive distribution and represents the uncertainty about a potential new observation. An example usage of this distribution could be when we want to predict the value of a test data. Since test data is not observed, we can use posterior predictive distribution as our best guess. However, in many applications, only a value (and not a distribution) is required as the prediction. This can be handled by using some statistics of the distribution (for example mean or median) as the prediction. Still, the quantified uncertainty in the distribution can be useful as it provides knowledge about how certain we are about our estimate. Particularly, this uncertainty can help us to design more efficient interaction with a user, as will be discussed in Section \ref{interaction}.
 
-%\item Explain general Bayesian modeling (posterior, likelihood, prior). represent uncertainty using probability distribution and then using Bayesian theorem for the inference, finding the distribution of the parameters of interest (unknown parameters), giving the observed variables and model assumptions. \cite{Gelman2013}
-	
-%\item Our approach, throughout this thesis is to model both data and user as a joint probabilistic models (figure XXX).... The role of model (prior) assumptions is crucial then since in all scenarios considered in this thesis there are only few observed data available which is usually smaller than the dimension of the problem (e.g., feature dimension)...
-	
-%\item Idea: Have a picture per section where there is a cloud on top of user and system head and in it there is the plate diagram of the particular model. Then talk about the interaction. 
-%In the first introduction section have the same figure but just write down (or explain) user probabilistic model and data probabilistic model (priors) and arrows for interactions? and then refer to later chapters for the type of interaction
-	
-%\item Then explain the two possible likelihoods and show a diagram where there is a section for data modeling and there is a section for user modeling that are connected through a shared latent parameter and then each have their own models. Then explain that we will go through details of the data and user model in the next two subsections. My contribution comes from adding data likelihoods and user priors and having interaction.
-	
 	
 
- 
 
+\section{Modelling the high-dimensional data}\label{prob_model_data}
 
-\section{Modelling the high-dimensional data}
-
+GO through Bayesian linear regression (the whole thing)!
+	
+%The role of model (prior) assumptions is crucial then since in all scenarios considered in this thesis there are only few observed data available which is usually smaller than the dimension of the problem (e.g., feature dimension)...
 
 %Defining appropriate likelihood and defining appropriate priors
+%GO through linear models here and maybe briefly mention and cite generalized linear models. 
 	
-
-
 
 
 \subsection{Bayesian Linear regression}
 % Here we want to start with linear regression (ridge) and then talk about sparsifying priors and maybe automatic relevance models? (relevant thesis: Tomi and Juho)
 \subsection{Sparse priors}
 
-\section{Modelling the user}
+\section{Modelling the user}\label{prob_model_user}
 
 %Our general approach is to consider new likelihood function for the user feedback and put appropriate priors on top of that. Explain the feedback likelihoods?
 
 
 
 
-\chapter{User interaction with the probabilistic model}
+\section{Key components of the joint model}\label{key_comp}
+
+
+
+%\item Idea: Have a picture per section where there is a cloud on top of user and system head and in it there is the plate diagram of the particular model. Then talk about the interaction. 
+%In the first introduction section have the same figure but just write down (or explain) user probabilistic model and data probabilistic model (priors) and arrows for interactions? and then refer to later chapters for the type of interaction
+
+%\item Then explain the two possible likelihoods and show a diagram where there is a section for data modeling and there is a section for user modeling that are connected through a shared latent parameter and then each have their own models. Then explain that we will go through details of the data and user model in the next two subsections. My contribution comes from adding data likelihoods and user priors and having interaction.
+
+%I design probabilistic machine learning models to tie the data model (prediction model from the training data) to the user model (the model of the human) in a unified way. After doing so, we use Bayesian inference to find the posterior, i.e, distribution of the unknown parameters related to data and user, giving the training data and user interaction. The posterior inference, in most cases, does not have an analytical solution. We use different approximation methods, such as expectation propagation and variational inference, to handle the computation.
+
+
+\textcolor{red}{Let $y$ and $x$ denote the outputs (target variables) and inputs (covariates), and $\theta$ and $\phi_y$ the model parameters. Let $f$ encode input (\textit{feedback}) from the user, presumably a domain expert, and $\phi_f$ be model parameters related to the user input. We identify the following key components:
+	%
+	\begin{enumerate}%[leftmargin=*,noitemsep,topsep=0pt]
+		\item An observation model $p(y\mid x,\theta,\phi_y)$ for $y$. %data model
+		\item A feedback model $p(f\mid\theta, \phi_f)$ for the expert's knowledge. % user model
+		\item A prior model $p(\theta, \phi_y, \phi_f)$ completing the hierarchical model description.
+		\item A query algorithm and user interface that facilitate gathering $f$ iteratively from the expert.
+		\item Update process of the model after user interaction.
+	\end{enumerate}
+	%
+	The observation model can be any appropriate probability model. It is assumed that there is some parameter $\theta$, possibly high-dimensional, that the expert has knowledge about. The expert's knowledge is encoded as (possibly partial) feedback $f$ that is transformed into information about $\theta$ via the feedback model. Of course, there could be a more complex hierarchy tying the observation and feedback models, and the feedback model can also be used to model more user-centric issues, such as the quality of or uncertainty in the knowledge or user's interests.}
+
+\chapter{User interaction with the probabilistic model}\label{interaction}
 
 %Here have the same figure, explain how user feedback is gathered. explain that we consider two sets of works. One where there is external data other than user feedback and one where the user feedback IS the data. Then explain our interaction goals and acquisition functions and experimental design.
 
