@@ -45,8 +45,22 @@
 \usepackage{mathtools}
 \usepackage{bm}
 
+\newcommand{\bw}{\bm{w}}
+\newcommand{\bX}{\bm{X}}
+\newcommand{\by}{\bm{y}}
 \newcommand{\bD}{\mathcal{D}}
+\DeclareMathOperator{\eye}{\textbf{I}}
 
+\newcommand{\KL}{\KLt\infdivx}
+\DeclareMathOperator{\betapdf}{Beta}
+\DeclareMathOperator{\bernoullipdf}{Bernoulli}
+\DeclareMathOperator{\normalpdf}{N}
+\DeclareMathOperator{\gammapdf}{Gamma}
+\DeclareMathOperator{\new}{new}
+\DeclareMathOperator{\old}{old}
+\DeclareMathOperator{\E}{\mathbb{E}}
+\DeclareMathOperator{\var}{var}
+\newcommand{\tp}{^{\top}}
 %%
 %% There's a HUGE number of LaTeX packages. Whatever it is you need, search for a package first before rolling your own!
 %%
@@ -244,12 +258,15 @@ The organization of the thesis is as follows. Chapter 2 provides an overview of 
 \chapter{Probabilistic modelling of data and user} \label{prob_model_data_user}
 % Sami's comments 15.07.2019: I need to also explain why probabilistic modelling is good and our approach for modelling the world. 
 
-This chapter provides a brief introduction to probabilistic modelling as the main statistical framework that is used through the thesis. After some preliminaries,  Section \ref{prob_model_data} investigates the models that are commonly used for data modelling for prediction. Section \ref{prob_model_user} introduces different types of user interaction with the linear model and how they can be tied to a joint model as observational feedback. Finally, the key components for modelling observational data and user feedback as a joint probabilistic model is introduced in Section \ref{key_comp}.
+%I need to tie the chapters to RQs like what Antti did if I want to go with RQ type of thesis. "This chapter gives an overview of the line of research related to RQ1"
+
+This chapter provides a brief introduction to probabilistic modelling as the main statistical framework that is used through the thesis. After some preliminaries,  Section \ref{prob_model_data} briefly reviews the type of linear models that are used in Publication I-IV for prediction. %  investigates linear models that are commonly used  for prediction.
+Section \ref{prob_model_user} introduces different types of user interaction with the linear model and explains how user knowledge about the model can be incorporated as observational feedback. Finally, the key components for modelling observational data and user feedback as a joint probabilistic model is introduced in Section \ref{key_comp}.
 
 \section{Preliminaries}
 The core idea of probabilistic modelling is to describe all the unobserved parameters and observed data as random variables from probability distributions. The unobserved parameters include the unknown quantity of interest or other parameters that affect the data or the quantity of interest. Bayesian inference provides a powerful framework to fit the described probabilistic model to observational data \cite{Gelman2013}. A core feature of Bayesian inference is that it provides probability distributions as the solution, compared to deterministic methods which provide a single outcome. This uncertainty quantification is of particularly high interest in cases where few observational data are available or when the data acquisition scheme is controlled by the model. Both of these constrains are prominently present in the tasks investigated by this thesis.
 
-We follow the notation of \cite{Gelman2013} and use $p(.)$ to denote a probability distribution and $p(.|.)$ a conditional distribution. Consider the case where there are a set of observations $\bD= \{x_1,...,x_n\}$ generated from a probabilistic model with an unobserved parameter of interest $\theta$. It is usually assumed that the observations are conditionally independent given $\theta$, therefore, the  observational model for an observation $x$ can be described as $x \sim p(x \mid \theta)$ and for all the observations as $p(\bD \mid \theta) =  \prod_{i=1}^{n} p(x_i \mid \theta)$. The observational model expresses the conditional density of $\bD$ given the parameter $\theta$. The observational model is called likelihood function if perceived as a function of $\theta$ with fixed observations $\bD$. One of the core questions in statistical inference is to estimate the parameter of interest $\theta$ based on observations $\bD$. % and the likelihood assumption. 
+We follow the notation of \cite{Gelman2013} and use $p(.)$ to denote a probability distribution and $p(.|.)$ a conditional distribution. Consider the case where there are a set of observations $\bD= \{y_1,...,y_n\}$ generated from a probabilistic model with an unobserved parameter of interest $\theta$. The  observational model for an observation $y$ describes the conditional density of $y$ given the parameter $\theta$ and is denoted as $y \sim p(y \mid \theta)$. It is usually assumed that the observations are conditionally independent given $\theta$, enabling us to write the model for all observations as $p(\bD \mid \theta) =  \prod_{i=1}^{n} p(y_i \mid \theta)$. The observational model is called likelihood function if perceived as a function of $\theta$ with fixed observation $y$. One of the core questions in statistical inference is to estimate the parameter of interest $\theta$ based on observations $\bD$. % and the likelihood assumption. 
 Bayesian inference answers this question by computing the conditional distribution of $\theta$ given $\bD$ following the Bayes rule
 
 
@@ -259,21 +276,36 @@ p(\theta \mid \bD) = \frac{p(\bD \mid \theta)p(\theta)}{p(\bD)}.
 
 Where $p(\theta)$ represents the prior belief about $\theta$ and $p(\bD)$ is called the marginal likelihood and acts as a normalization factor as it does not depend on $\theta$. The marginal likelihood can be computed using the marginalization rule, i.e., $p(\bD)= \int_{\theta} p(\bD, \theta)d\theta= \int_{\theta} p(\bD \mid \theta)p(\theta) d\theta$ \footnote{The integral turns to summation for discrete $\theta$.}. $p(\theta \mid \bD)$ is called the posterior and it expresses the uncertainty surrounding the true value of $\theta$, after updating the prior assumptions about $\theta$ (i.e., the prior distribution) with the knowledge coming from the observations through the likelihood.  
 
-In many cases, we may be more interested to make a prediction about an unknown observable data point $\hat{x}$ rather than the parameter $\theta$. Bayesian inference  allows us to compute the conditional distribution of this unknown observable data given the observed data point as 
+In many cases, we may be more interested to make a prediction about an unknown observable data point $\hat{y}$ rather than the parameter $\theta$. Bayesian inference  allows us to compute the conditional distribution of this unknown observable data given the observed data point as 
 
 \begin{equation}
-p(\hat{x} \mid\bD ) = \int_{\theta} p(\hat{x}  \mid \theta)p(\theta \mid \bD)d\theta. 
+p(\hat{y} \mid\bD ) = \int_{\theta} p(\hat{y}  \mid \theta)p(\theta \mid \bD)d\theta. 
 \end{equation}
 
-$p(\hat{x} \mid \bD)$ is known as the posterior predictive distribution and represents the uncertainty about a potential new observation. An example usage of this distribution could be when we want to predict the value of a test data. Since test data is not observed, we can use posterior predictive distribution as our best guess. However, in many applications, only a value (and not a distribution) is required as the prediction. This can be handled by using some statistics of the distribution (for example mean or median) as the prediction. Still, the quantified uncertainty in the distribution can be useful as it provides knowledge about how certain we are about our estimate. Particularly, this uncertainty can help us to design more efficient interaction with a user, as will be discussed in Section \ref{interaction}.
+$p(\hat{y} \mid \bD)$ is known as the posterior predictive distribution and represents the uncertainty about a potential new observation. An example usage of this distribution could be when we want to predict the value of a test data. Since test data is not observed, we can use posterior predictive distribution as our best guess. However, in many applications, only a value (and not a distribution) is required as the prediction. This can be handled by using some statistics of the distribution (for example mean or median) as the prediction. Still, the quantified uncertainty in the distribution can be useful as it provides knowledge about how certain we are about our estimate. Particularly, this uncertainty can help us to design more efficient interaction with a user, as will be discussed in Section \ref{interaction}.
 
 	
 
 
-\section{Modelling the high-dimensional data}\label{prob_model_data}
+\section{Modelling data for prediction} \label{prob_model_data}
+%Alternative title: Prediction of high-diensional data?
 
-GO through Bayesian linear regression (the whole thing)!
-	
+Prediction is one of the core problems in statistical analysis and supervised machine learning. Given a set of $n$ input and output pairs, called training data and denoted by $\bD= \{(\bm{x}_i,y_i)\}_{i=1}^{n}$, the goal is to find a mapping from inputs to outputs. Here, $\bm{x}_i \in \mathbb{R}^d$ is a d-dimensional vector representing the values of $i^{th}$ data point and $y_i$ is the corresponding response (or target) variable which can be anything depending on the underlying problem. In this thesis, we consider the regression tasks, meaning that we model response variables by real values, i.e., $y_i \in \mathbb{R}$\footnote{The problem is called classification in supervised learning if the response variable is restricted to categorical values (sometimes called classes).}. The dimensions of the inputs are commonly called feature, covariates, or attribute.
+  
+A well-studied and widely practical type of regression, known as linear regression, assumes that the relationship between all inputs and their corresponding response variables is linear. This relation ship can be written as 
+
+\begin{align*}
+y_i= \sum_{j=1}^{d}x_{i}^{j} w^{j}+\epsilon_i=\bm{x}_i\tp\bm{w}+\epsilon_i, \qquad i=1,\ldots,n, 
+\end{align*}
+
+where $\bm{w} \in \mathbb{R}^d$ is the regression coefficients or the model's weight (we use superindex to refer to an element of the vector) and $\epsilon_i$ is the residual error between linear prediction $\bm{x}_i\tp\bm{w}$ and the response value $y_i$. 
+
+EXPLAIN ERROR MODEL AND THEN MENTION HOW IT CAN BE SOLVED BY FREQUIENTICE APPROACH AND THEN INTRODUCE THE BAYES APPROACH AND MENTION THAT WE WILL GO THROUGH THE STEPS..
+
+\begin{equation}
+\by \sim \normalpdf(\bX \bw, \sigma^2 \eye),
+\end{equation}
+ALSO EXPLAIN BRIEFLY THE NON BAYESIAN TREATMENT AND EXPLAIN WHY WE GO WITH BAYES/
 %The role of model (prior) assumptions is crucial then since in all scenarios considered in this thesis there are only few observed data available which is usually smaller than the dimension of the problem (e.g., feature dimension)...
 
 %Defining appropriate likelihood and defining appropriate priors
