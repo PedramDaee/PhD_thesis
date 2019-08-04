@@ -266,11 +266,11 @@ Section \ref{prob_model_user} introduces different types of user interaction wit
 \section{Preliminaries}
 The core idea of probabilistic modelling is to describe all the unobserved parameters and observed data as random variables from probability distributions. The unobserved parameters include the unknown quantity of interest or other parameters that affect the data or the quantity of interest. Bayesian inference provides a powerful framework to fit the described probabilistic model to observational data \cite{Gelman2013}. A core feature of Bayesian inference is that it provides probability distributions as the solution, compared to deterministic methods which provide a single outcome. This uncertainty quantification is of particularly high interest in cases where few observational data are available or when the data acquisition scheme is controlled by the model. Both of these constrains are prominently present in the tasks investigated by this thesis.
 
-We follow the notation of \cite{Gelman2013} and use $p(.)$ to denote a probability distribution and $p(.|.)$ a conditional distribution. Consider the case where there are a set of observations $\bD= \{y_1,...,y_n\}$ generated from a probabilistic model with an unobserved parameter of interest $\theta$. The  observational model for an observation $y$ describes the conditional density of $y$ given the parameter $\theta$ and is denoted as $y \sim p(y \mid \theta)$. It is usually assumed that the observations are conditionally independent given $\theta$, enabling us to write the model for all observations as $p(\bD \mid \theta) =  \prod_{i=1}^{n} p(y_i \mid \theta)$. The observational model is called likelihood function if perceived as a function of $\theta$ with fixed observation $y$. One of the core questions in statistical inference is to estimate the parameter of interest $\theta$ based on observations $\bD$. % and the likelihood assumption. 
+We follow the notation of \cite{Gelman2013} and use $p(.)$ to denote a probability distribution and $p(.|.)$ a conditional distribution. Consider the case where there are a set of observations $\bD= \{y_1,\ldots,y_n\}$ generated from a probabilistic model with an unobserved parameter of interest $\theta$. The observational model for an observation $y$ describes the conditional density of $y$ given the parameter $\theta$ and is denoted as $y \sim p(y \mid \theta)$. It is usually assumed that the observations are conditionally independent given $\theta$, enabling us to write the model for all observations as $p(\bD \mid \theta) =  \prod_{i=1}^{n} p(y_i \mid \theta)$. The observational model is called likelihood function if perceived as a function of $\theta$ with fixed observation $y$. One of the core questions in statistical inference is to estimate the parameter of interest $\theta$ based on observations $\bD$. % and the likelihood assumption. 
 Bayesian inference answers this question by computing the conditional distribution of $\theta$ given $\bD$ following the Bayes rule
 
 
-\begin{equation}
+\begin{equation}\label{Eq:Bayes}
 p(\theta \mid \bD) = \frac{p(\bD \mid \theta)p(\theta)}{p(\bD)}.
 \end{equation}  
 
@@ -290,17 +290,41 @@ $p(\hat{y} \mid \bD)$ is known as the posterior predictive distribution and repr
 \section{Modelling data for prediction} \label{prob_model_data}
 %Alternative title: Prediction of high-diensional data?
 
-Prediction is one of the core problems in statistical analysis and supervised machine learning. Given a set of $n$ input and output pairs, called training data and denoted by $\bD= \{(\bm{x}_i,y_i)\}_{i=1}^{n}$, the goal is to find a mapping from inputs to outputs. Here, $\bm{x}_i \in \mathbb{R}^d$ is a d-dimensional vector representing the values of $i^{th}$ data point and $y_i$ is the corresponding response (or target) variable which can be anything depending on the underlying problem. In this thesis, we consider the regression tasks, meaning that we model response variables by real values, i.e., $y_i \in \mathbb{R}$\footnote{The problem is called classification in supervised learning if the response variable is restricted to categorical values (sometimes called classes).}. The dimensions of the inputs are commonly called feature, covariates, or attribute.
+Prediction is one of the core problems in statistical analysis and supervised machine learning. Given a set of $n$ input and output pairs, called training data, denoted by $\bD= \{(\bm{x}_i,y_i)\}_{i=1}^{n}$, the goal is to find a mapping from inputs to outputs. Here, $\bm{x}_i = [x_i^1,\ldots,x_i^d]\tp \in \mathbb{R}^d$ is a d-dimensional column vector representing the values of $i^{th}$ data point \footnote{We use subscripts to index an specific item (e.g, one particular observation out of several) and superscripts to refer to dimensions of the variable.}. The dimensions are commonly called feature, covariates, or attribute. $y_i$ is the corresponding response (or target) variable which can be anything depending on the underlying problem. In this thesis, we consider the regression tasks, meaning that we model response variables by real values, i.e., $y_i \in \mathbb{R}$. The problem is called classification in supervised learning if the response variable is restricted to categorical values (sometimes called classes). 
   
-A well-studied and widely practical type of regression, known as linear regression, assumes that the relationship between all inputs and their corresponding response variables is linear. This relation ship can be written as 
+A well-studied and widely practical type of regression, known as linear regression, assumes that the relationship between all inputs and their corresponding response variables is linear. This relationship can be written as 
 
-\begin{align*}
+\begin{equation*}
 y_i= \sum_{j=1}^{d}x_{i}^{j} w^{j}+\epsilon_i=\bm{x}_i\tp\bm{w}+\epsilon_i, \qquad i=1,\ldots,n, 
+\end{equation*}
+
+\noindent where $\bm{w} \in \mathbb{R}^d$ is the regression coefficients or the model's weights and $\epsilon_i$ is the residual error between linear prediction $\bm{x}_i\tp\bm{w}$ and the response value $y_i$. Given the labeled data $\bD$, a commonly used error function for this problem is the sum of squared of residual errors $\sum_{i=1}^n(\bm{x}_i\tp\bm{w}- y_i)^2$. By stacking the inputs in $\bX = [x_1,\ldots,x_n]\tp \in \mathbb{R}^{n\times d}$ and outputs in $\by = [y_1,\ldots,y_n]\tp \in \mathbb{R}^n$ the error can be written as $(\bX\bm{w}- \by)\tp(\bX\bm{w}- \by)$. The frequentist solution directly finds the point estimate for $\bw$ that minimizes this error. It is straightforward to show that $\hat{\bw} = (\bX \tp \bX)^{-1}\bX\tp \by$  would be the point estimate solution given that $(\bX \tp \bX)^{-1}$ is invertible.  
+
+However, as mentioned, we are interested in directly quantifying the uncertainty of the solution. The probabilistic way to model this problem is to explicitly describe the model assumptions (likelihood and priors) as probability distributions. In linear regression, the residual errors $\epsilon_i$ and the weights $\bm{w}$ are modelled as random variables and the inputs $\bm{x}_i$ as vector of values that are given. A customary assumption is to model the residual errors as independent zero-mean Gaussian random variables $\epsilon_i \sim \normalpdf(0,\sigma^2)$, where $\sigma^2$ is variance of the Gaussian distribution which indicates the model tolerance about residual errors. It is common to also model $\sigma^2$ as another random variable with its own distribution assumption, however, we can consider it to be a fixed hyperparameter for simplicity for now. The quantity of interest in the linear model is the regression coefficients. To complete the Bayesian inference loop, we need to consider a prior distribution on $\bm{w}$. There are many ways to do this depending on the underlying task. One simple prior could be to assume that coefficients are independent and each come from a zero-mean Gaussian distribution, encouraging the weights to be close to zero. This simple Bayesian linear regression can be described by
+
+\begin{align*} 
+\by \sim \normalpdf(\bX\bm{w},\sigma^2 \eye)\\
+\bm{w} \sim \normalpdf(0,\tau^2 \eye), 
 \end{align*}
 
-where $\bm{w} \in \mathbb{R}^d$ is the regression coefficients or the model's weight (we use superindex to refer to an element of the vector) and $\epsilon_i$ is the residual error between linear prediction $\bm{x}_i\tp\bm{w}$ and the response value $y_i$. 
+\noindent where $\tau^2$ is the variance of the weights and $\eye$ is the identity matrix. For simplicity we assume for now that $\tau^2$ is also a fixed hyperparameter. Therefore, The only unobserved parameters of this model is $\bm{w}$. The Bayesian rule (Equation \ref{Eq:Bayes}) allows us to derive the posterior for $\bm{w}$ as
 
-EXPLAIN ERROR MODEL AND THEN MENTION HOW IT CAN BE SOLVED BY FREQUIENTICE APPROACH AND THEN INTRODUCE THE BAYES APPROACH AND MENTION THAT WE WILL GO THROUGH THE STEPS..
+\begin{equation}
+p(\bm{w} \mid \bD) = \frac{p(\bD \mid \bm{w})p(\bm{w})}{p(\bD)}.
+\end{equation}  
+%p(\bm{w} \mid \bX , \by) = \frac{\normalpdf(\by \mid \bX \bm{w},\sigma^2 \eye) \normalpdf(\bw \mid 0,\tau^2 \eye))}{p(\bX , \by)}.
+
+Generally, the posterior in many problems cannot be analytically derived (we will discuss this issue more in XXX). For this simple model, however, an analytical solution is available. We will go through the steps as a hand on with posterior inference. Writing down the distribution assumptions and dropping $p(\bD)$ (as it is a constant factor) gives
+
+\begin{equation}
+p(\bm{w} \mid \bD) \propto \prod_{i=1}^{n} \normalpdf(y_i|\bm{x}_i\tp\bm{w},\sigma^2) \normalpdf(\bm{w}|0,\tau^2 \eye).
+\end{equation}    
+ 
+\noindent Note that we use for example $\bm{w} \sim \normalpdf(0,\tau^2 \eye)$ to denote the random variable $\bm{w}$ and $\normalpdf(\bm{w}|0,\tau^2 \eye)$ to refer to the density function. %todo: THIS IS OUT OF PLACE
+
+HERE GOES THE REST OF STEPS
+
+
 
 \begin{equation}
 \by \sim \normalpdf(\bX \bw, \sigma^2 \eye),
@@ -412,7 +436,8 @@ This chapter briefly summarizes the contributions of Publications I-V with empha
 % Add the errata of the publication, remove if there are none (the order can be interchanged with \addauthorscontribution).
 %\adderrata{j1 I This is wrong}
 % Add the publication pdf file, the filename is the parameter (must be the last).
-\addpublicationpdf{Articles/IUI16.pdf}
+%TODO: uncomment the following in the final version (now commented to increase speed)
+%\addpublicationpdf{Articles/IUI16.pdf}
 
 
 

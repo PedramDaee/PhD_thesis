@@ -12,17 +12,17 @@
 \contentsline {chapter}{\numberline {2.}Probabilistic modelling of data and user}{15}{chapter.2}
 \contentsline {section}{\numberline {2.1}Preliminaries}{15}{section.2.1}
 \contentsline {section}{\numberline {2.2}Modelling data for prediction}{16}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Bayesian Linear regression}{17}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Sparse priors}{17}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Modelling the user}{17}{section.2.3}
-\contentsline {section}{\numberline {2.4}Key components of the joint model}{17}{section.2.4}
-\contentsline {chapter}{\numberline {3.}User interaction with the probabilistic model}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}Active learning and experimental design}{19}{section.3.1}
-\contentsline {section}{\numberline {3.2}Multi-armed bandits and Bayesian optimization}{19}{section.3.2}
-\contentsline {chapter}{\numberline {4.}Summary of the Contributions}{21}{chapter.4}
-\contentsline {section}{\numberline {4.1}Interactive intent modelling from multiple feedback domains (Publications I and V)}{21}{section.4.1}
-\contentsline {section}{\numberline {4.2}Expert knowledge elicitation for high-dimensional prediction (Publications II and III)}{21}{section.4.2}
-\contentsline {section}{\numberline {4.3}User modelling for avoiding overfitting in knowledge elicitation (Publication IV)}{21}{section.4.3}
-\contentsline {chapter}{\numberline {5.}Discussion}{23}{chapter.5}
-\contentsline {chapter}{References}{25}{section*.10}
-\contentsline {chapter}{Publications}{27}{section*.11}
+\contentsline {subsection}{\numberline {2.2.1}Bayesian Linear regression}{18}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Sparse priors}{18}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Modelling the user}{18}{section.2.3}
+\contentsline {section}{\numberline {2.4}Key components of the joint model}{18}{section.2.4}
+\contentsline {chapter}{\numberline {3.}User interaction with the probabilistic model}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Active learning and experimental design}{21}{section.3.1}
+\contentsline {section}{\numberline {3.2}Multi-armed bandits and Bayesian optimization}{21}{section.3.2}
+\contentsline {chapter}{\numberline {4.}Summary of the Contributions}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}Interactive intent modelling from multiple feedback domains (Publications I and V)}{23}{section.4.1}
+\contentsline {section}{\numberline {4.2}Expert knowledge elicitation for high-dimensional prediction (Publications II and III)}{23}{section.4.2}
+\contentsline {section}{\numberline {4.3}User modelling for avoiding overfitting in knowledge elicitation (Publication IV)}{23}{section.4.3}
+\contentsline {chapter}{\numberline {5.}Discussion}{25}{chapter.5}
+\contentsline {chapter}{References}{27}{section*.10}
+\contentsline {chapter}{Publications}{29}{section*.11}
