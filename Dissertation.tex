@@ -290,7 +290,7 @@ $p(\hat{y} \mid \bD)$ is known as the posterior predictive distribution and repr
 \section{Modelling data for prediction} \label{prob_model_data}
 %Alternative title: Prediction of high-diensional data?
 
-Prediction is one of the core problems in statistical analysis and supervised machine learning. Given a set of $n$ input and output pairs, called training data, denoted by $\bD= \{(\bm{x}_i,y_i)\}_{i=1}^{n}$, the goal is to find a mapping from inputs to outputs. Here, $\bm{x}_i = [x_i^1,\ldots,x_i^d]\tp \in \mathbb{R}^d$ is a d-dimensional column vector representing the values of $i^{th}$ data point \footnote{We use subscripts to index an specific item (e.g, one particular observation out of several) and superscripts to refer to dimensions of the variable.}. The dimensions are commonly called feature, covariates, or attribute. $y_i$ is the corresponding response (or target) variable which can be anything depending on the underlying problem. In this thesis, we consider the regression tasks, meaning that we model response variables by real values, i.e., $y_i \in \mathbb{R}$. The problem is called classification in supervised learning if the response variable is restricted to categorical values (sometimes called classes). 
+Prediction is one of the core problems in statistical analysis and supervised machine learning. Given a set of $n$ input and output pairs, called training data, denoted by $\bD= \{(\bm{x}_i,y_i)\}_{i=1}^{n}$, the goal is to find a mapping from inputs to outputs. Here, $\bm{x}_i = [x_i^1,\ldots,x_i^d]\tp \in \mathbb{R}^d$ is a d-dimensional column vector representing the values of $i^{th}$ data point\footnote{We use subscripts to index an specific item (e.g, one particular observation out of several) and superscripts to refer to dimensions of the variable.}. The dimensions are commonly called feature, covariates, or attribute. $y_i$ is the corresponding response (or target) variable which can be anything depending on the underlying problem. In this thesis, we consider the regression tasks, meaning that we model response variables by real values, i.e., $y_i \in \mathbb{R}$. The problem is called classification in supervised learning if the response variable is restricted to categorical values (sometimes called classes). 
   
 A well-studied and widely practical type of regression, known as linear regression, assumes that the relationship between all inputs and their corresponding response variables is linear. This relationship can be written as 
 
@@ -307,29 +307,47 @@ However, as mentioned, we are interested in directly quantifying the uncertainty
 \bm{w} \sim \normalpdf(0,\tau^2 \eye), 
 \end{align*}
 
-\noindent where $\tau^2$ is the variance of the weights and $\eye$ is the identity matrix. For simplicity we assume for now that $\tau^2$ is also a fixed hyperparameter. Therefore, The only unobserved parameters of this model is $\bm{w}$. The Bayesian rule (Equation \ref{Eq:Bayes}) allows us to derive the posterior for $\bm{w}$ as
+\noindent where $\tau^2$ is the variance of the weights and $\eye$ is the identity matrix. For simplicity we assume for now that $\tau^2$ is also a fixed hyperparameter. Therefore, The only unobserved parameters of this model is $\bm{w}$. The Bayesian rule (Equation \ref{Eq:Bayes}) allows us to derive the posterior for $\bm{w}$ as\footnote{Note that we use $\bm{w} \sim \normalpdf(0,\tau^2 \eye)$ to denote the random variable $\bm{w}$ and $\normalpdf(\bm{w}|0,\tau^2 \eye)$ to refer to the density function.}
 
-\begin{equation}
-p(\bm{w} \mid \bD) = \frac{p(\bD \mid \bm{w})p(\bm{w})}{p(\bD)}.
+\begin{equation}\label{Eq:simple_Bayesian_reg}
+p(\bm{w} \mid \bD) = \frac{p(\bD \mid \bm{w})p(\bm{w})}{p(\bD)} = \frac{\normalpdf(\by \mid \bX \bm{w},\sigma^2 \eye) \normalpdf(\bw \mid 0,\tau^2 \eye))}{p(\bD)}.
 \end{equation}  
 %p(\bm{w} \mid \bX , \by) = \frac{\normalpdf(\by \mid \bX \bm{w},\sigma^2 \eye) \normalpdf(\bw \mid 0,\tau^2 \eye))}{p(\bX , \by)}.
 
-Generally, the posterior in many problems cannot be analytically derived (we will discuss this issue more in XXX). For this simple model, however, an analytical solution is available. We will go through the steps as a hand on with posterior inference. Writing down the distribution assumptions and dropping $p(\bD)$ (as it is a constant factor) gives
+Generally, the posterior in many problems cannot be analytically derived (we will discuss this issue more in XXX). For this simple model, however, an analytical solution is available. We will go through the steps as a hand on with posterior inference. Before starting, it would be useful to note that a multivariate Gaussian distribution can be expressed as  
 
-\begin{equation}
-p(\bm{w} \mid \bD) \propto \prod_{i=1}^{n} \normalpdf(y_i|\bm{x}_i\tp\bm{w},\sigma^2) \normalpdf(\bm{w}|0,\tau^2 \eye).
-\end{equation}    
+\begin{align}\label{Eq:multi_Gauss}
+\normalpdf(\bw \mid \mu,\Sigma) &\propto \exp \left (\bw - \mu)\tp\Sigma^{-1}(\bw - \mu) \right) \nonumber\\
+&\propto \exp \left ( \bw\tp\Sigma^{-1}\bw -  2\bw\tp\Sigma^{-1}\mu \right),
+\end{align}
+
+\noindent after dropping all the terms that are constant with respect to $\bw$. 
+
+To derive the posterior, we follow Equation \ref{Eq:simple_Bayesian_reg} 
+
+\begin{align} \label{Eq:lin_rel_simple_derivation}
+p(\bm{w} \mid \bD) &\propto \exp \left(\frac{1}{2\sigma^2} (\by - \bX \bw)\tp(\by - \bX \bw)\right) \exp(\frac{1}{2\tau^2}\bm{w}\tp\bm{w}) \nonumber\\ 
+&\propto \exp \left (\sigma^{-2}(\by\tp\by - 2\bm{w}\tp\bX\tp\by + \bm{w}\tp\bX\tp\bX\bm{w})+ \tau^{-2}\bm{w}\tp\bm{w} \right) \nonumber\\
+&\propto \exp \left ( -2\sigma^{-2}\bm{w}\tp\bX\tp\by + \bm{w}\tp( \sigma^{-2}\bX\tp\bX + \tau^{-2} \eye )\bm{w} \right) %\\
+%&= \exp \left ( -2\sigma^{-2}\bm{w}\tp\bX\tp\by + \bm{w}\tp\Sigma^{-1}\bm{w} \right)
+\end{align}    
  
-\noindent Note that we use for example $\bm{w} \sim \normalpdf(0,\tau^2 \eye)$ to denote the random variable $\bm{w}$ and $\normalpdf(\bm{w}|0,\tau^2 \eye)$ to refer to the density function. %todo: THIS IS OUT OF PLACE
+\noindent where we dropped $p(\bD)$ and all the other terms which where constant with respect to $\bw$. The terms in Equation \ref{Eq:lin_rel_simple_derivation} are a quadratic function of $\bm{w}$, which has the same form as a multivariate Gaussian distribution in \ref{Eq:multi_Gauss}. This relation shows that the posterior should be multivariate Gaussian and its parameters can be found by matching the terms of \ref{Eq:lin_rel_simple_derivation} and \ref{Eq:multi_Gauss}. Therefore, $\Sigma^{-1} = ( \sigma^{-2}\bX\tp\bX + \tau^{-2} \eye ) $ and $\Sigma^{-1}\mu = \sigma^{-2}\bX\tp\by$. Therefore, the posterior of our simple linear regression can be described as 
 
-HERE GOES THE REST OF STEPS
+\begin{align}\label{Eq:lin_rel_simple_posterior}
+	p(\bm{w} \mid \bD) &= \normalpdf(\bw \mid \mu,\Sigma),\\
+	\Sigma^{-1} &= (\sigma^{-2}\bX\tp\bX + \tau^{-2} \eye ), \nonumber\\
+	\mu &= \Sigma\sigma^{-2}\bX\tp\by. \nonumber
+\end{align}
+
+Comparing the mean of the posterior, i.e. $\hat{\bw}_{MAP} = (\bX\tp\bX + \frac{\sigma^{2}}{\tau^{2}} \eye )^{-1}(\bX\tp\by)$, as a point estimate of the posterior distribution with the frequentist solution $\hat{\bw} = (\bX \tp \bX)^{-1}\bX\tp \by$ indicates that the two estimate are very similar with the only difference that $\tau^{-2} \eye$ acts as an added  in the covariance of posterior. This term is known as a regularization and has a relationship with the type of prior that was used in the modelling.
+
+This simple Bayesian regression (Equation \ref{Eq:lin_rel_simple_posterior}) is actually used as the underlying data model in Publication I. However, ....
+
+TO DO: revise the last paragraph and talk about regularization and the role of posterior. Then talk about posterior inference and its difficulties. Then finish with a few models.
 
 
 
-\begin{equation}
-\by \sim \normalpdf(\bX \bw, \sigma^2 \eye),
-\end{equation}
-ALSO EXPLAIN BRIEFLY THE NON BAYESIAN TREATMENT AND EXPLAIN WHY WE GO WITH BAYES/
 %The role of model (prior) assumptions is crucial then since in all scenarios considered in this thesis there are only few observed data available which is usually smaller than the dimension of the problem (e.g., feature dimension)...
 
 %Defining appropriate likelihood and defining appropriate priors
