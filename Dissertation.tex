@@ -290,31 +290,33 @@ $p(\hat{y} \mid \bD)$ is known as the posterior predictive distribution and repr
 \section{Modelling data for prediction} \label{prob_model_data}
 %Alternative title: Prediction of high-diensional data?
 
-Prediction is one of the core problems in statistical analysis and supervised machine learning. Given a set of $n$ input and output pairs, called training data, denoted by $\bD= \{(\bm{x}_i,y_i)\}_{i=1}^{n}$, the goal is to find a mapping from inputs to outputs. Here, $\bm{x}_i = [x_i^1,\ldots,x_i^d]\tp \in \mathbb{R}^d$ is a d-dimensional column vector representing the values of $i^{th}$ data point\footnote{We use subscripts to index an specific item (e.g, one particular observation out of several) and superscripts to refer to dimensions of the variable.}. The dimensions are commonly called feature, covariates, or attribute. $y_i$ is the corresponding response (or target) variable which can be anything depending on the underlying problem. In this thesis, we consider the regression tasks, meaning that we model response variables by real values, i.e., $y_i \in \mathbb{R}$. The problem is called classification in supervised learning if the response variable is restricted to categorical values (sometimes called classes). 
-  
-A well-studied and widely practical type of regression, known as linear regression, assumes that the relationship between all inputs and their corresponding response variables is linear. This relationship can be written as 
+Prediction is one of the core problems in statistical analysis and supervised machine learning. Given a set of $n$ input and output pairs, called training data, denoted by $\bD= \{(\bm{x}_i,y_i)\}_{i=1}^{n}$, the goal is to find a mapping from inputs to outputs. Here, $\bm{x}_i = [x_i^1,\ldots,x_i^d]\tp \in \mathbb{R}^d$ is a d-dimensional column vector representing the values of $i^{th}$ data point\footnote{We use subscripts to index an specific item (e.g, one particular observation out of several) and superscripts to refer to dimensions of the variable.}. The dimensions are commonly called feature, covariates, or attribute. $y_i$ is the corresponding response (or target) variable which can be anything depending on the underlying problem. In this thesis, we consider the regression tasks, meaning that we model response variables by real values, i.e., $y_i \in \mathbb{R}$. The problem is called classification in supervised learning if the response variable is restricted to categorical values (called classes). 
+
+\subsection{Bayesian Linear regression}
+
+A well-studied and widely practical type of regression, known as linear regression, assumes that the relationship between all inputs and their corresponding response variables is linear. This relationship can be described as 
 
 \begin{equation*}
 y_i= \sum_{j=1}^{d}x_{i}^{j} w^{j}+\epsilon_i=\bm{x}_i\tp\bm{w}+\epsilon_i, \qquad i=1,\ldots,n, 
 \end{equation*}
 
-\noindent where $\bm{w} \in \mathbb{R}^d$ is the regression coefficients or the model's weights and $\epsilon_i$ is the residual error between linear prediction $\bm{x}_i\tp\bm{w}$ and the response value $y_i$. Given the labeled data $\bD$, a commonly used error function for this problem is the sum of squared of residual errors $\sum_{i=1}^n(\bm{x}_i\tp\bm{w}- y_i)^2$. By stacking the inputs in $\bX = [x_1,\ldots,x_n]\tp \in \mathbb{R}^{n\times d}$ and outputs in $\by = [y_1,\ldots,y_n]\tp \in \mathbb{R}^n$ the error can be written as $(\bX\bm{w}- \by)\tp(\bX\bm{w}- \by)$. The frequentist solution directly finds the point estimate for $\bw$ that minimizes this error. It is straightforward to show that $\hat{\bw} = (\bX \tp \bX)^{-1}\bX\tp \by$  would be the point estimate solution given that $(\bX \tp \bX)^{-1}$ is invertible.  
+\noindent where $\bm{w} \in \mathbb{R}^d$ is the regression coefficients or the model's weights and $\epsilon_i$ is the residual error between linear prediction $\bm{x}_i\tp\bm{w}$ and the response value $y_i$. Given the labeled data $\bD$, a commonly used error function is the sum of squared of residual errors $\sum_{i=1}^n(\bm{x}_i\tp\bm{w}- y_i)^2$. By stacking the inputs in $\bX = [x_1,\ldots,x_n]\tp \in \mathbb{R}^{n\times d}$ and outputs in $\by = [y_1,\ldots,y_n]\tp \in \mathbb{R}^n$ the error can be expressed in vector format as $(\bX\bm{w}- \by)\tp(\bX\bm{w}- \by)$. The frequentist solution directly finds the point estimate for $\bw$ that minimizes this error (also known as least squares solution). It is straightforward to show that $\hat{\bw} = (\bX \tp \bX)^{-1}\bX\tp \by$  would be the point estimate solution given that $(\bX \tp \bX)^{-1}$ is invertible.  
 
-However, as mentioned, we are interested in directly quantifying the uncertainty of the solution. The probabilistic way to model this problem is to explicitly describe the model assumptions (likelihood and priors) as probability distributions. In linear regression, the residual errors $\epsilon_i$ and the weights $\bm{w}$ are modelled as random variables and the inputs $\bm{x}_i$ as vector of values that are given. A customary assumption is to model the residual errors as independent zero-mean Gaussian random variables $\epsilon_i \sim \normalpdf(0,\sigma^2)$, where $\sigma^2$ is variance of the Gaussian distribution which indicates the model tolerance about residual errors. It is common to also model $\sigma^2$ as another random variable with its own distribution assumption, however, we can consider it to be a fixed hyperparameter for simplicity for now. The quantity of interest in the linear model is the regression coefficients. To complete the Bayesian inference loop, we need to consider a prior distribution on $\bm{w}$. There are many ways to do this depending on the underlying task. One simple prior could be to assume that coefficients are independent and each come from a zero-mean Gaussian distribution, encouraging the weights to be close to zero. This simple Bayesian linear regression can be described by
+However, as mentioned, we are interested in directly quantifying the uncertainty of the solution. The probabilistic way to model this problem is to explicitly describe the model assumptions (likelihood and priors) as probability distributions. In linear regression, the residual errors $\epsilon_i$ and the weights $\bm{w}$ are modelled as random variables and the inputs $\bm{x}_i$ as vector of values that are given. A customary assumption is to model the residual errors as independent zero-mean Gaussian random variables $\epsilon_i \sim \normalpdf(0,\sigma^2)$, where $\sigma^2$ is variance of the Gaussian distribution which indicates the model tolerance about residual errors. It is common to also model $\sigma^2$ as another random variable with its own distribution assumption, however, we consider it to be a fixed hyperparameter for simplicity. The quantity of interest in the linear model is the regression coefficients. To complete the Bayesian inference loop, we need to consider a prior distribution on $\bm{w}$. There are many ways to do this depending on the underlying task. One simple prior could be to assume that coefficients are independent and each come from a zero-mean Gaussian distribution, encouraging the weights to be close to zero. This simple Bayesian linear regression can be described by
 
 \begin{align*} 
-\by \sim \normalpdf(\bX\bm{w},\sigma^2 \eye)\\
+\by \sim \normalpdf(\bX\bm{w},\sigma^2 \eye),\\
 \bm{w} \sim \normalpdf(0,\tau^2 \eye), 
 \end{align*}
 
-\noindent where $\tau^2$ is the variance of the weights and $\eye$ is the identity matrix. For simplicity we assume for now that $\tau^2$ is also a fixed hyperparameter. Therefore, The only unobserved parameters of this model is $\bm{w}$. The Bayesian rule (Equation \ref{Eq:Bayes}) allows us to derive the posterior for $\bm{w}$ as\footnote{Note that we use $\bm{w} \sim \normalpdf(0,\tau^2 \eye)$ to denote the random variable $\bm{w}$ and $\normalpdf(\bm{w}|0,\tau^2 \eye)$ to refer to the density function.}
+\noindent where $\tau^2$ is the variance of the weights and $\eye$ is the identity matrix. For simplicity we assume that $\tau^2$ is also a fixed hyperparameter. Therefore, The only unobserved parameters of this model is $\bm{w}$. The Bayesian rule allows us to derive the posterior for $\bm{w}$ as\footnote{Note that we use $\bm{w} \sim \normalpdf(0,\tau^2 \eye)$ to denote the random variable $\bm{w}$ and $\normalpdf(\bm{w}|0,\tau^2 \eye)$ to refer to the density function.}
 
 \begin{equation}\label{Eq:simple_Bayesian_reg}
 p(\bm{w} \mid \bD) = \frac{p(\bD \mid \bm{w})p(\bm{w})}{p(\bD)} = \frac{\normalpdf(\by \mid \bX \bm{w},\sigma^2 \eye) \normalpdf(\bw \mid 0,\tau^2 \eye))}{p(\bD)}.
 \end{equation}  
 %p(\bm{w} \mid \bX , \by) = \frac{\normalpdf(\by \mid \bX \bm{w},\sigma^2 \eye) \normalpdf(\bw \mid 0,\tau^2 \eye))}{p(\bX , \by)}.
 
-Generally, the posterior in many problems cannot be analytically derived (we will discuss this issue more in XXX). For this simple model, however, an analytical solution is available. We will go through the steps as a hand on with posterior inference. Before starting, it would be useful to note that a multivariate Gaussian distribution can be expressed as  
+Generally, the posterior in many problems cannot be analytically derived (we will discuss this issue more in XXX). For this simple model, however, an analytical solution is available. We will go through the steps as a exercise with posterior inference. Before starting, it would be useful to note that a multivariate Gaussian distribution can be expressed as  
 
 \begin{align}\label{Eq:multi_Gauss}
 \normalpdf(\bw \mid \mu,\Sigma) &\propto \exp \left (\bw - \mu)\tp\Sigma^{-1}(\bw - \mu) \right) \nonumber\\
@@ -332,32 +334,41 @@ p(\bm{w} \mid \bD) &\propto \exp \left(\frac{1}{2\sigma^2} (\by - \bX \bw)\tp(\b
 %&= \exp \left ( -2\sigma^{-2}\bm{w}\tp\bX\tp\by + \bm{w}\tp\Sigma^{-1}\bm{w} \right)
 \end{align}    
  
-\noindent where we dropped $p(\bD)$ and all the other terms which where constant with respect to $\bw$. The terms in Equation \ref{Eq:lin_rel_simple_derivation} are a quadratic function of $\bm{w}$, which has the same form as a multivariate Gaussian distribution in \ref{Eq:multi_Gauss}. This relation shows that the posterior should be multivariate Gaussian and its parameters can be found by matching the terms of \ref{Eq:lin_rel_simple_derivation} and \ref{Eq:multi_Gauss}. Therefore, $\Sigma^{-1} = ( \sigma^{-2}\bX\tp\bX + \tau^{-2} \eye ) $ and $\Sigma^{-1}\mu = \sigma^{-2}\bX\tp\by$. Therefore, the posterior of our simple linear regression can be described as 
+\noindent where we dropped $p(\bD)$ and all the other terms which where constant with respect to $\bw$. Equation \ref{Eq:lin_rel_simple_derivation} has the same form to Equation \ref{Eq:multi_Gauss} (with respect to $\bm{w}$) and therefore is proportional to a multivariate Gaussian distribution. This relation shows that the posterior should be multivariate Gaussian and thus its parameters can be found by matching the terms of the two equations as $\Sigma^{-1} = ( \sigma^{-2}\bX\tp\bX + \tau^{-2} \eye ) $ and $\Sigma^{-1}\mu = \sigma^{-2}\bX\tp\by$. Finally, the posterior of our simple linear regression can be described as 
 
 \begin{align}\label{Eq:lin_rel_simple_posterior}
-	p(\bm{w} \mid \bD) &= \normalpdf(\bw \mid \mu,\Sigma),\\
+	p(\bm{w} \mid \bD) &= \normalpdf(\bw \mid \mu,\Sigma), \text{where}\\
 	\Sigma^{-1} &= (\sigma^{-2}\bX\tp\bX + \tau^{-2} \eye ), \nonumber\\
 	\mu &= \Sigma\sigma^{-2}\bX\tp\by. \nonumber
 \end{align}
 
-Comparing the mean of the posterior, i.e. $\hat{\bw}_{MAP} = (\bX\tp\bX + \frac{\sigma^{2}}{\tau^{2}} \eye )^{-1}(\bX\tp\by)$, as a point estimate of the posterior distribution with the frequentist solution $\hat{\bw} = (\bX \tp \bX)^{-1}\bX\tp \by$ indicates that the two estimate are very similar with the only difference that $\tau^{-2} \eye$ acts as an added  in the covariance of posterior. This term is known as a regularization and has a relationship with the type of prior that was used in the modelling.
-
-This simple Bayesian regression (Equation \ref{Eq:lin_rel_simple_posterior}) is actually used as the underlying data model in Publication I. However, ....
-
-TO DO: revise the last paragraph and talk about regularization and the role of posterior. Then talk about posterior inference and its difficulties. Then finish with a few models.
+This simple Bayesian regression is used as the underlying data model in Publication I. It would be interesting to compare a point estimate of the posterior distribution with the frequentist solution $\hat{\bw} = (\bX \tp \bX)^{-1}\bX\tp \by$. Maximum a posteriori (MAP) is a point estimate which represents the value in the posterior that has the highest density. In our case, this would be equal to the posterior mean, which after some rearrangement, can be described as $\hat{\bw}_{MAP} = (\bX\tp\bX + \frac{\sigma^{2}}{\tau^{2}} \eye )^{-1}(\bX\tp\by)$. Comparing the mean of the posterior with the frequentist solution indicates that the two estimates are very similar with the only difference that the MAP estimate has the additive term $\frac{\sigma^{2}}{\tau^{2}} \eye$ in the covariance matrix. This added term is the direct outcome of our assumptions in the likelihood and prior of the model which were not present in our simple frequentist model. This term can also be interpreted as a regularization parameter that controls the variance of weights. The designer of the model may want to consider different types of regularization or constrains in the model, which in probabilistic modelling, is usually done by incorporating them in the prior distribution. Such problems may not have an analytical posterior available. We will consider two such models in the following subsections.
 
 
 
-%The role of model (prior) assumptions is crucial then since in all scenarios considered in this thesis there are only few observed data available which is usually smaller than the dimension of the problem (e.g., feature dimension)...
 
-%Defining appropriate likelihood and defining appropriate priors
-%GO through linear models here and maybe briefly mention and cite generalized linear models. 
+\subsubsection{Sparsity-inducing prior}
+
+In many prediction problems, in particular those that require human intervention in a form, the number of available training data is smaller than dimensions of the problem. If not regularized properly, a model trained in this setting may overfit to the training data (achieving very low training error) while not being able to generalize properly to unobserved data (high test data error). One way to tackle this challenge, is to directly regularize the model parameters so that they would not overfit to observations. This regularization can be done by adding penalty terms (for example $l_1$ norms of the weights) to the error function in the non-Bayesian models (see for example Lasso \cite{lasso2011}). In probabilistic modelling, we can achieve the same goal by selecting sparsifying priors. 
+
+There are different priors that encourage sparsity but they can be categorized to two general groups of mixture priors, such as spike-and-slab prior \cite{spike_slab1993}, and the continuous shrinkage priors (such as horseshoe prior \cite{horseshoe_2017}). In this thesis we consider the spike-and-slab prior due to its high interoperability (we discuss more about this in XXXX).
+
+Consider the linear regression model .... Then explain spike and slab prior and what it means .... then parameters and posterior then talk a bit about posterior inference (read Juho's paper also and cite Tomi).
+
+
+This model is used as the underlying data model in Publication II, III, and IV. 
+
+
+
+
+\subsubsection{Automatic relevance detection}
+
+
 	
 
 
-\subsection{Bayesian Linear regression}
-% Here we want to start with linear regression (ridge) and then talk about sparsifying priors and maybe automatic relevance models? (relevant thesis: Tomi and Juho)
-\subsection{Sparse priors}
+
+
 
 \section{Modelling the user}\label{prob_model_user}
 
@@ -389,6 +400,10 @@ TO DO: revise the last paragraph and talk about regularization and the role of p
 	\end{enumerate}
 	%
 	The observation model can be any appropriate probability model. It is assumed that there is some parameter $\theta$, possibly high-dimensional, that the expert has knowledge about. The expert's knowledge is encoded as (possibly partial) feedback $f$ that is transformed into information about $\theta$ via the feedback model. Of course, there could be a more complex hierarchy tying the observation and feedback models, and the feedback model can also be used to model more user-centric issues, such as the quality of or uncertainty in the knowledge or user's interests.}
+
+
+
+TO EXPLAIN: Why we use linear models? because of the risk for overfitting if the model is not regularized enough... and also mentioning what model was used in each publication?
 
 \chapter{User interaction with the probabilistic model}\label{interaction}
 

@@ -13,4 +13,22 @@ Andrew Gelman, John~B Carlin, Hal~S Stern, David~B Dunson, Aki Vehtari, and
 \newblock {\em Bayesian data analysis}.
 \newblock Chapman \& Hall/CRC, 3rd edition, 2014.
 
+\bibitem{spike_slab1993}
+Edward~I George and Robert~E McCulloch.
+\newblock Variable selection via {Gibbs} sampling.
+\newblock {\em Journal of the American Statistical Association},
+  88(423):881--889, 1993.
+
+\bibitem{horseshoe_2017}
+Juho Piironen and Aki Vehtari.
+\newblock Sparsity information and regularization in the horseshoe and other
+  shrinkage priors.
+\newblock {\em Electron. J. Statist.}, 11(2):5018--5051, 2017.
+
+\bibitem{lasso2011}
+Robert Tibshirani.
+\newblock Regression shrinkage and selection via the lasso: a retrospective.
+\newblock {\em Journal of the Royal Statistical Society: Series B (Statistical
+  Methodology)}, 73(3):273--282, 2011.
+
 \end{thebibliography}
