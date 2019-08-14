@@ -7,6 +7,12 @@ David Donoho and Jared Tanner.
 \newblock {\em Philosophical Transactions of the Royal Society A: Mathematical,
   Physical and Engineering Sciences}, 367(1906):4273--4293, 2009.
 
+\bibitem{user_modelling_2001}
+Gerhard Fischer.
+\newblock User modeling in human--computer interaction.
+\newblock {\em User Modeling and User-Adapted Interaction}, 11(1-2):65--86,
+  2001.
+
 \bibitem{Gelman2013}
 Andrew Gelman, John~B Carlin, Hal~S Stern, David~B Dunson, Aki Vehtari, and
   Donald~B Rubin.
@@ -25,10 +31,21 @@ Juho Piironen and Aki Vehtari.
   shrinkage priors.
 \newblock {\em Electron. J. Statist.}, 11(2):5018--5051, 2017.
 
+\bibitem{seeger2008bayesian}
+Matthias~W Seeger.
+\newblock Bayesian inference and optimal design for the sparse linear model.
+\newblock {\em Journal of Machine Learning Research}, 9:759--813, 2008.
+
 \bibitem{lasso2011}
 Robert Tibshirani.
 \newblock Regression shrinkage and selection via the lasso: a retrospective.
 \newblock {\em Journal of the Royal Statistical Society: Series B (Statistical
   Methodology)}, 73(3):273--282, 2011.
+
+\bibitem{Bayesian_ARD2007}
+J.~{Ting}, A.~{D'Souza}, and S.~{Schaal}.
+\newblock Automatic outlier detection: A bayesian approach.
+\newblock In {\em Proceedings 2007 IEEE International Conference on Robotics
+  and Automation}, pages 2489--2494, April 2007.
 
 \end{thebibliography}
