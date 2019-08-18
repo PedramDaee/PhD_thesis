@@ -1,5 +1,13 @@
 \begin{thebibliography}{1}
 
+\bibitem{concept_driven_CHI2019}
+In~Kwon Choi, Taylor Childers, Nirmal~Kumar Raveendranath, Swati Mishra, Kyle
+  Harris, and Khairi Reda.
+\newblock Concept-driven visual analytics: An exploratory study of model- and
+  hypothesis-based reasoning with visualizations.
+\newblock In {\em Proceedings of the 2019 CHI Conference on Human Factors in
+  Computing Systems}, CHI '19, pages 68:1--68:14, New York, NY, USA, 2019. ACM.
+
 \bibitem{Donoho2009observed}
 David Donoho and Jared Tanner.
 \newblock Observed universality of phase transitions in high-dimensional

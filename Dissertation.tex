@@ -414,13 +414,35 @@ Noisy observations can particularly happen if the data provider is a noisy sourc
 
 \section{Modelling user interaction for prediction}\label{prob_model_user}
 
-A core idea in the thesis is to model the user interaction with the probabilistic model as observational feedback generated form the model. These feedbacks can be tied to the model parameters via conditional distributions (feedback models). The posterior inference can then learn the unobserved parameters given data observations (as introduced in the previous section) and the feedback observations (which we will discuss in this section). The feedback models are used to incorporate the user knowledge into the regression models introduced in the previous section. The following subsections introduces the feedback models proposed in Publication I-V and explains how they are tied to the probabilistic models.
+A core idea in the thesis is to model the user interaction with the probabilistic model as observational feedback. These feedbacks can be tied to the model parameters via conditional distributions (feedback models). The posterior inference can then learn the unobserved parameters given data observations (as introduced in the previous section) and the feedback observations (which will be discussed in this section). The feedback models are used to incorporate the user knowledge into the regression models introduced in the previous section. The following subsections introduces the feedback models proposed in Publication I-V and explains how they are tied to the probabilistic models.
 
 %Our general approach is to consider new likelihood function for the user feedback and put appropriate priors on top of that. Explain the feedback likelihoods?
 
 \subsection{User feedback as observation about model parameters}
 %This would be easy to address since the application is trivial and not necessary explain.
-Publication II, III
+In Publication II and III we target the case where the user has knowledge about the model parameters and is able to provide feedback regarding that if queried... EXPLAIN THE USER AND TASK... We consider the linear regression model with sparsity-inducing spike-and-slab prior on coefficients introduced in Equation \ref{Eq:ss_Bayesian_regression} as the underlying data model. The type of feedback naturally depends on the task and availability of user knowledge. Studies have shown that the type of domain knowledge in prediction tasks can be categprized in a small set \cite{concept_driven_CHI2019}. We consider three simple and natural types of feedback models. 
+
+\begin{itemize}
+	\item With some noise, the user can provide feedback about the value of coefficients
+	\begin{equation}\label{Eq:fb_on_val_coeff}
+	f_{j}^{val} \sim \normalpdf(w^j, \omega^2)
+	\end{equation}
+	\noindent where $\omega^2$ models the variance of error in user feedback. This type of feedback would be the least likely knowledge that a user may have. But still, in some specific applications, knowledge about value of coefficient may be available through related literature (for example [in some fields they report log(wj)?]) 
+	\item With some probability, the user can provide feedback about whether a coefficient should be included or excluded from the model
+	\begin{equation}\label{Eq:fb_on_rel_coeff}
+	f_{j}^{rel} \sim \gamma_j \bernoullipdf(\pi^{rel}) + (1 - \gamma_j) \bernoullipdf(1 - \pi^{rel}).
+	\end{equation}
+	\noindent where $\pi^{rel}$ indicates the probability that user is correct about the feedback. This relevant/not-relevant feedback is the simplest form of knowledge that a user (domain expert for example) may have about a regression model. 
+	\item With some probability, the user can provide feedback about direction of relevance of a coefficient, i.e., whether a feature is positively or negatively correlated with the response variable
+	\begin{equation}\label{Eq:fb_on_dir_coeff}
+	f_{j}^{dir} \sim I(w^j \geq 0) \bernoullipdf(\pi^{dir}) + I(w^j < 0) \bernoullipdf(1 - \pi^{dir}).
+	\end{equation}
+	\noindent where $\pi^{dir}$ indicates the probability that user is correct about the feedback.
+\end{itemize}
+
+The connection of the three mentioned feedback with model (Equation \ref{Eq:ss_Bayesian_regression}) is shown as a plate diagram in Figure XXX. The posterior of the unknown parameters given data observations and the user feedback can be written as XXXx
+
+It should be noted that there is no restriction on the amount of feedback (or the types) available for computation of the posterior. The posterior computation is discussed in Section \ref{posteriro_inf}.
 
 \subsection{User feedback as outcome of a cognitive process}
 %This is also easier to explain.
