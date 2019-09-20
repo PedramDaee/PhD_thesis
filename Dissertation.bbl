@@ -1,4 +1,28 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{Homayun_pairwise_UMAP}
+Homayun Afrabandpey, Tomi Peltola, and Samuel Kaski.
+\newblock Interactive prior elicitation of feature similarities for small
+  sample size prediction.
+\newblock In {\em Proceedings of the 25th Conference on User Modeling,
+  Adaptation and Personalization}, UMAP '17, pages 265--269, New York, NY, USA,
+  2017. ACM.
+
+\bibitem{Homayun_pairwise_ijcai2019}
+Homayun Afrabandpey, Tomi Peltola, and Samuel Kaski.
+\newblock Human-in-the-loop active covariance learning for improving prediction
+  in small data sets.
+\newblock In {\em Proceedings of the Twenty-Eighth International Joint
+  Conference on Artificial Intelligence, {IJCAI-19}}, pages 1959--1966.
+  International Joint Conferences on Artificial Intelligence Organization, 7
+  2019.
+
+\bibitem{drug_response_prediction}
+Muhammad Ammad-ud din, Suleiman~A. Khan, Disha Malani, Astrid Murumägi, Olli
+  Kallioniemi, Tero Aittokallio, and Samuel Kaski.
+\newblock {Drug response prediction by inferring pathway-response associations
+  with kernelized Bayesian matrix factorization}.
+\newblock {\em Bioinformatics}, 32(17):i455--i463, 08 2016.
 
 \bibitem{concept_driven_CHI2019}
 In~Kwon Choi, Taylor Childers, Nirmal~Kumar Raveendranath, Swati Mishra, Kyle
@@ -8,6 +32,18 @@ In~Kwon Choi, Taylor Childers, Nirmal~Kumar Raveendranath, Swati Mishra, Kyle
 \newblock In {\em Proceedings of the 2019 CHI Conference on Human Factors in
   Computing Systems}, CHI '19, pages 68:1--68:14, New York, NY, USA, 2019. ACM.
 
+\bibitem{Correia2019HumanintheLoopFS}
+Alvaro H.~C. Correia and Freddy L{\'e}cu{\'e}.
+\newblock Human-in-the-loop feature selection.
+\newblock In {\em Proceedings of the Thirty-Third AAAI Conference on Artificial
+  Intelligence}, 2019.
+
+\bibitem{dai2015semi}
+Andrew~M Dai and Quoc~V Le.
+\newblock Semi-supervised sequence learning.
+\newblock In {\em Advances in neural information processing systems}, pages
+  3079--3087, 2015.
+
 \bibitem{Donoho2009observed}
 David Donoho and Jared Tanner.
 \newblock Observed universality of phase transitions in high-dimensional
@@ -15,11 +51,23 @@ David Donoho and Jared Tanner.
 \newblock {\em Philosophical Transactions of the Royal Society A: Mathematical,
   Physical and Engineering Sciences}, 367(1906):4273--4293, 2009.
 
+\bibitem{druck2009active}
+Gregory Druck, Burr Settles, and Andrew McCallum.
+\newblock Active learning by labeling features.
+\newblock In {\em Proceedings of the Conference on Empirical Methods in Natural
+  Language Processing}, pages 81--90, 2009.
+
 \bibitem{user_modelling_2001}
 Gerhard Fischer.
 \newblock User modeling in human--computer interaction.
 \newblock {\em User Modeling and User-Adapted Interaction}, 11(1-2):65--86,
   2001.
+
+\bibitem{garthwaite2005statistical}
+Paul~H Garthwaite, Joseph~B Kadane, and Anthony O'Hagan.
+\newblock Statistical methods for eliciting probability distributions.
+\newblock {\em Journal of the American Statistical Association},
+  100(470):680--701, 2005.
 
 \bibitem{Gelman2013}
 Andrew Gelman, John~B Carlin, Hal~S Stern, David~B Dunson, Aki Vehtari, and
@@ -33,16 +81,48 @@ Edward~I George and Robert~E McCulloch.
 \newblock {\em Journal of the American Statistical Association},
   88(423):881--889, 1993.
 
+\bibitem{liu2015sentiment}
+Bing Liu.
+\newblock {\em Sentiment analysis: Mining opinions, sentiments, and emotions}.
+\newblock Cambridge University Press, 2015.
+
+\bibitem{Micallef_elicitation}
+Luana Micallef, Iiris Sundin, Pekka Marttinen, Muhammad Ammad-ud din, Tomi
+  Peltola, Marta Soare, Giulio Jacucci, and Samuel Kaski.
+\newblock Interactive elicitation of knowledge on feature relevance improves
+  predictions in small data sets.
+\newblock In {\em Proceedings of the 22Nd International Conference on
+  Intelligent User Interfaces}, IUI '17, pages 547--552, New York, NY, USA,
+  2017. ACM.
+
+\bibitem{OHagan06}
+Anthony O'Hagan, Caitlin~E. Buck, Alireza Daneshkhah, J.~Richard Eiser, Paul~H.
+  Garthwaite, David~J. Jenkinson, Jeremy~E. Oakley, and Tim Rakow.
+\newblock {\em Uncertain Judgements. Eliciting Experts' Probabilisties}.
+\newblock Wiley, Chichester, England, 2006.
+
 \bibitem{horseshoe_2017}
 Juho Piironen and Aki Vehtari.
 \newblock Sparsity information and regularization in the horseshoe and other
   shrinkage priors.
 \newblock {\em Electron. J. Statist.}, 11(2):5018--5051, 2017.
 
+\bibitem{raghavan2006active}
+Hema Raghavan, Omid Madani, and Rosie Jones.
+\newblock Active learning with feedback on features and instances.
+\newblock {\em Journal of Machine Learning Research}, 7(Aug):1655--1686, 2006.
+
 \bibitem{seeger2008bayesian}
 Matthias~W Seeger.
 \newblock Bayesian inference and optimal design for the sparse linear model.
 \newblock {\em Journal of Machine Learning Research}, 9:759--813, 2008.
+
+\bibitem{settles2011closing}
+Burr Settles.
+\newblock Closing the loop: Fast, interactive semi-supervised annotation with
+  queries on features and instances.
+\newblock In {\em Proceedings of the Conference on Empirical Methods in Natural
+  Language Processing}, pages 1467--1478, 2011.
 
 \bibitem{lasso2011}
 Robert Tibshirani.

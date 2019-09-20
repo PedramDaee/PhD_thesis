@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.9.7)  19 AUG 2019 00:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.9.7)  20 SEP 2019 17:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1200,53 +1200,53 @@ LaTeX Info: Redefining \bm on input line 207.
 ) (./Dissertation.aux)
 \openout1 = `Dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 105.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 108.
 LaTeX Font Info:    Try loading font information for FML+fncmi on input line 10
-5.
+8.
 
 (c:/texlive/2018/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 105.
-LaTeX Font Info:    Try loading font information for FMS+fncm on input line 105
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 108.
+LaTeX Font Info:    Try loading font information for FMS+fncm on input line 108
 .
 
 (c:/texlive/2018/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 105.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 105.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 108.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 108.
 
 
 (c:/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Try loading font information for T1+fnc on input line 105.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Try loading font information for T1+fnc on input line 108.
 
 (c:/texlive/2018/texmf-dist/tex/latex/fouriernc/t1fnc.fd
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 105.
+(Font)              scaled to size 10.18341pt on input line 108.
 
 ABD: EveryShipout initializing macros
 (c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1279,7 +1279,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 105.
+LaTeX Info: Redefining \microtypecontext on input line 108.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1295,7 +1295,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 \AtBeginShipoutBox=\box44
-Package hyperref Info: Link coloring ON on input line 105.
+Package hyperref Info: Link coloring ON on input line 108.
 
 (c:/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1305,9 +1305,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count172
 )
-LaTeX Info: Redefining \ref on input line 105.
-LaTeX Info: Redefining \pageref on input line 105.
-LaTeX Info: Redefining \nameref on input line 105.
+LaTeX Info: Redefining \ref on input line 108.
+LaTeX Info: Redefining \pageref on input line 108.
+LaTeX Info: Redefining \nameref on input line 108.
 
 (./Dissertation.out) (./Dissertation.out)
 \@outlinefile=\write5
@@ -1359,80 +1359,74 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 105.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 105.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 108.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 108.
 
 
 
 Package hyperref Warning: Option `colorlinks' has already been used,
-(hyperref)                setting the option has no effect on input line 105.
+(hyperref)                setting the option has no effect on input line 108.
 
-Package hyperref Info: Option `plainpages' set `false' on input line 105.
+Package hyperref Info: Option `plainpages' set `false' on input line 108.
 \c@lstlisting=\count173
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 126.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 129.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 10.18341pt on input line 126.
+(Font)              scaled to size 10.18341pt on input line 129.
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <12> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 126.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 129.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 126.
+(Font)              scaled to size 11.15991pt on input line 129.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 126.
+(Font)              scaled to size 10.18341pt on input line 129.
 LaTeX Font Info:    Font shape `T1/fnc/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/fnc/b/it' tried instead on input line 128.
+(Font)              Font shape `T1/fnc/b/it' tried instead on input line 131.
 LaTeX Font Info:    Font shape `T1/fnc/b/it' will be
-(Font)              scaled to size 10.18341pt on input line 128.
-
-Overfull \hbox (5.13751pt too wide) in paragraph at lines 130--132
-[]\T1/fnc/b/it/10.95 Probabilistic user mod-elling meth-ods for im-prov-ing hum
-an-in-the-loop
- []
-
+(Font)              scaled to size 10.18341pt on input line 131.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.43994pt on input line 153.
+(Font)              scaled to size 7.43994pt on input line 162.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 10.22992pt on input line 153.
+(Font)              scaled to size 10.22992pt on input line 162.
 [1
 
 ] [2
 
 ]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 18.59985pt on input line 153.
+(Font)              scaled to size 18.59985pt on input line 162.
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <20> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 153.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 162.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 18.59985pt on input line 153.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 153.
+(Font)              scaled to size 18.59985pt on input line 162.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 162.
  (c:/texlive/2018/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 153.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 162.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 18.99994pt on input line 153.
+(Font)              scaled to size 18.99994pt on input line 162.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.71893pt on input line 153.
+(Font)              scaled to size 7.71893pt on input line 162.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 153.
-LaTeX Font Info:    Try loading font information for FML+fncm on input line 153
+(Font)              scaled to size 5.57996pt on input line 162.
+LaTeX Font Info:    Try loading font information for FML+fncm on input line 162
 .
 
 (c:/texlive/2018/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
 File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 153.
+(Font)              scaled to size 10.07397pt on input line 162.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 153.
+(Font)              scaled to size 7.63599pt on input line 162.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 153.
-LaTeX Font Info:    Try loading font information for U+msa on input line 153.
+(Font)              scaled to size 5.51999pt on input line 162.
+LaTeX Font Info:    Try loading font information for U+msa on input line 162.
 
 (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1440,7 +1434,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (c:/texlive/2018/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 153.
+LaTeX Font Info:    Try loading font information for U+msb on input line 162.
 
 (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1449,9 +1443,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 7.71893pt on input line 153.
+(Font)              scaled to size 7.71893pt on input line 162.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 5.57996pt on input line 153.
+(Font)              scaled to size 5.57996pt on input line 162.
  [3] [4
 
 
@@ -1485,19 +1479,19 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 \openout8 = `Dissertation.asc'.
 
  [10]
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
 
 [11
 
 ]
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 247.
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 256.
  (c:/texlive/2018/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.2125pt on input line 247.
+(Font)              scaled to size 8.2125pt on input line 256.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
@@ -1507,120 +1501,129 @@ Package microtype Info: Loading generic protrusion settings for font family
 ]
 [15]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 287.
+(Font)              scaled to size 8.36993pt on input line 296.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 287.
+(Font)              scaled to size 9.29993pt on input line 296.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.06795pt on input line 287.
+(Font)              scaled to size 7.06795pt on input line 296.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 287.
+(Font)              scaled to size 9.19998pt on input line 296.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 287.
+(Font)              scaled to size 6.99199pt on input line 296.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 9.29993pt on input line 287.
+(Font)              scaled to size 9.29993pt on input line 296.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 7.06795pt on input line 287.
+(Font)              scaled to size 7.06795pt on input line 296.
  [16]
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <11> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 305.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 314.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 10.22992pt on input line 305.
+(Font)              scaled to size 10.22992pt on input line 314.
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <10> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 322.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 331.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 9.29993pt on input line 322.
+(Font)              scaled to size 9.29993pt on input line 331.
  [17] [18]
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.22992pt on input line 360.
- [19] [20]
-LaTeX Font Info:    Try loading font information for TS1+fnc on input line 426.
+(Font)              scaled to size 10.22992pt on input line 369.
+ [19] [20] [21]
 
+pdfTeX warning: pdflatex.exe (file ./Figures/Plate_diagram_KE.pdf): PDF inclusi
+on: found PDF version <1.7>, but at most version <1.4> allowed
+<Figures/Plate_diagram_KE.pdf, id=339, 388.77246pt x 209.70345pt>
+File: Figures/Plate_diagram_KE.pdf Graphic file (type pdf)
+<use Figures/Plate_diagram_KE.pdf>
+Package pdftex.def Info: Figures/Plate_diagram_KE.pdf  used on input line 436.
+(pdftex.def)             Requested size: 369.88585pt x 199.5243pt.
+LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <9> not available
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 437.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 8.36993pt on input line 437.
+LaTeX Font Info:    Try loading font information for TS1+fnc on input line 443.
 
 (c:/texlive/2018/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
 File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
 )
 LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 426.
+(Font)              scaled to size 10.18341pt on input line 443.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fnc' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [21] [22] [23]
-[24
+ [22 <./Figures/Plate_diagram_KE.pdf>]
+Overfull \hbox (3.46996pt too wide) detected at line 466
+\FML/fncmi/m/it/10.95 p\T1/fnc/m/n/10.95 (\FML/fncmi/b/it/10.95 w\FML/fncmi/m/i
+t/10.95 ; \FML/fncmi/b/it/10.95 ^^M\FML/fncmi/m/it/10.95 ; ^^[[] \FMS/fncm/m/n/
+10.95 j D\FML/fncmi/m/it/10.95 ; \FMS/fncm/m/n/10.95 F\T1/fnc/m/n/10.95 ) \FMS/
+fncm/m/n/10.95 Å []\FML/fncmi/m/it/10.95 ;
+ []
 
-] [25] [26
+[23] [24] [25
+
+] [26
 
 ] [27] [28
 
 ]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 16.07027pt on input line 532.
+(Font)              scaled to size 16.07027pt on input line 569.
  [29] [30
 
 ] (./Dissertation.bbl
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 9.29993pt on input line 8.
+(Font)              scaled to size 9.29993pt on input line 7.
+ [31
 
-Overfull \hbox (0.95871pt too wide) in paragraph at lines 48--52
-\T1/fnc/m/it/10 (-20) Journal of the Royal Statistical Society: Series B (Stati
-stical Methodology)\T1/fnc/m/n/10 (-20) , 73(3):273--
- []
-
-) [31
-
-] [32
-
-]
+]) [32]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 545.
+(Font)              scaled to size 11.15991pt on input line 582.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 545.
+(Font)              scaled to size 15.89755pt on input line 582.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 545.
+(Font)              scaled to size 11.03998pt on input line 582.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 545.
+(Font)              scaled to size 8.27998pt on input line 582.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 16.07027pt on input line 545.
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 8.36993pt on input line 545.
+(Font)              scaled to size 16.07027pt on input line 582.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 545.
+(Font)              scaled to size 16.41594pt on input line 582.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 545.
+(Font)              scaled to size 11.39996pt on input line 582.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 6.50995pt on input line 545.
+(Font)              scaled to size 6.50995pt on input line 582.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 545.
+(Font)              scaled to size 6.43999pt on input line 582.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 6.50995pt on input line 545.
+(Font)              scaled to size 6.50995pt on input line 582.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 545.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 582.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 11.39996pt on input line 545.
+(Font)              scaled to size 11.39996pt on input line 582.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.44997pt on input line 545.
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 545.
+(Font)              scaled to size 10.44997pt on input line 582.
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 582.
 
- (c:/texlive/2018/texmf-dist/tex/latex/psnfss/ts1phv.fd
+
+(c:/texlive/2018/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 10.44997pt on input line 545.
+(Font)              scaled to size 10.44997pt on input line 582.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [33
 
-]
-[34
+
+] [34
 
 ] [35
 
 ] [36
 
 ]
-Overfull \hbox (3.40355pt too wide) in paragraph at lines 568--568
+Overfull \hbox (3.40355pt too wide) in paragraph at lines 605--605
 \T1/phv/m/n/12 (-20) Samuel Kaski. Im-prov-ing genomics-based pre-dic-tions for
  pre-ci-sion medicine
  []
@@ -1636,23 +1639,23 @@ Overfull \hbox (3.40355pt too wide) in paragraph at lines 568--568
 ] [41
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 593.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 593.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 630.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 630.
  (./Dissertation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 593.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 593.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 630.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 630.
 Package rerunfilecheck Info: File `Dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 482AA47D67FC9FD58EE7AE637EFC797F;2846.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 593.
+(rerunfilecheck)             Checksum: 8502C244066D2E44D680E67B918EFBAB;2846.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 630.
  ) 
 Here is how much of TeX's memory you used:
- 31000 strings out of 492641
- 517343 string characters out of 6133117
- 1112973 words of memory out of 5000000
- 33916 multiletter control sequences out of 15000+600000
- 128050 words of font info for 355 fonts, out of 8000000 for 9000
+ 31115 strings out of 492641
+ 518900 string characters out of 6133117
+ 1112987 words of memory out of 5000000
+ 33940 multiletter control sequences out of 15000+600000
+ 131987 words of font info for 403 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,12n,58p,1469b,2088s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,12n,58p,1717b,2105s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2018/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fo
 nts/type1/public/fourier/fourier-bb.pfb><c:/texlive/2018/texmf-dist/fonts/type1
@@ -1667,9 +1670,9 @@ elvetic/uhvro8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a
 .pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/ncntrsbk/uncbi8a.pfb><c:/texli
 ve/2018/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb><c:/texlive/2018/texmf-d
 ist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Dissertation.pdf (41 pages, 252801 bytes).
+Output written on Dissertation.pdf (41 pages, 315627 bytes).
 PDF statistics:
- 525 PDF objects out of 1000 (max. 8388607)
- 122 named destinations out of 1000 (max. 500000)
- 45857 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 617 PDF objects out of 1000 (max. 8388607)
+ 140 named destinations out of 1000 (max. 500000)
+ 45862 words of extra memory for PDF output out of 51595 (max. 10000000)
 

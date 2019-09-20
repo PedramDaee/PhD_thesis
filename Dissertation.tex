@@ -49,6 +49,7 @@
 \newcommand{\bX}{\bm{X}}
 \newcommand{\by}{\bm{y}}
 \newcommand{\bD}{\mathcal{D}}
+\newcommand{\bF}{\mathcal{F}}
 \DeclareMathOperator{\eye}{\textbf{I}}
 
 \newcommand{\KL}{\KLt\infdivx}
@@ -61,6 +62,8 @@
 \DeclareMathOperator{\E}{\mathbb{E}}
 \DeclareMathOperator{\var}{var}
 \newcommand{\tp}{^{\top}}
+
+\usepackage{graphicx}
 %%
 %% There's a HUGE number of LaTeX packages. Whatever it is you need, search for a package first before rolling your own!
 %%
@@ -125,9 +128,15 @@
 
 \begin{abstract}[english]
 	Ongoing title: \\
-	\textbf{Interactive user modelling for human-in-the-loop machine learning}
-	
 	\textbf{Probabilistic user modelling methods for improving human-in-the-loop machine learning}
+	
+	\textbf{Interactive user modelling for human-in-the-loop machine learning} % NOTE: Interactive and in-the-loop are a bit redundant
+	
+	
+	
+	
+	
+%early comments from Sami: Drop half of the abstract and put it in the intro. Go into the gist and why it is different and what is done immediately. Sami thinks that the gist is “joint model of human and data through active learning, experimental design on a budget”. Add one sentence why it is a hard problem, then add another sentence that “and that is why we …..” to connect to your contribution. Sami thinks that intent modelling in IR is not prediction, but we model and solved it as a prediction problem. Maybe have “relevance of variables” as a keyword since this may be what I am doing. Regarding the title, keep the spirit but focus more. E.g., “human intent modelling for eliciting importance of variables” (knowledge elicitation?). Try to list 5 example titles and then have a meeting with Sami.
 \end{abstract}
 
 %1. What is the bigger picture?
@@ -414,40 +423,68 @@ Noisy observations can particularly happen if the data provider is a noisy sourc
 
 \section{Modelling user interaction for prediction}\label{prob_model_user}
 
-A core idea in the thesis is to model the user interaction with the probabilistic model as observational feedback. These feedbacks can be tied to the model parameters via conditional distributions (feedback models). The posterior inference can then learn the unobserved parameters given data observations (as introduced in the previous section) and the feedback observations (which will be discussed in this section). The feedback models are used to incorporate the user knowledge into the regression models introduced in the previous section. The following subsections introduces the feedback models proposed in Publication I-V and explains how they are tied to the probabilistic models.
+A core idea in the thesis is to model the user interaction with the probabilistic model as observational feedback. These feedbacks can be tied to the model parameters via conditional distributions (feedback models). The posterior inference can then learn the unobserved parameters given data observations (as introduced in the previous section) and the feedback observations (which will be discussed in this section). The feedback models are used to incorporate the user knowledge into the regression models introduced in the previous section. The following subsections explain the feedback models used in Publication I-V, and their relations to the probabilistic models.
 
-%Our general approach is to consider new likelihood function for the user feedback and put appropriate priors on top of that. Explain the feedback likelihoods?
 
 \subsection{User feedback as observation about model parameters}
-%This would be easy to address since the application is trivial and not necessary explain.
-In Publication II and III we target the case where the user has knowledge about the model parameters and is able to provide feedback regarding that if queried... EXPLAIN THE USER AND TASK... We consider the linear regression model with sparsity-inducing spike-and-slab prior on coefficients introduced in Equation \ref{Eq:ss_Bayesian_regression} as the underlying data model. The type of feedback naturally depends on the task and availability of user knowledge. Studies have shown that the type of domain knowledge in prediction tasks can be categprized in a small set \cite{concept_driven_CHI2019}. We consider three simple and natural types of feedback models. 
+%This would be easy to address since the application is trivial.
+Publication II and III target the case where the user has knowledge about the regression parameters and can provide feedback if queried. As mentioned, we consider high dimensional scenarios where few data points are available. An example task could be a drug response prediction given genomic features of patients \cite{drug_response_prediction}. The genomic feature size may exceed thousands of variables, but only a small number of patient data might be available, which make the prediction task challenging. Fortunately, experts in the field may have experience or knowledge from literature about which features, and in what ways, are relevant for this prediction task. If accounted properly, the expert knowledge can help the prediction performance. Another potential scenario is the sentiment prediction problem \cite{liu2015sentiment} when only few texts (e.g., textual reviews of items) with known sentiments (e.g., score of the review) are available. A classical representation of textual data, known as bag-of-words, considers each textual data as a vector of distinct words where the feature value indicates the number of appearance of each word in the text\footnote{It is also common to represent textual data in dense forms such as \cite{dai2015semi}. We use bag-of-words due to its simplicity and interpretability of the features.}. Humans have intuitions about how individual words may be related to the sentiment (e.g., appearance of the word "awful" in a review may indicate low review score). Our goal is to design probabilistic models that can receive these types of expert knowledge, alongside the training data, to boost the prediction performance.  
+
+We consider the linear regression model with sparsity-inducing spike-and-slab prior on coefficients introduced in Equation \ref{Eq:ss_Bayesian_regression} as the underlying data model. The type of feedback naturally depends on the task and availability of user knowledge.  We consider three simple and natural types of user interaction with the model. 
+
+\begin{figure}
+	\includegraphics[width=\linewidth]{Figures/Plate_diagram_KE.pdf}
+	\caption{Plate notation of the prediction model (right; see Equation \ref{Eq:ss_Bayesian_regression}) and user feedback observations (left; see Equations \ref{Eq:fb_on_val_coeff}, \ref{Eq:fb_on_rel_coeff}, and \ref{Eq:fb_on_dir_coeff}). User feedback influences the data model through observations about model parameters. Circles represent variables (observed variables are shaded), and shaded squares are the fixed hyperparameters.}
+	\label{fig:Plate_KE}
+\end{figure}
+
 
 \begin{itemize}
 	\item With some noise, the user can provide feedback about the value of coefficients
 	\begin{equation}\label{Eq:fb_on_val_coeff}
-	f_{j}^{val} \sim \normalpdf(w^j, \omega^2)
+	f_{val}^{j} \sim \normalpdf(w^j, \tau^2),
 	\end{equation}
-	\noindent where $\omega^2$ models the variance of error in user feedback. This type of feedback would be the least likely knowledge that a user may have. But still, in some specific applications, knowledge about value of coefficient may be available through related literature (for example [in some fields they report log(wj)?]) 
+	\noindent where $\tau^2$ models the variance of error in user feedback. Knowledge about value of coefficients is very powerful, however, only available in some specific applications (e.g., exploiting similar trained models or reported values in related literature). 
 	\item With some probability, the user can provide feedback about whether a coefficient should be included or excluded from the model
 	\begin{equation}\label{Eq:fb_on_rel_coeff}
-	f_{j}^{rel} \sim \gamma_j \bernoullipdf(\pi^{rel}) + (1 - \gamma_j) \bernoullipdf(1 - \pi^{rel}).
+	f_{rel}^{j} \sim \gamma^j \bernoullipdf(\pi_{rel}) + (1 - \gamma^j), \bernoullipdf(1 - \pi_{rel}).
 	\end{equation}
-	\noindent where $\pi^{rel}$ indicates the probability that user is correct about the feedback. This relevant/not-relevant feedback is the simplest form of knowledge that a user (domain expert for example) may have about a regression model. 
+	\noindent where $\pi_{rel}$ indicates the probability that user is correct about the feedback. This relevant/not-relevant feedback is the simplest form of knowledge that a user may have about a regression model. 
 	\item With some probability, the user can provide feedback about direction of relevance of a coefficient, i.e., whether a feature is positively or negatively correlated with the response variable
 	\begin{equation}\label{Eq:fb_on_dir_coeff}
-	f_{j}^{dir} \sim I(w^j \geq 0) \bernoullipdf(\pi^{dir}) + I(w^j < 0) \bernoullipdf(1 - \pi^{dir}).
+	f_{dir}^{j} \sim I(w^j \geq 0) \bernoullipdf(\pi_{dir}) + I(w^j < 0) \bernoullipdf(1 - \pi_{dir}),
 	\end{equation}
-	\noindent where $\pi^{dir}$ indicates the probability that user is correct about the feedback.
+	\noindent where $\pi_{dir}$ indicates the probability that user is correct about the feedback.
 \end{itemize}
 
-The connection of the three mentioned feedback with model (Equation \ref{Eq:ss_Bayesian_regression}) is shown as a plate diagram in Figure XXX. The posterior of the unknown parameters given data observations and the user feedback can be written as XXXx
 
-It should be noted that there is no restriction on the amount of feedback (or the types) available for computation of the posterior. The posterior computation is discussed in Section \ref{posteriro_inf}.
+
+The connection of the three mentioned feedback with the data model (Equation \ref{Eq:ss_Bayesian_regression}) is shown as a plate diagram in Figure \ref{fig:Plate_KE}. The full posterior of the unknown parameters given data observations and the user feedback can be described as 
+
+\begin{equation}\label{Eq:Bayes_rule_ss_reg_with_fb}
+p(\bw, \bm{\gamma}, \sigma^2 \mid \bD,\bF) = \frac{p(\bD \mid \bw, \sigma^2)p(F_{val} \mid \bw)p(F_{rel} \mid \bm{\gamma})p(F_{dir} \mid \bw)p(\bw \mid \bm{\gamma})p(\sigma^2)p(\bm{\gamma})}{p(\bD,\bF)},
+\end{equation} 
+
+\noindent where $F_{val}$, $F_{rel}$, and $F_{dir}$ are the sets of collected feedback corresponding to the three considered feedback types and $\bF = (F_{val}, F_{rel}, F_{dir})$. The posterior computation is discussed in Section \ref{posteriro_inf}.
+
+%It should be noted that there is no restriction on the amount of feedback (or the types) available for computation of the posterior. 
+
+
+
+\subsubsection{Related works}
+
+The proposed feedback models provide an intuitive and effortless ways for the user to directly influence the prediction model without caring about the complications of the data model. Classical prior elicitation (see for example \cite{OHagan06,garthwaite2005statistical}) aims at eliciting a distribution to represent the expert's knowledge by asking about summary information such as quantiles of the parameters. This is done through iterations between the expert in the related field and statisticians who design the model. Our work goes beyond pure elicitation as it directly connects the expert to the model and also exploits the training data to facilitate the interaction (will be discussed in Section \ref{interaction}).
+
+Studies have shown that the type of domain knowledge in prediction tasks can be summarize in a small set \cite{concept_driven_CHI2019}. A large body of works have studied the exclusion/inclusion of features in different contexts, for classification  \cite{raghavan2006active,druck2009active,settles2011closing}, and regression \cite{Micallef_elicitation}. These methods are different to ours from the modelling point as we consider sparse models and also the set of possible interactions...
+Pairwise similarity of features has also been investigated in \cite{Homayun_pairwise_UMAP,Homayun_pairwise_ijcai2019}....  Human-in-the-loop feature selection \cite{Correia2019HumanintheLoopFS}.  
 
 \subsection{User feedback as outcome of a cognitive process}
 %This is also easier to explain.
 Publication IV.
 
+
+\subsubsection{Related works}
+HERE I NEED TO CITE OUR LAB WORKS REGARDING THIS?
 
 \subsection{User feedback as data observation} 
 % The problem here is that the work here cannot be generalized to other applications. I need to introduce documents and keywords!
@@ -455,8 +492,8 @@ In many tasks only user feedback is available as observations. An immediate inst
 
 
 
-   
-
+\subsubsection{Related works}
+HERE I NEED TO CITE OUR LAB WORKS REGARDING THIS?
 
 \section{Posterior inference} \label{posteriro_inf}
 
