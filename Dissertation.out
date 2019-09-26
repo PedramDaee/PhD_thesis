@@ -9,7 +9,7 @@
 \BOOKMARK [0][]{chapter.2}{2.\040Probabilistic\040modelling\040of\040data\040and\040user}{}% 9
 \BOOKMARK [1][]{section.2.1}{2.1\040Preliminaries}{chapter.2}% 10
 \BOOKMARK [1][]{section.2.2}{2.2\040Modelling\040data\040for\040prediction}{chapter.2}% 11
-\BOOKMARK [2][]{subsection.2.2.1}{2.2.1\040Bayesian\040Linear\040regression}{section.2.2}% 12
+\BOOKMARK [2][]{subsection.2.2.1}{2.2.1\040Bayesian\040linear\040regression}{section.2.2}% 12
 \BOOKMARK [1][]{section.2.3}{2.3\040Modelling\040user\040interaction\040for\040prediction}{chapter.2}% 13
 \BOOKMARK [2][]{subsection.2.3.1}{2.3.1\040User\040feedback\040as\040observation\040about\040model\040parameters}{section.2.3}% 14
 \BOOKMARK [2][]{subsection.2.3.2}{2.3.2\040User\040feedback\040as\040outcome\040of\040a\040cognitive\040process}{section.2.3}% 15

@@ -17,6 +17,12 @@ Homayun Afrabandpey, Tomi Peltola, and Samuel Kaski.
   International Joint Conferences on Artificial Intelligence Organization, 7
   2019.
 
+\bibitem{amershi2014power}
+Saleema Amershi, Maya Cakmak, William~Bradley Knox, and Todd Kulesza.
+\newblock Power to the people: The role of humans in interactive machine
+  learning.
+\newblock {\em AI Magazine}, 35(4):105--120, 2014.
+
 \bibitem{drug_response_prediction}
 Muhammad Ammad-ud din, Suleiman~A. Khan, Disha Malani, Astrid Murumägi, Olli
   Kallioniemi, Tero Aittokallio, and Samuel Kaski.
@@ -43,6 +49,13 @@ Andrew~M Dai and Quoc~V Le.
 \newblock Semi-supervised sequence learning.
 \newblock In {\em Advances in neural information processing systems}, pages
   3079--3087, 2015.
+
+\bibitem{BEAMES_Endert}
+S.~{Das}, D.~{Cashman}, R.~{Chang}, and A.~{Endert}.
+\newblock Beames: Interactive multimodel steering, selection, and inspection
+  for regression tasks.
+\newblock {\em IEEE Computer Graphics and Applications}, 39(5):20--32, Sep.
+  2019.
 
 \bibitem{Donoho2009observed}
 David Donoho and Jared Tanner.
@@ -81,6 +94,19 @@ Edward~I George and Robert~E McCulloch.
 \newblock {\em Journal of the American Statistical Association},
   88(423):881--889, 1993.
 
+\bibitem{Kapoor2010}
+Ashish Kapoor, Bongshin Lee, Desney Tan, and Eric Horvitz.
+\newblock Interactive optimization for steering machine classification.
+\newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, CHI '10, pages 1343--1352, New York, NY, USA, 2010. ACM.
+
+\bibitem{krause2014infuse}
+Josua Krause, Adam Perer, and Enrico Bertini.
+\newblock {INFUSE}: interactive feature selection for predictive modeling of
+  high dimensional data.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  20(12):1614--1623, 2014.
+
 \bibitem{liu2015sentiment}
 Bing Liu.
 \newblock {\em Sentiment analysis: Mining opinions, sentiments, and emotions}.
@@ -94,6 +120,13 @@ Luana Micallef, Iiris Sundin, Pekka Marttinen, Muhammad Ammad-ud din, Tomi
 \newblock In {\em Proceedings of the 22Nd International Conference on
   Intelligent User Interfaces}, IUI '17, pages 547--552, New York, NY, USA,
   2017. ACM.
+
+\bibitem{muhlbacher2013partition}
+Thomas M{\"u}hlbacher and Harald Piringer.
+\newblock A partition-based framework for building and validating regression
+  models.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  19(12):1962--1971, 2013.
 
 \bibitem{OHagan06}
 Anthony O'Hagan, Caitlin~E. Buck, Alireza Daneshkhah, J.~Richard Eiser, Paul~H.
@@ -112,6 +145,19 @@ Hema Raghavan, Omid Madani, and Rosie Jones.
 \newblock Active learning with feedback on features and instances.
 \newblock {\em Journal of Machine Learning Research}, 7(Aug):1655--1686, 2006.
 
+\bibitem{sacha2017you}
+Dominik Sacha, Michael Sedlmair, Leishi Zhang, John~A Lee, Jaakko Peltonen,
+  Daniel Weiskopf, Stephen~C North, and Daniel~A Keim.
+\newblock What you see is what you can change: Human-centered machine learning
+  by interactive visualization.
+\newblock {\em Neurocomputing}, 268:164--175, 2017.
+
+\bibitem{sarkar2015interactive}
+Advait Sarkar, Mateja Jamnik, Alan~F Blackwell, and Martin Spott.
+\newblock Interactive visual machine learning in spreadsheets.
+\newblock In {\em Visual Languages and Human-Centric Computing (VL/HCC), 2015
+  IEEE Symposium on}, pages 159--163. IEEE, 2015.
+
 \bibitem{seeger2008bayesian}
 Matthias~W Seeger.
 \newblock Bayesian inference and optimal design for the sparse linear model.
@@ -124,6 +170,13 @@ Burr Settles.
 \newblock In {\em Proceedings of the Conference on Empirical Methods in Natural
   Language Processing}, pages 1467--1478, 2011.
 
+\bibitem{Talbot2009}
+Justin Talbot, Bongshin Lee, Ashish Kapoor, and Desney~S. Tan.
+\newblock Ensemblematrix: Interactive visualization to support machine learning
+  with multiple classifiers.
+\newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, CHI '09, pages 1283--1292, New York, NY, USA, 2009. ACM.
+
 \bibitem{lasso2011}
 Robert Tibshirani.
 \newblock Regression shrinkage and selection via the lasso: a retrospective.
@@ -135,5 +188,17 @@ J.~{Ting}, A.~{D'Souza}, and S.~{Schaal}.
 \newblock Automatic outlier detection: A bayesian approach.
 \newblock In {\em Proceedings 2007 IEEE International Conference on Robotics
   and Automation}, pages 2489--2494, April 2007.
+
+\bibitem{Tversky1974}
+Amos Tversky and Daniel Kahneman.
+\newblock Judgment under uncertainty: Heuristics and biases.
+\newblock {\em Science}, 185(4157):1124--1131, 1974.
+
+\bibitem{van2011baobabview}
+Stef Van Den~Elzen and Jarke~J van Wijk.
+\newblock {BaobabView}: Interactive construction and analysis of decision
+  trees.
+\newblock In {\em Proceedings of IEEE Symposium on Visual Analytics Science and
+  Technology (VAST)}, pages 151--160. IEEE, 2011.
 
 \end{thebibliography}

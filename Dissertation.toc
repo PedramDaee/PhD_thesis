@@ -12,15 +12,15 @@
 \contentsline {chapter}{\numberline {2.}Probabilistic modelling of data and user}{15}{chapter.2}
 \contentsline {section}{\numberline {2.1}Preliminaries}{15}{section.2.1}
 \contentsline {section}{\numberline {2.2}Modelling data for prediction}{16}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Bayesian Linear regression}{17}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.1}Bayesian linear regression}{17}{subsection.2.2.1}
 \contentsline {subsubsection}{Sparsity-inducing priors}{19}{section*.10}
 \contentsline {subsubsection}{Detecting outliers}{20}{section*.11}
 \contentsline {section}{\numberline {2.3}Modelling user interaction for prediction}{21}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}User feedback as observation about model parameters}{21}{subsection.2.3.1}
 \contentsline {subsubsection}{Related works}{23}{section*.13}
 \contentsline {subsection}{\numberline {2.3.2}User feedback as outcome of a cognitive process}{23}{subsection.2.3.2}
-\contentsline {subsubsection}{Related works}{24}{section*.15}
-\contentsline {subsection}{\numberline {2.3.3}User feedback as data observation}{24}{subsection.2.3.3}
+\contentsline {subsubsection}{Related works}{25}{section*.15}
+\contentsline {subsection}{\numberline {2.3.3}User feedback as data observation}{25}{subsection.2.3.3}
 \contentsline {subsubsection}{Related works}{25}{section*.16}
 \contentsline {section}{\numberline {2.4}Posterior inference}{25}{section.2.4}
 \contentsline {section}{\numberline {2.5}Key components of the joint model}{25}{section.2.5}
@@ -33,4 +33,4 @@
 \contentsline {section}{\numberline {4.3}User modelling for avoiding overfitting in knowledge elicitation (Publication IV)}{29}{section.4.3}
 \contentsline {chapter}{\numberline {5.}Discussion}{31}{chapter.5}
 \contentsline {chapter}{References}{33}{section*.17}
-\contentsline {chapter}{Publications}{35}{section*.18}
+\contentsline {chapter}{Publications}{37}{section*.18}
