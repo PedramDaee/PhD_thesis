@@ -93,18 +93,22 @@
 \citation{Micallef_elicitation}
 \citation{Tversky1974}
 \citation{garthwaite2005statistical}
+\citation{gershman2015computational}
 \newlabel{Eq:Bayes_rule_ss_reg_with_fb}{{2.15}{23}{User feedback as observation about model parameters}{equation.2.3.15}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Related works}{23}{section*.13}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}User feedback as outcome of a cognitive process}{23}{subsection.2.3.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Plate notation of the prediction model (right; see Equation \ref  {Eq:ss_Bayesian_regression}) and user feedback. The user feedback is generated after observing data model knowledge about probability of relevance of the coefficient (i.e., ($\gamma ^j\mid \mathcal  {D}$)), and therefore is biased. We are interested in inferring the unbiased version of the feedback ($f^j$) to update the parameters of interest in the data model.\relax }}{24}{figure.caption.14}}
-\newlabel{fig:Plate_OF}{{2.2}{24}{Plate notation of the prediction model (right; see Equation \ref {Eq:ss_Bayesian_regression}) and user feedback. The user feedback is generated after observing data model knowledge about probability of relevance of the coefficient (i.e., ($\gamma ^j\mid \bD $)), and therefore is biased. We are interested in inferring the unbiased version of the feedback ($f^j$) to update the parameters of interest in the data model.\relax }{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Plate notation of the prediction model (right; see Equation \ref  {Eq:ss_Bayesian_regression}) and user model for feedback (left). The observed user feedback about the probability of relevance of coefficient, $p(\gamma ^j \mid \mathcal  {D},f^j)$, is biased as it is generated from combination of latent user knowledge about the coefficient (i.e., $p(f^j \mid \gamma ^j$) and information visualized from the data model about probability of relevance of the coefficient (i.e., $p(\gamma ^j\mid \mathcal  {D}$)). We are interested in inferring the unbiased, latent, version of the feedback to update the parameters of interest in the data model.\relax }}{24}{figure.caption.14}}
+\newlabel{fig:Plate_OF}{{2.2}{24}{Plate notation of the prediction model (right; see Equation \ref {Eq:ss_Bayesian_regression}) and user model for feedback (left). The observed user feedback about the probability of relevance of coefficient, $p(\gamma ^j \mid \bD ,f^j)$, is biased as it is generated from combination of latent user knowledge about the coefficient (i.e., $p(f^j \mid \gamma ^j$) and information visualized from the data model about probability of relevance of the coefficient (i.e., $p(\gamma ^j\mid \bD $)). We are interested in inferring the unbiased, latent, version of the feedback to update the parameters of interest in the data model.\relax }{figure.caption.14}{}}
+\citation{bias_warning}
+\newlabel{Eq:Bayesian_update_biased_fb}{{2.16}{25}{User feedback as outcome of a cognitive process}{equation.2.3.16}{}}
+\newlabel{Eq:latent_knowledge_infer}{{2.17}{25}{User feedback as outcome of a cognitive process}{equation.2.3.17}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Related works}{25}{section*.15}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}User feedback as data observation}{25}{subsection.2.3.3}}
-\@writefile{toc}{\contentsline {subsubsection}{Related works}{25}{section*.16}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}Posterior inference}{25}{section.2.4}}
-\newlabel{posteriro_inf}{{2.4}{25}{Posterior inference}{section.2.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.5}Key components of the joint model}{25}{section.2.5}}
-\newlabel{key_comp}{{2.5}{25}{Key components of the joint model}{section.2.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Related works}{26}{section*.16}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Posterior inference}{26}{section.2.4}}
+\newlabel{posteriro_inf}{{2.4}{26}{Posterior inference}{section.2.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Key components of the joint model}{26}{section.2.5}}
+\newlabel{key_comp}{{2.5}{26}{Key components of the joint model}{section.2.5}{}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {3.}User interaction with the probabilistic model}{27}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -137,23 +141,25 @@
 \@writefile{toc}{\contentsline {chapter}{References}{33}{section*.17}}
 \bibcite{Gelman2013}{13}
 \bibcite{spike_slab1993}{14}
-\bibcite{Kapoor2010}{15}
-\bibcite{krause2014infuse}{16}
-\bibcite{liu2015sentiment}{17}
-\bibcite{Micallef_elicitation}{18}
-\bibcite{muhlbacher2013partition}{19}
-\bibcite{OHagan06}{20}
-\bibcite{horseshoe_2017}{21}
-\bibcite{raghavan2006active}{22}
-\bibcite{sacha2017you}{23}
-\bibcite{sarkar2015interactive}{24}
-\bibcite{seeger2008bayesian}{25}
-\bibcite{settles2011closing}{26}
-\bibcite{Talbot2009}{27}
-\bibcite{lasso2011}{28}
-\bibcite{Bayesian_ARD2007}{29}
-\bibcite{Tversky1974}{30}
-\bibcite{van2011baobabview}{31}
+\bibcite{gershman2015computational}{15}
+\bibcite{Kapoor2010}{16}
+\bibcite{krause2014infuse}{17}
+\bibcite{liu2015sentiment}{18}
+\bibcite{Micallef_elicitation}{19}
+\bibcite{muhlbacher2013partition}{20}
+\bibcite{OHagan06}{21}
+\bibcite{horseshoe_2017}{22}
+\bibcite{raghavan2006active}{23}
+\bibcite{sacha2017you}{24}
+\bibcite{sarkar2015interactive}{25}
+\bibcite{seeger2008bayesian}{26}
+\bibcite{settles2011closing}{27}
+\bibcite{Talbot2009}{28}
+\bibcite{lasso2011}{29}
+\bibcite{Bayesian_ARD2007}{30}
+\bibcite{Tversky1974}{31}
+\bibcite{van2011baobabview}{32}
+\bibcite{bias_warning}{33}
 \@writefile{asp}{\item \publication[in]{\relax $\@@underline {\hbox {Pedram Daee}}\mathsurround \z@ $\relax , Joel Pyykk\"o, Dorota G\l {}owacka, and Samuel Kaski}{Interactive Intent Modeling from Multiple Feedback Domains}{Proceedings of the 21st International Conference on Intelligent User Interfaces}{Sonoma, California, USA, 71--75}{March}{2016}}
 \@writefile{toc}{\contentsline {chapter}{Publications}{37}{section*.18}}
 \newlabel{c1}{{Publication\ I}{37}{Publication\ I}{pub.c1.1}{}}\newlabel{c1-long}{{Publication\ I}{37}{Publication\ I}{pub.c1.1}{}}\newlabel{c1-short}{{PI}{37}{P\ I}{pub.c1.1}{}}\newlabel{c1-number}{{I}{37}{I}{pub.c1.1}{}}

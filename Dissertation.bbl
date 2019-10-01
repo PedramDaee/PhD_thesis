@@ -94,6 +94,12 @@ Edward~I George and Robert~E McCulloch.
 \newblock {\em Journal of the American Statistical Association},
   88(423):881--889, 1993.
 
+\bibitem{gershman2015computational}
+Samuel~J Gershman, Eric~J Horvitz, and Joshua~B Tenenbaum.
+\newblock Computational rationality: A converging paradigm for intelligence in
+  brains, minds, and machines.
+\newblock {\em Science}, 349(6245):273--278, 2015.
+
 \bibitem{Kapoor2010}
 Ashish Kapoor, Bongshin Lee, Desney Tan, and Eric Horvitz.
 \newblock Interactive optimization for steering machine classification.
@@ -200,5 +206,12 @@ Stef Van Den~Elzen and Jarke~J van Wijk.
   trees.
 \newblock In {\em Proceedings of IEEE Symposium on Visual Analytics Science and
   Technology (VAST)}, pages 151--160. IEEE, 2011.
+
+\bibitem{bias_warning}
+E.~{Wall}, L.~M. {Blaha}, L.~{Franklin}, and A.~{Endert}.
+\newblock Warning, bias may occur: A proposed approach to detecting cognitive
+  bias in interactive visual analytics.
+\newblock In {\em 2017 IEEE Conference on Visual Analytics Science and
+  Technology (VAST)}, pages 104--115, Oct 2017.
 
 \end{thebibliography}
