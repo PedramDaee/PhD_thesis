@@ -13,7 +13,7 @@
 \BOOKMARK [1][]{section.2.3}{2.3\040Modelling\040user\040interaction\040for\040prediction}{chapter.2}% 13
 \BOOKMARK [2][]{subsection.2.3.1}{2.3.1\040User\040feedback\040as\040observation\040about\040model\040parameters}{section.2.3}% 14
 \BOOKMARK [2][]{subsection.2.3.2}{2.3.2\040User\040feedback\040as\040outcome\040of\040a\040cognitive\040process}{section.2.3}% 15
-\BOOKMARK [2][]{subsection.2.3.3}{2.3.3\040User\040feedback\040as\040data\040observation}{section.2.3}% 16
+\BOOKMARK [2][]{subsection.2.3.3}{2.3.3\040User\040feedback\040for\040intent\040modelling}{section.2.3}% 16
 \BOOKMARK [1][]{section.2.4}{2.4\040Posterior\040inference}{chapter.2}% 17
 \BOOKMARK [1][]{section.2.5}{2.5\040Key\040components\040of\040the\040joint\040model}{chapter.2}% 18
 \BOOKMARK [0][]{chapter.3}{3.\040User\040interaction\040with\040the\040probabilistic\040model}{}% 19
@@ -24,10 +24,10 @@
 \BOOKMARK [1][]{section.4.2}{4.2\040Expert\040knowledge\040elicitation\040for\040high-dimensional\040prediction\040\(Publications\040II\040and\040III\)}{chapter.4}% 24
 \BOOKMARK [1][]{section.4.3}{4.3\040User\040modelling\040for\040avoiding\040overfitting\040in\040knowledge\040elicitation\040\(Publication\040IV\)}{chapter.4}% 25
 \BOOKMARK [0][]{chapter.5}{5.\040Discussion}{}% 26
-\BOOKMARK [0][]{section*.17}{References}{}% 27
-\BOOKMARK [0][]{section*.18}{Publications}{}% 28
-\BOOKMARK [1][]{pub.c1.1}{Publication\040I}{section*.18}% 29
-\BOOKMARK [1][]{pub.j1.1}{Publication\040II}{section*.18}% 30
-\BOOKMARK [1][]{pub.j2.1}{Publication\040III}{section*.18}% 31
-\BOOKMARK [1][]{pub.c2.1}{Publication\040IV}{section*.18}% 32
-\BOOKMARK [1][]{pub.j3.1}{Publication\040V}{section*.18}% 33
+\BOOKMARK [0][]{section*.20}{References}{}% 27
+\BOOKMARK [0][]{section*.21}{Publications}{}% 28
+\BOOKMARK [1][]{pub.c1.1}{Publication\040I}{section*.21}% 29
+\BOOKMARK [1][]{pub.j1.1}{Publication\040II}{section*.21}% 30
+\BOOKMARK [1][]{pub.j2.1}{Publication\040III}{section*.21}% 31
+\BOOKMARK [1][]{pub.c2.1}{Publication\040IV}{section*.21}% 32
+\BOOKMARK [1][]{pub.j3.1}{Publication\040V}{section*.21}% 33

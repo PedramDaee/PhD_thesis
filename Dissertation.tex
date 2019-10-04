@@ -484,11 +484,11 @@ The feedback models proposed in the previous section consider the user as a pass
 \begin{figure}
 	\centering
 	\includegraphics[width=0.80\linewidth]{Figures/Plate_diagram_OF.pdf}
-	\caption{Plate notation of the prediction model (right; see Equation \ref{Eq:ss_Bayesian_regression}) and user model for feedback (left). The observed user feedback about the probability of relevance of coefficient, $p(\gamma^j \mid \bD,f^j)$, is biased as it is generated from combination of latent user knowledge about the coefficient (i.e., $p(f^j \mid \gamma^j$) and information visualized from the data model about probability of relevance of the coefficient (i.e., $p(\gamma^j\mid \bD$)). We are interested in inferring the unbiased, latent, version of the feedback to update the parameters of interest in the data model.}
+	\caption{Plate notation of the prediction model (right; see Equation \ref{Eq:ss_Bayesian_regression}) and user model for feedback (left). The observed user feedback about the probability of relevance of coefficient, $p(\gamma^j \mid \bD,f^j)$, is biased as it is generated from combination of latent user knowledge about the coefficient, i.e., $p(f^j \mid \gamma^j)$, and information visualized from the data model about probability of relevance of the coefficient, i.e., $p(\gamma^j\mid \bD)$. We are interested in inferring the unbiased, latent, version of the feedback to update the parameters of interest in the data model.}
 	\label{fig:Plate_OF}
 \end{figure}
 
-In many interaction scenarios, such as visual analytics or human in the loop machine learning systems, certain aspects of the training data, such as statistics or outputs of the machine learning method, may be revealed to the user during the interaction \cite{BEAMES_Endert,sacha2017you,Homayun_pairwise_UMAP,muhlbacher2013partition,Talbot2009,van2011baobabview,Kapoor2010,krause2014infuse,sarkar2015interactive,Micallef_elicitation}. This is mainly done to provide information about important characteristic of the data to improve decision making or to guide the user to facilitate the interaction. For example, in the mentioned knowledge elicitation tasks, the system may first show what it learns about the coefficient of the linear model from the training data and then ask for the user feedback about the same coefficient. Though very common, this type of interaction is prone to overfitting, as the user feedback may not be independent of the knowledge in the training data, while the machine learning methods commonly assume independence between data and user input. Studies in cognitive science have shown that humans are unintentionally biased toward the pieces of information provided for them \cite{Tversky1974,garthwaite2005statistical}. We propose a user model that accounts for such bias. In other words, the user model assumes that the user is rational \cite{gershman2015computational} and combines the information provided to her with her knowledge and then provides feedback as the outcome of such cognitive procedure. The user model can then undo the bias in the feedback by performing the inverse of the same rational update.
+In many interaction scenarios, such as visual analytics or human in the loop machine learning systems, certain aspects of the training data, such as statistics or outputs of the machine learning method, may be revealed to the user  \cite{BEAMES_Endert,sacha2017you,Homayun_pairwise_UMAP,muhlbacher2013partition,Talbot2009,van2011baobabview,Kapoor2010,krause2014infuse,sarkar2015interactive,Micallef_elicitation}. This is mainly done to provide information about important characteristic of the data to improve decision making or to guide the user to facilitate the interaction. For example, in the mentioned knowledge elicitation tasks, the system may first show what it has learned about the coefficient of the linear model from the training data and then ask for the user feedback about the same coefficient. Though very common, this type of interaction is prone to overfitting, as the user feedback may not be independent of the knowledge in the training data, while the machine learning methods commonly assume independence between data and user input. Studies in cognitive science have shown that humans are unintentionally biased toward the pieces of information provided for them \cite{Tversky1974,garthwaite2005statistical}. We propose a user model that accounts for such bias. In other words, the user model assumes that the user is rational \cite{gershman2015computational} and combines the information provided to her with her knowledge and then provides feedback as the outcome of such cognitive procedure. The user model can then undo the bias in the feedback by performing the inverse of the same rational update.
 
 In particular, we consider the case where the user provides feedback about the probability of relevance of a coefficient. %This new feedback type can be modelled by \ref{Eq:fb_on_rel_coeff} with the difference that both $f_{rel}^{j}$ and $\pi_{rel}^{j}$ are jointly observed as feedback for the $j^{th}$ feature (e.g., the user input  $f_{rel}^{j}=1$ and $\pi_{rel}^{j}=0.8$ describes the user belief that the probability of relevance of the $j^{th}$ feature is $0.8$).
 The belief of the model (based on data alone) about the probability of relevance of the coefficient, i.e., marginal posterior probability $p(\gamma^j \mid \bD)$, is also visualized for the user. We make the assumption that the user is rational in first combining the visualized information from data with her latent knowledge. The reported feedback is the updated knowledge which is naturally biased as it is partially coming from information in the training data. The model should consider this while inferring the posterior of the parameters of interest given the user feedback. Figure \ref{fig:Plate_OF} depicts a schematic of the data and user feedback model for this problem.% (note that we renamed the observed feedback to $f_{bias}^{j}$ and $\pi_{bias}^{j}$).
@@ -499,35 +499,75 @@ We assume that the user is rational and combines her latent knowledge about the 
 p(\gamma^j=1 \mid \bD, f^{j}) \propto p(f^{j}\mid \gamma^j=1)p(\gamma^j =1\mid \bD),
 \end{equation}  
 
-\noindent and provides as feedback the resulting posterior  $p(\gamma^j=1 \mid \bD, f^{j})$. The latent feedback likelihood can be represented as $p(f^{j}\mid \gamma^j) = \pi^j \gamma^j + (1-\pi^j) (1-\gamma^j)$, with $\pi^j$ being the likelihood for for latent feedback when $\gamma^j=1$. By doing the reverse of the Bayesian update in \ref{Eq:Bayesian_update_biased_fb}, we can infer $\pi^j$ as:
+\noindent and provides as feedback the resulting posterior  $p(\gamma^j=1 \mid \bD, f^{j})$. The latent feedback likelihood can be represented as $p(f^{j}\mid \gamma^j) = \pi^j \gamma^j + (1-\pi^j) (1-\gamma^j)$, with $\pi^j$ being the likelihood for latent feedback when $\gamma^j=1$. By doing the reverse of the Bayesian update in \ref{Eq:Bayesian_update_biased_fb}, we can infer $\pi^j$ as:
 
 \begin{equation}\label{Eq:latent_knowledge_infer}
 \pi^j \propto \dfrac{p(\gamma^j=1 \mid \bD, f^{j})}{p(\gamma^j =1\mid \bD)}.
 \end{equation}  
 
-We can then use the inferred user feedback $p(f^{j}\mid \gamma^j)$, instead of the observed one, to update the posterior for the parameters of interest.
+We can then use the inferred user feedback $p(f^{j}\mid \gamma^j)$, instead of the observed one, to update the posterior for the parameters of interest. Publication IV shows in a simple user study that the prediction performance in a simple sentiment analysis task can be improved if the user model accounts for the rational updates that the user may undergo.
 
 \subsubsection{Related works}
-HAVE OTHERS TRIED TO INFER MODE FROM THE USER? MAYBE CITE OUR NEURIPS PAPER AND SOME RL. DO NOT CITE APPLICATIONS HERE.
 
-Several works have investigated methods to extract more from the user feedback alone. Maybe RL works? Our work, is the first to 
+Human bias in interactive tools has been discussed in prior elicitation \cite{garthwaite2005statistical}, and visual analytics \cite{bias_warning}. In particular, \cite{garthwaite2005statistical} reviews the common human biases from psychological literature and provides guidelines for how to reliably extract expert knowledge about uncertain quantities. \cite{bias_warning} proposed a framework for measurement of such biases in visual analytics tools and investigated how to overcome it through informing the user of potential biases. Our work is fundamentally different as we are not limiting or interrupting the interaction (by just following a guideline or showing a warning), but rather, acknowledge the presence of such biases and allow the user model, as part of the system, to account for that.
 
-Potential user bias to information revealed during the interaction has rarely been investigated. \cite{bias_warning} proposed a framework for measurement of such biases in visual analytics tools and investigated how to overcome it through informing the user of potential biases. Our work is different in a sense that we do not interrupt the interaction of the user but rather handle the potential biases by having a user model that accounts for them.  
-%the model fitting to idiosyncrasies in the training data and hence not generalizing to new data
-
-Overfitting has been investigated. Revealing the training data to the user increases the chance of overfitting.  
+%HAVE OTHERS TRIED TO INFER MODE FROM THE USER? MAYBE CITE OUR NEURIPS PAPER AND SOME RL. DO NOT CITE APPLICATIONS HERE.
+%Several works have investigated methods to extract more from the user feedback alone. Maybe RL works? Our work, is the first to 
 
 
-
-\subsection{User feedback as data observation} 
+\subsection{User feedback for intent modelling} 
 % The problem here is that the work here cannot be generalized to other applications. I need to introduce documents and keywords!
-In many tasks only user feedback is available as observations. An immediate instance is the intent modelling in personalised recommender system. Targets of Publication I and V... The model can just be a linear regression. Challenge of limited feedback... In the papers we proposed to augment the type of feedback either by considering new dimension of feedback (e.g., feedback on both keywords and documents) or new type of feedback source (e.g., physiological signal)...
+Intent modelling describes the task of learning the hidden intent of the user from user feedbacks. Unlike the previous mentioned scenarios where the user feedback was used as complementary information to the training data, in Publication I and V the task is to predict the user intent based on user feedback alone. An important instance of this scenario is the interactive personalized search systems where in each iteration the system recommends items and the user provides feedback regarding relevance of recommendations. The goal is not just to better predict relevance of items for the user but rather to find the most relevant item with minimal interaction. In this section, we discuss the probabilistic modelling of this task and later in Section \ref{interaction} discuss how to design the interaction so that the most relevant item can be learned as fast as possible. 
+
+Consider the case where a user is searching for a scientific article by forming a query with keywords. The user is uncertain about the exact description of the article (e.g., the user may not know the tile), however, if the article is recommended, the user can assess the relevance of it. This information seeking task is usually done in several iterations starting with an initial query, assessing the results recommended by the system, and modifying the query with the goal of getting better results. This type of information seeking with the user being uncertain about her information need, is known as exploratory search \cite{Marchionini2006,white2009exploratory} and covers around half of search behaviours of users \cite{Teevan_2004} (see \cite{paba_exploratory_vs_lookup} for more in depth review for exploratory and standard lookup search). The main bottle necks of such search systems are that i) the amount of user feedback that can be gathered is very limited compared to the size of the information space, and ii) the users are mostly sometimes reluctant to give more than few explicit feedback after assessing the recommended results. To tackle these challenges, Publication I, exploits the relationship between articles and their keywords and defines feedback likelihoods on both keywords and articles, providing more flexibility for the user to express its intent. Furthermore, the modelling of noisy implicit feedback, in particular feedback generated from brain activity measured through electroencephalography (EEG) and eye movements, is investigated in Publication V.  
+
+The intent model is defined as function that maps all the keywords (used to express the search intent) and articles to real values, indicating the relevance of each item for the user. As the number of user feedback is few, it is reasonable to use a linear model to define the relation of user feedback on keywords to the hidden intent (denoted by $\bw$)
+
+\begin{align}\label{Eq:feedback_on_kw} 
+f_{kw}^{i} \sim \normalpdf(\bm{x}_i\tp \bw, \sigma_{kw}^2), 
+\end{align}
+
+\noindent where $\sigma_{kw}^2$ models the noise of the keyword feedback. The keywords are represented in the keyword-document matrix $X \in \mathbb{R}^{k \times d}$ where the element $(i,j)$ describes the tf-idf weighting of keyword $i$ (out of $k$ total keywords) in document $j$ (out of $d$ total documents), and $\bm{x}_i\tp$ indicates the $i^{th}$ row of the matrix. As mentioned, we are interested to also model potential user feedback on the documents. We make the simplifying assumption that the expected relevance of a document can be represented as a weighted sum of the expected relevance of keywords that appear in it
+
+\begin{align}\label{Eq:doc_key_relation} 
+ \E[f_{doc}^{j}] = \sum_{i=1}^{k} p_{(i \mid j)}  \E[f_{kw}^{i}],
+\end{align}
+
+\noindent where $f_{doc}^{j}$ indicates the relevance of the $j^{th}$ documents, $\E[.]$ denotes the expected value and $p_{(i \mid j)}$ is the likelihood of the $i^{th}$ keyword being present in the $j^{th}$ document. This likelihood is not available but can approximated by normalizing $X$ such that its columns sum up to one. Denoting the resulting matrix as $\hat{X}$ and following following \ref{Eq:feedback_on_kw}, the feedback for relevance of documents can be described as 
+
+\begin{align}\label{Eq:doc_key_relation} 
+F_{doc} \sim \normalpdf(  \hat{X}\tp X \bw, \sigma_{doc}^2 \eye),
+\end{align}  
+
+\noindent where $F_{doc}=[f_{doc}^{1},\ldots,f_{doc}^{d}]$ is the vector representation of relevance feedback for all documents, and $\sigma_{doc}^2$ models the noise of the document feedback. 
+
+Given user feedback on keywords and documents the posterior of the hidden intent can be learned by assuming a Gaussian prior on the intent weights, i.e., $\bw \sim \normalpdf(0,\tau^2 \eye)$. As the both likelihoods follow a Gaussian distribution, the posterior has a closed form solution and can be derived following the same derivations as the simple linear model in \ref{Eq:lin_rel_simple_posterior}. Figure \ref{fig:Plate_intent_kd} illustrates the schematic of user feedback models and its connection to the latent intent. 
 
 
+\begin{figure}
+	\centering
+	\includegraphics[width=0.80\linewidth]{Figures/Plate_diagram_intent_kd.pdf}
+	\caption{Plate notation of the intent modelling from feedback on recommended documents and keywords. The feature transformation are now shown. The feature for the $i^{th}$ keyword (shown as $x_i$) is the $i^{th}$ row of keyword document matrix $X$, and for the $j^{th}$ document (shown as $x_j$) is the $j^{th}$ column of $\hat{X}\tp X$.}
+	\label{fig:Plate_intent_kd}
+\end{figure}
 
+
+\subsubsection{Implicit feedback model}
+
+The model proposed model is very simple as the noise of feedback is assumed to be known and the only unknown parameter is the intent vector $\bw$. As mentioned, we are interested to consider feedbacks from implicit sources such as neurophysiologic signals gathered from brain activities. The implicit feedback is extremely cheap, as the it requires no physical effort from the user, but at the same time extremely noisy. Our modelling solution is to use the automatic relevance detection model proposed in \ref{Eq:Bayes_rule_ARD} to endow the feedback likelihood to handle the inherent noise in the implicit feedback (here only on keywords, but straightforward to extend) when used in combination of the explicit feedbacks (here only on documents but straightforward to extend). The resulting model is depicted in Figure \ref{fig:Plate_intent_imp}.  
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.80\linewidth]{Figures/Plate_diagram_intent_imp.pdf}
+	\caption{Plate notation of the intent modelling from feedback on recommended documents and noisy, implicit feedback on keywords. The data model is based on \ref{Eq:Bayes_rule_ARD} with the feedbacks as the observational data.}
+	\label{fig:Plate_intent_imp}
+\end{figure}
+
+   
 \subsubsection{Related works}
 HERE I NEED TO CITE OUR LAB WORKS REGARDING THIS?
-
+Intent modelling for article search has been studied in CITES. The user interface proposed in CITE considers a radial space for feedback... document retrieval was modelled differently... only based on user feedback on keywords.
+Has been used also for image retrieval maybe cite a few.
 \section{Posterior inference} \label{posteriro_inf}
 
 

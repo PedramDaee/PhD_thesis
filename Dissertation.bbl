@@ -30,6 +30,14 @@ Muhammad Ammad-ud din, Suleiman~A. Khan, Disha Malani, Astrid Murumägi, Olli
   with kernelized Bayesian matrix factorization}.
 \newblock {\em Bioinformatics}, 32(17):i455--i463, 08 2016.
 
+\bibitem{paba_exploratory_vs_lookup}
+Kumaripaba Athukorala, Dorota Głowacka, Giulio Jacucci, Antti Oulasvirta, and
+  Jilles Vreeken.
+\newblock Is exploratory search different? a comparison of information search
+  behavior for exploratory and lookup tasks.
+\newblock {\em Journal of the Association for Information Science and
+  Technology}, 67(11):2635--2651, 2016.
+
 \bibitem{concept_driven_CHI2019}
 In~Kwon Choi, Taylor Childers, Nirmal~Kumar Raveendranath, Swati Mishra, Kyle
   Harris, and Khairi Reda.
@@ -118,6 +126,11 @@ Bing Liu.
 \newblock {\em Sentiment analysis: Mining opinions, sentiments, and emotions}.
 \newblock Cambridge University Press, 2015.
 
+\bibitem{Marchionini2006}
+Gary Marchionini.
+\newblock Exploratory search: From finding to understanding.
+\newblock {\em Communications of the ACM}, 49(4):41--46, 2006.
+
 \bibitem{Micallef_elicitation}
 Luana Micallef, Iiris Sundin, Pekka Marttinen, Muhammad Ammad-ud din, Tomi
   Peltola, Marta Soare, Giulio Jacucci, and Samuel Kaski.
@@ -183,6 +196,13 @@ Justin Talbot, Bongshin Lee, Ashish Kapoor, and Desney~S. Tan.
 \newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
   Computing Systems}, CHI '09, pages 1283--1292, New York, NY, USA, 2009. ACM.
 
+\bibitem{Teevan_2004}
+Jaime Teevan, Christine Alvarado, Mark~S. Ackerman, and David~R. Karger.
+\newblock The perfect search engine is not enough: A study of orienteering
+  behavior in directed search.
+\newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, CHI '04, pages 415--422, New York, NY, USA, 2004. ACM.
+
 \bibitem{lasso2011}
 Robert Tibshirani.
 \newblock Regression shrinkage and selection via the lasso: a retrospective.
@@ -213,5 +233,11 @@ E.~{Wall}, L.~M. {Blaha}, L.~{Franklin}, and A.~{Endert}.
   bias in interactive visual analytics.
 \newblock In {\em 2017 IEEE Conference on Visual Analytics Science and
   Technology (VAST)}, pages 104--115, Oct 2017.
+
+\bibitem{white2009exploratory}
+Ryen~W White and Resa~A Roth.
+\newblock Exploratory search: Beyond the query-response paradigm.
+\newblock {\em Synthesis lectures on information concepts, retrieval, and
+  services}, 1(1):1--98, 2009.
 
 \end{thebibliography}

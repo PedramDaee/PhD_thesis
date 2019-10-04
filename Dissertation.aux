@@ -97,32 +97,47 @@
 \newlabel{Eq:Bayes_rule_ss_reg_with_fb}{{2.15}{23}{User feedback as observation about model parameters}{equation.2.3.15}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Related works}{23}{section*.13}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}User feedback as outcome of a cognitive process}{23}{subsection.2.3.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Plate notation of the prediction model (right; see Equation \ref  {Eq:ss_Bayesian_regression}) and user model for feedback (left). The observed user feedback about the probability of relevance of coefficient, $p(\gamma ^j \mid \mathcal  {D},f^j)$, is biased as it is generated from combination of latent user knowledge about the coefficient (i.e., $p(f^j \mid \gamma ^j$) and information visualized from the data model about probability of relevance of the coefficient (i.e., $p(\gamma ^j\mid \mathcal  {D}$)). We are interested in inferring the unbiased, latent, version of the feedback to update the parameters of interest in the data model.\relax }}{24}{figure.caption.14}}
-\newlabel{fig:Plate_OF}{{2.2}{24}{Plate notation of the prediction model (right; see Equation \ref {Eq:ss_Bayesian_regression}) and user model for feedback (left). The observed user feedback about the probability of relevance of coefficient, $p(\gamma ^j \mid \bD ,f^j)$, is biased as it is generated from combination of latent user knowledge about the coefficient (i.e., $p(f^j \mid \gamma ^j$) and information visualized from the data model about probability of relevance of the coefficient (i.e., $p(\gamma ^j\mid \bD $)). We are interested in inferring the unbiased, latent, version of the feedback to update the parameters of interest in the data model.\relax }{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Plate notation of the prediction model (right; see Equation \ref  {Eq:ss_Bayesian_regression}) and user model for feedback (left). The observed user feedback about the probability of relevance of coefficient, $p(\gamma ^j \mid \mathcal  {D},f^j)$, is biased as it is generated from combination of latent user knowledge about the coefficient, i.e., $p(f^j \mid \gamma ^j)$, and information visualized from the data model about probability of relevance of the coefficient, i.e., $p(\gamma ^j\mid \mathcal  {D})$. We are interested in inferring the unbiased, latent, version of the feedback to update the parameters of interest in the data model.\relax }}{24}{figure.caption.14}}
+\newlabel{fig:Plate_OF}{{2.2}{24}{Plate notation of the prediction model (right; see Equation \ref {Eq:ss_Bayesian_regression}) and user model for feedback (left). The observed user feedback about the probability of relevance of coefficient, $p(\gamma ^j \mid \bD ,f^j)$, is biased as it is generated from combination of latent user knowledge about the coefficient, i.e., $p(f^j \mid \gamma ^j)$, and information visualized from the data model about probability of relevance of the coefficient, i.e., $p(\gamma ^j\mid \bD )$. We are interested in inferring the unbiased, latent, version of the feedback to update the parameters of interest in the data model.\relax }{figure.caption.14}{}}
+\citation{garthwaite2005statistical}
+\citation{bias_warning}
+\citation{garthwaite2005statistical}
 \citation{bias_warning}
 \newlabel{Eq:Bayesian_update_biased_fb}{{2.16}{25}{User feedback as outcome of a cognitive process}{equation.2.3.16}{}}
 \newlabel{Eq:latent_knowledge_infer}{{2.17}{25}{User feedback as outcome of a cognitive process}{equation.2.3.17}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Related works}{25}{section*.15}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}User feedback as data observation}{25}{subsection.2.3.3}}
-\@writefile{toc}{\contentsline {subsubsection}{Related works}{26}{section*.16}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}Posterior inference}{26}{section.2.4}}
-\newlabel{posteriro_inf}{{2.4}{26}{Posterior inference}{section.2.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.5}Key components of the joint model}{26}{section.2.5}}
-\newlabel{key_comp}{{2.5}{26}{Key components of the joint model}{section.2.5}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3.}User interaction with the probabilistic model}{27}{chapter.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}User feedback for intent modelling}{25}{subsection.2.3.3}}
+\citation{Marchionini2006}
+\citation{white2009exploratory}
+\citation{Teevan_2004}
+\citation{paba_exploratory_vs_lookup}
+\newlabel{Eq:feedback_on_kw}{{2.18}{26}{User feedback for intent modelling}{equation.2.3.18}{}}
+\newlabel{Eq:doc_key_relation}{{2.19}{26}{User feedback for intent modelling}{equation.2.3.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Plate notation of the intent modelling from feedback on recommended documents and keywords. The feature transformation are now shown. The feature for the $i^{th}$ keyword (shown as $x_i$) is the $i^{th}$ row of keyword document matrix $X$, and for the $j^{th}$ document (shown as $x_j$) is the $j^{th}$ column of $\mathaccentV {hat}002{X}^{\top }X$.\relax }}{27}{figure.caption.16}}
+\newlabel{fig:Plate_intent_kd}{{2.3}{27}{Plate notation of the intent modelling from feedback on recommended documents and keywords. The feature transformation are now shown. The feature for the $i^{th}$ keyword (shown as $x_i$) is the $i^{th}$ row of keyword document matrix $X$, and for the $j^{th}$ document (shown as $x_j$) is the $j^{th}$ column of $\hat {X}\tp X$.\relax }{figure.caption.16}{}}
+\newlabel{Eq:doc_key_relation}{{2.20}{27}{User feedback for intent modelling}{equation.2.3.20}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Implicit feedback model}{27}{section*.17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Plate notation of the intent modelling from feedback on recommended documents and noisy, implicit feedback on keywords. The data model is based on \ref  {Eq:Bayes_rule_ARD} with the feedbacks as the observational data.\relax }}{28}{figure.caption.18}}
+\newlabel{fig:Plate_intent_imp}{{2.4}{28}{Plate notation of the intent modelling from feedback on recommended documents and noisy, implicit feedback on keywords. The data model is based on \ref {Eq:Bayes_rule_ARD} with the feedbacks as the observational data.\relax }{figure.caption.18}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Related works}{28}{section*.19}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Posterior inference}{28}{section.2.4}}
+\newlabel{posteriro_inf}{{2.4}{28}{Posterior inference}{section.2.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Key components of the joint model}{28}{section.2.5}}
+\newlabel{key_comp}{{2.5}{28}{Key components of the joint model}{section.2.5}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3.}User interaction with the probabilistic model}{31}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{interaction}{{3}{27}{User interaction with the probabilistic model}{chapter.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Active learning and experimental design}{27}{section.3.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Multi-armed bandits and Bayesian optimization}{27}{section.3.2}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4.}Summary of the Contributions}{29}{chapter.4}}
+\newlabel{interaction}{{3}{31}{User interaction with the probabilistic model}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Active learning and experimental design}{31}{section.3.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Multi-armed bandits and Bayesian optimization}{31}{section.3.2}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4.}Summary of the Contributions}{33}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Interactive intent modelling from multiple feedback domains (Publications I and V)}{29}{section.4.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Expert knowledge elicitation for high-dimensional prediction (Publications II and III)}{29}{section.4.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}User modelling for avoiding overfitting in knowledge elicitation (Publication IV)}{29}{section.4.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Interactive intent modelling from multiple feedback domains (Publications I and V)}{33}{section.4.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Expert knowledge elicitation for high-dimensional prediction (Publications II and III)}{33}{section.4.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}User modelling for avoiding overfitting in knowledge elicitation (Publication IV)}{33}{section.4.3}}
 \bibstyle{plain}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5.}Discussion}{31}{chapter.5}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5.}Discussion}{35}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \bibdata{references}
@@ -130,44 +145,48 @@
 \bibcite{Homayun_pairwise_ijcai2019}{2}
 \bibcite{amershi2014power}{3}
 \bibcite{drug_response_prediction}{4}
-\bibcite{concept_driven_CHI2019}{5}
-\bibcite{Correia2019HumanintheLoopFS}{6}
-\bibcite{dai2015semi}{7}
-\bibcite{BEAMES_Endert}{8}
-\bibcite{Donoho2009observed}{9}
-\bibcite{druck2009active}{10}
-\bibcite{user_modelling_2001}{11}
-\bibcite{garthwaite2005statistical}{12}
-\@writefile{toc}{\contentsline {chapter}{References}{33}{section*.17}}
-\bibcite{Gelman2013}{13}
-\bibcite{spike_slab1993}{14}
-\bibcite{gershman2015computational}{15}
-\bibcite{Kapoor2010}{16}
-\bibcite{krause2014infuse}{17}
-\bibcite{liu2015sentiment}{18}
-\bibcite{Micallef_elicitation}{19}
-\bibcite{muhlbacher2013partition}{20}
-\bibcite{OHagan06}{21}
-\bibcite{horseshoe_2017}{22}
-\bibcite{raghavan2006active}{23}
-\bibcite{sacha2017you}{24}
-\bibcite{sarkar2015interactive}{25}
-\bibcite{seeger2008bayesian}{26}
-\bibcite{settles2011closing}{27}
-\bibcite{Talbot2009}{28}
-\bibcite{lasso2011}{29}
-\bibcite{Bayesian_ARD2007}{30}
-\bibcite{Tversky1974}{31}
-\bibcite{van2011baobabview}{32}
-\bibcite{bias_warning}{33}
+\bibcite{paba_exploratory_vs_lookup}{5}
+\bibcite{concept_driven_CHI2019}{6}
+\bibcite{Correia2019HumanintheLoopFS}{7}
+\bibcite{dai2015semi}{8}
+\bibcite{BEAMES_Endert}{9}
+\bibcite{Donoho2009observed}{10}
+\bibcite{druck2009active}{11}
+\@writefile{toc}{\contentsline {chapter}{References}{37}{section*.20}}
+\bibcite{user_modelling_2001}{12}
+\bibcite{garthwaite2005statistical}{13}
+\bibcite{Gelman2013}{14}
+\bibcite{spike_slab1993}{15}
+\bibcite{gershman2015computational}{16}
+\bibcite{Kapoor2010}{17}
+\bibcite{krause2014infuse}{18}
+\bibcite{liu2015sentiment}{19}
+\bibcite{Marchionini2006}{20}
+\bibcite{Micallef_elicitation}{21}
+\bibcite{muhlbacher2013partition}{22}
+\bibcite{OHagan06}{23}
+\bibcite{horseshoe_2017}{24}
+\bibcite{raghavan2006active}{25}
+\bibcite{sacha2017you}{26}
+\bibcite{sarkar2015interactive}{27}
+\bibcite{seeger2008bayesian}{28}
+\bibcite{settles2011closing}{29}
+\bibcite{Talbot2009}{30}
+\bibcite{Teevan_2004}{31}
+\bibcite{lasso2011}{32}
+\bibcite{Bayesian_ARD2007}{33}
+\bibcite{Tversky1974}{34}
+\bibcite{van2011baobabview}{35}
+\bibcite{bias_warning}{36}
+\bibcite{white2009exploratory}{37}
 \@writefile{asp}{\item \publication[in]{\relax $\@@underline {\hbox {Pedram Daee}}\mathsurround \z@ $\relax , Joel Pyykk\"o, Dorota G\l {}owacka, and Samuel Kaski}{Interactive Intent Modeling from Multiple Feedback Domains}{Proceedings of the 21st International Conference on Intelligent User Interfaces}{Sonoma, California, USA, 71--75}{March}{2016}}
-\@writefile{toc}{\contentsline {chapter}{Publications}{37}{section*.18}}
-\newlabel{c1}{{Publication\ I}{37}{Publication\ I}{pub.c1.1}{}}\newlabel{c1-long}{{Publication\ I}{37}{Publication\ I}{pub.c1.1}{}}\newlabel{c1-short}{{PI}{37}{P\ I}{pub.c1.1}{}}\newlabel{c1-number}{{I}{37}{I}{pub.c1.1}{}}
+\@writefile{toc}{\contentsline {chapter}{Publications}{41}{section*.21}}
+\newlabel{c1}{{Publication\ I}{41}{Publication\ I}{pub.c1.1}{}}\newlabel{c1-long}{{Publication\ I}{41}{Publication\ I}{pub.c1.1}{}}\newlabel{c1-short}{{PI}{41}{P\ I}{pub.c1.1}{}}\newlabel{c1-number}{{I}{41}{I}{pub.c1.1}{}}
 \@writefile{asp}{\item \publication{\relax $\@@underline {\hbox {Pedram Daee}}\mathsurround \z@ $\relax $^*$, Tomi Peltola$^*$, Marta Soare$^*$, and Samuel Kaski}{Knowledge elicitation via sequential probabilistic inference for high-dimensional prediction}{Machine Learning}{106, 9-10, 1599--1620}{}{2017}}
-\newlabel{j1}{{Publication\ II}{39}{Publication\ II}{pub.j1.1}{}}\newlabel{j1-long}{{Publication\ II}{39}{Publication\ II}{pub.j1.1}{}}\newlabel{j1-short}{{PII}{39}{P\ II}{pub.j1.1}{}}\newlabel{j1-number}{{II}{39}{II}{pub.j1.1}{}}
+\newlabel{j1}{{Publication\ II}{43}{Publication\ II}{pub.j1.1}{}}\newlabel{j1-long}{{Publication\ II}{43}{Publication\ II}{pub.j1.1}{}}\newlabel{j1-short}{{PII}{43}{P\ II}{pub.j1.1}{}}\newlabel{j1-number}{{II}{43}{II}{pub.j1.1}{}}
 \@writefile{asp}{\item \publication{ Iiris Sundin$^*$, Tomi Peltola$^*$, Luana Micallef, Homayun Afrabandpey, Marta Soare, Muntasir Mamun Majumder, \relax $\@@underline {\hbox {Pedram Daee}}\mathsurround \z@ $\relax , Chen He, Baris Serim, Aki Havulinna, Caroline Heckman, Giulio Jacucci, Pekka Marttinen, and Samuel Kaski}{Improving genomics-based predictions for precision medicine through active elicitation of expert knowledge}{Bioinformatics}{34, 13, i395\IeC {\textendash }i403}{}{2018}}
-\newlabel{j2}{{Publication\ III}{41}{Publication\ III}{pub.j2.1}{}}\newlabel{j2-long}{{Publication\ III}{41}{Publication\ III}{pub.j2.1}{}}\newlabel{j2-short}{{PIII}{41}{P\ III}{pub.j2.1}{}}\newlabel{j2-number}{{III}{41}{III}{pub.j2.1}{}}
+\newlabel{j2}{{Publication\ III}{45}{Publication\ III}{pub.j2.1}{}}\newlabel{j2-long}{{Publication\ III}{45}{Publication\ III}{pub.j2.1}{}}\newlabel{j2-short}{{PIII}{45}{P\ III}{pub.j2.1}{}}\newlabel{j2-number}{{III}{45}{III}{pub.j2.1}{}}
 \@writefile{asp}{\item \publication[in]{\relax $\@@underline {\hbox {Pedram Daee}}\mathsurround \z@ $\relax $^*$, Tomi Peltola$^*$, Aki Vehtari, and Samuel Kaski}{User Modelling for Avoiding Overfitting in Interactive Knowledge Elicitation for Prediction}{Proceedings of the 23rd International Conference on Intelligent User Interfaces}{Tokyo, Japan, 305--310}{March}{2018}}
-\newlabel{c2}{{Publication\ IV}{43}{Publication\ IV}{pub.c2.1}{}}\newlabel{c2-long}{{Publication\ IV}{43}{Publication\ IV}{pub.c2.1}{}}\newlabel{c2-short}{{PIV}{43}{P\ IV}{pub.c2.1}{}}\newlabel{c2-number}{{IV}{43}{IV}{pub.c2.1}{}}
+\newlabel{c2}{{Publication\ IV}{47}{Publication\ IV}{pub.c2.1}{}}\newlabel{c2-long}{{Publication\ IV}{47}{Publication\ IV}{pub.c2.1}{}}\newlabel{c2-short}{{PIV}{47}{P\ IV}{pub.c2.1}{}}\newlabel{c2-number}{{IV}{47}{IV}{pub.c2.1}{}}
 \@writefile{asp}{\item \publication{Giulio Jacucci, Oswald Barral, \relax $\@@underline {\hbox {Pedram Daee}}\mathsurround \z@ $\relax , Markus Wenzel, Baris Serim, Tuukka Ruotsalo, Patrik Pluchino, Jonathan Freeman, Luciano Gamberini, Samuel Kaski, Benjamin Blankertz}{Integrating Neurophysiological Relevance Feedback in Intent Modeling for Information Retrieval}{Journal of the Association for Information Science and Technology}{}{}{2019}}
-\newlabel{j3}{{Publication\ V}{45}{Publication\ V}{pub.j3.1}{}}\newlabel{j3-long}{{Publication\ V}{45}{Publication\ V}{pub.j3.1}{}}\newlabel{j3-short}{{PV}{45}{P\ V}{pub.j3.1}{}}\newlabel{j3-number}{{V}{45}{V}{pub.j3.1}{}}
+\newlabel{j3}{{Publication\ V}{49}{Publication\ V}{pub.j3.1}{}}\newlabel{j3-long}{{Publication\ V}{49}{Publication\ V}{pub.j3.1}{}}\newlabel{j3-short}{{PV}{49}{P\ V}{pub.j3.1}{}}\newlabel{j3-number}{{V}{49}{V}{pub.j3.1}{}}
