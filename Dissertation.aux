@@ -115,15 +115,26 @@
 \newlabel{Eq:doc_key_relation}{{2.19}{26}{User feedback for intent modelling}{equation.2.3.19}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Plate notation of the intent modelling from feedback on recommended documents and keywords. The feature transformation are now shown. The feature for the $i^{th}$ keyword (shown as $x_i$) is the $i^{th}$ row of keyword document matrix $X$, and for the $j^{th}$ document (shown as $x_j$) is the $j^{th}$ column of $\mathaccentV {hat}002{X}^{\top }X$.\relax }}{27}{figure.caption.16}}
 \newlabel{fig:Plate_intent_kd}{{2.3}{27}{Plate notation of the intent modelling from feedback on recommended documents and keywords. The feature transformation are now shown. The feature for the $i^{th}$ keyword (shown as $x_i$) is the $i^{th}$ row of keyword document matrix $X$, and for the $j^{th}$ document (shown as $x_j$) is the $j^{th}$ column of $\hat {X}\tp X$.\relax }{figure.caption.16}{}}
-\newlabel{Eq:doc_key_relation}{{2.20}{27}{User feedback for intent modelling}{equation.2.3.20}{}}
+\newlabel{Eq:doc_key_relation_vector}{{2.20}{27}{User feedback for intent modelling}{equation.2.3.20}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Implicit feedback model}{27}{section*.17}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Plate notation of the intent modelling from feedback on recommended documents and noisy, implicit feedback on keywords. The data model is based on \ref  {Eq:Bayes_rule_ARD} with the feedbacks as the observational data.\relax }}{28}{figure.caption.18}}
-\newlabel{fig:Plate_intent_imp}{{2.4}{28}{Plate notation of the intent modelling from feedback on recommended documents and noisy, implicit feedback on keywords. The data model is based on \ref {Eq:Bayes_rule_ARD} with the feedbacks as the observational data.\relax }{figure.caption.18}{}}
+\citation{GlowIUI2013}
+\citation{ruotsalo2015interactive}
+\citation{Ruotsalo2018}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Plate notation of the intent modelling from feedback on recommended documents and noisy, implicit feedback on keywords. The data model is based on \ref  {Eq:ard_Bayesian_regression} with the feedbacks as the observational data. The feature vector of documents follows the transformation introduced in equation \ref  {Eq:doc_key_relation_vector}\relax }}{28}{figure.caption.18}}
+\newlabel{fig:Plate_intent_imp}{{2.4}{28}{Plate notation of the intent modelling from feedback on recommended documents and noisy, implicit feedback on keywords. The data model is based on \ref {Eq:ard_Bayesian_regression} with the feedbacks as the observational data. The feature vector of documents follows the transformation introduced in equation \ref {Eq:doc_key_relation_vector}\relax }{figure.caption.18}{}}
+\newlabel{Eq:imp_fb_on_kw}{{2.21}{28}{Implicit feedback model}{equation.2.3.21}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Related works}{28}{section*.19}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}Posterior inference}{28}{section.2.4}}
-\newlabel{posteriro_inf}{{2.4}{28}{Posterior inference}{section.2.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.5}Key components of the joint model}{28}{section.2.5}}
-\newlabel{key_comp}{{2.5}{28}{Key components of the joint model}{section.2.5}{}}
+\citation{Gelman2013}
+\citation{STAN}
+\citation{bingham2018pyro}
+\citation{Bayesian_workflow_cog_sci_2019}
+\citation{Gelman2013}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Posterior inference}{29}{section.2.4}}
+\newlabel{posteriro_inf}{{2.4}{29}{Posterior inference}{section.2.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Sampling based methods}{29}{section*.20}}
+\@writefile{toc}{\contentsline {subsubsection}{Deterministic posterior approximation}{29}{section*.21}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Key components of the joint model}{30}{section.2.5}}
+\newlabel{key_comp}{{2.5}{30}{Key components of the joint model}{section.2.5}{}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {3.}User interaction with the probabilistic model}{31}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -146,41 +157,47 @@
 \bibcite{amershi2014power}{3}
 \bibcite{drug_response_prediction}{4}
 \bibcite{paba_exploratory_vs_lookup}{5}
-\bibcite{concept_driven_CHI2019}{6}
-\bibcite{Correia2019HumanintheLoopFS}{7}
-\bibcite{dai2015semi}{8}
-\bibcite{BEAMES_Endert}{9}
-\bibcite{Donoho2009observed}{10}
-\bibcite{druck2009active}{11}
-\@writefile{toc}{\contentsline {chapter}{References}{37}{section*.20}}
-\bibcite{user_modelling_2001}{12}
-\bibcite{garthwaite2005statistical}{13}
-\bibcite{Gelman2013}{14}
-\bibcite{spike_slab1993}{15}
-\bibcite{gershman2015computational}{16}
-\bibcite{Kapoor2010}{17}
-\bibcite{krause2014infuse}{18}
-\bibcite{liu2015sentiment}{19}
-\bibcite{Marchionini2006}{20}
-\bibcite{Micallef_elicitation}{21}
-\bibcite{muhlbacher2013partition}{22}
-\bibcite{OHagan06}{23}
-\bibcite{horseshoe_2017}{24}
-\bibcite{raghavan2006active}{25}
-\bibcite{sacha2017you}{26}
-\bibcite{sarkar2015interactive}{27}
-\bibcite{seeger2008bayesian}{28}
-\bibcite{settles2011closing}{29}
-\bibcite{Talbot2009}{30}
-\bibcite{Teevan_2004}{31}
-\bibcite{lasso2011}{32}
-\bibcite{Bayesian_ARD2007}{33}
-\bibcite{Tversky1974}{34}
-\bibcite{van2011baobabview}{35}
-\bibcite{bias_warning}{36}
-\bibcite{white2009exploratory}{37}
+\bibcite{bingham2018pyro}{6}
+\bibcite{STAN}{7}
+\bibcite{concept_driven_CHI2019}{8}
+\bibcite{Correia2019HumanintheLoopFS}{9}
+\bibcite{dai2015semi}{10}
+\bibcite{BEAMES_Endert}{11}
+\@writefile{toc}{\contentsline {chapter}{References}{37}{section*.22}}
+\bibcite{Donoho2009observed}{12}
+\bibcite{druck2009active}{13}
+\bibcite{user_modelling_2001}{14}
+\bibcite{garthwaite2005statistical}{15}
+\bibcite{Gelman2013}{16}
+\bibcite{spike_slab1993}{17}
+\bibcite{gershman2015computational}{18}
+\bibcite{GlowIUI2013}{19}
+\bibcite{Kapoor2010}{20}
+\bibcite{krause2014infuse}{21}
+\bibcite{liu2015sentiment}{22}
+\bibcite{Marchionini2006}{23}
+\bibcite{Micallef_elicitation}{24}
+\bibcite{muhlbacher2013partition}{25}
+\bibcite{OHagan06}{26}
+\bibcite{horseshoe_2017}{27}
+\bibcite{raghavan2006active}{28}
+\bibcite{ruotsalo2015interactive}{29}
+\bibcite{Ruotsalo2018}{30}
+\bibcite{sacha2017you}{31}
+\bibcite{sarkar2015interactive}{32}
+\bibcite{Bayesian_workflow_cog_sci_2019}{33}
+\bibcite{seeger2008bayesian}{34}
+\bibcite{settles2011closing}{35}
+\bibcite{Talbot2009}{36}
+\bibcite{Teevan_2004}{37}
+\bibcite{lasso2011}{38}
+\bibcite{Bayesian_ARD2007}{39}
+\bibcite{Tversky1974}{40}
+\bibcite{van2011baobabview}{41}
+\bibcite{bias_warning}{42}
+\bibcite{white2009exploratory}{43}
 \@writefile{asp}{\item \publication[in]{\relax $\@@underline {\hbox {Pedram Daee}}\mathsurround \z@ $\relax , Joel Pyykk\"o, Dorota G\l {}owacka, and Samuel Kaski}{Interactive Intent Modeling from Multiple Feedback Domains}{Proceedings of the 21st International Conference on Intelligent User Interfaces}{Sonoma, California, USA, 71--75}{March}{2016}}
-\@writefile{toc}{\contentsline {chapter}{Publications}{41}{section*.21}}
+\@writefile{toc}{\contentsline {chapter}{Publications}{41}{section*.23}}
 \newlabel{c1}{{Publication\ I}{41}{Publication\ I}{pub.c1.1}{}}\newlabel{c1-long}{{Publication\ I}{41}{Publication\ I}{pub.c1.1}{}}\newlabel{c1-short}{{PI}{41}{P\ I}{pub.c1.1}{}}\newlabel{c1-number}{{I}{41}{I}{pub.c1.1}{}}
 \@writefile{asp}{\item \publication{\relax $\@@underline {\hbox {Pedram Daee}}\mathsurround \z@ $\relax $^*$, Tomi Peltola$^*$, Marta Soare$^*$, and Samuel Kaski}{Knowledge elicitation via sequential probabilistic inference for high-dimensional prediction}{Machine Learning}{106, 9-10, 1599--1620}{}{2017}}
 \newlabel{j1}{{Publication\ II}{43}{Publication\ II}{pub.j1.1}{}}\newlabel{j1-long}{{Publication\ II}{43}{Publication\ II}{pub.j1.1}{}}\newlabel{j1-short}{{PII}{43}{P\ II}{pub.j1.1}{}}\newlabel{j1-number}{{II}{43}{II}{pub.j1.1}{}}

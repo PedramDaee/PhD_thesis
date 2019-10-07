@@ -38,6 +38,20 @@ Kumaripaba Athukorala, Dorota Głowacka, Giulio Jacucci, Antti Oulasvirta, and
 \newblock {\em Journal of the Association for Information Science and
   Technology}, 67(11):2635--2651, 2016.
 
+\bibitem{bingham2018pyro}
+Eli Bingham, Jonathan~P. Chen, Martin Jankowiak, Fritz Obermeyer, Neeraj
+  Pradhan, Theofanis Karaletsos, Rohit Singh, Paul Szerlip, Paul Horsfall, and
+  Noah~D. Goodman.
+\newblock {Pyro: Deep Universal Probabilistic Programming}.
+\newblock {\em Journal of Machine Learning Research}, 2018.
+
+\bibitem{STAN}
+Bob Carpenter, Andrew Gelman, Matthew Hoffman, Daniel Lee, Ben Goodrich,
+  Michael Betancourt, Marcus Brubaker, Jiqiang Guo, Peter Li, and Allen
+  Riddell.
+\newblock Stan: A probabilistic programming language.
+\newblock {\em Journal of Statistical Software, Articles}, 76(1):1--32, 2017.
+
 \bibitem{concept_driven_CHI2019}
 In~Kwon Choi, Taylor Childers, Nirmal~Kumar Raveendranath, Swati Mishra, Kyle
   Harris, and Khairi Reda.
@@ -108,6 +122,15 @@ Samuel~J Gershman, Eric~J Horvitz, and Joshua~B Tenenbaum.
   brains, minds, and machines.
 \newblock {\em Science}, 349(6245):273--278, 2015.
 
+\bibitem{GlowIUI2013}
+Dorota Głowacka, Tuukka Ruotsalo, Ksenia Konuyshkova, kumaripaba Athukorala,
+  Samuel Kaski, and Giulio Jacucci.
+\newblock Directing exploratory search: Reinforcement learning from user
+  interactions with keywords.
+\newblock In {\em Proceedings of the 2013 International Conference on
+  Intelligent User Interfaces}, IUI '13, pages 117--128, New York, NY, USA,
+  2013. ACM.
+
 \bibitem{Kapoor2010}
 Ashish Kapoor, Bongshin Lee, Desney Tan, and Eric Horvitz.
 \newblock Interactive optimization for steering machine classification.
@@ -164,6 +187,17 @@ Hema Raghavan, Omid Madani, and Rosie Jones.
 \newblock Active learning with feedback on features and instances.
 \newblock {\em Journal of Machine Learning Research}, 7(Aug):1655--1686, 2006.
 
+\bibitem{ruotsalo2015interactive}
+Tuukka Ruotsalo, Giulio Jacucci, Petri Myllym{\"a}ki, and Samuel Kaski.
+\newblock Interactive intent modeling: Information discovery beyond search.
+\newblock {\em Communications of the ACM}, 58(1):86--92, 2015.
+
+\bibitem{Ruotsalo2018}
+Tuukka Ruotsalo, Jaakko Peltonen, Manuel J.~A. Eugster, Dorota Głowacka,
+  Patrik Flor{\'e}en, Petri Myllym\"{a}ki, Giulio Jacucci, and Samuel Kaski.
+\newblock Interactive intent modeling for exploratory search.
+\newblock {\em ACM Trans. Inf. Syst.}, 36(4):44:1--44:46, October 2018.
+
 \bibitem{sacha2017you}
 Dominik Sacha, Michael Sedlmair, Leishi Zhang, John~A Lee, Jaakko Peltonen,
   Daniel Weiskopf, Stephen~C North, and Daniel~A Keim.
@@ -176,6 +210,11 @@ Advait Sarkar, Mateja Jamnik, Alan~F Blackwell, and Martin Spott.
 \newblock Interactive visual machine learning in spreadsheets.
 \newblock In {\em Visual Languages and Human-Centric Computing (VL/HCC), 2015
   IEEE Symposium on}, pages 159--163. IEEE, 2015.
+
+\bibitem{Bayesian_workflow_cog_sci_2019}
+Daniel~J Schad, Michael Betancourt, and Shravan Vasishth.
+\newblock Toward a principled bayesian workflow in cognitive science.
+\newblock {\em arXiv preprint arXiv:1904.12765}, 2019.
 
 \bibitem{seeger2008bayesian}
 Matthias~W Seeger.

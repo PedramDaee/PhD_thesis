@@ -519,7 +519,7 @@ Human bias in interactive tools has been discussed in prior elicitation \cite{ga
 % The problem here is that the work here cannot be generalized to other applications. I need to introduce documents and keywords!
 Intent modelling describes the task of learning the hidden intent of the user from user feedbacks. Unlike the previous mentioned scenarios where the user feedback was used as complementary information to the training data, in Publication I and V the task is to predict the user intent based on user feedback alone. An important instance of this scenario is the interactive personalized search systems where in each iteration the system recommends items and the user provides feedback regarding relevance of recommendations. The goal is not just to better predict relevance of items for the user but rather to find the most relevant item with minimal interaction. In this section, we discuss the probabilistic modelling of this task and later in Section \ref{interaction} discuss how to design the interaction so that the most relevant item can be learned as fast as possible. 
 
-Consider the case where a user is searching for a scientific article by forming a query with keywords. The user is uncertain about the exact description of the article (e.g., the user may not know the tile), however, if the article is recommended, the user can assess the relevance of it. This information seeking task is usually done in several iterations starting with an initial query, assessing the results recommended by the system, and modifying the query with the goal of getting better results. This type of information seeking with the user being uncertain about her information need, is known as exploratory search \cite{Marchionini2006,white2009exploratory} and covers around half of search behaviours of users \cite{Teevan_2004} (see \cite{paba_exploratory_vs_lookup} for more in depth review for exploratory and standard lookup search). The main bottle necks of such search systems are that i) the amount of user feedback that can be gathered is very limited compared to the size of the information space, and ii) the users are mostly sometimes reluctant to give more than few explicit feedback after assessing the recommended results. To tackle these challenges, Publication I, exploits the relationship between articles and their keywords and defines feedback likelihoods on both keywords and articles, providing more flexibility for the user to express its intent. Furthermore, the modelling of noisy implicit feedback, in particular feedback generated from brain activity measured through electroencephalography (EEG) and eye movements, is investigated in Publication V.  
+Consider the case where a user is searching for a scientific article by forming a query with keywords. The user is uncertain about the exact description of the article (e.g., the user may not know the tile), however, if the article is recommended, the user can assess the relevance of it. This information seeking task is usually done in several iterations starting with an initial query, assessing the results recommended by the system, and modifying the query with the goal of getting better results. This type of information seeking with the user being uncertain about her information need, is known as exploratory search \cite{Marchionini2006,white2009exploratory} and covers around half of search behaviours of users \cite{Teevan_2004} (see \cite{paba_exploratory_vs_lookup} for more in depth review for exploratory and standard lookup search). The main bottle necks of such search systems are that (i) the amount of user feedback that can be gathered is very limited compared to the size of the information space, and (ii) the users are mostly sometimes reluctant to give more than few explicit feedback after assessing the recommended results. To tackle these challenges, Publication I, exploits the relationship between articles and their keywords and defines feedback likelihoods on both keywords and articles, providing more flexibility for the user to express its intent. Furthermore, the modelling of noisy implicit feedback, in particular feedback generated from brain activity measured through electroencephalography (EEG) and eye movements, is investigated in Publication V.  
 
 The intent model is defined as function that maps all the keywords (used to express the search intent) and articles to real values, indicating the relevance of each item for the user. As the number of user feedback is few, it is reasonable to use a linear model to define the relation of user feedback on keywords to the hidden intent (denoted by $\bw$)
 
@@ -535,7 +535,7 @@ f_{kw}^{i} \sim \normalpdf(\bm{x}_i\tp \bw, \sigma_{kw}^2),
 
 \noindent where $f_{doc}^{j}$ indicates the relevance of the $j^{th}$ documents, $\E[.]$ denotes the expected value and $p_{(i \mid j)}$ is the likelihood of the $i^{th}$ keyword being present in the $j^{th}$ document. This likelihood is not available but can approximated by normalizing $X$ such that its columns sum up to one. Denoting the resulting matrix as $\hat{X}$ and following following \ref{Eq:feedback_on_kw}, the feedback for relevance of documents can be described as 
 
-\begin{align}\label{Eq:doc_key_relation} 
+\begin{align}\label{Eq:doc_key_relation_vector} 
 F_{doc} \sim \normalpdf(  \hat{X}\tp X \bw, \sigma_{doc}^2 \eye),
 \end{align}  
 
@@ -554,22 +554,40 @@ Given user feedback on keywords and documents the posterior of the hidden intent
 
 \subsubsection{Implicit feedback model}
 
-The model proposed model is very simple as the noise of feedback is assumed to be known and the only unknown parameter is the intent vector $\bw$. As mentioned, we are interested to consider feedbacks from implicit sources such as neurophysiologic signals gathered from brain activities. The implicit feedback is extremely cheap, as the it requires no physical effort from the user, but at the same time extremely noisy. Our modelling solution is to use the automatic relevance detection model proposed in \ref{Eq:Bayes_rule_ARD} to endow the feedback likelihood to handle the inherent noise in the implicit feedback (here only on keywords, but straightforward to extend) when used in combination of the explicit feedbacks (here only on documents but straightforward to extend). The resulting model is depicted in Figure \ref{fig:Plate_intent_imp}.  
+The model proposed model is very simple as the noise of feedback is assumed to be known and the only unknown parameter is the intent vector $\bw$. As mentioned, we are interested to consider feedbacks from implicit sources such as neurophysiologic signals gathered from brain activities\footnote{Note that here we assume that the implicit feedbacks, EEG signals, are already converted to a continuous relevance value (see Publication V for details about this conversion).}. The implicit feedback is extremely cheap, as the it requires no physical effort from the user, but at the same time extremely noisy. Our modelling solution is to use the automatic relevance detection model proposed in \ref{Eq:ard_Bayesian_regression} to endow the feedback likelihood handle the inherent noise in the implicit feedback when used in combination of the explicit feedbacks. For simplicity, let's assume that only the keyword feedback is generated from an implicit source (it is straightforward to consider a similar feedback source for documents or to consider both explicit and implicit feedback for keywords or documents). The implicit feedback likelihood for keywords can be expressed as 
+
+\begin{align}\label{Eq:imp_fb_on_kw} 
+f_{kw}^{i} \sim \normalpdf(\bm{x}_i\tp\bw,\frac{\sigma_{kw}^2}{\nu_i}),
+\end{align}  
+
+\noindent where the parameters follow the model \ref{Eq:ard_Bayesian_regression}. The model can then infer the accuracy of feedback $\nu_i$ based on the observed feedback and handle the high uncertainty in implicit feedback. The resulting model for a case of availability of explicit feedback on documents and implicit feedback on keywords is depicted in Figure \ref{fig:Plate_intent_imp}. The resulting posterior is analytically intractable.  
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.80\linewidth]{Figures/Plate_diagram_intent_imp.pdf}
-	\caption{Plate notation of the intent modelling from feedback on recommended documents and noisy, implicit feedback on keywords. The data model is based on \ref{Eq:Bayes_rule_ARD} with the feedbacks as the observational data.}
+	\caption{Plate notation of the intent modelling from feedback on recommended documents and noisy, implicit feedback on keywords. The data model is based on \ref{Eq:ard_Bayesian_regression} with the feedbacks as the observational data. The feature vector of documents follows the transformation introduced in equation \ref{Eq:doc_key_relation_vector}}
 	\label{fig:Plate_intent_imp}
 \end{figure}
 
    
 \subsubsection{Related works}
-HERE I NEED TO CITE OUR LAB WORKS REGARDING THIS?
-Intent modelling for article search has been studied in CITES. The user interface proposed in CITE considers a radial space for feedback... document retrieval was modelled differently... only based on user feedback on keywords.
-Has been used also for image retrieval maybe cite a few.
-\section{Posterior inference} \label{posteriro_inf}
+Intent modelling for article search has been studied in  \cite{GlowIUI2013,ruotsalo2015interactive,Ruotsalo2018}. These works are different to ours as they only define the intent on keywords and then use the learned intent as an input to a separate retrieval model (based on a standard language model) to retrieve ranked documents, while document retrieval is a natural outcome of the document feedback likelihood in our work. Furthermore, the previous methods did not consider the option of user providing feedback on documents. We borrowed the same user interface for providing feedback on keywords which is based on the idea of visualizing the top relevant keywords in a radar-like interface where the distance to center for each keyword is proportional to the predicted relevance from the intent model. The user then can provide feedback by dragging a keyword toward the center (indicating positive relevance) or further away from the center (indicating negative feedback). We added document feedback through clicks or bookmarking. 
 
+
+
+\section{Posterior inference} \label{posteriro_inf}
+Other than simple models (like the linear regression introduced in \ref{Eq:lin_rel_simple_posterior}) the models proposed in this chapter do not have a closed-form posterior and posterior predictive distributions. For low dimensional posteriors, it is still practical to approximate the posterior distribution by simulation methods such as numerical computation on girds or Monte Carlo simulations (see \cite[Chapter~10]{Gelman2013} for a review). However, as mentioned, we are interested on high-dimensional problems (e.g., sentiment analysis or search with textual data or drug prediction with genomic data), where the simple methods cannot scale well due to the curse of dimensionality (the number of evaluations grows exponentially with respect to the dimension). There are two general family of methods to approach such intractable posterior.
+
+\subsubsection{Sampling based methods}
+
+MCMC.. 
+Recent advances in sampling based methods has resulted in probabilistic programming languages that such as Stan \cite{STAN} and Pyro \cite{bingham2018pyro} that made the computation of Bayesian inference straightforward for end users. The user of such software needs to declare the inference problem, and the probabilistic programming language performs the inference (for example using and provides posterior samples that can be used for next steps (for example see \cite{Bayesian_workflow_cog_sci_2019} for a step-by-step guides to do Bayesian modelling and inference using Stan).
+
+\subsubsection{Deterministic posterior approximation}
+
+\begin{itemize}
+	\item normal (Laplace) approximation where the posterior is approximated with multivariate normal distribution (see \cite[Chapter~4]{Gelman2013} for a review), MORE IN chapter 13
+\end{itemize}
 
 \section{Key components of the joint model}\label{key_comp}
 

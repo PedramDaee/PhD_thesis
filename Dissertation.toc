@@ -23,8 +23,10 @@
 \contentsline {subsection}{\numberline {2.3.3}User feedback for intent modelling}{25}{subsection.2.3.3}
 \contentsline {subsubsection}{Implicit feedback model}{27}{section*.17}
 \contentsline {subsubsection}{Related works}{28}{section*.19}
-\contentsline {section}{\numberline {2.4}Posterior inference}{28}{section.2.4}
-\contentsline {section}{\numberline {2.5}Key components of the joint model}{28}{section.2.5}
+\contentsline {section}{\numberline {2.4}Posterior inference}{29}{section.2.4}
+\contentsline {subsubsection}{Sampling based methods}{29}{section*.20}
+\contentsline {subsubsection}{Deterministic posterior approximation}{29}{section*.21}
+\contentsline {section}{\numberline {2.5}Key components of the joint model}{30}{section.2.5}
 \contentsline {chapter}{\numberline {3.}User interaction with the probabilistic model}{31}{chapter.3}
 \contentsline {section}{\numberline {3.1}Active learning and experimental design}{31}{section.3.1}
 \contentsline {section}{\numberline {3.2}Multi-armed bandits and Bayesian optimization}{31}{section.3.2}
@@ -33,5 +35,5 @@
 \contentsline {section}{\numberline {4.2}Expert knowledge elicitation for high-dimensional prediction (Publications II and III)}{33}{section.4.2}
 \contentsline {section}{\numberline {4.3}User modelling for avoiding overfitting in knowledge elicitation (Publication IV)}{33}{section.4.3}
 \contentsline {chapter}{\numberline {5.}Discussion}{35}{chapter.5}
-\contentsline {chapter}{References}{37}{section*.20}
-\contentsline {chapter}{Publications}{41}{section*.21}
+\contentsline {chapter}{References}{37}{section*.22}
+\contentsline {chapter}{Publications}{41}{section*.23}
