@@ -295,7 +295,7 @@ p(\theta \mid \bD) = \frac{p(\bD \mid \theta)p(\theta)}{p(\bD)}.
 
 Where $p(\theta)$ represents the prior belief about $\theta$ and $p(\bD)$ is called the marginal likelihood and acts as a normalization factor as it does not depend on $\theta$. The marginal likelihood can be computed using the marginalization rule, i.e., $p(\bD)= \int_{\theta} p(\bD, \theta)d\theta= \int_{\theta} p(\bD \mid \theta)p(\theta) d\theta$ \footnote{The integral turns to summation for discrete $\theta$.}. $p(\theta \mid \bD)$ is called the posterior and it expresses the uncertainty surrounding the true value of $\theta$, after updating the prior assumptions about $\theta$ (i.e., the prior distribution) with the knowledge coming from the observations through the likelihood.  
 
-In many cases, we may be more interested to make a prediction about an unknown observable data point $\hat{y}$ rather than the parameter $\theta$. Bayesian inference  allows us to compute the conditional distribution of this unknown observable data given the observed data point as 
+In many cases, we may be more interested to make a prediction about an unknown observable data point $\hat{y}$ rather than the parameter $\theta$. Bayesian inference allows us to compute the conditional distribution of this unknown observable data given the observed data points by averaging over the posterior: 
 
 \begin{equation}
 p(\hat{y} \mid\bD ) = \int_{\theta} p(\hat{y}  \mid \theta)p(\theta \mid \bD)d\theta. 
@@ -576,17 +576,20 @@ Intent modelling for article search has been studied in  \cite{GlowIUI2013,ruots
 
 
 \section{Posterior inference} \label{posteriro_inf}
-Other than simple models (like the linear regression introduced in \ref{Eq:lin_rel_simple_posterior}) the models proposed in this chapter do not have a closed-form posterior and posterior predictive distributions. For low dimensional posteriors, it is still practical to approximate the posterior distribution by simulation methods such as numerical computation on girds or Monte Carlo simulations (see \cite[Chapter~10]{Gelman2013} for a review). However, as mentioned, we are interested on high-dimensional problems (e.g., sentiment analysis or search with textual data or drug prediction with genomic data), where the simple methods cannot scale well due to the curse of dimensionality (the number of evaluations grows exponentially with respect to the dimension). There are two general family of methods to approach such intractable posterior.
+Other than simple models (like the linear regression introduced in \ref{Eq:lin_rel_simple_posterior}) the models proposed in this chapter do not have a closed-form posterior and posterior predictive distributions. For low dimensional unknown parameters, it is still practical to approximate the posterior distribution by simulation methods such as numerical computation on girds or Monte Carlo simulations (see \cite[Chapter~10]{Gelman2013} for a review). However, as mentioned, we are interested on high-dimensional problems (e.g., sentiment analysis or search with textual data, or drug prediction with genomic data), where simple methods cannot scale well due to the curse of dimensionality (the number of evaluations grows exponentially with respect to the dimension). There are two general family of methods to approach such intractable posteriors --namely Markov chain simulation and deterministic posterior approximation methods.
 
-\subsubsection{Sampling based methods}
+\subsubsection{Markov chain simulation methods}
 
-MCMC.. 
-Recent advances in sampling based methods has resulted in probabilistic programming languages that such as Stan \cite{STAN} and Pyro \cite{bingham2018pyro} that made the computation of Bayesian inference straightforward for end users. The user of such software needs to declare the inference problem, and the probabilistic programming language performs the inference (for example using and provides posterior samples that can be used for next steps (for example see \cite{Bayesian_workflow_cog_sci_2019} for a step-by-step guides to do Bayesian modelling and inference using Stan).
+Markov chain simulation methods are general methods to draw samples from the target posterior, i.e., $\theta^s \sim p(\theta \mid \bD)$, by starting from an initial sample in the parameter space and sequentially updating the sample toward the target posterior distribution. The sequence of dependent samples form a chain which should have the Markov property, i.e., the updating rule to get to $\theta^{t+1}$ at time $t+1$ should only depend on the previous sample $\theta^t$, and not the whole chain. It can be shown that under some assumptions for the updating rule and the Markov chain, by increasing the chain size toward infinity, the last sample in the chain would be a sample from the target distribution \cite[Chapter~11]{Gelman2013}. Recent advances in Markov chain simulation methods has resulted in probabilistic programming languages, such as Stan \cite{STAN} and Pyro \cite{bingham2018pyro}, that make the computation of Bayesian inference straightforward for end users. The user of such softwares needs to declare the model, and the probabilistic programming language performs the inference by providing samples from the posterior (for example see \cite{Bayesian_workflow_cog_sci_2019} for a step-by-step guides to do Bayesian modelling and inference using Stan). The posterior samples can be used as the representative of the posterior to compute predictive distributions or to compute summaries (such as expected value) or utilities for decision making. A bottleneck of iterative simulation methods is that they can sometimes be slow. This is particularly important in the works investigated in this thesis as all of them require real-time performance with a user.
 
 \subsubsection{Deterministic posterior approximation}
 
+The idea of deterministic posterior methods is to approximate the target distribution with a simpler family of distributions. The resulting approximation does not fully represent the target distribution, however, in many cases it can be efficient enough for the targeted task. Here we briefly review some of the common methods. 
+
 \begin{itemize}
-	\item normal (Laplace) approximation where the posterior is approximated with multivariate normal distribution (see \cite[Chapter~4]{Gelman2013} for a review), MORE IN chapter 13
+	\item Expectation propagation (EP) \cite{minka2001expectation} TODO: try to pitch the idea of each method. 
+	\item Normal (Laplace) approximation where the posterior is approximated with multivariate normal distribution (see \cite[Chapter~4]{Gelman2013} for a review), MORE IN chapter 13
+	\item Variational Inference
 \end{itemize}
 
 \section{Key components of the joint model}\label{key_comp}

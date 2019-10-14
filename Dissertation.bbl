@@ -163,6 +163,12 @@ Luana Micallef, Iiris Sundin, Pekka Marttinen, Muhammad Ammad-ud din, Tomi
   Intelligent User Interfaces}, IUI '17, pages 547--552, New York, NY, USA,
   2017. ACM.
 
+\bibitem{minka2001expectation}
+Thomas~P Minka.
+\newblock Expectation propagation for approximate {Bayesian} inference.
+\newblock In {\em Proceedings of the Seventeenth Conference on Uncertainty in
+  Artificial Intelligence (UAI)}, pages 362--369, 2001.
+
 \bibitem{muhlbacher2013partition}
 Thomas M{\"u}hlbacher and Harald Piringer.
 \newblock A partition-based framework for building and validating regression
