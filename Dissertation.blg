@@ -3,44 +3,47 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Dissertation.aux
 The style file: plain.bst
 Database file #1: references.bib
-You've used 44 entries,
+Warning--entry type for "Tomi_P_thesis" isn't style-file defined
+--line 551 of file references.bib
+You've used 47 entries,
             2118 wiz_defined-function locations,
-            790 strings with 13859 characters,
-and the built_in function-call counts, 18853 in all, are:
-= -- 1891
-> -- 955
+            810 strings with 14687 characters,
+and the built_in function-call counts, 19796 in all, are:
+= -- 1984
+> -- 998
 < -- 16
-+ -- 378
-- -- 332
-* -- 1416
-:= -- 2996
-add.period$ -- 142
-call.type$ -- 44
-change.case$ -- 296
++ -- 395
+- -- 346
+* -- 1486
+:= -- 3152
+add.period$ -- 150
+call.type$ -- 47
+change.case$ -- 312
 chr.to.int$ -- 0
-cite$ -- 44
-duplicate$ -- 692
-empty$ -- 1387
-format.name$ -- 332
-if$ -- 4006
+cite$ -- 47
+duplicate$ -- 721
+empty$ -- 1465
+format.name$ -- 346
+if$ -- 4199
 int.to.chr$ -- 0
-int.to.str$ -- 44
-missing$ -- 47
-newline$ -- 223
-num.names$ -- 88
-pop$ -- 294
+int.to.str$ -- 47
+missing$ -- 49
+newline$ -- 237
+num.names$ -- 94
+pop$ -- 311
 preamble$ -- 1
-purify$ -- 254
+purify$ -- 267
 quote$ -- 0
-skip$ -- 527
+skip$ -- 549
 stack$ -- 0
-substring$ -- 1326
-swap$ -- 210
+substring$ -- 1397
+swap$ -- 213
 text.length$ -- 16
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 170
+type$ -- 182
 warning$ -- 0
-while$ -- 174
-width$ -- 46
-write$ -- 506
+while$ -- 184
+width$ -- 49
+write$ -- 536
+(There was 1 warning)

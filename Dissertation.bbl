@@ -131,6 +131,20 @@ Dorota Głowacka, Tuukka Ruotsalo, Ksenia Konuyshkova, kumaripaba Athukorala,
   Intelligent User Interfaces}, IUI '13, pages 117--128, New York, NY, USA,
   2013. ACM.
 
+\bibitem{hernandez2013generalized}
+Daniel Hern{\'a}ndez-Lobato, Jos{\'e}~Miguel Hern{\'a}ndez-Lobato, and Pierre
+  Dupont.
+\newblock Generalized spike-and-slab priors for bayesian group feature
+  selection using expectation propagation.
+\newblock {\em Journal of Machine Learning Research}, 14(1):1891--1945, 2013.
+
+\bibitem{Lobato2015ML}
+Jos{\'{e}}~Miguel Hern{\'{a}}ndez{-}Lobato, Daniel Hern{\'{a}}ndez{-}Lobato,
+  and Alberto Su{\'{a}}rez.
+\newblock Expectation propagation in linear regression models with
+  spike-and-slab priors.
+\newblock {\em Machine Learning}, 99(3):437--487, 2015.
+
 \bibitem{Kapoor2010}
 Ashish Kapoor, Bongshin Lee, Desney Tan, and Eric Horvitz.
 \newblock Interactive optimization for steering machine classification.
@@ -181,6 +195,12 @@ Anthony O'Hagan, Caitlin~E. Buck, Alireza Daneshkhah, J.~Richard Eiser, Paul~H.
   Garthwaite, David~J. Jenkinson, Jeremy~E. Oakley, and Tim Rakow.
 \newblock {\em Uncertain Judgements. Eliciting Experts' Probabilisties}.
 \newblock Wiley, Chichester, England, 2006.
+
+\bibitem{Tomi_P_thesis}
+Tomi Peltola.
+\newblock Sparse bayesian linear models: Computational advances and
+  applications in epidemiology; harvuutta suosivat bayesilaiset lineaarimallit:
+  laskennallisia menetelmiä ja sovelluksia epidemiologiassa, 2014.
 
 \bibitem{horseshoe_2017}
 Juho Piironen and Aki Vehtari.

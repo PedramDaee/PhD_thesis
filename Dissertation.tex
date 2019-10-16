@@ -52,6 +52,10 @@
 \newcommand{\bF}{\mathcal{F}}
 \DeclareMathOperator{\eye}{\textbf{I}}
 
+\DeclarePairedDelimiterX{\infdivx}[2]{[}{]}{%
+	#1\;\delimsize\|\;#2%
+}
+\DeclareMathOperator{\KLt}{KL}
 \newcommand{\KL}{\KLt\infdivx}
 \DeclareMathOperator{\betapdf}{Beta}
 \DeclareMathOperator{\bernoullipdf}{Bernoulli}
@@ -62,6 +66,8 @@
 \DeclareMathOperator{\E}{\mathbb{E}}
 \DeclareMathOperator{\var}{var}
 \newcommand{\tp}{^{\top}}
+
+
 
 \usepackage{graphicx}
 %%
@@ -325,7 +331,7 @@ However, as mentioned, we are interested in directly quantifying the uncertainty
 
 \begin{align}\label{Eq:simple_Bayesian_regression} 
 \by \sim \normalpdf(\bX\bw,\sigma^2 \eye),\\
-\bw \sim \normalpdf(0,\tau^2 \eye), \nonumber
+\bw \sim \normalpdf(\textbf{0},\tau^2 \eye), \nonumber
 \end{align}
 
 \noindent where $\tau^2$ is the variance of the weights and $\eye$ is the identity matrix. For simplicity we assume that $\tau^2$ is also a fixed hyperparameter. Therefore, The only unobserved parameters of this model is $\bw$. The Bayesian rule allows us to derive the posterior for $\bw$ as\footnote{Note that we use $\bw \sim \normalpdf(0,\tau^2 \eye)$ to denote the random variable $\bw$ and $\normalpdf(\bw\mid 0,\tau^2 \eye)$ to refer to the density function.}
@@ -338,8 +344,8 @@ p(\bw \mid \bD) = \frac{p(\bD \mid \bw)p(\bw)}{p(\bD)} = \frac{\normalpdf(\by \m
 Generally, the posterior in many problems cannot be analytically derived (we will discuss this issue more in Section \ref{posteriro_inf}). For this simple model, however, an analytical solution is available. We will go through the steps as a exercise with posterior inference. Before starting, it would be useful to note that a multivariate Gaussian distribution can be expressed as  
 
 \begin{align}\label{Eq:multi_Gauss}
-\normalpdf(\bw \mid \mu,\Sigma) &\propto \exp \left (\bw - \mu)\tp\Sigma^{-1}(\bw - \mu) \right) \nonumber\\
-&\propto \exp \left ( \bw\tp\Sigma^{-1}\bw -  2\bw\tp\Sigma^{-1}\mu \right),
+\normalpdf(\bw \mid \bm{\mu},\bm{\Sigma}) &\propto \exp \left ((\bw - \bm{\mu})\tp\bm{\Sigma}^{-1}(\bw - \bm{\mu}) \right) \nonumber\\
+&\propto \exp \left ( \bw\tp\bm{\Sigma}^{-1}\bw -  2\bw\tp\bm{\Sigma}^{-1}\bm{\mu} \right),
 \end{align}
 
 \noindent after dropping all the terms that are constant with respect to $\bw$. 
@@ -353,12 +359,12 @@ p(\bw \mid \bD) &\propto \exp \left(\frac{1}{2\sigma^2} (\by - \bX \bw)\tp(\by -
 %&= \exp \left ( -2\sigma^{-2}\bw\tp\bX\tp\by + \bw\tp\Sigma^{-1}\bw \right)
 \end{align}    
  
-\noindent where we dropped $p(\bD)$ and all the other terms which where constant with respect to $\bw$. Equation \ref{Eq:lin_rel_simple_derivation} has the same form to Equation \ref{Eq:multi_Gauss} (with respect to $\bw$) and therefore is proportional to a multivariate Gaussian distribution. This relation shows that the posterior should be multivariate Gaussian, as both equations should integrate to one, and thus its parameters can be found by matching the terms of the two equations as $\Sigma^{-1} = ( \sigma^{-2}\bX\tp\bX + \tau^{-2} \eye ) $ and $\Sigma^{-1}\mu = \sigma^{-2}\bX\tp\by$. Finally, the posterior of our simple linear regression can be described as 
+\noindent where we dropped $p(\bD)$ and all the other terms which where constant with respect to $\bw$. Equation \ref{Eq:lin_rel_simple_derivation} has the same form to Equation \ref{Eq:multi_Gauss} (with respect to $\bw$) and therefore is proportional to a multivariate Gaussian distribution. This relation shows that the posterior should be multivariate Gaussian, as both equations should integrate to one, and thus its parameters can be found by matching the terms of the two equations as $\bm{\Sigma}^{-1} = ( \sigma^{-2}\bX\tp\bX + \tau^{-2} \eye ) $ and $\bm{\Sigma}^{-1}\bm{\mu} = \sigma^{-2}\bX\tp\by$. Finally, the posterior of our simple linear regression can be described as 
 
 \begin{align}\label{Eq:lin_rel_simple_posterior}
-	p(\bw \mid \bD) &= \normalpdf(\bw \mid \mu,\Sigma), \text{where}\\
-	\Sigma^{-1} &= (\sigma^{-2}\bX\tp\bX + \tau^{-2} \eye ), \nonumber\\
-	\mu &= \Sigma\sigma^{-2}\bX\tp\by. \nonumber
+	p(\bw \mid \bD) &= \normalpdf(\bw \mid \bm{\mu},\bm{\Sigma}), \text{where}\\
+	\bm{\Sigma}^{-1} &= (\sigma^{-2}\bX\tp\bX + \tau^{-2} \eye ), \nonumber\\
+	\bm{\mu} &= \bm{\Sigma}\sigma^{-2}\bX\tp\by. \nonumber
 \end{align}
 
 This simple Bayesian regression is used as the underlying data model in Publication I. It would be interesting to compare a point estimate of the posterior distribution with the frequentist solution $\hat{\bw} = (\bX \tp \bX)^{-1}\bX\tp \by$. Maximum a posteriori (MAP) is a point estimate which represents the value in the posterior that has the highest density. In our case, this would be equal to the posterior mean, which after some rearrangement, can be described as $\hat{\bw}_{MAP} = (\bX\tp\bX + \frac{\sigma^{2}}{\tau^{2}} \eye )^{-1}(\bX\tp\by)$. Comparing the mean of the posterior with the frequentist solution indicates that the two estimates are very similar with the only difference that the MAP estimate has the additive term $\frac{\sigma^{2}}{\tau^{2}} \eye$ in the covariance matrix. This added term is the direct outcome of our assumptions in the likelihood and prior of the model which were not present in our simple frequentist model. This term can also be interpreted as a regularization parameter that controls the variance of weights. The designer of the model may want to consider different types of regularization or constrains in the model, which in probabilistic modelling is usually done by incorporating them in the prior distribution. Such problems may not have an analytical posterior available. We will consider two such models in the following subsections.
@@ -407,7 +413,7 @@ In regression, there may be observations that have response values substantially
 y_i &\sim \normalpdf(\bm{x}_i\tp\bw,\frac{\sigma^2}{\nu_i}),  & i=1,\ldots,n,\\
 \nu_i &\sim \gammapdf(\alpha_{\nu}, \beta_{\nu}), & i=1,\ldots,n,\nonumber \\
 \sigma^{-2} &\sim \gammapdf(\alpha_{\sigma}, \beta_{\sigma}), \nonumber \\
-\bw &\sim \normalpdf(0,\tau^2 \eye), \nonumber
+\bw &\sim \normalpdf(\textbf{0},\tau^2 \eye), \nonumber
 \end{align}
 
 \noindent where $\alpha_{\nu}$, $\beta_{\nu}$, $\alpha_{\sigma}$, $\beta_{\sigma}$, and $\tau^2$ are fixed hyperparameters and $n$ is the number of observations. For the unobserved parameters $\bw$, $\sigma^2$, and $\bm{\nu}$ (as a vector of all $\nu_i$s), the posterior does not have an analytical solution and can be written as
@@ -576,20 +582,27 @@ Intent modelling for article search has been studied in  \cite{GlowIUI2013,ruots
 
 
 \section{Posterior inference} \label{posteriro_inf}
-Other than simple models (like the linear regression introduced in \ref{Eq:lin_rel_simple_posterior}) the models proposed in this chapter do not have a closed-form posterior and posterior predictive distributions. For low dimensional unknown parameters, it is still practical to approximate the posterior distribution by simulation methods such as numerical computation on girds or Monte Carlo simulations (see \cite[Chapter~10]{Gelman2013} for a review). However, as mentioned, we are interested on high-dimensional problems (e.g., sentiment analysis or search with textual data, or drug prediction with genomic data), where simple methods cannot scale well due to the curse of dimensionality (the number of evaluations grows exponentially with respect to the dimension). There are two general family of methods to approach such intractable posteriors --namely Markov chain simulation and deterministic posterior approximation methods.
+Other than simple models (like the linear regression introduced in \ref{Eq:lin_rel_simple_posterior}) the models proposed in this thesis do not have a closed-form posterior and posterior predictive distributions. For low dimensional unknown parameters, it is still practical to approximate the posterior distribution by simulation methods such as numerical computation on girds or Monte Carlo simulations (see \cite[Chapter~10]{Gelman2013} for a review). However, as mentioned, we are interested on high-dimensional problems (e.g., sentiment analysis and search with textual data, or drug response prediction with genomic data), where simple simulation methods cannot scale well due to the curse of dimensionality (the number of evaluations grows exponentially with respect to the dimension). There are two general family of methods to approach such intractable posteriors --namely Markov chain simulation and deterministic posterior approximation methods.
 
 \subsubsection{Markov chain simulation methods}
 
-Markov chain simulation methods are general methods to draw samples from the target posterior, i.e., $\theta^s \sim p(\theta \mid \bD)$, by starting from an initial sample in the parameter space and sequentially updating the sample toward the target posterior distribution. The sequence of dependent samples form a chain which should have the Markov property, i.e., the updating rule to get to $\theta^{t+1}$ at time $t+1$ should only depend on the previous sample $\theta^t$, and not the whole chain. It can be shown that under some assumptions for the updating rule and the Markov chain, by increasing the chain size toward infinity, the last sample in the chain would be a sample from the target distribution \cite[Chapter~11]{Gelman2013}. Recent advances in Markov chain simulation methods has resulted in probabilistic programming languages, such as Stan \cite{STAN} and Pyro \cite{bingham2018pyro}, that make the computation of Bayesian inference straightforward for end users. The user of such softwares needs to declare the model, and the probabilistic programming language performs the inference by providing samples from the posterior (for example see \cite{Bayesian_workflow_cog_sci_2019} for a step-by-step guides to do Bayesian modelling and inference using Stan). The posterior samples can be used as the representative of the posterior to compute predictive distributions or to compute summaries (such as expected value) or utilities for decision making. A bottleneck of iterative simulation methods is that they can sometimes be slow. This is particularly important in the works investigated in this thesis as all of them require real-time performance with a user.
+Markov chain simulation methods are general methods to draw samples from the target posterior, i.e., $\theta^s \sim p(\theta \mid \bD)$, by starting from an initial sample in the parameter space and sequentially updating the sample toward the target posterior distribution. The sequence of dependent samples forms a chain which should have the Markov property, i.e., the updating rule to get to $\theta^{t+1}$ at time $t+1$ should only depend on the previous sample $\theta^t$, and not the whole chain. It can be shown that under some assumptions for the updating rule and the Markov chain, by increasing the chain size toward infinity, the last sample in the chain would be a sample from the target distribution \cite[Chapter~11]{Gelman2013}. Recent advances in Markov chain simulation methods has resulted in probabilistic programming languages, such as Stan \cite{STAN} and Pyro \cite{bingham2018pyro}, that make the computation of Bayesian inference straightforward for end users. The user of such softwares needs to declare the model, and the probabilistic programming language performs the inference by providing samples from the posterior (for example see \cite{Bayesian_workflow_cog_sci_2019} for a step-by-step guides to do Bayesian modelling and inference using Stan). The posterior samples can be used to compute predictive distributions, summaries (such as expected value or other estimates), or utilities for decision making. A bottleneck of iterative simulation methods is that they can sometimes be slow. This is particularly important in the works investigated in this thesis as all of them require real-time performance with a user.
 
 \subsubsection{Deterministic posterior approximation}
 
-The idea of deterministic posterior methods is to approximate the target distribution with a simpler family of distributions. The resulting approximation does not fully represent the target distribution, however, in many cases it can be efficient enough for the targeted task. Here we briefly review some of the common methods. 
+The idea of deterministic approximation methods is to approximate the target distribution, such as posterior distribution $p(\theta \mid \bD)$, with a simpler distribution $q(\theta)$ (e.g., from exponential family), i.e., $q(\theta) \approx p(\theta \mid \bD)$. The resulting approximation does not fully represent the target distribution, however, in many cases it can be efficient or accurate enough for the targeted task. There are different ways, e.g., different objective functions or assumptions about the approximated distribution, to handle the approximation. Here we briefly review some of the common methods that have been also employed in this thesis. 
 
 \begin{itemize}
-	\item Expectation propagation (EP) \cite{minka2001expectation} TODO: try to pitch the idea of each method. 
-	\item Normal (Laplace) approximation where the posterior is approximated with multivariate normal distribution (see \cite[Chapter~4]{Gelman2013} for a review), MORE IN chapter 13
-	\item Variational Inference
+	\item Expectation propagation (EP) \cite{minka2001expectation} aims at finding $q(\theta)$ that minimizes the Kullback–Leibler ($\KLt$) divergence between the posterior and the approximation, i.e., $\KL{p(\theta \mid \bD)}{q(\theta)}$. KL-divergence is a popular asymmetric measure of how two distributions are different from each other. The minimization is usually intractable. The posterior distribution can be written as a product of terms $p(\theta \mid \bD) = \prod_{j} t_j(\theta)$ (for example the posterior in \ref{Eq:Bayes_rule_ss_reg_with_fb} is a product of seven terms). It it is sensible to consider the same structure for the approximated posterior $q(\theta) = \prod_{j} \tilde{t}_j(\theta)$. % \dfrac{1}{Z}, where $Z$ is a normalization factor. 
+	EP approximates each term $t_j(\theta)$ in the posterior by a simpler exponential family form $\tilde{t}_j(\theta)$ such that $\prod_{j} t_j(\theta) \approx \prod_{j}\tilde{t}_j(\theta)$. As the exponential family is closed under product, $q(\theta)$ also follows a simple and tractable exponential form. To optimize the terms, EP iteratively refines the parameters of $\tilde{t}_j(\theta)$ to minimize $\KL{t_j(\theta) q^{\!\!\!\backslash j}(\theta)} {\tilde{t}_j(\theta) q^{\!\!\!\backslash j}(\theta)}$, where $q^{\!\!\!\backslash j}(\theta)$ denotes the approximated posterior after removing the $j^{th}$ term, i.e.,  $q^{\!\!\!\backslash j}(\theta) \propto \frac{q(\theta)}{\tilde{t}_j(\theta)}$. This is optimized by matching the sufficient statistics of $t_j(\theta) q^{\!\!\!\backslash j}(\theta)$ with $\tilde{t}_j(\theta) q^{\!\!\!\backslash j}(\theta)$. After refining each $\tilde{t}_j(\theta)$, an updated approximation is achieved as $q(\theta)\propto q^{\!\!\!\backslash j}(\theta) \tilde{t}_j(\theta)$. This step is repeated until all the terms converge.  \cite{hernandez2013generalized,Lobato2015ML,Tomi_P_thesis}
+	
+	EP can provide good estimate to uncertainty (e.g., approximation for the posterior covariance of the weights in the linear model) that is desirable for designing the interaction (experimental design methods; see Section \ref{AL_and_ED}) \cite{hernandez2013generalized}. Furthermore, for sequential interaction, the inference can be sped up by only performing few iterations of parameter updates (instead of waiting for full convergence) as suggested by \cite{seeger2008bayesian}. EP was used in Publication II and III for fast approximation of the posterior of the linear regression model with sparsity-inducing spike-and-slab prior on coefficients with data and feedback observations (Equation \ref{Eq:Bayes_rule_ss_reg_with_fb}). The regression weights ($\bw$) are approximated by a multivariate Gaussian distribution. 
+	
+	\item Variational Bayesian (VB) methods aim at minimizing $\KL{q(\theta)}{p(\theta \mid \bD)}$ (unlike EP).
+	
+	\item Normal (Laplace) approximation where the posterior is approximated with multivariate normal distribution (see \cite[Chapter~4]{Gelman2013} for a review), 
+	
+ 
 \end{itemize}
 
 \section{Key components of the joint model}\label{key_comp}
@@ -624,7 +637,7 @@ TO EXPLAIN: Why we use linear models? because of the risk for overfitting if the
 
 %Here have the same figure, explain how user feedback is gathered. explain that we consider two sets of works. One where there is external data other than user feedback and one where the user feedback IS the data. Then explain our interaction goals and acquisition functions and experimental design.
 
-\section{Active learning and experimental design}
+\section{Active learning and experimental design}\label{AL_and_ED}
 
 \section{Multi-armed bandits and Bayesian optimization}
 
