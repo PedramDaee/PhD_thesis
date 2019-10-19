@@ -5,45 +5,45 @@ The style file: plain.bst
 Database file #1: references.bib
 Warning--entry type for "Tomi_P_thesis" isn't style-file defined
 --line 551 of file references.bib
-You've used 47 entries,
+You've used 51 entries,
             2118 wiz_defined-function locations,
-            810 strings with 14687 characters,
-and the built_in function-call counts, 19796 in all, are:
-= -- 1984
-> -- 998
-< -- 16
-+ -- 395
-- -- 346
-* -- 1486
-:= -- 3152
-add.period$ -- 150
-call.type$ -- 47
-change.case$ -- 312
+            833 strings with 15348 characters,
+and the built_in function-call counts, 21091 in all, are:
+= -- 2116
+> -- 1053
+< -- 17
++ -- 417
+- -- 364
+* -- 1567
+:= -- 3368
+add.period$ -- 163
+call.type$ -- 51
+change.case$ -- 333
 chr.to.int$ -- 0
-cite$ -- 47
-duplicate$ -- 721
-empty$ -- 1465
-format.name$ -- 346
-if$ -- 4199
+cite$ -- 51
+duplicate$ -- 775
+empty$ -- 1568
+format.name$ -- 364
+if$ -- 4478
 int.to.chr$ -- 0
-int.to.str$ -- 47
-missing$ -- 49
-newline$ -- 237
-num.names$ -- 94
-pop$ -- 311
+int.to.str$ -- 51
+missing$ -- 53
+newline$ -- 257
+num.names$ -- 102
+pop$ -- 333
 preamble$ -- 1
-purify$ -- 267
+purify$ -- 284
 quote$ -- 0
-skip$ -- 549
+skip$ -- 586
 stack$ -- 0
-substring$ -- 1397
-swap$ -- 213
-text.length$ -- 16
+substring$ -- 1470
+swap$ -- 225
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 182
+type$ -- 196
 warning$ -- 0
-while$ -- 184
-width$ -- 49
-write$ -- 536
+while$ -- 196
+width$ -- 53
+write$ -- 582
 (There was 1 warning)

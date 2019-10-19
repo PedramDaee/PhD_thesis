@@ -55,6 +55,7 @@
 \@writefile{toc}{\contentsline {subsubsection}{Sparsity-inducing priors}{19}{section*.10}}
 \newlabel{Eq:ss_Bayesian_regression}{{2.8}{19}{Sparsity-inducing priors}{equation.2.2.8}{}}
 \citation{Bayesian_ARD2007}
+\citation{Kangasraasio_2016_interactive}
 \newlabel{Eq:Bayes_rule_ss_reg}{{2.9}{20}{Sparsity-inducing priors}{equation.2.2.9}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Detecting outliers}{20}{section*.11}}
 \newlabel{Eq:ard_Bayesian_regression}{{2.10}{20}{Detecting outliers}{equation.2.2.10}{}}
@@ -132,23 +133,37 @@
 \@writefile{toc}{\contentsline {section}{\numberline {2.4}Posterior inference}{29}{section.2.4}}
 \newlabel{posteriro_inf}{{2.4}{29}{Posterior inference}{section.2.4}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Markov chain simulation methods}{29}{section*.20}}
+\citation{Blei_VB}
+\citation{bishop2006pattern}
 \citation{minka2001expectation}
 \citation{hernandez2013generalized}
 \citation{Lobato2015ML}
 \citation{Tomi_P_thesis}
+\@writefile{toc}{\contentsline {subsubsection}{Deterministic posterior approximation}{30}{section*.21}}
+\@writefile{toc}{\contentsline {paragraph}{Variational Bayes (VB)}{30}{section*.22}}
+\@writefile{toc}{\contentsline {paragraph}{Expectation propagation (EP)}{30}{section*.23}}
 \citation{hernandez2013generalized}
 \citation{seeger2008bayesian}
-\@writefile{toc}{\contentsline {subsubsection}{Deterministic posterior approximation}{30}{section*.21}}
-\citation{Gelman2013}
-\@writefile{toc}{\contentsline {section}{\numberline {2.5}Key components of the joint model}{31}{section.2.5}}
-\newlabel{key_comp}{{2.5}{31}{Key components of the joint model}{section.2.5}{}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {3.}User interaction with the probabilistic model}{33}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{interaction}{{3}{33}{User interaction with the probabilistic model}{chapter.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Active learning and experimental design}{33}{section.3.1}}
-\newlabel{AL_and_ED}{{3.1}{33}{Active learning and experimental design}{section.3.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Multi-armed bandits and Bayesian optimization}{33}{section.3.2}}
+\citation{settles2010active}
+\citation{seeger2008bayesian}
+\citation{concept_driven_CHI2019}
+\citation{Correia2019HumanintheLoopFS}
+\citation{raghavan2006active}
+\citation{druck2009active}
+\citation{settles2011closing}
+\citation{Micallef_elicitation}
+\citation{Homayun_pairwise_UMAP}
+\citation{Homayun_pairwise_ijcai2019}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Sequential interaction with the user. The probabilistic model uses the history of interaction (and training data, if available) to query the next question from the user and the user provides the corresponding feedback. The figure is adapted from Publication II.\relax }}{34}{figure.caption.24}}
+\newlabel{fig:infoflow}{{3.1}{34}{Sequential interaction with the user. The probabilistic model uses the history of interaction (and training data, if available) to query the next question from the user and the user provides the corresponding feedback. The figure is adapted from Publication II.\relax }{figure.caption.24}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Active learning and experimental design}{34}{section.3.1}}
+\newlabel{AL_and_ED}{{3.1}{34}{Active learning and experimental design}{section.3.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Multi-armed bandits and Bayesian optimization}{34}{section.3.2}}
+\newlabel{MAP_and_BO}{{3.2}{34}{Multi-armed bandits and Bayesian optimization}{section.3.2}{}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {4.}Summary of the Contributions}{35}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -166,50 +181,54 @@
 \bibcite{drug_response_prediction}{4}
 \bibcite{paba_exploratory_vs_lookup}{5}
 \bibcite{bingham2018pyro}{6}
-\bibcite{STAN}{7}
-\bibcite{concept_driven_CHI2019}{8}
-\bibcite{Correia2019HumanintheLoopFS}{9}
-\bibcite{dai2015semi}{10}
-\bibcite{BEAMES_Endert}{11}
-\@writefile{toc}{\contentsline {chapter}{References}{39}{section*.22}}
-\bibcite{Donoho2009observed}{12}
-\bibcite{druck2009active}{13}
-\bibcite{user_modelling_2001}{14}
-\bibcite{garthwaite2005statistical}{15}
-\bibcite{Gelman2013}{16}
-\bibcite{spike_slab1993}{17}
-\bibcite{gershman2015computational}{18}
-\bibcite{GlowIUI2013}{19}
-\bibcite{hernandez2013generalized}{20}
-\bibcite{Lobato2015ML}{21}
-\bibcite{Kapoor2010}{22}
-\bibcite{krause2014infuse}{23}
-\bibcite{liu2015sentiment}{24}
-\bibcite{Marchionini2006}{25}
-\bibcite{Micallef_elicitation}{26}
-\bibcite{minka2001expectation}{27}
-\bibcite{muhlbacher2013partition}{28}
-\bibcite{OHagan06}{29}
-\bibcite{Tomi_P_thesis}{30}
-\bibcite{horseshoe_2017}{31}
-\bibcite{raghavan2006active}{32}
-\bibcite{ruotsalo2015interactive}{33}
-\bibcite{Ruotsalo2018}{34}
-\bibcite{sacha2017you}{35}
-\bibcite{sarkar2015interactive}{36}
-\bibcite{Bayesian_workflow_cog_sci_2019}{37}
-\bibcite{seeger2008bayesian}{38}
-\bibcite{settles2011closing}{39}
-\bibcite{Talbot2009}{40}
-\bibcite{Teevan_2004}{41}
-\bibcite{lasso2011}{42}
-\bibcite{Bayesian_ARD2007}{43}
-\bibcite{Tversky1974}{44}
-\bibcite{van2011baobabview}{45}
-\bibcite{bias_warning}{46}
-\bibcite{white2009exploratory}{47}
+\bibcite{bishop2006pattern}{7}
+\bibcite{Blei_VB}{8}
+\bibcite{STAN}{9}
+\bibcite{concept_driven_CHI2019}{10}
+\bibcite{Correia2019HumanintheLoopFS}{11}
+\@writefile{toc}{\contentsline {chapter}{References}{39}{section*.25}}
+\bibcite{dai2015semi}{12}
+\bibcite{BEAMES_Endert}{13}
+\bibcite{Donoho2009observed}{14}
+\bibcite{druck2009active}{15}
+\bibcite{user_modelling_2001}{16}
+\bibcite{garthwaite2005statistical}{17}
+\bibcite{Gelman2013}{18}
+\bibcite{spike_slab1993}{19}
+\bibcite{gershman2015computational}{20}
+\bibcite{GlowIUI2013}{21}
+\bibcite{hernandez2013generalized}{22}
+\bibcite{Lobato2015ML}{23}
+\bibcite{Kangasraasio_2016_interactive}{24}
+\bibcite{Kapoor2010}{25}
+\bibcite{krause2014infuse}{26}
+\bibcite{liu2015sentiment}{27}
+\bibcite{Marchionini2006}{28}
+\bibcite{Micallef_elicitation}{29}
+\bibcite{minka2001expectation}{30}
+\bibcite{muhlbacher2013partition}{31}
+\bibcite{OHagan06}{32}
+\bibcite{Tomi_P_thesis}{33}
+\bibcite{horseshoe_2017}{34}
+\bibcite{raghavan2006active}{35}
+\bibcite{ruotsalo2015interactive}{36}
+\bibcite{Ruotsalo2018}{37}
+\bibcite{sacha2017you}{38}
+\bibcite{sarkar2015interactive}{39}
+\bibcite{Bayesian_workflow_cog_sci_2019}{40}
+\bibcite{seeger2008bayesian}{41}
+\bibcite{settles2010active}{42}
+\bibcite{settles2011closing}{43}
+\bibcite{Talbot2009}{44}
+\bibcite{Teevan_2004}{45}
+\bibcite{lasso2011}{46}
+\bibcite{Bayesian_ARD2007}{47}
+\bibcite{Tversky1974}{48}
+\bibcite{van2011baobabview}{49}
+\bibcite{bias_warning}{50}
+\bibcite{white2009exploratory}{51}
 \@writefile{asp}{\item \publication[in]{\relax $\@@underline {\hbox {Pedram Daee}}\mathsurround \z@ $\relax , Joel Pyykk\"o, Dorota G\l {}owacka, and Samuel Kaski}{Interactive Intent Modeling from Multiple Feedback Domains}{Proceedings of the 21st International Conference on Intelligent User Interfaces}{Sonoma, California, USA, 71--75}{March}{2016}}
-\@writefile{toc}{\contentsline {chapter}{Publications}{43}{section*.23}}
+\@writefile{toc}{\contentsline {chapter}{Publications}{43}{section*.26}}
 \newlabel{c1}{{Publication\ I}{43}{Publication\ I}{pub.c1.1}{}}\newlabel{c1-long}{{Publication\ I}{43}{Publication\ I}{pub.c1.1}{}}\newlabel{c1-short}{{PI}{43}{P\ I}{pub.c1.1}{}}\newlabel{c1-number}{{I}{43}{I}{pub.c1.1}{}}
 \@writefile{asp}{\item \publication{\relax $\@@underline {\hbox {Pedram Daee}}\mathsurround \z@ $\relax $^*$, Tomi Peltola$^*$, Marta Soare$^*$, and Samuel Kaski}{Knowledge elicitation via sequential probabilistic inference for high-dimensional prediction}{Machine Learning}{106, 9-10, 1599--1620}{}{2017}}
 \newlabel{j1}{{Publication\ II}{45}{Publication\ II}{pub.j1.1}{}}\newlabel{j1-long}{{Publication\ II}{45}{Publication\ II}{pub.j1.1}{}}\newlabel{j1-short}{{PII}{45}{P\ II}{pub.j1.1}{}}\newlabel{j1-number}{{II}{45}{II}{pub.j1.1}{}}
