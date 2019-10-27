@@ -66,6 +66,7 @@
 \DeclareMathOperator{\E}{\mathbb{E}}
 \DeclareMathOperator{\var}{var}
 \newcommand{\tp}{^{\top}}
+\DeclareMathOperator*{\argmax}{arg\,max}
 
 \usepackage{tikz}
 \usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,fit,positioning,shapes.symbols,chains}
@@ -302,13 +303,13 @@ p(\theta \mid \bD) = \frac{p(\bD \mid \theta)p(\theta)}{p(\bD)}.
 
 Where $p(\theta)$ represents the prior belief about $\theta$ and $p(\bD)$ is called the marginal likelihood and acts as a normalization factor as it does not depend on $\theta$. The marginal likelihood can be computed using the marginalization rule, i.e., $p(\bD)= \int_{\theta} p(\bD, \theta)d\theta= \int_{\theta} p(\bD \mid \theta)p(\theta) d\theta$ \footnote{The integral turns to summation for discrete $\theta$.}. $p(\theta \mid \bD)$ is called the posterior and it expresses the uncertainty surrounding the true value of $\theta$, after updating the prior assumptions about $\theta$ (i.e., the prior distribution) with the knowledge coming from the observations through the likelihood.  
 
-In many cases, we may be more interested to make a prediction about an unknown observable data point $\hat{y}$ rather than the parameter $\theta$. Bayesian inference allows us to compute the conditional distribution of this unknown observable data given the observed data points by averaging over the posterior: 
+In many cases, we may be more interested to make a prediction about an unknown observable data point $\tilde{y}$ rather than the parameter $\theta$. Bayesian inference allows us to compute the conditional distribution of this unknown observable data given the observed data points by averaging over the posterior: 
 
 \begin{equation}
-p(\hat{y} \mid\bD ) = \int_{\theta} p(\hat{y}  \mid \theta)p(\theta \mid \bD)d\theta. 
+p(\tilde{y} \mid\bD ) = \int_{\theta} p(\tilde{y}  \mid \theta)p(\theta \mid \bD)d\theta. 
 \end{equation}
 
-$p(\hat{y} \mid \bD)$ is known as the posterior predictive distribution and represents the uncertainty about a potential new observation. An example usage of this distribution could be when we want to predict the value of a test data. Since test data is unobserved, we can use posterior predictive distribution as our best guess. However, in many applications, only a value (and not a distribution) is required as the prediction. This can be handled by using some statistics of the distribution (for example mean or median) as the prediction. Still, the quantified uncertainty in the distribution can be useful as it provides knowledge about how certain we are about our estimate. Particularly, this uncertainty can help us to design more efficient interaction with a user, as will be discussed in Section \ref{interaction}.
+$p(\tilde{y} \mid \bD)$ is known as the posterior predictive distribution and represents the uncertainty about a potential new observation. An example usage of this distribution could be when we want to predict the value of a test data. Since test data is unobserved, we can use posterior predictive distribution as our best guess. However, in many applications, only a value (and not a distribution) is required as the prediction. This can be handled by using some statistics of the distribution (for example mean or median) as the prediction. Still, the quantified uncertainty in the distribution can be useful as it provides knowledge about how certain we are about our estimate. Particularly, this uncertainty can help us to design more efficient interaction with a user, as will be discussed in Section \ref{interaction}.
 
 	
 
@@ -433,7 +434,8 @@ Noisy observations can particularly happen if the data provider is a noisy sourc
 A core idea in the thesis is to model user interaction with the probabilistic model as observational feedback. These feedbacks can be tied to the model parameters via conditional distributions (feedback models). The posterior inference can then learn the unobserved parameters given data observations (as introduced in the previous section) and the feedback observations (which will be discussed in this section). The feedback models are used to incorporate the user knowledge into the regression models introduced in the previous section. The following subsections explain the feedback models used in Publication I-V, and their relations to the probabilistic models.
 
 
-\subsection{User feedback as observation about model parameters}
+\subsection{User feedback as observation about model parameters}\label{KE_models}
+
 %This would be easy to address since the application is trivial.
 Publication II and III target the case where the user has knowledge about the regression parameters and can provide feedback if queried. As mentioned, we consider high dimensional scenarios where few data points are available. An example task could be a drug response prediction given genomic features of patients \cite{drug_response_prediction}. The genomic feature size may exceed thousands of variables, but only a small number of patient data might be available and it may not be possible (or too expensive) to add new data, which make the prediction task challenging. Fortunately, experts in the field may have experience or knowledge from literature about which features, and in what ways, are relevant for this prediction task. If accounted properly, the expert knowledge can help the prediction performance. Another potential scenario is the sentiment prediction problem \cite{liu2015sentiment} when only few texts (e.g., textual reviews of items) with known sentiments (e.g., score of the review) are available. A classical representation of textual data known as bag-of-words, considers each data as a vector of distinct words where the feature value indicates the number of appearance of each word in the text\footnote{It is also common to represent textual data in dense forms such as \cite{dai2015semi}. We use bag-of-words due to its simplicity and interpretability of the features.}. Humans have intuitions about how individual words may be related to the sentiment (e.g., appearance of the word "awful" in a review may indicate low review score). Our goal is to design probabilistic models that can receive these types of expert knowledge, alongside the training data, to boost the prediction performance.  
 
@@ -630,17 +632,17 @@ EP can provide good estimate to uncertainty (e.g., approximation for the posteri
  
 The previous chapter introduced how the user input to a high-dimensional probabilistic model can jointly be modelled with observational data and how the resulting probabilistic inference can be computed. However, the number of possible feedbacks that a human users can provide is usually limited due to the user's reluctance (e.g., in personalized system the user is usually willing to provide only a couple of feedback) or the time and workload constrains (as there is usually the possibility to provide thousands of feedbacks). To reduce the burden of the user and to achieve the best results faster, the interaction with the probabilistic model needs to be carefully designed. 
 
-We consider sequential interaction where at each iteration the probabilistic model selects the next query to receive feedback from the user, and the user provides the feedback. The design of the query should be based on the history of observed feedback (along with training data, if available) and target of the interaction (see Figure \ref{fig:infoflow} for a schematic of the interaction). The key components of such interactive system can be summarized as
+We consider sequential interaction where at each iteration the probabilistic model selects the next query to receive feedback from the user, and the user provides the feedback. The design of the query should be based on the history of observed feedbacks (along with training data, if available) and target of the interaction. Figure \ref{fig:infoflow} depicts a schematic the interaction. The key components of such interactive system can be summarized as
 
 \begin{enumerate}
 	\item A data observation model $p(\bD \mid \theta,\phi_D)$, where the data are in the form $\bD= \{(\bm{x}_i,y_i)\}_{i=1}^{n}$, $\theta$ is the unknown parameter of interest, and $\phi_D$ are model parameters related to data model. The observational data may not be available in some applications (see Section \ref{prob_model_data}). 
 	\item A user feedback model $p(f\mid \theta, \phi_f)$, where $\phi_f$ are model parameters related to the user model (see Section \ref{prob_model_user}).
-	\item A prior model $p(\theta, \phi_D, \phi_f)$ for the hierarchical model description. The data model and user model are connected through the shared latent parameters $\theta$.
+	\item A prior model $p(\theta, \phi_D, \phi_f)$ for the hierarchical model description. The data and user model are connected through the shared latent parameter $\theta$.
 	\item A query algorithm that facilitate gathering feedback $f$ iteratively from the user (will be discussed in this chapter).
 	\item Bayesian inference for Updating the model after user interaction (see Section \ref{posteriro_inf}).
 \end{enumerate}
 
-This chapter studies two general query algorithms for the interaction. Section \ref{AL_and_ED} reviews active learning methods that aims to query the most informative question from the user to maximize the predictive performance of the probabilistic model. Section \ref{MAP_and_BO} reviews the methods that are used to find the most relevant (rewarding) item with as few interaction as possible. 
+This chapter studies two general family of query algorithms for the interaction. Section \ref{AL_and_ED} reviews the methods that aim to query the most informative question from the user to maximize the predictive performance of the probabilistic model. Section \ref{MAP_and_BO} reviews the methods that are used to find the most relevant (rewarding) item with minimum number of interactions. 
 
 
 %\vspace{-0.5cm}
@@ -681,18 +683,33 @@ This chapter studies two general query algorithms for the interaction. Section \
 	\path[<-,bend left=-20,thick] ([xshift=0.1cm]q2.north) edge ([xshift=0.4cm]E.south);
 	\path[<-,bend left=-20,thick] ([xshift=0.2cm]E.south) edge ([xshift=-0.1cm]q2.north);
 	\end{tikzpicture}
-	\caption{Sequential interaction with the user. The probabilistic model uses the history of interaction (and training data, if available) to query the next question from the user and the user provides the corresponding feedback. The figure is adapted from Publication II.}\label{fig:infoflow}
+	\caption{Sequential interaction with the user. The probabilistic model uses the history of interaction (and training data, if available) to query the next question from the user and the user provides the corresponding feedback. For brevity, the user and data related parameters, $\phi_D$ and $\phi_f$, are omitted from the posterior. The figure is adapted from Publication II.}\label{fig:infoflow}
 \end{figure}
 
 
 
 %Here have the same figure, explain how user feedback is gathered. explain that we consider two sets of works. One where there is external data other than user feedback and one where the user feedback IS the data. Then explain our interaction goals and acquisition functions and experimental design.
 
-\section{Active learning and experimental design}\label{AL_and_ED}
+\section{Sequential experimental design}\label{AL_and_ED}
 
-active learning \cite{settles2010active} \cite{seeger2008bayesian}
+In many problems, performing new experiments is expensive. Sequential experimental design \cite{chaloner1995,seeger2008bayesian,settles2010active} (also known as active learning \cite{settles2010active}) are a family of methods that allow the underlying data model to select the next experiment that would maximally improve the model with respect to a utility measure. The experimental design methods are usually employed at the data domain, where the model ask the expert to label a new data point (e.g., identify the  the objects in a picture) with the goal to maximally improve the prediction performance of the model. In Section \ref{KE_models}, we considered the interactions at a novel level where the user could provide feedback about model parameters (such as direction of relevance of features). Here we propose experimental design scheme for interaction with the expert on non-data observations.
 
-\textcolor{red}{We have considered three intuitive types of feedback models. Studies have shown that the type of domain knowledge in prediction tasks can be summarize in a small set \cite{concept_driven_CHI2019}. A large body of works have studied the exclusion/inclusion of features (also known as feature selection \cite{Correia2019HumanintheLoopFS}) in different contexts, for classification  \cite{raghavan2006active,druck2009active,settles2011closing}, and regression \cite{Micallef_elicitation}. These methods are different to ours from the modelling point as we consider sparse models and also the type of interaction. A different type of feedback is the case where user has knowledge about pairwise similarity of features with respect to the response variable (i.e., asking the user about which  pairs of features affect the prediction output similarly) which has been investigated in \cite{Homayun_pairwise_UMAP,Homayun_pairwise_ijcai2019}.}
+The aim of our work is to improve prediction on data. In Bayesian modelling, the prediction on an unobservable data given the observed data and also feedbacks form the user is expressed by the posterior predictive distribution of data 
+
+\begin{equation}\label{Eq:post_pred_data_fb}
+p(\tilde{y} \mid \tilde{\bm{x}}, \bD,\bF) = \int_{\theta} p(\tilde{y}  \mid \tilde{\bm{x}}, \theta)p(\theta \mid \bD, \bF)d\theta,
+\end{equation}
+
+\noindent where $\tilde{y}$ is the unobserved response variable,  $\tilde{\bm{x}}$ is the corresponding feature vector, and $\bF$ contains the gathered feedback till now. The user and data related parameters ($\phi_D$ and $\phi_f$) are omitted for brevity. The goal is to query the user about the feature, let's say $j^*$, that the corresponding feedback, i.e., $f_{j^*}$, would maximally improve this predictive distribution. The improvement can be measured by comparing the posterior predictive distribution after and before observing the feedback using $\KLt$-divergence, i.e., $\KL{p(\tilde{y} \mid \tilde{\bm{x}}, \bD,\bF,f_{j^*})} {p(\tilde{y} \mid, \tilde{\bm{x}}, \bD,\bF)}$. This utility function is known as the information gain and it measures the impact the new feedback on the posterior predictive distribution of the data. There are two issues with the information gain: first, we do not have access to the unobserved data $(\tilde{\bm{x}},\tilde{y})$, and second, we would only observe the user feedback $f_{j^*}$ after querying it from the user. Rather than computing the utility on the unobserved data, we use the available training data set to compute the utility. Unobserved feedback can be handled by computing the expected feedback that the user may provide after the query. The expectation would be taken with respect to the posterior predictive of user feedback (the distribution that the system believes the feedback would be generated from), i.e., $p(\tilde{f}_j \mid \bD,\bF)= \int_{\theta} p(\tilde{f}_j \mid \theta)p(\theta \mid \bD, \bF)d\theta$. The best query can then be  selected as
+
+\begin{equation}\label{Eq:expected_info_gain}
+j^* = \argmax_{j \notin \bF} \E_{p(\tilde{f}_j \mid \bD,\bF)} \left[ \sum_{i=1}^{n}  \KL{p(\tilde{y}\mid \bm{x}_i, \bD,\bF,\tilde{f}_j)} {p(\tilde{y} \mid \bm{x}_i, \bD,\bF)} \right].
+\end{equation}
+    
+This utility (known as expected information gain) is expensive as it requires the computation of the posterior predictive distribution before and after the new feedback (which itself requires the computation of the corresponding posterior and the integral in Equation \ref{Eq:post_pred_data_fb}), computation of the $\KLt$-divergence, and computation of the posterior predictive of the feedback necessary for deriving the expectation. Publications II and III used expected information gain to extract expert's knowledge. TODO: say something about computation (EP as discussed before) and also about approximating the posterior predictive of data by Gaussian and therefore having analytical solution for KL, and then approximating the posterior predictive of feedback by Guassian (for feedback 1) and Bernoulli for other types...    
+
+ 
+%\textcolor{red}{We have considered three intuitive types of feedback models. Studies have shown that the type of domain knowledge in prediction tasks can be summarize in a small set \cite{concept_driven_CHI2019}. A large body of works have studied the exclusion/inclusion of features (also known as feature selection \cite{Correia2019HumanintheLoopFS}) in different contexts, for classification  \cite{raghavan2006active,druck2009active,settles2011closing}, and regression \cite{Micallef_elicitation}. These methods are different to ours from the modelling point as we consider sparse models and also the type of interaction. A different type of feedback is the case where user has knowledge about pairwise similarity of features with respect to the response variable (i.e., asking the user about which  pairs of features affect the prediction output similarly) which has been investigated in \cite{Homayun_pairwise_UMAP,Homayun_pairwise_ijcai2019}.}
 
 
 \section{Multi-armed bandits and Bayesian optimization}\label{MAP_and_BO}

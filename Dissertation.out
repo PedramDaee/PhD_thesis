@@ -16,7 +16,7 @@
 \BOOKMARK [2][]{subsection.2.3.3}{2.3.3\040User\040feedback\040for\040intent\040modelling}{section.2.3}% 16
 \BOOKMARK [1][]{section.2.4}{2.4\040Posterior\040inference}{chapter.2}% 17
 \BOOKMARK [0][]{chapter.3}{3.\040User\040interaction\040with\040the\040probabilistic\040model}{}% 18
-\BOOKMARK [1][]{section.3.1}{3.1\040Active\040learning\040and\040experimental\040design}{chapter.3}% 19
+\BOOKMARK [1][]{section.3.1}{3.1\040Sequential\040experimental\040design}{chapter.3}% 19
 \BOOKMARK [1][]{section.3.2}{3.2\040Multi-armed\040bandits\040and\040Bayesian\040optimization}{chapter.3}% 20
 \BOOKMARK [0][]{chapter.4}{4.\040Summary\040of\040the\040Contributions}{}% 21
 \BOOKMARK [1][]{section.4.1}{4.1\040Interactive\040intent\040modelling\040from\040multiple\040feedback\040domains\040\(Publications\040I\040and\040V\)}{chapter.4}% 22

@@ -63,6 +63,11 @@ Bob Carpenter, Andrew Gelman, Matthew Hoffman, Daniel Lee, Ben Goodrich,
 \newblock Stan: A probabilistic programming language.
 \newblock {\em Journal of Statistical Software, Articles}, 76(1):1--32, 2017.
 
+\bibitem{chaloner1995}
+Kathryn Chaloner and Isabella Verdinelli.
+\newblock Bayesian experimental design: A review.
+\newblock {\em Statistical Science}, 10(3):273--304, 08 1995.
+
 \bibitem{concept_driven_CHI2019}
 In~Kwon Choi, Taylor Childers, Nirmal~Kumar Raveendranath, Swati Mishra, Kyle
   Harris, and Khairi Reda.
