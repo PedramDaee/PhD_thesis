@@ -56,6 +56,19 @@ David~M. Blei, Alp Kucukelbir, and Jon~D. McAuliffe.
 \newblock {\em Journal of the American Statistical Association},
   112(518):859--877, 2017.
 
+\bibitem{brochu2010tutorial}
+Eric Brochu, Vlad~M Cora, and Nando De~Freitas.
+\newblock A tutorial on bayesian optimization of expensive cost functions, with
+  application to active user modeling and hierarchical reinforcement learning.
+\newblock {\em arXiv preprint arXiv:1012.2599}, 2010.
+
+\bibitem{bubeck2012regret}
+S{\'e}bastien Bubeck, Nicolo Cesa-Bianchi, et~al.
+\newblock Regret analysis of stochastic and nonstochastic multi-armed bandit
+  problems.
+\newblock {\em Foundations and Trends{\textregistered} in Machine Learning},
+  5(1):1--122, 2012.
+
 \bibitem{STAN}
 Bob Carpenter, Andrew Gelman, Matthew Hoffman, Daniel Lee, Ben Goodrich,
   Michael Betancourt, Marcus Brubaker, Jiqiang Guo, Peter Li, and Allen
@@ -138,6 +151,12 @@ Samuel~J Gershman, Eric~J Horvitz, and Joshua~B Tenenbaum.
   brains, minds, and machines.
 \newblock {\em Science}, 349(6245):273--278, 2015.
 
+\bibitem{Bandit_IR}
+Dorota Glowacka.
+\newblock Bandit algorithms in information retrieval.
+\newblock {\em Foundations and Trends® in Information Retrieval},
+  13(4):299--424, 2019.
+
 \bibitem{GlowIUI2013}
 Dorota Głowacka, Tuukka Ruotsalo, Ksenia Konuyshkova, kumaripaba Athukorala,
   Samuel Kaski, and Giulio Jacucci.
@@ -160,6 +179,13 @@ Jos{\'{e}}~Miguel Hern{\'{a}}ndez{-}Lobato, Daniel Hern{\'{a}}ndez{-}Lobato,
 \newblock Expectation propagation in linear regression models with
   spike-and-slab priors.
 \newblock {\em Machine Learning}, 99(3):437--487, 2015.
+
+\bibitem{hoffman2014correlation}
+Matthew Hoffman, Bobak Shahriari, and Nando Freitas.
+\newblock On correlation and budget constraints in model-based bandit
+  optimization with application to automatic machine learning.
+\newblock In {\em Artificial Intelligence and Statistics}, pages 365--374,
+  2014.
 
 \bibitem{Kangasraasio_2016_interactive}
 Antti Kangasr{\"a}{\"a}si{\"o}, Yi~Chen, Dorota Glowacka, and Samuel Kaski.
@@ -226,6 +252,11 @@ Tomi Peltola.
   applications in epidemiology; harvuutta suosivat bayesilaiset lineaarimallit:
   laskennallisia menetelmiä ja sovelluksia epidemiologiassa, 2014.
 
+\bibitem{peltola2018machine}
+Tomi Peltola, Mustafa~Mert Çelikok, Pedram Daee, and Samuel Kaski.
+\newblock Machine teaching of active sequential learners.
+\newblock 2018.
+
 \bibitem{horseshoe_2017}
 Juho Piironen and Aki Vehtari.
 \newblock Sparsity information and regularization in the horseshoe and other
@@ -283,6 +314,11 @@ Burr Settles.
   queries on features and instances.
 \newblock In {\em Proceedings of the Conference on Empirical Methods in Natural
   Language Processing}, pages 1467--1478, 2011.
+
+\bibitem{BO_review}
+B.~{Shahriari}, K.~{Swersky}, Z.~{Wang}, R.~P. {Adams}, and N.~{de Freitas}.
+\newblock Taking the human out of the loop: A review of bayesian optimization.
+\newblock {\em Proceedings of the IEEE}, 104(1):148--175, Jan 2016.
 
 \bibitem{Talbot2009}
 Justin Talbot, Bongshin Lee, Ashish Kapoor, and Desney~S. Tan.

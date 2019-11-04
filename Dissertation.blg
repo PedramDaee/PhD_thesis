@@ -5,45 +5,46 @@ The style file: plain.bst
 Database file #1: references.bib
 Warning--entry type for "Tomi_P_thesis" isn't style-file defined
 --line 551 of file references.bib
-You've used 52 entries,
+Warning--empty booktitle in peltola2018machine
+You've used 58 entries,
             2118 wiz_defined-function locations,
-            841 strings with 15513 characters,
-and the built_in function-call counts, 21426 in all, are:
-= -- 2151
-> -- 1066
-< -- 17
-+ -- 422
-- -- 368
-* -- 1595
-:= -- 3423
-add.period$ -- 166
-call.type$ -- 52
-change.case$ -- 338
+            875 strings with 16709 characters,
+and the built_in function-call counts, 23555 in all, are:
+= -- 2353
+> -- 1178
+< -- 18
++ -- 467
+- -- 406
+* -- 1751
+:= -- 3776
+add.period$ -- 184
+call.type$ -- 58
+change.case$ -- 374
 chr.to.int$ -- 0
-cite$ -- 52
-duplicate$ -- 786
-empty$ -- 1595
-format.name$ -- 368
-if$ -- 4546
+cite$ -- 59
+duplicate$ -- 865
+empty$ -- 1758
+format.name$ -- 406
+if$ -- 4989
 int.to.chr$ -- 0
-int.to.str$ -- 52
-missing$ -- 54
-newline$ -- 262
-num.names$ -- 104
-pop$ -- 336
+int.to.str$ -- 58
+missing$ -- 60
+newline$ -- 292
+num.names$ -- 116
+pop$ -- 374
 preamble$ -- 1
-purify$ -- 288
+purify$ -- 318
 quote$ -- 0
-skip$ -- 594
+skip$ -- 650
 stack$ -- 0
-substring$ -- 1500
-swap$ -- 226
-text.length$ -- 17
+substring$ -- 1624
+swap$ -- 242
+text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 200
-warning$ -- 0
-while$ -- 200
-width$ -- 54
-write$ -- 593
-(There was 1 warning)
+type$ -- 224
+warning$ -- 1
+while$ -- 219
+width$ -- 60
+write$ -- 656
+(There were 2 warnings)

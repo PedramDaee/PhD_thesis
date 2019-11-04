@@ -1,0 +1,38 @@
+
+\begin{figure}[t]
+	\centering
+	\begin{tikzpicture}[
+	]
+	\node[] at (-4.5,2) (DM) {Model $p$};
+	\node[] at (-4.5,0) (D) {Data $\mathcal{D}$};
+	\node[] at (-3,1) (p1) {$p(\theta\mid\mathcal{D})$};
+	\node[right=0.5cm of p1] (p2) {$p(\theta\mid\mathcal{D},i_1)$};
+	\node[right=0.5cm of p2] (p3) {$p(\theta\mid\mathcal{D},i_1,i_2)$};
+	\node[right=0.5cm of p3] (p4) {};
+	
+	\node[above right=1 and 0.28cm of p1,anchor=south] (q1) {Interaction};
+	\node[above right=1 and 0.28cm of p2,anchor=south] (q2) {Interaction};
+	
+	\node[above right=2.5 and 0cm of p2.north,anchor=south,rectangle] (E) {Human};
+	
+	\path[->,bend left=-25,thick] (DM) edge ([yshift=0.1cm]p1.west);
+	\path[->,bend left=25,thick] (D) edge ([yshift=-0.1cm]p1.west);
+	
+	\path[->,thick] ([yshift=-0.1cm]p1.east) edge ([yshift=-0.1cm]p2.west);
+	\path[->,thick] ([yshift=-0.1cm]p2.east) edge ([yshift=-0.1cm]p3.west);
+	\path[dotted,thick] (p3) edge (p4);
+	
+	\path[->,bend left=-10,thick] ([yshift=0.1cm]p1.east) edge ([xshift=-0.1cm]q1.south);
+	\path[->,bend left=-10,thick] ([xshift=0.1cm]q1.south) edge ([yshift=0.1cm]p2.west);
+	
+	\path[->,bend left=-10,thick] ([yshift=0.1cm]p2.east) edge ([xshift=-0.1cm]q2.south);
+	\path[->,bend left=-10,thick] ([xshift=0.1cm]q2.south) edge ([yshift=0.1cm]p3.west);
+	
+	\path[<-,bend left=-20,thick] ([xshift=0.1cm]q1.north) edge ([xshift=-0.2cm]E.south);
+	\path[<-,bend left=-20,thick] ([xshift=-0.4cm]E.south) edge ([xshift=-0.1cm]q1.north);
+	
+	\path[<-,bend left=-20,thick] ([xshift=0.1cm]q2.north) edge ([xshift=0.4cm]E.south);
+	\path[<-,bend left=-20,thick] ([xshift=0.2cm]E.south) edge ([xshift=-0.1cm]q2.north);
+	\end{tikzpicture}
+	\caption{Sequential interaction with the user. The probabilistic model uses the history of interaction (and training data, if available) to query the next question from the user and the user provides the corresponding feedback. For brevity, the user and data related parameters, $\phi_D$ and $\phi_f$, are omitted from the posterior. The figure is adapted from Publication II.}\label{fig:infoflosssw}
+\end{figure}

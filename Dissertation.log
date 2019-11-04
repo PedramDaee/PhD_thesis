@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.9.7)  28 OCT 2019 00:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.9.7)  4 NOV 2019 19:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1645,53 +1645,55 @@ ne 576.
 [28 <./Figures/Plate_diagram_intent_imp.pdf>] [29] [30] [31] [32
 
 ] [33] [34]
-[35] [36
+[35] [36] [37
 
-] [37] [38
+] [38
 
 ]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 16.07027pt on input line 749.
+(Font)              scaled to size 16.07027pt on input line 768.
  [39] [40
 
 ] (./Dissertation.bbl
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
 (Font)              scaled to size 9.29993pt on input line 7.
+LaTeX Font Info:    Font shape `TS1/fnc/m/it' will be
+(Font)              scaled to size 9.29993pt on input line 69.
  [41
 
 ] [42] [43]) [44]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 762.
+(Font)              scaled to size 11.15991pt on input line 781.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 762.
+(Font)              scaled to size 15.89755pt on input line 781.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 762.
+(Font)              scaled to size 11.03998pt on input line 781.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 16.07027pt on input line 762.
+(Font)              scaled to size 16.07027pt on input line 781.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 762.
+(Font)              scaled to size 16.41594pt on input line 781.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 762.
+(Font)              scaled to size 11.39996pt on input line 781.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 6.50995pt on input line 762.
+(Font)              scaled to size 6.50995pt on input line 781.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 762.
+(Font)              scaled to size 6.43999pt on input line 781.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 6.50995pt on input line 762.
+(Font)              scaled to size 6.50995pt on input line 781.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 762.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 781.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 11.39996pt on input line 762.
+(Font)              scaled to size 11.39996pt on input line 781.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.44997pt on input line 762.
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 762.
+(Font)              scaled to size 10.44997pt on input line 781.
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 781.
 
 
 (c:/texlive/2018/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 10.44997pt on input line 762.
+(Font)              scaled to size 10.44997pt on input line 781.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
@@ -1706,7 +1708,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 ] [48
 
 ]
-Overfull \hbox (3.40355pt too wide) in paragraph at lines 785--785
+Overfull \hbox (3.40355pt too wide) in paragraph at lines 804--804
 \T1/phv/m/n/12 (-20) Samuel Kaski. Im-prov-ing genomics-based pre-dic-tions for
  pre-ci-sion medicine
  []
@@ -1722,21 +1724,21 @@ Overfull \hbox (3.40355pt too wide) in paragraph at lines 785--785
 ] [53
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 810.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 810.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 829.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 829.
  (./Dissertation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 810.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 810.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 829.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 829.
 Package rerunfilecheck Info: File `Dissertation.out' has not changed.
 (rerunfilecheck)             Checksum: 7143E2A0FA686D62C55D3E40BE8FF556;2731.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 810.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 829.
  ) 
 Here is how much of TeX's memory you used:
- 32990 strings out of 492641
- 569395 string characters out of 6133117
- 1151093 words of memory out of 5000000
- 35637 multiletter control sequences out of 15000+600000
- 143559 words of font info for 459 fonts, out of 8000000 for 9000
+ 33030 strings out of 492641
+ 569949 string characters out of 6133117
+ 1151551 words of memory out of 5000000
+ 35649 multiletter control sequences out of 15000+600000
+ 146984 words of font info for 473 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,12n,65p,1841b,2103s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2018/texm
@@ -1753,9 +1755,9 @@ helvetic/uhvro8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8
 a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/ncntrsbk/uncbi8a.pfb><c:/texl
 ive/2018/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb><c:/texlive/2018/texmf-
 dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Dissertation.pdf (53 pages, 558728 bytes).
+Output written on Dissertation.pdf (53 pages, 571162 bytes).
 PDF statistics:
- 960 PDF objects out of 1000 (max. 8388607)
- 201 named destinations out of 1000 (max. 500000)
- 45869 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 984 PDF objects out of 1000 (max. 8388607)
+ 210 named destinations out of 1000 (max. 500000)
+ 46381 words of extra memory for PDF output out of 51595 (max. 10000000)
 

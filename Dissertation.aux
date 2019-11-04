@@ -109,6 +109,7 @@
 \newlabel{Eq:latent_knowledge_infer}{{2.17}{25}{User feedback as outcome of a cognitive process}{equation.2.3.17}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Related works}{25}{section*.15}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}User feedback for intent modelling}{25}{subsection.2.3.3}}
+\newlabel{feedback_intent_modelling}{{2.3.3}{25}{User feedback for intent modelling}{subsection.2.3.3}{}}
 \citation{Marchionini2006}
 \citation{white2009exploratory}
 \citation{Teevan_2004}
@@ -158,15 +159,26 @@
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}Sequential experimental design}{34}{section.3.1}}
 \newlabel{AL_and_ED}{{3.1}{34}{Sequential experimental design}{section.3.1}{}}
 \newlabel{Eq:post_pred_data_fb}{{3.1}{34}{Sequential experimental design}{equation.3.1.1}{}}
+\citation{bubeck2012regret}
+\citation{brochu2010tutorial}
+\citation{BO_review}
+\citation{bubeck2012regret}
+\citation{Bandit_IR}
+\citation{hoffman2014correlation}
+\citation{brochu2010tutorial}
+\citation{ruotsalo2015interactive}
 \newlabel{Eq:expected_info_gain}{{3.2}{35}{Sequential experimental design}{equation.3.1.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.2}Multi-armed bandits and Bayesian optimization}{35}{section.3.2}}
 \newlabel{MAP_and_BO}{{3.2}{35}{Multi-armed bandits and Bayesian optimization}{section.3.2}{}}
+\newlabel{Eq:black_box_optimization}{{3.3}{36}{Multi-armed bandits and Bayesian optimization}{equation.3.2.3}{}}
+\newlabel{Eq:regret}{{3.4}{36}{Multi-armed bandits and Bayesian optimization}{equation.3.2.4}{}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {4.}Summary of the Contributions}{37}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {4.1}Interactive intent modelling from multiple feedback domains (Publications I and V)}{37}{section.4.1}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.2}Expert knowledge elicitation for high-dimensional prediction (Publications II and III)}{37}{section.4.2}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.3}User modelling for avoiding overfitting in knowledge elicitation (Publication IV)}{37}{section.4.3}}
+\citation{peltola2018machine}
 \bibstyle{plain}
 \@writefile{toc}{\contentsline {chapter}{\numberline {5.}Discussion}{39}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
@@ -180,51 +192,57 @@
 \bibcite{bingham2018pyro}{6}
 \bibcite{bishop2006pattern}{7}
 \bibcite{Blei_VB}{8}
-\bibcite{STAN}{9}
-\bibcite{chaloner1995}{10}
-\bibcite{concept_driven_CHI2019}{11}
+\bibcite{brochu2010tutorial}{9}
+\bibcite{bubeck2012regret}{10}
+\bibcite{STAN}{11}
 \@writefile{toc}{\contentsline {chapter}{References}{41}{section*.25}}
-\bibcite{Correia2019HumanintheLoopFS}{12}
-\bibcite{dai2015semi}{13}
-\bibcite{BEAMES_Endert}{14}
-\bibcite{Donoho2009observed}{15}
-\bibcite{druck2009active}{16}
-\bibcite{user_modelling_2001}{17}
-\bibcite{garthwaite2005statistical}{18}
-\bibcite{Gelman2013}{19}
-\bibcite{spike_slab1993}{20}
-\bibcite{gershman2015computational}{21}
-\bibcite{GlowIUI2013}{22}
-\bibcite{hernandez2013generalized}{23}
-\bibcite{Lobato2015ML}{24}
-\bibcite{Kangasraasio_2016_interactive}{25}
-\bibcite{Kapoor2010}{26}
-\bibcite{krause2014infuse}{27}
-\bibcite{liu2015sentiment}{28}
-\bibcite{Marchionini2006}{29}
-\bibcite{Micallef_elicitation}{30}
-\bibcite{minka2001expectation}{31}
-\bibcite{muhlbacher2013partition}{32}
-\bibcite{OHagan06}{33}
-\bibcite{Tomi_P_thesis}{34}
-\bibcite{horseshoe_2017}{35}
-\bibcite{raghavan2006active}{36}
-\bibcite{ruotsalo2015interactive}{37}
-\bibcite{Ruotsalo2018}{38}
-\bibcite{sacha2017you}{39}
-\bibcite{sarkar2015interactive}{40}
-\bibcite{Bayesian_workflow_cog_sci_2019}{41}
-\bibcite{seeger2008bayesian}{42}
-\bibcite{settles2010active}{43}
-\bibcite{settles2011closing}{44}
-\bibcite{Talbot2009}{45}
-\bibcite{Teevan_2004}{46}
-\bibcite{lasso2011}{47}
-\bibcite{Bayesian_ARD2007}{48}
-\bibcite{Tversky1974}{49}
-\bibcite{van2011baobabview}{50}
-\bibcite{bias_warning}{51}
-\bibcite{white2009exploratory}{52}
+\bibcite{chaloner1995}{12}
+\bibcite{concept_driven_CHI2019}{13}
+\bibcite{Correia2019HumanintheLoopFS}{14}
+\bibcite{dai2015semi}{15}
+\bibcite{BEAMES_Endert}{16}
+\bibcite{Donoho2009observed}{17}
+\bibcite{druck2009active}{18}
+\bibcite{user_modelling_2001}{19}
+\bibcite{garthwaite2005statistical}{20}
+\bibcite{Gelman2013}{21}
+\bibcite{spike_slab1993}{22}
+\bibcite{gershman2015computational}{23}
+\bibcite{Bandit_IR}{24}
+\bibcite{GlowIUI2013}{25}
+\bibcite{hernandez2013generalized}{26}
+\bibcite{Lobato2015ML}{27}
+\bibcite{hoffman2014correlation}{28}
+\bibcite{Kangasraasio_2016_interactive}{29}
+\bibcite{Kapoor2010}{30}
+\bibcite{krause2014infuse}{31}
+\bibcite{liu2015sentiment}{32}
+\bibcite{Marchionini2006}{33}
+\bibcite{Micallef_elicitation}{34}
+\bibcite{minka2001expectation}{35}
+\bibcite{muhlbacher2013partition}{36}
+\bibcite{OHagan06}{37}
+\bibcite{Tomi_P_thesis}{38}
+\bibcite{peltola2018machine}{39}
+\bibcite{horseshoe_2017}{40}
+\bibcite{raghavan2006active}{41}
+\bibcite{ruotsalo2015interactive}{42}
+\bibcite{Ruotsalo2018}{43}
+\bibcite{sacha2017you}{44}
+\bibcite{sarkar2015interactive}{45}
+\bibcite{Bayesian_workflow_cog_sci_2019}{46}
+\bibcite{seeger2008bayesian}{47}
+\bibcite{settles2010active}{48}
+\bibcite{settles2011closing}{49}
+\bibcite{BO_review}{50}
+\bibcite{Talbot2009}{51}
+\bibcite{Teevan_2004}{52}
+\bibcite{lasso2011}{53}
+\bibcite{Bayesian_ARD2007}{54}
+\bibcite{Tversky1974}{55}
+\bibcite{van2011baobabview}{56}
+\bibcite{bias_warning}{57}
+\bibcite{white2009exploratory}{58}
 \@writefile{asp}{\item \publication[in]{\relax $\@@underline {\hbox {Pedram Daee}}\mathsurround \z@ $\relax , Joel Pyykk\"o, Dorota G\l {}owacka, and Samuel Kaski}{Interactive Intent Modeling from Multiple Feedback Domains}{Proceedings of the 21st International Conference on Intelligent User Interfaces}{Sonoma, California, USA, 71--75}{March}{2016}}
 \@writefile{toc}{\contentsline {chapter}{Publications}{45}{section*.26}}
 \newlabel{c1}{{Publication\ I}{45}{Publication\ I}{pub.c1.1}{}}\newlabel{c1-long}{{Publication\ I}{45}{Publication\ I}{pub.c1.1}{}}\newlabel{c1-short}{{PI}{45}{P\ I}{pub.c1.1}{}}\newlabel{c1-number}{{I}{45}{I}{pub.c1.1}{}}
