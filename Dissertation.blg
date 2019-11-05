@@ -6,45 +6,45 @@ Database file #1: references.bib
 Warning--entry type for "Tomi_P_thesis" isn't style-file defined
 --line 551 of file references.bib
 Warning--empty booktitle in peltola2018machine
-You've used 58 entries,
+You've used 61 entries,
             2118 wiz_defined-function locations,
-            875 strings with 16709 characters,
-and the built_in function-call counts, 23555 in all, are:
-= -- 2353
-> -- 1178
-< -- 18
-+ -- 467
-- -- 406
-* -- 1751
-:= -- 3776
-add.period$ -- 184
-call.type$ -- 58
-change.case$ -- 374
+            897 strings with 17285 characters,
+and the built_in function-call counts, 24818 in all, are:
+= -- 2488
+> -- 1216
+< -- 21
++ -- 482
+- -- 418
+* -- 1837
+:= -- 3958
+add.period$ -- 194
+call.type$ -- 61
+change.case$ -- 389
 chr.to.int$ -- 0
-cite$ -- 59
-duplicate$ -- 865
-empty$ -- 1758
-format.name$ -- 406
-if$ -- 4989
+cite$ -- 62
+duplicate$ -- 923
+empty$ -- 1866
+format.name$ -- 418
+if$ -- 5274
 int.to.chr$ -- 0
-int.to.str$ -- 58
-missing$ -- 60
-newline$ -- 292
-num.names$ -- 116
-pop$ -- 374
+int.to.str$ -- 61
+missing$ -- 63
+newline$ -- 307
+num.names$ -- 122
+pop$ -- 391
 preamble$ -- 1
-purify$ -- 318
+purify$ -- 330
 quote$ -- 0
-skip$ -- 650
+skip$ -- 696
 stack$ -- 0
-substring$ -- 1624
-swap$ -- 242
-text.length$ -- 18
+substring$ -- 1728
+swap$ -- 266
+text.length$ -- 21
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 224
+type$ -- 236
 warning$ -- 1
-while$ -- 219
-width$ -- 60
-write$ -- 656
+while$ -- 233
+width$ -- 63
+write$ -- 692
 (There were 2 warnings)

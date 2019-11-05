@@ -530,25 +530,25 @@ Intent modelling describes the task of learning the hidden intent of the user fr
 
 Consider the case where a user is searching for a scientific article by forming a query with keywords. The user is uncertain about the exact description of the article (e.g., the user may not know the tile), however, if the article is recommended, the user can assess the relevance of it. This information seeking task is usually done in several iterations starting with an initial query, assessing the results recommended by the system, and modifying the query with the goal of getting better results. This type of information seeking with the user being uncertain about her information need, is known as exploratory search \cite{Marchionini2006,white2009exploratory} and covers around half of search behaviours of users \cite{Teevan_2004} (see \cite{paba_exploratory_vs_lookup} for more in depth review for exploratory and standard lookup search). The main bottle necks of such search systems are that (i) the amount of user feedback that can be gathered is very limited compared to the size of the information space, and (ii) the users are mostly sometimes reluctant to give more than few explicit feedback after assessing the recommended results. To tackle these challenges, Publication I, exploits the relationship between articles and their keywords and defines feedback likelihoods on both keywords and articles, providing more flexibility for the user to express its intent. Furthermore, the modelling of noisy implicit feedback, in particular feedback generated from brain activity measured through electroencephalography (EEG) and eye movements, is investigated in Publication V.  
 
-The intent model is defined as function that maps all the keywords (used to express the search intent) and articles to real values, indicating the relevance of each item for the user. As the number of user feedback is few, it is reasonable to use a linear model to define the relation of user feedback on keywords to the hidden intent (denoted by $\bw$)
+The intent model is defined as a function that maps all the keywords (used to express the search intent) and articles to real values, indicating the relevance of each item for the user. As the number of user feedback is few, it is reasonable to use a linear model to define the relation of user feedback on keywords to the hidden intent (denoted by $\bw$)
 
 \begin{align}\label{Eq:feedback_on_kw} 
-f_{kw}^{i} \sim \normalpdf(\bm{x}_i\tp \bw, \sigma_{kw}^2), 
+f_{i}^{kw} \sim \normalpdf(\bm{x}_i\tp \bw, \sigma_{kw}^2), 
 \end{align}
 
 \noindent where $\sigma_{kw}^2$ models the noise of the keyword feedback. The keywords are represented in the keyword-document matrix $X \in \mathbb{R}^{k \times d}$ where the element $(i,j)$ describes the tf-idf weighting of keyword $i$ (out of $k$ total keywords) in document $j$ (out of $d$ total documents), and $\bm{x}_i\tp$ indicates the $i^{th}$ row of the matrix. As mentioned, we are interested to also model potential user feedback on the documents. We make the simplifying assumption that the expected relevance of a document can be represented as a weighted sum of the expected relevance of keywords that appear in it
 
 \begin{align}\label{Eq:doc_key_relation} 
- \E[f_{doc}^{j}] = \sum_{i=1}^{k} p_{(i \mid j)}  \E[f_{kw}^{i}],
+ \E[f_{j}^{doc}] = \sum_{i=1}^{k} p_{(i \mid j)}  \E[f_{i}^{kw}],
 \end{align}
 
-\noindent where $f_{doc}^{j}$ indicates the relevance of the $j^{th}$ documents, $\E[.]$ denotes the expected value and $p_{(i \mid j)}$ is the likelihood of the $i^{th}$ keyword being present in the $j^{th}$ document. This likelihood is not available but can approximated by normalizing $X$ such that its columns sum up to one. Denoting the resulting matrix as $\hat{X}$ and following following \ref{Eq:feedback_on_kw}, the feedback for relevance of documents can be described as 
+\noindent where $f_{j}^{doc}$ indicates the relevance of the $j^{th}$ documents, $\E[.]$ denotes the expected value and $p_{(i \mid j)}$ is the likelihood of the $i^{th}$ keyword being present in the $j^{th}$ document. This likelihood is not available but can approximated by normalizing $X$ such that its columns sum up to one. Denoting the resulting matrix as $\hat{X}$ and following following \ref{Eq:feedback_on_kw}, the feedback for relevance of documents can be described as 
 
 \begin{align}\label{Eq:doc_key_relation_vector} 
-F_{doc} \sim \normalpdf(  \hat{X}\tp X \bw, \sigma_{doc}^2 \eye),
+F^{doc} \sim \normalpdf(  \hat{X}\tp X \bw, \sigma_{doc}^2 \eye),
 \end{align}  
 
-\noindent where $F_{doc}=[f_{doc}^{1},\ldots,f_{doc}^{d}]$ is the vector representation of relevance feedback for all documents, and $\sigma_{doc}^2$ models the noise of the document feedback. 
+\noindent where $F^{doc}=[f_{1}^{doc},\ldots,f_{d}^{doc}]$ is the vector representation of relevance feedback for all documents, and $\sigma_{doc}^2$ models the noise of the document feedback. 
 
 Given user feedback on keywords and documents the posterior of the hidden intent can be learned by assuming a Gaussian prior on the intent weights, i.e., $\bw \sim \normalpdf(0,\tau^2 \eye)$. As the both likelihoods follow a Gaussian distribution, the posterior has a closed form solution and can be derived following the same derivations as the simple linear model in \ref{Eq:lin_rel_simple_posterior}. Figure \ref{fig:Plate_intent_kd} illustrates the schematic of user feedback models and its connection to the latent intent. 
 
@@ -566,7 +566,7 @@ Given user feedback on keywords and documents the posterior of the hidden intent
 The model proposed model is very simple as the noise of feedback is assumed to be known and the only unknown parameter is the intent vector $\bw$. As mentioned, we are interested to consider feedbacks from implicit sources such as neurophysiologic signals gathered from brain activities\footnote{Note that here we assume that the implicit feedbacks, EEG signals, are already converted to a continuous relevance value (see Publication V for details about this conversion).}. The implicit feedback is extremely cheap, as the it requires no physical effort from the user, but at the same time extremely noisy. Our modelling solution is to use the automatic relevance detection model proposed in \ref{Eq:ard_Bayesian_regression} to endow the feedback likelihood handle the inherent noise in the implicit feedback when used in combination of the explicit feedbacks. For simplicity, let's assume that only the keyword feedback is generated from an implicit source (it is straightforward to consider a similar feedback source for documents or to consider both explicit and implicit feedback for keywords or documents). The implicit feedback likelihood for keywords can be expressed as 
 
 \begin{align}\label{Eq:imp_fb_on_kw} 
-f_{kw}^{i} \sim \normalpdf(\bm{x}_i\tp\bw,\frac{\sigma_{kw}^2}{\nu_i}),
+f_{i}^{kw} \sim \normalpdf(\bm{x}_i\tp\bw,\frac{\sigma_{kw}^2}{\nu_i}),
 \end{align}  
 
 \noindent where the parameters follow the model \ref{Eq:ard_Bayesian_regression}. The model can then infer the accuracy of feedback $\nu_i$ based on the observed feedback and handle the high uncertainty in implicit feedback. The resulting model for a case of availability of explicit feedback on documents and implicit feedback on keywords is depicted in Figure \ref{fig:Plate_intent_imp}. The resulting posterior is analytically intractable.  
@@ -636,8 +636,8 @@ We consider sequential interaction where at each iteration the probabilistic mod
 
 \begin{enumerate}
 	\item A data observation model $p(\bD \mid \theta,\phi_D)$, where the data are in the form $\bD= \{(\bm{x}_i,y_i)\}_{i=1}^{n}$, $\theta$ is the unknown parameter of interest, and $\phi_D$ are model parameters related to data model. The observational data may not be available in some applications (see Section \ref{prob_model_data}). 
-	\item A user feedback model $p(f\mid \theta, \phi_f)$, where $\phi_f$ are model parameters related to the user model (see Section \ref{prob_model_user}).
-	\item A prior model $p(\theta, \phi_D, \phi_f)$ for the hierarchical model description. The data and user model are connected through the shared latent parameter $\theta$.
+	\item A user feedback model $p(f\mid \theta, \phi_F)$, where $\phi_F$ are model parameters related to the user model (see Section \ref{prob_model_user}).
+	\item A prior model $p(\theta, \phi_D, \phi_F)$ for the hierarchical model description. The data and user model are connected through the shared latent parameter $\theta$.
 	\item A query algorithm that facilitate gathering feedback $f$ iteratively from the user (will be discussed in this chapter).
 	\item Bayesian inference for updating the model after user interaction (see Section \ref{posteriro_inf}).
 \end{enumerate}
@@ -683,7 +683,7 @@ This chapter studies two general family of query algorithms for interaction. Sec
 	\path[<-,bend left=-20,thick] ([xshift=0.1cm]q2.north) edge ([xshift=0.4cm]E.south);
 	\path[<-,bend left=-20,thick] ([xshift=0.2cm]E.south) edge ([xshift=-0.1cm]q2.north);
 	\end{tikzpicture}
-	\caption{Sequential interaction with the user. The probabilistic model uses the history of interaction (and training data, if available) to query the next question from the user and the user provides the corresponding feedback. For brevity, the user and data related parameters, $\phi_D$ and $\phi_f$, are omitted from the posterior. The figure is adapted from Publication II.}\label{fig:infoflow}
+	\caption{Sequential interaction with the user. The probabilistic model uses the history of interaction (and training data, if available) to query the next question from the user and the user provides the corresponding feedback. For brevity, the user and data related parameters, $\phi_D$ and $\phi_F$, are omitted from the posterior. The figure is adapted from Publication II.}\label{fig:infoflow}
 \end{figure}
 
 
@@ -698,10 +698,10 @@ The aim of our work is to improve prediction on data. The prediction on an unobs
 p(\tilde{y} \mid \tilde{\bm{x}}, \bD,\bF) = \int_{\theta} p(\tilde{y}  \mid \tilde{\bm{x}}, \theta)p(\theta \mid \bD, \bF)d\theta,
 \end{equation}
 
-\noindent where $\tilde{y}$ is the unobserved response variable,  $\tilde{\bm{x}}$ is the corresponding feature vector, and $\bF$ contains the gathered feedback till now. The user and data related parameters ($\phi_f$ and $\phi_D$) are omitted for brevity. The goal is to query the user about the feature, let's say $j^*$, that the corresponding feedback, i.e., $f_{j^*}$, would maximally improve this predictive distribution. The improvement can be measured by comparing the posterior predictive distribution after and before observing the feedback using $\KLt$-divergence, i.e., $\KL{p(\tilde{y} \mid \tilde{\bm{x}}, \bD,\bF,f_{j^*})} {p(\tilde{y} \mid, \tilde{\bm{x}}, \bD,\bF)}$. This utility is known as the information gain and it measures the impact of the new feedback on the posterior predictive distribution of the data. Information gain cannot be computed as (i) the unobserved data $(\tilde{\bm{x}},\tilde{y})$ is not available, and (ii) the user feedback $f_{j^*}$ is only observed only after querying $j^*$ from the user. Rather than computing the utility on unobserved data, we use the available training data set. Furthermore, unobserved feedback can be handled by computing the expected feedback that the user may provide after the query. The expectation would be taken with respect to the posterior predictive of user feedback (the distribution that the system believes the feedback would be generated from), i.e., $p(\tilde{f}_j \mid \bD,\bF)= \int_{\theta} p(\tilde{f}_j \mid \theta)p(\theta \mid \bD, \bF)d\theta$. The best query can then be  selected as
+\noindent where $\tilde{y}$ is the unobserved response variable,  $\tilde{\bm{x}}$ is the corresponding feature vector, and $\bF$ contains the gathered feedback till now. The user and data related parameters ($\phi_f$ and $\phi_D$) are omitted for brevity. The goal is to query the user about the feature, let's say $j^*$, that the corresponding feedback, i.e., $f^{j^*}$, would maximally improve this predictive distribution. The improvement can be measured by comparing the posterior predictive distribution after and before observing the feedback using $\KLt$-divergence, i.e., $\KL{p(\tilde{y} \mid \tilde{\bm{x}}, \bD,\bF,f^{j^*})} {p(\tilde{y} \mid, \tilde{\bm{x}}, \bD,\bF)}$. This utility is known as the information gain and it measures the impact of the new feedback on the posterior predictive distribution of the data. Information gain cannot be computed as (i) the unobserved data $(\tilde{\bm{x}},\tilde{y})$ is not available, and (ii) the user feedback $f^{j^*}$ is only observed only after querying $j^*$ from the user. Rather than computing the utility on unobserved data, we use the available training data set. Furthermore, unobserved feedback can be handled by computing the expected feedback that the user may provide after the query. The expectation would be taken with respect to the posterior predictive of user feedback (the distribution that the system believes the feedback would be generated from), i.e., $p(\tilde{f}^j \mid \bD,\bF)= \int_{\theta} p(\tilde{f}^j \mid \theta)p(\theta \mid \bD, \bF)d\theta$. The best query can then be  selected as
 
 \begin{equation}\label{Eq:expected_info_gain}
-j^* = \argmax_{j \notin \bF} \E_{p(\tilde{f}_j \mid \bD,\bF)} \left[ \sum_{i=1}^{n}  \KL{p(\tilde{y}\mid \bm{x}_i, \bD,\bF,\tilde{f}_j)} {p(\tilde{y} \mid \bm{x}_i, \bD,\bF)} \right].
+j^* = \argmax_{j \notin \bF} \E_{p(\tilde{f}^j \mid \bD,\bF)} \left[ \sum_{i=1}^{n}  \KL{p(\tilde{y}\mid \bm{x}_i, \bD,\bF,\tilde{f}^j)} {p(\tilde{y} \mid \bm{x}_i, \bD,\bF)} \right].
 \end{equation}
     
 This new utility (known as expected information gain) is expensive as it requires the computation of the posterior predictive distribution before and after the new feedback (which itself requires the computation of the corresponding posterior and solving the integral in Equation \ref{Eq:post_pred_data_fb}), computation of the $\KLt$-divergence, and computation of the posterior predictive of the feedback necessary for deriving the expectation. 
@@ -712,24 +712,38 @@ Publications II and III used expected information gain to sequentially extract e
 
 \section{Multi-armed bandits and Bayesian optimization}\label{MAP_and_BO}
 
-Consider the problem of finding the argument that maximizes an objective function, i.e., $x_{j^*} = \argmax_{x_{j} \in \mathcal{X}} f(x_{j})$, in the design space $\mathcal{X}$. Now consider that the function of interest $f(x)$ is unknown  and the only way to gain information about it is to sequentially query it, i.e., ask the function value about a point of interest, such as $x_q \in \mathcal{X}$, and observe the corresponding function value $f(x_q)$ (or alternatively with some added noise). The natural goal for this black box optimization problem could be to find $x^*$ with minimum number of queries. This problem has been extensively investigated in the multi-armed bandit \cite{bubeck2012regret} and Bayesian optimization \cite{brochu2010tutorial,BO_review} literatures. A core characteristic of these approaches is that they need to make a compromise between asking queries that would provide new information about the hidden objective function (for example in areas that have not been explored), versus exploiting the current guess about where the maximum and querying it. This is known as the exploration exploitation trade-off and methods in the literature propose different acquisition function to balance it. Bayesian optimization and multi-armed bandits methods have been used in many applications such as clinical trials (finding the best treatment of a patient out of several alternatives) \cite{bubeck2012regret}, ad placement (finding the ad that would have the highest user click chance) \cite{Bandit_IR}, Automatic machine learning (searching in space of machine learning models) \cite{hoffman2014correlation}, reinforcement learning (finding the best action of an agent) \cite{brochu2010tutorial}, and personalized search systems \cite{ruotsalo2015interactive}. 
+Consider the problem of finding the argument that maximizes an objective function in a design space $\mathcal{X}$, i.e., $x^* = \argmax_{x \in \mathcal{X}} f(x)$. Now consider that the function of interest $f(x)$ is unknown  and the only way to gain information about it is to sequentially query it, i.e., ask the function value about a point of interest, such as $x_q \in \mathcal{X}$, and observe the corresponding function value $f(x_q)$ (or in the general case with some added noise). The natural goal for this black box optimization problem could be to find $x^*$ with minimum number of queries. This problem has been extensively investigated in the multi-armed bandit \cite{bubeck2012regret} and Bayesian optimization \cite{brochu2010tutorial,BO_review} literatures. A core characteristic of these approaches is that they need to make a compromise between asking queries that would provide new information about the hidden objective function (for example in areas that have not been explored), versus exploiting the current guess about where the maximum is and querying it. This is known as the exploration exploitation trade-off and methods in the literature propose different query algorithms, known as acquisition functions, to balance it. Bayesian optimization and multi-armed bandits methods have been used in many applications such as clinical trials (finding the best treatment of a patient out of several alternatives) \cite{bubeck2012regret}, ad placement (finding the ad that would have the highest user click chance) \cite{Bandit_IR}, Automatic machine learning (searching in space of machine learning models) \cite{hoffman2014correlation}, reinforcement learning (finding the best action of an agent) \cite{brochu2010tutorial}, and personalized search systems \cite{ruotsalo2015interactive}. 
 
-A focused application in this thesis is the personalize search system, where the goal is to find the most relevant item for a user by minimum interaction. As the user relevance profile over items is unobserved and only can be queried through recommendations and observing user feedback, one can can map this problem to the black-box optimization problem introduced above. In particular, the problem can be formulated as finding (recommending) the item $\bm{x}_{j^*}$ item that has the highest expected relevance (or equivalently highest expected feedback value). As explained in \ref{feedback_intent_modelling}, we consider the cases where the expected relevance of items have linear relationship with the unknown parameter $\bm{\theta}$\footnote{Note that we have changed the notation for the unknown weight vectors $\bm{w}$ in Section \ref{prob_model_user} to $\bm{\theta}$ to increase readability.}: 
+A focused application in this thesis is the personalize search system, where the goal is to find the most relevant item for a user by minimum interaction. As the user relevance profile over items is unobserved and can only be queried through recommendations and observing user feedback, one can can map this problem to the black-box optimization problem introduced above. In particular, the problem can be formulated as finding (recommending) the item $\bm{x}_{j^*}$ that has the highest expected relevance (or equivalently highest expected feedback value). As explained in \ref{feedback_intent_modelling}, we consider the cases where the expected relevance of items have linear relationship with the unknown parameter $\bm{\theta}$\footnote{Note that we have changed the notation for the unknown weight vectors $\bm{w}$ in Section \ref{prob_model_user} to $\bm{\theta}$ for consistency.}, the optimization can then be described as: 
 
 \begin{equation}\label{Eq:black_box_optimization}
-\bm{x}_{j^*} = \argmax_{\bm{x}_j \in \mathcal{X}} \E [f^j \mid \bm{x}_j] = \argmax_{\bm{x}_j \in \mathcal{X}} \bm{x}_j\tp \bm{\theta}.
+\bm{x}^* = \argmax_{\bm{x} \in \mathcal{X}} \E [f \mid \bm{x}] = \argmax_{\bm{x} \in \mathcal{X}} \bm{x}\tp \bm{\theta}.
 \end{equation}
 
-Given the history of interaction at time $t$, $\bF = \{(\bm{x}_i , f^i)\}_{i=1}^{t}$, the loss of the query algorithm (also known as acquisition function) is measured by the cumulative regret defined as:
+Given a history of interaction at time $t$, $\bF_t = \{(\bm{x}_i , f_i)\}_{i=1}^{t}$, the loss of the query algorithm can be measured by the expected cumulative regret defined as:
 
 \begin{equation}\label{Eq:regret}
-regret_t = t \bm{x}_{j^*}\tp \bm{\theta} - \sum_{i=1}^{t} \bm{x}_j\tp \bm{\theta}.
+\textrm{regret}_t = t \bm{x}^{*\top} \bm{\theta} - \sum_{i=1}^{t} \bm{x}_i\tp \bm{\theta}.
 \end{equation} 
 
-Note that the cumulative regret is minimized if the most relevant item is recommended to the user. In the literature, there are m 
+Note that the cumulative regret is minimized if the most relevant item is recommended to the user. The relevance profile of the user over items is determined by $\bm{\theta}$. Since we are using Bayesian statistics, we have an ongoing update of the posterior given the history of user feedback $p(\bm{\theta} \mid \bF_t)$ which can help us to better design the next query to ask from the user due to having an immediate expression of the uncertainty about $\bm{\theta}$. There are different forms of acquisition functions that exploit the model uncertainty to design the next query. To commons ones are upper confidence bound (UCB) \cite{auer2002using,Bayes_UCB} methods and Thompson sampling \cite{agrawal2013thompson}, which both enjoy theoretical guarantees (for some family of problems) regarding how well they control the regret. 
 
+Publications I and V used Thompson sampling to balance the exploration and exploitation of the recommendations. Thompson sampling follows the Bayesian idea and selects the next query according to its posterior probability of being the best query:  
 
-TODO: try to explain the regret a bit better and refer to a right paper (it is now a bit hand waving). Then go with the acquisition function and introduce Thompson sampling in more details. Then link to publications. 
+\begin{equation}\label{Eq:Thompson}
+\Pr(\bm{x}_{q})=\!\!\int_{\bm{\theta}}\!\!I(\argmax_{\bm{x} \in \mathcal{X}} \bm{x}\tp \bm{\theta} \!=\!\bm{x}_{q}\!\!\mid \!\bm{\theta}) p(\bm{\theta} \mid \bF_t) d\bm{\theta},
+\end{equation}
+ 
+
+\noindent where $\Pr(\bm{x}_{q})$ is the Thompson probability for selecting query point $\bm{x}_{q}$, and $I(.)$ is the indicator function (returns 1 if the condition in front of it holds and zero otherwise). Selection of the query at time $t+1$ according to the Thompson probabilities can be realized by the following steps:
+
+\begin{enumerate}
+	\item Draw a sample from the posterior: $ \bm{\theta}^p \sim p(\bm{\theta} \mid \bF_t)$.
+	\item Find the query that has the highest expected relevance given the posterior sample: $\bm{x}_{q} = \argmax_{\bm{x} \in \mathcal{X}} \bm{x}\tp \bm{\theta}^p$.
+	\item Ask the query from the user, observe user feedback, and update the posterior given the new observation: $p(\bm{\theta} \mid \bF_{t+1})$, where $ \bF_{t+1} = \bF_{t} \cup \{(\bm{x}_{q},f_q)\}$.
+\end{enumerate}
+
+In Publications I and V we considered feedback models for items (keywords and documents) that their expectation was also linear with respect to the unknown parameter (see likelihoods  \ref{Eq:feedback_on_kw}, \ref{Eq:doc_key_relation_vector}, and \ref{Eq:imp_fb_on_kw} in Section \ref{feedback_intent_modelling}.). Thus, the same algorithm can be applied on them with the difference that at each iteration different query types (documents and keywords) are selected to be represented to the user.
 
 \chapter{Summary of the Contributions}
 %Applications and results OR Summary of the Publications

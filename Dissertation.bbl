@@ -17,6 +17,12 @@ Homayun Afrabandpey, Tomi Peltola, and Samuel Kaski.
   International Joint Conferences on Artificial Intelligence Organization, 7
   2019.
 
+\bibitem{agrawal2013thompson}
+Shipra Agrawal and Navin Goyal.
+\newblock Thompson sampling for contextual bandits with linear payoffs.
+\newblock In {\em International Conference on Machine Learning}, pages
+  127--135, 2013.
+
 \bibitem{amershi2014power}
 Saleema Amershi, Maya Cakmak, William~Bradley Knox, and Todd Kulesza.
 \newblock Power to the people: The role of humans in interactive machine
@@ -37,6 +43,11 @@ Kumaripaba Athukorala, Dorota Głowacka, Giulio Jacucci, Antti Oulasvirta, and
   behavior for exploratory and lookup tasks.
 \newblock {\em Journal of the Association for Information Science and
   Technology}, 67(11):2635--2651, 2016.
+
+\bibitem{auer2002using}
+Peter Auer.
+\newblock Using confidence bounds for exploitation-exploration trade-offs.
+\newblock {\em Journal of Machine Learning Research}, 3(Nov):397--422, 2002.
 
 \bibitem{bingham2018pyro}
 Eli Bingham, Jonathan~P. Chen, Martin Jankowiak, Fritz Obermeyer, Neeraj
@@ -200,6 +211,14 @@ Ashish Kapoor, Bongshin Lee, Desney Tan, and Eric Horvitz.
 \newblock Interactive optimization for steering machine classification.
 \newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
   Computing Systems}, CHI '10, pages 1343--1352, New York, NY, USA, 2010. ACM.
+
+\bibitem{Bayes_UCB}
+Emilie Kaufmann, Olivier Cappe, and Aurelien Garivier.
+\newblock On bayesian upper confidence bounds for bandit problems.
+\newblock In {\em Proceedings of the Fifteenth International Conference on
+  Artificial Intelligence and Statistics}, volume~22 of {\em Proceedings of
+  Machine Learning Research}, pages 592--600, La Palma, Canary Islands, 21--23
+  Apr 2012. PMLR.
 
 \bibitem{krause2014infuse}
 Josua Krause, Adam Perer, and Enrico Bertini.
