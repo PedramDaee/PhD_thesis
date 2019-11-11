@@ -136,9 +136,11 @@
 
 \begin{abstract}[english]
 	Ongoing title: \\
-	\textbf{Probabilistic user modelling methods for improving human-in-the-loop machine learning}
+	\textbf{1. Probabilistic user modelling for improving human-in-the-loop machine learning}
 	
-	\textbf{Interactive user modelling for human-in-the-loop machine learning} % NOTE: Interactive and in-the-loop are a bit redundant
+	\textbf{2. Probabilistic user modelling methods for improving human-in-the-loop machine learning}
+	
+	\textbf{3. Interactive user modelling for human-in-the-loop machine learning} % NOTE: Interactive and in-the-loop are a bit redundant
 	
 	
 	
@@ -738,31 +740,56 @@ Publications I and V used Thompson sampling to balance the exploration and explo
 \noindent where $\Pr(\bm{x}_{q})$ is the Thompson probability for selecting query point $\bm{x}_{q}$, and $I(.)$ is the indicator function (returns 1 if the condition in front of it holds and zero otherwise). Selection of the query at time $t+1$ according to the Thompson probabilities can be realized by the following steps:
 
 \begin{enumerate}
-	\item Draw a sample from the posterior: $ \bm{\theta}^p \sim p(\bm{\theta} \mid \bF_t)$.
-	\item Find the query that has the highest expected relevance given the posterior sample: $\bm{x}_{q} = \argmax_{\bm{x} \in \mathcal{X}} \bm{x}\tp \bm{\theta}^p$.
+	\item Draw a sample from the posterior: $ \bm{\theta}^s \sim p(\bm{\theta} \mid \bF_t)$.
+	\item Find the query that has the highest expected relevance given the posterior sample: $\bm{x}_{q} = \argmax_{\bm{x} \in \mathcal{X}} \bm{x}\tp \bm{\theta}^s$.
 	\item Ask the query from the user, observe user feedback, and update the posterior given the new observation: $p(\bm{\theta} \mid \bF_{t+1})$, where $ \bF_{t+1} = \bF_{t} \cup \{(\bm{x}_{q},f_q)\}$.
 \end{enumerate}
 
 In Publications I and V we considered feedback models for items (keywords and documents) that their expectation was also linear with respect to the unknown parameter (see likelihoods  \ref{Eq:feedback_on_kw}, \ref{Eq:doc_key_relation_vector}, and \ref{Eq:imp_fb_on_kw} in Section \ref{feedback_intent_modelling}.). Thus, the same algorithm can be applied on them with the difference that at each iteration different query types (documents and keywords) are selected to be represented to the user.
 
-\chapter{Summary of the Contributions}
+
+\chapter{Conclusions and discussion}
+%Summary of the Contributions
 %Applications and results OR Summary of the Publications
 %Go through the papers and tasks. 
 This chapter briefly summarizes the contributions of Publications I-V with emphasize on answering the research questions of the thesis. 
 
 \section{Interactive intent modelling from multiple feedback domains (Publications I and V)}
 
+
+RQ1 was ``Can we exploit new sources of interaction as additional learning signals from human user to improve interactive intent modelling?''
+
+Publications I and V investigated the ways to improve interactive intent modelling by considering new feedback domains. The application considered in these papers was a personalized article search problem where at each iteration the system recommends a list of articles and keywords, given the history of user interaction, and the user provides feedback to them with the goal to find the most relevant articles faster.
+
+In particular, Publication I exploited the relationship between articles and keywords and proposed a joint probabilistic model that ties the user feedback on both keywords and documents (see Figure \ref{fig:Plate_intent_kd} for model description) to the latent user intent. Previous works \cite{GlowIUI2013,ruotsalo2015interactive} only defined the user intent on keywords and had a separate language model to retrieve documents. The joint probabilistic model allows to learn the user intent with fewer interaction rounds and at the same time provides a unified way to recommend keywords and articles by using Thompson sampling on the posterior of the latent intent (see Section \ref{MAP_and_BO} for details). The model was evaluated in a simulated study and a user study with 10 participants using the exploratory search system SciNet \cite{GlowIUI2013}. 
+
+Publication V investigated the usage of noisy neurophysiologic signals gathered from brain activities (EEG signals) along with scarce explicit interactions (mouse clicks) for a the same interactive article search task. Compared to the previous work, the feedback is still in the same domain of items but its type is more implicit. The integration of feedbacks is challenging due to different nature of noise. To account for the inherit noise we considered a per feedback prior parameter that controls the noise on the observed feedback, given the feedback source. The posterior of that parameter allows the system to correct some of the noises and to detect outlier feedback which is common in neurophysiologic feedback sources (see Figure \ref{fig:Plate_intent_imp} for model description). We used the same approach as Publication I to connect the feedback on documents and keywords and to recommend new items. The model was evaluated in a fully integrated information retrieval system that used the real-time generated feedback from brain activities (EEG) and  eye movements tracking (to map the brain signal to visualized items), and scarce mouse click feedback.  
+
+The conclusion of the thesis to RQ1 is that, interactive intent modelling can be improved by adding new domains of feedback as long as the uncertainty of the feedback source and connection of the feedback to the latent intent is properly accounted for.  
+
 \section{Expert knowledge elicitation for high-dimensional prediction (Publications II and III)}
+
+RQ2 was ``Can expert knowledge about high dimensional data models be elicited to improve the prediction performance?''
+
+Publications II and III studied the ways user knowledge about the parameters of a model can be encapsulated as likelihood functions and how they can sequentially be queried to improve the performance of a prediction task. Expert knowledge is particularly important in ``small $n$, large $p$'' scenarios where the number of available data points ($n$) is fewer than the dimension of the problem ($p$). An example application of such scenario that was investigated in Publication III is the drug response prediction problem given few patient profiles, where it is very costly, or some cases impossible, to add new data to the training data set but expert knowledge is available. 
+
+Both publications contributed to the research question by providing models to add different types of expert knowledge to the prediction model (see Figure \ref{fig:Plate_KE} for the three suggested feedback types) and designing the interaction with sequential experimental design to query the most informative expert knowledge earlier (see Section \ref{AL_and_ED} for details). Both publications were evaluated by extensive simulated experiments and studies with real users/experts.
+
+The conclusion of the thesis to RQ2 is that, even though the expert knowledge is not as powerful as new labeled data points, if connected properly to the data model, the knowledge can still significantly help to improve the prediction performance. This increase in performance is noticeably fast if the queries are designed sequentially by the model to ask the most informative questions first. 
 
 \section{User modelling for avoiding overfitting in knowledge elicitation (Publication IV)}
 
+RQ3 was ``Is it enough to incorporate human knowledge directly in the data model as explained in RQ2, or could it be beneficial to account for rational knowledge updates that humans may undergo during the interaction?''
 
-\chapter{Discussion}
+Publication IV investigates the complementary question to RQ2 of what if we acknowledge that the knowledge elicitation is being performed on a human user which comes with its own preset of biases and cognitive characteristics. In particular, we consider anchoring bias as one of the well-studied cognitive biases \cite{Tversky1974} and ask what if the knowledge elicitation system explicitly model this potential bias when gathering user feedback. The bias can particularly be harmful when extracting user knowledge after revealing certain aspects of training data, such as statistics or scatter plots. If not accounted properly, the user knowledge can be influenced by the information in the training data which may result in overfitting in the prediction model (as the user knowledge and training data are to some degree dependent). We proposed a probabilistic model that acknowledges the bias by assuming that the user updates her latent knowledge with the information in the training data that has been revealed and provides the biased feedback. The probabilistic model than accounts for the bias by performing the inverse of the knowledge update and extracting the tacit knowledge to be used in the model (see Figure \ref{fig:Plate_OF} for model description). The proposed model was evaluated on a simple user study with 49 participants and the results showed that modelling the user bias (or thinking behaviour) in the knowledge elicitation model improves the prediction.
 
-The thesis can be summarized as attempts to model the user in some cases of human-in-the-loop machine learning scenarios. We believe that the this area would be of great importance in the future as the machine learning methods would always need the interaction for the user (for example for decision making) or collaboration. User modelling, can provide the machine with a model of how users perceive the world, and knowing that the interaction between the human and machine can be improved. In a following work \cite{peltola2018machine}, we showed that the personalized search systems can be improved if the user model acknowledges that the user may actually model the machine and exploit it in the interaction...
+The conclusion of the thesis to RQ2 is that interactive models can gain more from an observed user feedback if it correctly models the unobserved thinking process that the user may undergo to produce the feedback. The finding is striking as it opens a new horizon for user modelling in human-in-the-loop machine learning methods systems where the model acknowledges how the human user interacts and is able to condition on the thinking process to have more informative updates from an observed interaction.
 
-To cite the NeurIPS paper.
-%Motivate future works such as next level of user modelling. Similar to overfitting work, but assuming a more active version of the user -> ATOM
+%\chapter{Discussion}
+\section{Discussion}
+
+The thesis has focused on modelling the user interaction with a machine learning system as a unified probabilistic model of both the user model, i.e., model of user interaction (in the form of feedback) and intention, and the data model. The user interaction to the model has then designed as a sequential probabilistic inference problem where the most informative query from the user is selected at each iteration (see figure Figure \ref{fig:infoflow}). We believe that probabilistic user modelling would be of great importance in human-in-the-loop machine learning systems as it allows to (i) infer more information from an observed user feedback and (ii) design better interactions by exploiting the quantified uncertainty. User modelling, can provide the machine with a model of how users perceive the world, and the works in the thesis show that exploiting this knowledge can improve the interaction. Recent works have shown the benefits of such user modelling. In \cite{peltola2019machine}, we showed that the performance of a personalized search system can be improved if the user model acknowledges that the user is exploiting a simplified model of the system they are interacting with.   % Future works have started to model the user jointly with the data and early results show that the probabilistic user modelling can expand to more complex user models for example assuming that the user has a model of the machine in her mind \cite{peltola2018machine}. %we showed that the personalized search systems can be improved if the user model acknowledges that the user may actually model the machine and exploit it in the interaction.
+
 
 
 

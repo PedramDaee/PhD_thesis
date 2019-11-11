@@ -271,10 +271,10 @@ Tomi Peltola.
   applications in epidemiology; harvuutta suosivat bayesilaiset lineaarimallit:
   laskennallisia menetelmiä ja sovelluksia epidemiologiassa, 2014.
 
-\bibitem{peltola2018machine}
+\bibitem{peltola2019machine}
 Tomi Peltola, Mustafa~Mert Çelikok, Pedram Daee, and Samuel Kaski.
 \newblock Machine teaching of active sequential learners.
-\newblock 2018.
+\newblock In {\em Advances in neural information processing systems}, 2019.
 
 \bibitem{horseshoe_2017}
 Juho Piironen and Aki Vehtari.

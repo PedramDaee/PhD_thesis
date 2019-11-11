@@ -5,46 +5,45 @@ The style file: plain.bst
 Database file #1: references.bib
 Warning--entry type for "Tomi_P_thesis" isn't style-file defined
 --line 551 of file references.bib
-Warning--empty booktitle in peltola2018machine
 You've used 61 entries,
             2118 wiz_defined-function locations,
             897 strings with 17285 characters,
-and the built_in function-call counts, 24818 in all, are:
-= -- 2488
+and the built_in function-call counts, 24826 in all, are:
+= -- 2489
 > -- 1216
 < -- 21
 + -- 482
 - -- 418
-* -- 1837
-:= -- 3958
+* -- 1838
+:= -- 3959
 add.period$ -- 194
 call.type$ -- 61
 change.case$ -- 389
 chr.to.int$ -- 0
-cite$ -- 62
-duplicate$ -- 923
-empty$ -- 1866
+cite$ -- 61
+duplicate$ -- 924
+empty$ -- 1868
 format.name$ -- 418
-if$ -- 5274
+if$ -- 5277
 int.to.chr$ -- 0
 int.to.str$ -- 61
 missing$ -- 63
 newline$ -- 307
 num.names$ -- 122
-pop$ -- 391
+pop$ -- 390
 preamble$ -- 1
 purify$ -- 330
 quote$ -- 0
 skip$ -- 696
 stack$ -- 0
 substring$ -- 1728
-swap$ -- 266
+swap$ -- 267
 text.length$ -- 21
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 236
-warning$ -- 1
+warning$ -- 0
 while$ -- 233
 width$ -- 63
-write$ -- 692
-(There were 2 warnings)
+write$ -- 693
+(There was 1 warning)
