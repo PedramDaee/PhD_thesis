@@ -25,13 +25,13 @@
 \@writefile{toc}{\contentsline {chapter}{Author's Contribution}{9}{section*.4}}
 \citation{amershi2014power}
 \citation{Donoho2009observed}
+\citation{lasso2011}
 \citation{user_modelling_2001}
 \@writefile{toc}{\contentsline {chapter}{\numberline {1.}Introduction}{11}{chapter.1}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {1.1}Motivation}{11}{section.1.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.2}Research questions and contributions}{11}{section.1.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.3}Organization of the thesis}{13}{section.1.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Research questions and contributions}{12}{section.1.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}Organization of the thesis}{13}{section.1.2}}
 \citation{Gelman2013}
 \citation{Gelman2013}
 \@writefile{toc}{\contentsline {chapter}{\numberline {2.}Probabilistic modelling of data and user}{15}{chapter.2}}
@@ -59,10 +59,10 @@
 \newlabel{Eq:Bayes_rule_ss_reg}{{2.9}{20}{Sparsity-inducing priors}{equation.2.2.9}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Detecting outliers}{20}{section*.11}}
 \newlabel{Eq:ard_Bayesian_regression}{{2.10}{20}{Detecting outliers}{equation.2.2.10}{}}
-\newlabel{Eq:Bayes_rule_ARD}{{2.11}{20}{Detecting outliers}{equation.2.2.11}{}}
 \citation{drug_response_prediction}
 \citation{liu2015sentiment}
 \citation{dai2015semi}
+\newlabel{Eq:Bayes_rule_ARD}{{2.11}{21}{Detecting outliers}{equation.2.2.11}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.3}Modelling user interaction for prediction}{21}{section.2.3}}
 \newlabel{prob_model_user}{{2.3}{21}{Modelling user interaction for prediction}{section.2.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}User feedback as observation about model parameters}{21}{subsection.2.3.1}}
@@ -72,17 +72,19 @@
 \newlabel{fig:Plate_KE}{{2.1}{22}{Plate notation of the prediction model (right; see Equation \ref {Eq:ss_Bayesian_regression}) and user feedback observations (left; see Equations \ref {Eq:fb_on_val_coeff}, \ref {Eq:fb_on_rel_coeff}, and \ref {Eq:fb_on_dir_coeff}). User feedback influences the data model through observations about model parameters. Circles represent variables (observed variables are shaded), and shaded squares are the fixed hyperparameters.\relax }{figure.caption.12}{}}
 \newlabel{Eq:fb_on_val_coeff}{{2.12}{22}{User feedback as observation about model parameters}{equation.2.3.12}{}}
 \newlabel{Eq:fb_on_rel_coeff}{{2.13}{22}{User feedback as observation about model parameters}{equation.2.3.13}{}}
-\newlabel{Eq:fb_on_dir_coeff}{{2.14}{22}{User feedback as observation about model parameters}{equation.2.3.14}{}}
 \citation{OHagan06}
 \citation{garthwaite2005statistical}
 \citation{concept_driven_CHI2019}
+\citation{Homayun_pairwise_UMAP}
+\citation{Homayun_pairwise_ijcai2019}
 \citation{Correia2019HumanintheLoopFS}
 \citation{raghavan2006active}
 \citation{druck2009active}
 \citation{settles2011closing}
 \citation{Micallef_elicitation}
-\citation{Homayun_pairwise_UMAP}
-\citation{Homayun_pairwise_ijcai2019}
+\newlabel{Eq:fb_on_dir_coeff}{{2.14}{23}{User feedback as observation about model parameters}{equation.2.3.14}{}}
+\newlabel{Eq:Bayes_rule_ss_reg_with_fb}{{2.15}{23}{User feedback as observation about model parameters}{equation.2.3.15}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Related works}{23}{section*.13}}
 \citation{BEAMES_Endert}
 \citation{sacha2017you}
 \citation{Homayun_pairwise_UMAP}
@@ -96,56 +98,54 @@
 \citation{Tversky1974}
 \citation{garthwaite2005statistical}
 \citation{gershman2015computational}
-\newlabel{Eq:Bayes_rule_ss_reg_with_fb}{{2.15}{23}{User feedback as observation about model parameters}{equation.2.3.15}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Related works}{23}{section*.13}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}User feedback as outcome of a cognitive process}{23}{subsection.2.3.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Plate notation of the prediction model (right; see Equation \ref  {Eq:ss_Bayesian_regression}) and user model for feedback (left). The observed user feedback about the probability of relevance of coefficient, $p(\gamma ^j \mid \mathcal  {D},f^j)$, is biased as it is generated from combination of latent user knowledge about the coefficient, i.e., $p(f^j \mid \gamma ^j)$, and information visualized from the data model about probability of relevance of the coefficient, i.e., $p(\gamma ^j\mid \mathcal  {D})$. We are interested in inferring the unbiased, latent, version of the feedback to update the parameters of interest in the data model.\relax }}{24}{figure.caption.14}}
-\newlabel{fig:Plate_OF}{{2.2}{24}{Plate notation of the prediction model (right; see Equation \ref {Eq:ss_Bayesian_regression}) and user model for feedback (left). The observed user feedback about the probability of relevance of coefficient, $p(\gamma ^j \mid \bD ,f^j)$, is biased as it is generated from combination of latent user knowledge about the coefficient, i.e., $p(f^j \mid \gamma ^j)$, and information visualized from the data model about probability of relevance of the coefficient, i.e., $p(\gamma ^j\mid \bD )$. We are interested in inferring the unbiased, latent, version of the feedback to update the parameters of interest in the data model.\relax }{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}User feedback as outcome of a cognitive process}{24}{subsection.2.3.2}}
+\newlabel{Eq:Bayesian_update_biased_fb}{{2.16}{24}{User feedback as outcome of a cognitive process}{equation.2.3.16}{}}
 \citation{garthwaite2005statistical}
 \citation{bias_warning}
 \citation{garthwaite2005statistical}
 \citation{bias_warning}
-\newlabel{Eq:Bayesian_update_biased_fb}{{2.16}{25}{User feedback as outcome of a cognitive process}{equation.2.3.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Plate notation of the prediction model (right; see Equation \ref  {Eq:ss_Bayesian_regression}) and user model for feedback (left). The observed user feedback about the probability of relevance of coefficient, $p(\gamma ^j \mid \mathcal  {D},f^j)$, is biased as it is generated from combination of latent user knowledge about the coefficient, i.e., $p(f^j \mid \gamma ^j)$, and information visualized from the data model about probability of relevance of the coefficient, i.e., $p(\gamma ^j\mid \mathcal  {D})$. We are interested in inferring the unbiased, latent, version of the feedback to update the parameters of interest in the data model.\relax }}{25}{figure.caption.14}}
+\newlabel{fig:Plate_OF}{{2.2}{25}{Plate notation of the prediction model (right; see Equation \ref {Eq:ss_Bayesian_regression}) and user model for feedback (left). The observed user feedback about the probability of relevance of coefficient, $p(\gamma ^j \mid \bD ,f^j)$, is biased as it is generated from combination of latent user knowledge about the coefficient, i.e., $p(f^j \mid \gamma ^j)$, and information visualized from the data model about probability of relevance of the coefficient, i.e., $p(\gamma ^j\mid \bD )$. We are interested in inferring the unbiased, latent, version of the feedback to update the parameters of interest in the data model.\relax }{figure.caption.14}{}}
 \newlabel{Eq:latent_knowledge_infer}{{2.17}{25}{User feedback as outcome of a cognitive process}{equation.2.3.17}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Related works}{25}{section*.15}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}User feedback for intent modelling}{25}{subsection.2.3.3}}
-\newlabel{feedback_intent_modelling}{{2.3.3}{25}{User feedback for intent modelling}{subsection.2.3.3}{}}
 \citation{Marchionini2006}
 \citation{white2009exploratory}
 \citation{Teevan_2004}
 \citation{paba_exploratory_vs_lookup}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}User feedback for intent modelling}{26}{subsection.2.3.3}}
+\newlabel{feedback_intent_modelling}{{2.3.3}{26}{User feedback for intent modelling}{subsection.2.3.3}{}}
 \newlabel{Eq:feedback_on_kw}{{2.18}{26}{User feedback for intent modelling}{equation.2.3.18}{}}
-\newlabel{Eq:doc_key_relation}{{2.19}{26}{User feedback for intent modelling}{equation.2.3.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Plate notation of the intent modelling from feedback on recommended documents and keywords. The feature transformation are now shown. The feature for the $i^{th}$ keyword (shown as $x_i$) is the $i^{th}$ row of keyword document matrix $X$, and for the $j^{th}$ document (shown as $x_j$) is the $j^{th}$ column of $\mathaccentV {hat}002{X}^{\top }X$.\relax }}{27}{figure.caption.16}}
-\newlabel{fig:Plate_intent_kd}{{2.3}{27}{Plate notation of the intent modelling from feedback on recommended documents and keywords. The feature transformation are now shown. The feature for the $i^{th}$ keyword (shown as $x_i$) is the $i^{th}$ row of keyword document matrix $X$, and for the $j^{th}$ document (shown as $x_j$) is the $j^{th}$ column of $\hat {X}\tp X$.\relax }{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Plate notation of the intent modelling from feedback on recommended documents and keywords. The feature transformations are not shown. The feature for the $i^{th}$ keyword (shown as $\bm  {x}_i$) is the $i^{th}$ row of the keyword-document matrix $\bm  {X}$, and for the $j^{th}$ document (shown as $\bm  {x}_j$) is the $j^{th}$ row of $\mathaccentV {hat}002{\bm  {X}}^{\top }\bm  {X}$.\relax }}{27}{figure.caption.16}}
+\newlabel{fig:Plate_intent_kd}{{2.3}{27}{Plate notation of the intent modelling from feedback on recommended documents and keywords. The feature transformations are not shown. The feature for the $i^{th}$ keyword (shown as $\bm {x}_i$) is the $i^{th}$ row of the keyword-document matrix $\bm {X}$, and for the $j^{th}$ document (shown as $\bm {x}_j$) is the $j^{th}$ row of $\hat {\bm {X}}\tp \bm {X}$.\relax }{figure.caption.16}{}}
+\newlabel{Eq:doc_key_relation}{{2.19}{27}{User feedback for intent modelling}{equation.2.3.19}{}}
 \newlabel{Eq:doc_key_relation_vector}{{2.20}{27}{User feedback for intent modelling}{equation.2.3.20}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Implicit feedback model}{27}{section*.17}}
 \citation{GlowIUI2013}
 \citation{ruotsalo2015interactive}
 \citation{Ruotsalo2018}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Plate notation of the intent modelling from feedback on recommended documents and noisy, implicit feedback on keywords. The data model is based on \ref  {Eq:ard_Bayesian_regression} with the feedbacks as the observational data. The feature vector of documents follows the transformation introduced in equation \ref  {Eq:doc_key_relation_vector}\relax }}{28}{figure.caption.18}}
-\newlabel{fig:Plate_intent_imp}{{2.4}{28}{Plate notation of the intent modelling from feedback on recommended documents and noisy, implicit feedback on keywords. The data model is based on \ref {Eq:ard_Bayesian_regression} with the feedbacks as the observational data. The feature vector of documents follows the transformation introduced in equation \ref {Eq:doc_key_relation_vector}\relax }{figure.caption.18}{}}
+\citation{Gelman2013}
+\@writefile{toc}{\contentsline {subsubsection}{Implicit feedback model}{28}{section*.17}}
 \newlabel{Eq:imp_fb_on_kw}{{2.21}{28}{Implicit feedback model}{equation.2.3.21}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Related works}{28}{section*.19}}
-\citation{Gelman2013}
 \citation{Gelman2013}
 \citation{STAN}
 \citation{bingham2018pyro}
 \citation{Bayesian_workflow_cog_sci_2019}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Plate notation of the intent modelling from feedback on recommended documents and noisy, implicit feedback on keywords. The data model is based on \ref  {Eq:ard_Bayesian_regression} with the feedbacks as the observational data. The feature vector of documents follows the transformation introduced in equation \ref  {Eq:doc_key_relation_vector}\relax }}{29}{figure.caption.18}}
+\newlabel{fig:Plate_intent_imp}{{2.4}{29}{Plate notation of the intent modelling from feedback on recommended documents and noisy, implicit feedback on keywords. The data model is based on \ref {Eq:ard_Bayesian_regression} with the feedbacks as the observational data. The feature vector of documents follows the transformation introduced in equation \ref {Eq:doc_key_relation_vector}\relax }{figure.caption.18}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.4}Posterior inference}{29}{section.2.4}}
 \newlabel{posteriro_inf}{{2.4}{29}{Posterior inference}{section.2.4}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Markov chain simulation methods}{29}{section*.20}}
 \citation{Blei_VB}
 \citation{bishop2006pattern}
+\@writefile{toc}{\contentsline {subsubsection}{Deterministic posterior approximation}{30}{section*.21}}
+\@writefile{toc}{\contentsline {paragraph}{Variational Bayes (VB)}{30}{section*.22}}
 \citation{minka2001expectation}
 \citation{hernandez2013generalized}
 \citation{Lobato2015ML}
 \citation{Tomi_P_thesis}
-\@writefile{toc}{\contentsline {subsubsection}{Deterministic posterior approximation}{30}{section*.21}}
-\@writefile{toc}{\contentsline {paragraph}{Variational Bayes (VB)}{30}{section*.22}}
-\@writefile{toc}{\contentsline {paragraph}{Expectation propagation (EP)}{30}{section*.23}}
 \citation{hernandez2013generalized}
 \citation{seeger2008bayesian}
+\@writefile{toc}{\contentsline {paragraph}{Expectation propagation (EP)}{31}{section*.23}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {3.}User interaction with the probabilistic model}{33}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
