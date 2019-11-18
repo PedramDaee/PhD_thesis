@@ -198,6 +198,13 @@ Matthew Hoffman, Bobak Shahriari, and Nando Freitas.
 \newblock In {\em Artificial Intelligence and Statistics}, pages 365--374,
   2014.
 
+\bibitem{NIPS2016_6155}
+Tzu-Kuo Huang, Lihong Li, Ara Vartanian, Saleema Amershi, and Jerry Zhu.
+\newblock Active learning with oracle epiphany.
+\newblock In D.~D. Lee, M.~Sugiyama, U.~V. Luxburg, I.~Guyon, and R.~Garnett,
+  editors, {\em Advances in Neural Information Processing Systems 29}, pages
+  2820--2828. Curran Associates, Inc., 2016.
+
 \bibitem{Kangasraasio_2016_interactive}
 Antti Kangasr{\"a}{\"a}si{\"o}, Yi~Chen, Dorota Glowacka, and Samuel Kaski.
 \newblock Interactive modeling of concept drift and errors in relevance

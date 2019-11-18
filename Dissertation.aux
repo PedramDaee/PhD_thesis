@@ -115,13 +115,14 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}User feedback for intent modelling}{26}{subsection.2.3.3}}
 \newlabel{feedback_intent_modelling}{{2.3.3}{26}{User feedback for intent modelling}{subsection.2.3.3}{}}
 \newlabel{Eq:feedback_on_kw}{{2.18}{26}{User feedback for intent modelling}{equation.2.3.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Plate notation of the intent modelling from feedback on recommended documents and keywords. The feature transformations are not shown. The feature for the $i^{th}$ keyword (shown as $\bm  {x}_i$) is the $i^{th}$ row of the keyword-document matrix $\bm  {X}$, and for the $j^{th}$ document (shown as $\bm  {x}_j$) is the $j^{th}$ row of $\mathaccentV {hat}002{\bm  {X}}^{\top }\bm  {X}$.\relax }}{27}{figure.caption.16}}
-\newlabel{fig:Plate_intent_kd}{{2.3}{27}{Plate notation of the intent modelling from feedback on recommended documents and keywords. The feature transformations are not shown. The feature for the $i^{th}$ keyword (shown as $\bm {x}_i$) is the $i^{th}$ row of the keyword-document matrix $\bm {X}$, and for the $j^{th}$ document (shown as $\bm {x}_j$) is the $j^{th}$ row of $\hat {\bm {X}}\tp \bm {X}$.\relax }{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Plate notation of the intent modelling from feedback on recommended documents and keywords. The feature transformations are not shown. The feature vector for the $i^{th}$ keyword (shown as $\bm  {x}_i$) is the $i^{th}$ column of the keyword-document matrix $\bm  {X}^{\top }$, and for the $j^{th}$ document (shown as $\bm  {x}_j$) is the $j^{th}$ column of $\bm  {X}^{\top }\mathaccentV {hat}002{\bm  {X}}$.\relax }}{27}{figure.caption.16}}
+\newlabel{fig:Plate_intent_kd}{{2.3}{27}{Plate notation of the intent modelling from feedback on recommended documents and keywords. The feature transformations are not shown. The feature vector for the $i^{th}$ keyword (shown as $\bm {x}_i$) is the $i^{th}$ column of the keyword-document matrix $\bm {X}\tp $, and for the $j^{th}$ document (shown as $\bm {x}_j$) is the $j^{th}$ column of $\bm {X}\tp \hat {\bm {X}}$.\relax }{figure.caption.16}{}}
 \newlabel{Eq:doc_key_relation}{{2.19}{27}{User feedback for intent modelling}{equation.2.3.19}{}}
 \newlabel{Eq:doc_key_relation_vector}{{2.20}{27}{User feedback for intent modelling}{equation.2.3.20}{}}
 \citation{GlowIUI2013}
 \citation{ruotsalo2015interactive}
 \citation{Ruotsalo2018}
+\citation{GlowIUI2013}
 \citation{Gelman2013}
 \@writefile{toc}{\contentsline {subsubsection}{Implicit feedback model}{28}{section*.17}}
 \newlabel{Eq:imp_fb_on_kw}{{2.21}{28}{Implicit feedback model}{equation.2.3.21}{}}
@@ -130,8 +131,8 @@
 \citation{STAN}
 \citation{bingham2018pyro}
 \citation{Bayesian_workflow_cog_sci_2019}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Plate notation of the intent modelling from feedback on recommended documents and noisy, implicit feedback on keywords. The data model is based on \ref  {Eq:ard_Bayesian_regression} with the feedbacks as the observational data. The feature vector of documents follows the transformation introduced in equation \ref  {Eq:doc_key_relation_vector}\relax }}{29}{figure.caption.18}}
-\newlabel{fig:Plate_intent_imp}{{2.4}{29}{Plate notation of the intent modelling from feedback on recommended documents and noisy, implicit feedback on keywords. The data model is based on \ref {Eq:ard_Bayesian_regression} with the feedbacks as the observational data. The feature vector of documents follows the transformation introduced in equation \ref {Eq:doc_key_relation_vector}\relax }{figure.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Plate notation of the intent modelling from explicit feedback on recommended documents and noisy, implicit feedback on recommended keywords. The model is based on \ref  {Eq:ard_Bayesian_regression} with the feedbacks likelihoods following \ref  {Eq:imp_fb_on_kw} for keywords and \ref  {Eq:doc_key_relation_vector} for documents.\relax }}{29}{figure.caption.18}}
+\newlabel{fig:Plate_intent_imp}{{2.4}{29}{Plate notation of the intent modelling from explicit feedback on recommended documents and noisy, implicit feedback on recommended keywords. The model is based on \ref {Eq:ard_Bayesian_regression} with the feedbacks likelihoods following \ref {Eq:imp_fb_on_kw} for keywords and \ref {Eq:doc_key_relation_vector} for documents.\relax }{figure.caption.18}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.4}Posterior inference}{29}{section.2.4}}
 \newlabel{posteriro_inf}{{2.4}{29}{Posterior inference}{section.2.4}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Markov chain simulation methods}{29}{section*.20}}
@@ -185,6 +186,7 @@
 \@writefile{toc}{\contentsline {section}{\numberline {4.1}Interactive intent modelling from multiple feedback domains (Publications I and V)}{39}{section.4.1}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.2}Expert knowledge elicitation for high-dimensional prediction (Publications II and III)}{40}{section.4.2}}
 \citation{Tversky1974}
+\citation{NIPS2016_6155}
 \citation{peltola2019machine}
 \@writefile{toc}{\contentsline {section}{\numberline {4.3}User modelling for avoiding overfitting in knowledge elicitation (Publication IV)}{41}{section.4.3}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.4}Discussion}{41}{section.4.4}}
@@ -221,37 +223,38 @@
 \bibcite{hernandez2013generalized}{28}
 \bibcite{Lobato2015ML}{29}
 \bibcite{hoffman2014correlation}{30}
-\bibcite{Kangasraasio_2016_interactive}{31}
-\bibcite{Kapoor2010}{32}
-\bibcite{Bayes_UCB}{33}
-\bibcite{krause2014infuse}{34}
-\bibcite{liu2015sentiment}{35}
-\bibcite{Marchionini2006}{36}
-\bibcite{Micallef_elicitation}{37}
-\bibcite{minka2001expectation}{38}
-\bibcite{muhlbacher2013partition}{39}
-\bibcite{OHagan06}{40}
-\bibcite{Tomi_P_thesis}{41}
-\bibcite{peltola2019machine}{42}
-\bibcite{horseshoe_2017}{43}
-\bibcite{raghavan2006active}{44}
-\bibcite{ruotsalo2015interactive}{45}
-\bibcite{Ruotsalo2018}{46}
-\bibcite{sacha2017you}{47}
-\bibcite{sarkar2015interactive}{48}
-\bibcite{Bayesian_workflow_cog_sci_2019}{49}
-\bibcite{seeger2008bayesian}{50}
-\bibcite{settles2010active}{51}
-\bibcite{settles2011closing}{52}
-\bibcite{BO_review}{53}
-\bibcite{Talbot2009}{54}
-\bibcite{Teevan_2004}{55}
-\bibcite{lasso2011}{56}
-\bibcite{Bayesian_ARD2007}{57}
-\bibcite{Tversky1974}{58}
-\bibcite{van2011baobabview}{59}
-\bibcite{bias_warning}{60}
-\bibcite{white2009exploratory}{61}
+\bibcite{NIPS2016_6155}{31}
+\bibcite{Kangasraasio_2016_interactive}{32}
+\bibcite{Kapoor2010}{33}
+\bibcite{Bayes_UCB}{34}
+\bibcite{krause2014infuse}{35}
+\bibcite{liu2015sentiment}{36}
+\bibcite{Marchionini2006}{37}
+\bibcite{Micallef_elicitation}{38}
+\bibcite{minka2001expectation}{39}
+\bibcite{muhlbacher2013partition}{40}
+\bibcite{OHagan06}{41}
+\bibcite{Tomi_P_thesis}{42}
+\bibcite{peltola2019machine}{43}
+\bibcite{horseshoe_2017}{44}
+\bibcite{raghavan2006active}{45}
+\bibcite{ruotsalo2015interactive}{46}
+\bibcite{Ruotsalo2018}{47}
+\bibcite{sacha2017you}{48}
+\bibcite{sarkar2015interactive}{49}
+\bibcite{Bayesian_workflow_cog_sci_2019}{50}
+\bibcite{seeger2008bayesian}{51}
+\bibcite{settles2010active}{52}
+\bibcite{settles2011closing}{53}
+\bibcite{BO_review}{54}
+\bibcite{Talbot2009}{55}
+\bibcite{Teevan_2004}{56}
+\bibcite{lasso2011}{57}
+\bibcite{Bayesian_ARD2007}{58}
+\bibcite{Tversky1974}{59}
+\bibcite{van2011baobabview}{60}
+\bibcite{bias_warning}{61}
+\bibcite{white2009exploratory}{62}
 \@writefile{asp}{\item \publication[in]{\relax $\@@underline {\hbox {Pedram Daee}}\mathsurround \z@ $\relax , Joel Pyykk\"o, Dorota G\l {}owacka, and Samuel Kaski}{Interactive Intent Modeling from Multiple Feedback Domains}{Proceedings of the 21st International Conference on Intelligent User Interfaces}{Sonoma, California, USA, 71--75}{March}{2016}}
 \@writefile{toc}{\contentsline {chapter}{Publications}{49}{section*.26}}
 \newlabel{c1}{{Publication\ I}{49}{Publication\ I}{pub.c1.1}{}}\newlabel{c1-long}{{Publication\ I}{49}{Publication\ I}{pub.c1.1}{}}\newlabel{c1-short}{{PI}{49}{P\ I}{pub.c1.1}{}}\newlabel{c1-number}{{I}{49}{I}{pub.c1.1}{}}
