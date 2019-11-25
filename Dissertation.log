@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.9.7)  18 NOV 2019 15:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.9.7)  25 NOV 2019 15:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1433,53 +1433,53 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
 (Font)              scaled to size 10.18341pt on input line 137.
 LaTeX Font Info:    Font shape `T1/fnc/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/fnc/b/it' tried instead on input line 139.
+(Font)              Font shape `T1/fnc/b/it' tried instead on input line 141.
 LaTeX Font Info:    Font shape `T1/fnc/b/it' will be
-(Font)              scaled to size 10.18341pt on input line 139.
+(Font)              scaled to size 10.18341pt on input line 141.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.43994pt on input line 172.
+(Font)              scaled to size 7.43994pt on input line 174.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 10.22992pt on input line 172.
+(Font)              scaled to size 10.22992pt on input line 174.
 [1
 
 ] [2
 
 ]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 18.59985pt on input line 172.
+(Font)              scaled to size 18.59985pt on input line 174.
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <20> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 172.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 174.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 18.59985pt on input line 172.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 172.
+(Font)              scaled to size 18.59985pt on input line 174.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 174.
  (c:/texlive/2018/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 172.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 174.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 18.99994pt on input line 172.
+(Font)              scaled to size 18.99994pt on input line 174.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.71893pt on input line 172.
+(Font)              scaled to size 7.71893pt on input line 174.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 172.
-LaTeX Font Info:    Try loading font information for FML+fncm on input line 172
+(Font)              scaled to size 5.57996pt on input line 174.
+LaTeX Font Info:    Try loading font information for FML+fncm on input line 174
 .
 
 (c:/texlive/2018/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
 File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 172.
+(Font)              scaled to size 10.07397pt on input line 174.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 172.
+(Font)              scaled to size 7.63599pt on input line 174.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 172.
-LaTeX Font Info:    Try loading font information for U+msa on input line 172.
+(Font)              scaled to size 5.51999pt on input line 174.
+LaTeX Font Info:    Try loading font information for U+msa on input line 174.
 
 (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1487,7 +1487,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (c:/texlive/2018/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 172.
+LaTeX Font Info:    Try loading font information for U+msb on input line 174.
 
 (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1496,9 +1496,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 7.71893pt on input line 172.
+(Font)              scaled to size 7.71893pt on input line 174.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 5.57996pt on input line 172.
+(Font)              scaled to size 5.57996pt on input line 174.
  [3] [4
 
 
@@ -1531,80 +1531,79 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 \tf@asc=\write8
 \openout8 = `Dissertation.asc'.
 
- [10]
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+ [10] [11
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
 
-[11
-
-]
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 236.
- (c:/texlive/2018/texmf-dist/tex/latex/bera/t1fvm.fd
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 260.
+(c:/texlive/2018/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.2125pt on input line 236.
+(Font)              scaled to size 8.2125pt on input line 260.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [12] [13] [14
 
-]
-[15]
+] [15]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 269.
+(Font)              scaled to size 8.36993pt on input line 293.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 269.
+(Font)              scaled to size 9.29993pt on input line 293.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.06795pt on input line 269.
+(Font)              scaled to size 7.06795pt on input line 293.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 269.
+(Font)              scaled to size 9.19998pt on input line 293.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 269.
+(Font)              scaled to size 6.99199pt on input line 293.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 9.29993pt on input line 269.
+(Font)              scaled to size 9.29993pt on input line 293.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 7.06795pt on input line 269.
- [16]
+(Font)              scaled to size 7.06795pt on input line 293.
+
+[16]
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <11> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 286.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 310.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 10.22992pt on input line 286.
+(Font)              scaled to size 10.22992pt on input line 310.
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <10> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 303.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 327.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 9.29993pt on input line 303.
+(Font)              scaled to size 9.29993pt on input line 327.
  [17] [18]
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.22992pt on input line 339.
+(Font)              scaled to size 10.22992pt on input line 363.
  [19] [20] [21]
 
 pdfTeX warning: pdflatex.exe (file ./Figures/Plate_diagram_KE.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.4> allowed
-<Figures/Plate_diagram_KE.pdf, id=333, 380.74246pt x 202.6772pt>
+<Figures/Plate_diagram_KE.pdf, id=338, 380.74246pt x 202.6772pt>
 File: Figures/Plate_diagram_KE.pdf Graphic file (type pdf)
 <use Figures/Plate_diagram_KE.pdf>
-Package pdftex.def Info: Figures/Plate_diagram_KE.pdf  used on input line 399.
+Package pdftex.def Info: Figures/Plate_diagram_KE.pdf  used on input line 423.
 (pdftex.def)             Requested size: 369.88585pt x 196.90898pt.
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <9> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 400.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 424.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 8.36993pt on input line 400.
-LaTeX Font Info:    Try loading font information for TS1+fnc on input line 406.
+(Font)              scaled to size 8.36993pt on input line 424.
+LaTeX Font Info:    Try loading font information for TS1+fnc on input line 430.
 
 (c:/texlive/2018/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
 File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
 )
 LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 406.
+(Font)              scaled to size 10.18341pt on input line 430.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fnc' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [22 <./Figures/Plate_diagram_KE.pdf>]
-Overfull \hbox (3.46996pt too wide) detected at line 431
+Overfull \hbox (3.46996pt too wide) detected at line 455
 \FML/fncmi/m/it/10.95 p\T1/fnc/m/n/10.95 (\FML/fncmi/b/it/10.95 w\FML/fncmi/m/i
 t/10.95 ; \FML/fncmi/b/it/10.95 ^^M\FML/fncmi/m/it/10.95 ; ^^[[] \FMS/fncm/m/n/
 10.95 j D\FML/fncmi/m/it/10.95 ; \FMS/fncm/m/n/10.95 F\T1/fnc/m/n/10.95 ) \FMS/
@@ -1615,32 +1614,32 @@ fncm/m/n/10.95 Å []\FML/fncmi/m/it/10.95 ;
 
 pdfTeX warning: pdflatex.exe (file ./Figures/Plate_diagram_OF.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.4> allowed
-<Figures/Plate_diagram_OF.pdf, id=462, 302.44995pt x 188.6247pt>
+<Figures/Plate_diagram_OF.pdf, id=467, 302.44995pt x 188.6247pt>
 File: Figures/Plate_diagram_OF.pdf Graphic file (type pdf)
 <use Figures/Plate_diagram_OF.pdf>
-Package pdftex.def Info: Figures/Plate_diagram_OF.pdf  used on input line 455.
+Package pdftex.def Info: Figures/Plate_diagram_OF.pdf  used on input line 479.
 (pdftex.def)             Requested size: 295.9098pt x 184.55159pt.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 456.
+(Font)              scaled to size 8.27998pt on input line 480.
 [24] [25 <./Figures/Plate_diagram_OF.pdf>] [26]
 
 pdfTeX warning: pdflatex.exe (file ./Figures/Plate_diagram_intent_kd.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.4> allowed
-<Figures/Plate_diagram_intent_kd.pdf, id=557, 316.50246pt x 209.70345pt>
+<Figures/Plate_diagram_intent_kd.pdf, id=560, 316.50246pt x 209.70345pt>
 File: Figures/Plate_diagram_intent_kd.pdf Graphic file (type pdf)
 <use Figures/Plate_diagram_intent_kd.pdf>
 Package pdftex.def Info: Figures/Plate_diagram_intent_kd.pdf  used on input lin
-e 513.
+e 537.
 (pdftex.def)             Requested size: 295.9098pt x 196.05891pt.
 [27 <./Figures/Plate_diagram_intent_kd.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Figures/Plate_diagram_intent_imp.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.4> allowed
-<Figures/Plate_diagram_intent_imp.pdf, id=619, 309.47621pt x 282.97722pt>
+<Figures/Plate_diagram_intent_imp.pdf, id=622, 309.47621pt x 282.97722pt>
 File: Figures/Plate_diagram_intent_imp.pdf Graphic file (type pdf)
 <use Figures/Plate_diagram_intent_imp.pdf>
 Package pdftex.def Info: Figures/Plate_diagram_intent_imp.pdf  used on input li
-ne 536.
+ne 560.
 (pdftex.def)             Requested size: 295.9098pt x 270.57556pt.
 [28] [29 <./Figures/Plate_diagram_intent_imp.pdf>] [30] [31] [32
 
@@ -1649,114 +1648,1231 @@ ne 536.
 
 ] [39] [40] [41]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 16.07027pt on input line 761.
+(Font)              scaled to size 16.07027pt on input line 788.
  [42] (./Dissertation.bbl
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
 (Font)              scaled to size 9.29993pt on input line 7.
-LaTeX Font Info:    Font shape `TS1/fnc/m/it' will be
-(Font)              scaled to size 9.29993pt on input line 80.
  [43
 
 
-] [44] [45]
+]
+LaTeX Font Info:    Font shape `TS1/fnc/m/it' will be
+(Font)              scaled to size 9.29993pt on input line 89.
+ [44] [45]
 [46]) [47] [48
 
 ]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 774.
+(Font)              scaled to size 11.15991pt on input line 801.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 774.
+(Font)              scaled to size 15.89755pt on input line 801.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 774.
+(Font)              scaled to size 11.03998pt on input line 801.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 16.07027pt on input line 774.
+(Font)              scaled to size 16.07027pt on input line 801.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 774.
+(Font)              scaled to size 16.41594pt on input line 801.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 774.
+(Font)              scaled to size 11.39996pt on input line 801.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 6.50995pt on input line 774.
+(Font)              scaled to size 6.50995pt on input line 801.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 774.
+(Font)              scaled to size 6.43999pt on input line 801.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 6.50995pt on input line 774.
+(Font)              scaled to size 6.50995pt on input line 801.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 774.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 801.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 11.39996pt on input line 774.
+(Font)              scaled to size 11.39996pt on input line 801.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.44997pt on input line 774.
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 774.
+(Font)              scaled to size 10.44997pt on input line 801.
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 801.
 
  (c:/texlive/2018/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 10.44997pt on input line 774.
+(Font)              scaled to size 10.44997pt on input line 801.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI16.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI16.pdf, id=892, 614.295pt x 794.97pt>
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf>
+Package pdftex.def Info: Articles/IUI16.pdf  used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI16.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf>
+Package pdftex.def Info: Articles/IUI16.pdf  used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI16.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI16.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI16.pdf, id=895, page=1, 614.295pt x 794.97pt>
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 1>
+Package pdftex.def Info: Articles/IUI16.pdf , page1 used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 [49
 
-] [50
+]
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 1>
+Package pdftex.def Info: Articles/IUI16.pdf , page1 used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 1>
+Package pdftex.def Info: Articles/IUI16.pdf , page1 used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [50]
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 1>
+Package pdftex.def Info: Articles/IUI16.pdf , page1 used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 1>
+Package pdftex.def Info: Articles/IUI16.pdf , page1 used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 1>
+Package pdftex.def Info: Articles/IUI16.pdf , page1 used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [51 <./Articles/IUI16.pdf>]
 
-] [51
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI16.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI16.pdf, id=952, page=2, 614.295pt x 794.97pt>
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 2>
+Package pdftex.def Info: Articles/IUI16.pdf , page2 used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 2>
+Package pdftex.def Info: Articles/IUI16.pdf , page2 used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 2>
+Package pdftex.def Info: Articles/IUI16.pdf , page2 used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[52 <./Articles/IUI16.pdf>]
 
-] [52
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI16.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI16.pdf, id=957, page=3, 614.295pt x 794.97pt>
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 3>
+Package pdftex.def Info: Articles/IUI16.pdf , page3 used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 3>
+Package pdftex.def Info: Articles/IUI16.pdf , page3 used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 3>
+Package pdftex.def Info: Articles/IUI16.pdf , page3 used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[53 <./Articles/IUI16.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI16.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI16.pdf, id=973, page=4, 614.295pt x 794.97pt>
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 4>
+Package pdftex.def Info: Articles/IUI16.pdf , page4 used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 4>
+Package pdftex.def Info: Articles/IUI16.pdf , page4 used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 4>
+Package pdftex.def Info: Articles/IUI16.pdf , page4 used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[54 <./Articles/IUI16.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI16.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI16.pdf, id=978, page=5, 614.295pt x 794.97pt>
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 5>
+Package pdftex.def Info: Articles/IUI16.pdf , page5 used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 5>
+Package pdftex.def Info: Articles/IUI16.pdf , page5 used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI16.pdf Graphic file (type pdf)
+<use Articles/IUI16.pdf, page 5>
+Package pdftex.def Info: Articles/IUI16.pdf , page5 used on input line 813.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[55 <./Articles/IUI16.pdf>] [56
 
 ]
-Overfull \hbox (3.40355pt too wide) in paragraph at lines 797--797
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=988, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf>
+Package pdftex.def Info: Articles/ML17.pdf  used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf>
+Package pdftex.def Info: Articles/ML17.pdf  used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=991, page=1, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 1>
+Package pdftex.def Info: Articles/ML17.pdf , page1 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[57
+
+]
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 1>
+Package pdftex.def Info: Articles/ML17.pdf , page1 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 1>
+Package pdftex.def Info: Articles/ML17.pdf , page1 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+ [58]
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 1>
+Package pdftex.def Info: Articles/ML17.pdf , page1 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 1>
+Package pdftex.def Info: Articles/ML17.pdf , page1 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 1>
+Package pdftex.def Info: Articles/ML17.pdf , page1 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+ [59 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1733, page=2, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 2>
+Package pdftex.def Info: Articles/ML17.pdf , page2 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 2>
+Package pdftex.def Info: Articles/ML17.pdf , page2 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 2>
+Package pdftex.def Info: Articles/ML17.pdf , page2 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[60 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1739, page=3, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 3>
+Package pdftex.def Info: Articles/ML17.pdf , page3 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 3>
+Package pdftex.def Info: Articles/ML17.pdf , page3 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 3>
+Package pdftex.def Info: Articles/ML17.pdf , page3 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[61 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1745, page=4, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 4>
+Package pdftex.def Info: Articles/ML17.pdf , page4 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 4>
+Package pdftex.def Info: Articles/ML17.pdf , page4 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 4>
+Package pdftex.def Info: Articles/ML17.pdf , page4 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[62 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1755, page=5, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 5>
+Package pdftex.def Info: Articles/ML17.pdf , page5 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 5>
+Package pdftex.def Info: Articles/ML17.pdf , page5 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 5>
+Package pdftex.def Info: Articles/ML17.pdf , page5 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[63 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1786, page=6, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 6>
+Package pdftex.def Info: Articles/ML17.pdf , page6 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 6>
+Package pdftex.def Info: Articles/ML17.pdf , page6 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 6>
+Package pdftex.def Info: Articles/ML17.pdf , page6 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[64 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1808, page=7, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 7>
+Package pdftex.def Info: Articles/ML17.pdf , page7 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 7>
+Package pdftex.def Info: Articles/ML17.pdf , page7 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 7>
+Package pdftex.def Info: Articles/ML17.pdf , page7 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[65 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1813, page=8, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 8>
+Package pdftex.def Info: Articles/ML17.pdf , page8 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 8>
+Package pdftex.def Info: Articles/ML17.pdf , page8 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 8>
+Package pdftex.def Info: Articles/ML17.pdf , page8 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[66 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1822, page=9, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 9>
+Package pdftex.def Info: Articles/ML17.pdf , page9 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 9>
+Package pdftex.def Info: Articles/ML17.pdf , page9 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 9>
+Package pdftex.def Info: Articles/ML17.pdf , page9 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[67 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1828, page=10, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 10>
+Package pdftex.def Info: Articles/ML17.pdf , page10 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 10>
+Package pdftex.def Info: Articles/ML17.pdf , page10 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 10>
+Package pdftex.def Info: Articles/ML17.pdf , page10 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[68 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1861, page=11, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 11>
+Package pdftex.def Info: Articles/ML17.pdf , page11 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 11>
+Package pdftex.def Info: Articles/ML17.pdf , page11 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 11>
+Package pdftex.def Info: Articles/ML17.pdf , page11 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[69 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1874, page=12, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 12>
+Package pdftex.def Info: Articles/ML17.pdf , page12 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 12>
+Package pdftex.def Info: Articles/ML17.pdf , page12 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 12>
+Package pdftex.def Info: Articles/ML17.pdf , page12 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[70 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1879, page=13, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 13>
+Package pdftex.def Info: Articles/ML17.pdf , page13 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 13>
+Package pdftex.def Info: Articles/ML17.pdf , page13 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 13>
+Package pdftex.def Info: Articles/ML17.pdf , page13 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[71 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1888, page=14, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 14>
+Package pdftex.def Info: Articles/ML17.pdf , page14 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 14>
+Package pdftex.def Info: Articles/ML17.pdf , page14 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 14>
+Package pdftex.def Info: Articles/ML17.pdf , page14 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[72 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1893, page=15, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 15>
+Package pdftex.def Info: Articles/ML17.pdf , page15 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 15>
+Package pdftex.def Info: Articles/ML17.pdf , page15 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 15>
+Package pdftex.def Info: Articles/ML17.pdf , page15 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[73 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1899, page=16, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 16>
+Package pdftex.def Info: Articles/ML17.pdf , page16 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 16>
+Package pdftex.def Info: Articles/ML17.pdf , page16 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 16>
+Package pdftex.def Info: Articles/ML17.pdf , page16 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[74 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1912, page=17, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 17>
+Package pdftex.def Info: Articles/ML17.pdf , page17 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 17>
+Package pdftex.def Info: Articles/ML17.pdf , page17 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 17>
+Package pdftex.def Info: Articles/ML17.pdf , page17 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[75 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1919, page=18, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 18>
+Package pdftex.def Info: Articles/ML17.pdf , page18 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 18>
+Package pdftex.def Info: Articles/ML17.pdf , page18 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 18>
+Package pdftex.def Info: Articles/ML17.pdf , page18 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[76 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1924, page=19, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 19>
+Package pdftex.def Info: Articles/ML17.pdf , page19 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 19>
+Package pdftex.def Info: Articles/ML17.pdf , page19 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 19>
+Package pdftex.def Info: Articles/ML17.pdf , page19 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[77 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1929, page=20, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 20>
+Package pdftex.def Info: Articles/ML17.pdf , page20 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 20>
+Package pdftex.def Info: Articles/ML17.pdf , page20 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 20>
+Package pdftex.def Info: Articles/ML17.pdf , page20 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[78 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1934, page=21, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 21>
+Package pdftex.def Info: Articles/ML17.pdf , page21 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 21>
+Package pdftex.def Info: Articles/ML17.pdf , page21 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 21>
+Package pdftex.def Info: Articles/ML17.pdf , page21 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[79 <./Articles/ML17.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/ML17.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.4> allowed
+<Articles/ML17.pdf, id=1940, page=22, 441.01764pt x 668.64006pt>
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 22>
+Package pdftex.def Info: Articles/ML17.pdf , page22 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 22>
+Package pdftex.def Info: Articles/ML17.pdf , page22 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+File: Articles/ML17.pdf Graphic file (type pdf)
+<use Articles/ML17.pdf, page 22>
+Package pdftex.def Info: Articles/ML17.pdf , page22 used on input line 820.
+(pdftex.def)             Requested size: 441.01656pt x 668.63843pt.
+[80 <./Articles/ML17.pdf>]
+Overfull \hbox (3.40355pt too wide) in paragraph at lines 824--824
 \T1/phv/m/n/12 (-20) Samuel Kaski. Im-prov-ing genomics-based pre-dic-tions for
  pre-ci-sion medicine
  []
 
-[53
+<Articles/Bio18.pdf, id=1945, 614.57909pt x 793.83177pt>
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf>
+Package pdftex.def Info: Articles/Bio18.pdf  used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf>
+Package pdftex.def Info: Articles/Bio18.pdf  used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+<Articles/Bio18.pdf, id=1948, page=1, 614.57909pt x 793.83177pt>
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 1>
+Package pdftex.def Info: Articles/Bio18.pdf , page1 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[81
 
-] [54
-
-] [55
-
-] [56
-
-] [57
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 822.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 822.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 1>
+Package pdftex.def Info: Articles/Bio18.pdf , page1 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 1>
+Package pdftex.def Info: Articles/Bio18.pdf , page1 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [82]
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 1>
+Package pdftex.def Info: Articles/Bio18.pdf , page1 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 1>
+Package pdftex.def Info: Articles/Bio18.pdf , page1 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 1>
+Package pdftex.def Info: Articles/Bio18.pdf , page1 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [83 <./Articles/Bio18.pdf>]
+<Articles/Bio18.pdf, id=2001, page=2, 614.57909pt x 793.83177pt>
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 2>
+Package pdftex.def Info: Articles/Bio18.pdf , page2 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 2>
+Package pdftex.def Info: Articles/Bio18.pdf , page2 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 2>
+Package pdftex.def Info: Articles/Bio18.pdf , page2 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [84 <./Articles/Bio18.pdf>]
+<Articles/Bio18.pdf, id=2031, page=3, 614.57909pt x 793.83177pt>
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 3>
+Package pdftex.def Info: Articles/Bio18.pdf , page3 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 3>
+Package pdftex.def Info: Articles/Bio18.pdf , page3 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 3>
+Package pdftex.def Info: Articles/Bio18.pdf , page3 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [85 <./Articles/Bio18.pdf>]
+<Articles/Bio18.pdf, id=2053, page=4, 614.57909pt x 793.83177pt>
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 4>
+Package pdftex.def Info: Articles/Bio18.pdf , page4 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 4>
+Package pdftex.def Info: Articles/Bio18.pdf , page4 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 4>
+Package pdftex.def Info: Articles/Bio18.pdf , page4 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [86 <./Articles/Bio18.pdf>]
+<Articles/Bio18.pdf, id=2061, page=5, 614.57909pt x 793.83177pt>
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 5>
+Package pdftex.def Info: Articles/Bio18.pdf , page5 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 5>
+Package pdftex.def Info: Articles/Bio18.pdf , page5 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 5>
+Package pdftex.def Info: Articles/Bio18.pdf , page5 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [87 <./Articles/Bio18.pdf>]
+<Articles/Bio18.pdf, id=2073, page=6, 614.57909pt x 793.83177pt>
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 6>
+Package pdftex.def Info: Articles/Bio18.pdf , page6 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 6>
+Package pdftex.def Info: Articles/Bio18.pdf , page6 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 6>
+Package pdftex.def Info: Articles/Bio18.pdf , page6 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [88 <./Articles/Bio18.pdf>]
+<Articles/Bio18.pdf, id=2078, page=7, 614.57909pt x 793.83177pt>
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 7>
+Package pdftex.def Info: Articles/Bio18.pdf , page7 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 7>
+Package pdftex.def Info: Articles/Bio18.pdf , page7 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 7>
+Package pdftex.def Info: Articles/Bio18.pdf , page7 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [89 <./Articles/Bio18.pdf>]
+<Articles/Bio18.pdf, id=2087, page=8, 614.57909pt x 793.83177pt>
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 8>
+Package pdftex.def Info: Articles/Bio18.pdf , page8 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 8>
+Package pdftex.def Info: Articles/Bio18.pdf , page8 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 8>
+Package pdftex.def Info: Articles/Bio18.pdf , page8 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [90 <./Articles/Bio18.pdf>]
+<Articles/Bio18.pdf, id=2092, page=9, 614.57909pt x 793.83177pt>
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 9>
+Package pdftex.def Info: Articles/Bio18.pdf , page9 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 9>
+Package pdftex.def Info: Articles/Bio18.pdf , page9 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/Bio18.pdf Graphic file (type pdf)
+<use Articles/Bio18.pdf, page 9>
+Package pdftex.def Info: Articles/Bio18.pdf , page9 used on input line 827.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+
+[91 <./Articles/Bio18.pdf>] [92
+
+]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI18.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI18.pdf, id=2102, 614.295pt x 794.97pt>
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf>
+Package pdftex.def Info: Articles/IUI18.pdf  used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI18.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf>
+Package pdftex.def Info: Articles/IUI18.pdf  used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI18.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI18.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI18.pdf, id=2105, page=1, 614.295pt x 794.97pt>
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 1>
+Package pdftex.def Info: Articles/IUI18.pdf , page1 used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[93
+
+]
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 1>
+Package pdftex.def Info: Articles/IUI18.pdf , page1 used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 1>
+Package pdftex.def Info: Articles/IUI18.pdf , page1 used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [94]
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 1>
+Package pdftex.def Info: Articles/IUI18.pdf , page1 used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 1>
+Package pdftex.def Info: Articles/IUI18.pdf , page1 used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 1>
+Package pdftex.def Info: Articles/IUI18.pdf , page1 used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [95 <./Articles/IUI18.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI18.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI18.pdf, id=2199, page=2, 614.295pt x 794.97pt>
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 2>
+Package pdftex.def Info: Articles/IUI18.pdf , page2 used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 2>
+Package pdftex.def Info: Articles/IUI18.pdf , page2 used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 2>
+Package pdftex.def Info: Articles/IUI18.pdf , page2 used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[96 <./Articles/IUI18.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI18.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI18.pdf, id=2247, page=3, 614.295pt x 794.97pt>
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 3>
+Package pdftex.def Info: Articles/IUI18.pdf , page3 used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 3>
+Package pdftex.def Info: Articles/IUI18.pdf , page3 used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 3>
+Package pdftex.def Info: Articles/IUI18.pdf , page3 used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[97 <./Articles/IUI18.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI18.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI18.pdf, id=2271, page=4, 614.295pt x 794.97pt>
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 4>
+Package pdftex.def Info: Articles/IUI18.pdf , page4 used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 4>
+Package pdftex.def Info: Articles/IUI18.pdf , page4 used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 4>
+Package pdftex.def Info: Articles/IUI18.pdf , page4 used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[98 <./Articles/IUI18.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI18.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI18.pdf, id=2295, page=5, 614.295pt x 794.97pt>
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 5>
+Package pdftex.def Info: Articles/IUI18.pdf , page5 used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 5>
+Package pdftex.def Info: Articles/IUI18.pdf , page5 used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 5>
+Package pdftex.def Info: Articles/IUI18.pdf , page5 used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[99 <./Articles/IUI18.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/IUI18.pdf): PDF inclusion: found 
+PDF version <1.5>, but at most version <1.4> allowed
+<Articles/IUI18.pdf, id=2313, page=6, 614.295pt x 794.97pt>
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 6>
+Package pdftex.def Info: Articles/IUI18.pdf , page6 used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 6>
+Package pdftex.def Info: Articles/IUI18.pdf , page6 used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Articles/IUI18.pdf Graphic file (type pdf)
+<use Articles/IUI18.pdf, page 6>
+Package pdftex.def Info: Articles/IUI18.pdf , page6 used on input line 833.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[100 <./Articles/IUI18.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=2331, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf>
+Package pdftex.def Info: Articles/JASIST19.pdf  used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf>
+Package pdftex.def Info: Articles/JASIST19.pdf  used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=2334, page=1, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 1>
+Package pdftex.def Info: Articles/JASIST19.pdf , page1 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[101
+
+
+]
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 1>
+Package pdftex.def Info: Articles/JASIST19.pdf , page1 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 1>
+Package pdftex.def Info: Articles/JASIST19.pdf , page1 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [102]
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 1>
+Package pdftex.def Info: Articles/JASIST19.pdf , page1 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 1>
+Package pdftex.def Info: Articles/JASIST19.pdf , page1 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 1>
+Package pdftex.def Info: Articles/JASIST19.pdf , page1 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+ [103 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=2377, page=2, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 2>
+Package pdftex.def Info: Articles/JASIST19.pdf , page2 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 2>
+Package pdftex.def Info: Articles/JASIST19.pdf , page2 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 2>
+Package pdftex.def Info: Articles/JASIST19.pdf , page2 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[104 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=2382, page=3, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 3>
+Package pdftex.def Info: Articles/JASIST19.pdf , page3 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 3>
+Package pdftex.def Info: Articles/JASIST19.pdf , page3 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 3>
+Package pdftex.def Info: Articles/JASIST19.pdf , page3 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[105 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=2387, page=4, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 4>
+Package pdftex.def Info: Articles/JASIST19.pdf , page4 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 4>
+Package pdftex.def Info: Articles/JASIST19.pdf , page4 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 4>
+Package pdftex.def Info: Articles/JASIST19.pdf , page4 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[106 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=2396, page=5, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 5>
+Package pdftex.def Info: Articles/JASIST19.pdf , page5 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 5>
+Package pdftex.def Info: Articles/JASIST19.pdf , page5 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 5>
+Package pdftex.def Info: Articles/JASIST19.pdf , page5 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[107 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=2418, page=6, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 6>
+Package pdftex.def Info: Articles/JASIST19.pdf , page6 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 6>
+Package pdftex.def Info: Articles/JASIST19.pdf , page6 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 6>
+Package pdftex.def Info: Articles/JASIST19.pdf , page6 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[108 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=2423, page=7, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 7>
+Package pdftex.def Info: Articles/JASIST19.pdf , page7 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 7>
+Package pdftex.def Info: Articles/JASIST19.pdf , page7 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 7>
+Package pdftex.def Info: Articles/JASIST19.pdf , page7 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[109 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=2430, page=8, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 8>
+Package pdftex.def Info: Articles/JASIST19.pdf , page8 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 8>
+Package pdftex.def Info: Articles/JASIST19.pdf , page8 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 8>
+Package pdftex.def Info: Articles/JASIST19.pdf , page8 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[110 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=2436, page=9, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 9>
+Package pdftex.def Info: Articles/JASIST19.pdf , page9 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 9>
+Package pdftex.def Info: Articles/JASIST19.pdf , page9 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 9>
+Package pdftex.def Info: Articles/JASIST19.pdf , page9 used on input line 839.
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[111 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=2446, page=10, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 10>
+Package pdftex.def Info: Articles/JASIST19.pdf , page10 used on input line 839.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 10>
+Package pdftex.def Info: Articles/JASIST19.pdf , page10 used on input line 839.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 10>
+Package pdftex.def Info: Articles/JASIST19.pdf , page10 used on input line 839.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[112 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=2452, page=11, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 11>
+Package pdftex.def Info: Articles/JASIST19.pdf , page11 used on input line 839.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 11>
+Package pdftex.def Info: Articles/JASIST19.pdf , page11 used on input line 839.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 11>
+Package pdftex.def Info: Articles/JASIST19.pdf , page11 used on input line 839.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[113 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=2458, page=12, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 12>
+Package pdftex.def Info: Articles/JASIST19.pdf , page12 used on input line 839.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 12>
+Package pdftex.def Info: Articles/JASIST19.pdf , page12 used on input line 839.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 12>
+Package pdftex.def Info: Articles/JASIST19.pdf , page12 used on input line 839.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[114 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=2463, page=13, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 13>
+Package pdftex.def Info: Articles/JASIST19.pdf , page13 used on input line 839.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 13>
+Package pdftex.def Info: Articles/JASIST19.pdf , page13 used on input line 839.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 13>
+Package pdftex.def Info: Articles/JASIST19.pdf , page13 used on input line 839.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[115 <./Articles/JASIST19.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Articles/JASIST19.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.4> allowed
+<Articles/JASIST19.pdf, id=2469, page=14, 614.57909pt x 793.83177pt>
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 14>
+Package pdftex.def Info: Articles/JASIST19.pdf , page14 used on input line 839.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 14>
+Package pdftex.def Info: Articles/JASIST19.pdf , page14 used on input line 839.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+File: Articles/JASIST19.pdf Graphic file (type pdf)
+<use Articles/JASIST19.pdf, page 14>
+Package pdftex.def Info: Articles/JASIST19.pdf , page14 used on input line 839.
+
+(pdftex.def)             Requested size: 614.57759pt x 793.82983pt.
+[116 <./Articles/JASIST19.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 849.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 849.
  (./Dissertation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 822.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 822.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 849.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 849.
 Package rerunfilecheck Info: File `Dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: E039C2F383AAD4A8CE07A3E585744CAC;2675.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 822.
+(rerunfilecheck)             Checksum: 794B68453F66888932F710BA522F1F86;2738.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 849.
  ) 
 Here is how much of TeX's memory you used:
- 33068 strings out of 492641
- 570339 string characters out of 6133117
- 1151788 words of memory out of 5000000
- 35653 multiletter control sequences out of 15000+600000
- 150311 words of font info for 489 fonts, out of 8000000 for 9000
+ 33331 strings out of 492641
+ 577591 string characters out of 6133117
+ 1151868 words of memory out of 5000000
+ 35844 multiletter control sequences out of 15000+600000
+ 150366 words of font info for 489 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,12n,65p,1877b,2107s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,18n,65p,1877b,2107s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2018/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fo
-nts/type1/public/fourier/fourier-bb.pfb><c:/texlive/2018/texmf-dist/fonts/type1
-/public/fourier/fourier-mcl.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/
-fourier/fourier-mlb.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/fourier/
-fourier-mlit.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/fourier/fourier
--mlitb.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-ms.pf
-b><c:/texlive/2018/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb><c:/texlive/20
-18/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2018/texmf-dist/f
-onts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/
-helvetic/uhvro8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8
-a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/ncntrsbk/uncbi8a.pfb><c:/texl
-ive/2018/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb><c:/texlive/2018/texmf-
-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Dissertation.pdf (57 pages, 594090 bytes).
+nts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr6.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c
+:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive
+/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2018/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2018/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2018/texmf-dist/fonts/type1/p
+ublic/fourier/fourier-bb.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/fou
+rier/fourier-mcl.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/fourier/fou
+rier-mlb.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-mli
+t.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-mlitb.pfb>
+<c:/texlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texli
+ve/2018/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb><c:/texlive/2018/texmf-di
+st/fonts/type1/public/marvosym/marvosym.pfb><c:/texlive/2018/texmf-dist/fonts/t
+ype1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2018/texmf-dist/fonts/type1
+/public/rsfs/rsfs10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/txfonts/
+t1xbtt.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb><c:
+/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2018/t
+exmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2018/texmf-dist/fonts
+/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/ncn
+trsbk/uncb8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/ncntrsbk/uncbi8a.p
+fb><c:/texlive/2018/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb><c:/texlive/
+2018/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb><c:/texlive/2018/texmf-dis
+t/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/s
+ymbol/usyr.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:
+/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2018/texm
+f-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Dissertation.pdf (116 pages, 4695305 bytes).
 PDF statistics:
- 1043 PDF objects out of 1200 (max. 8388607)
- 222 named destinations out of 1000 (max. 500000)
- 46373 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 2623 PDF objects out of 2984 (max. 8388607)
+ 283 named destinations out of 1000 (max. 500000)
+ 46736 words of extra memory for PDF output out of 51595 (max. 10000000)
 

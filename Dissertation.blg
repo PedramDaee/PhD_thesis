@@ -5,45 +5,51 @@ The style file: plain.bst
 Database file #1: references.bib
 Warning--entry type for "Tomi_P_thesis" isn't style-file defined
 --line 551 of file references.bib
-You've used 62 entries,
+I was expecting a `,' or a `}'---line 680 of file references.bib
+ :  
+ :  url = {http://papers.nips.cc/paper/9299-machine-teaching-of-active-sequential-learners.pdf}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty publisher in NIPS2016_6155
+You've used 64 entries,
             2118 wiz_defined-function locations,
-            905 strings with 17587 characters,
-and the built_in function-call counts, 25504 in all, are:
-= -- 2553
-> -- 1261
-< -- 22
-+ -- 498
-- -- 433
-* -- 1890
-:= -- 4064
-add.period$ -- 198
-call.type$ -- 62
-change.case$ -- 397
+            920 strings with 18265 characters,
+and the built_in function-call counts, 26785 in all, are:
+= -- 2690
+> -- 1325
+< -- 24
++ -- 525
+- -- 458
+* -- 1988
+:= -- 4250
+add.period$ -- 205
+call.type$ -- 64
+change.case$ -- 418
 chr.to.int$ -- 0
-cite$ -- 62
-duplicate$ -- 950
-empty$ -- 1913
-format.name$ -- 433
-if$ -- 5426
+cite$ -- 65
+duplicate$ -- 997
+empty$ -- 1994
+format.name$ -- 458
+if$ -- 5706
 int.to.chr$ -- 0
-int.to.str$ -- 62
-missing$ -- 64
-newline$ -- 312
-num.names$ -- 126
-pop$ -- 401
+int.to.str$ -- 64
+missing$ -- 66
+newline$ -- 322
+num.names$ -- 128
+pop$ -- 420
 preamble$ -- 1
-purify$ -- 337
+purify$ -- 356
 quote$ -- 0
-skip$ -- 717
+skip$ -- 762
 stack$ -- 0
-substring$ -- 1773
-swap$ -- 279
-text.length$ -- 22
+substring$ -- 1878
+swap$ -- 303
+text.length$ -- 24
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 240
-warning$ -- 0
-while$ -- 239
-width$ -- 64
-write$ -- 705
-(There was 1 warning)
+type$ -- 248
+warning$ -- 1
+while$ -- 249
+width$ -- 66
+write$ -- 730
+(There was 1 error message)

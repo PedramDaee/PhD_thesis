@@ -49,6 +49,15 @@ Peter Auer.
 \newblock Using confidence bounds for exploitation-exploration trade-offs.
 \newblock {\em Journal of Machine Learning Research}, 3(Nov):397--422, 2002.
 
+\bibitem{OSwald_2015}
+Oswald Barral, Manuel~J.A. Eugster, Tuukka Ruotsalo, Michiel~M. Spap{\'e},
+  Ilkka Kosunen, Niklas Ravaja, Samuel Kaski, and Giulio Jacucci.
+\newblock Exploring peripheral physiology as a predictor of perceived relevance
+  in information retrieval.
+\newblock In {\em Proceedings of the 20th International Conference on
+  Intelligent User Interfaces}, IUI '15, pages 389--399, New York, NY, USA,
+  2015. ACM.
+
 \bibitem{bingham2018pyro}
 Eli Bingham, Jonathan~P. Chen, Martin Jankowiak, Fritz Obermeyer, Neeraj
   Pradhan, Theofanis Karaletsos, Rohit Singh, Paul Szerlip, Paul Horsfall, and
@@ -132,6 +141,13 @@ Gregory Druck, Burr Settles, and Andrew McCallum.
 \newblock In {\em Proceedings of the Conference on Empirical Methods in Natural
   Language Processing}, pages 81--90, 2009.
 
+\bibitem{Manuel2016natural}
+Manuel~JA Eugster, Tuukka Ruotsalo, Michiel~M Spap{\'e}, Oswald Barral, Niklas
+  Ravaja, Giulio Jacucci, and Samuel Kaski.
+\newblock Natural brain-information interfaces: Recommending information by
+  relevance inferred from human brain signals.
+\newblock {\em Scientific reports}, 6:38580, 2016.
+
 \bibitem{user_modelling_2001}
 Gerhard Fischer.
 \newblock User modeling in human--computer interaction.
@@ -201,9 +217,8 @@ Matthew Hoffman, Bobak Shahriari, and Nando Freitas.
 \bibitem{NIPS2016_6155}
 Tzu-Kuo Huang, Lihong Li, Ara Vartanian, Saleema Amershi, and Jerry Zhu.
 \newblock Active learning with oracle epiphany.
-\newblock In D.~D. Lee, M.~Sugiyama, U.~V. Luxburg, I.~Guyon, and R.~Garnett,
-  editors, {\em Advances in Neural Information Processing Systems 29}, pages
-  2820--2828. Curran Associates, Inc., 2016.
+\newblock In {\em Advances in Neural Information Processing Systems 29}, pages
+  2820--2828. 2016.
 
 \bibitem{Kangasraasio_2016_interactive}
 Antti Kangasr{\"a}{\"a}si{\"o}, Yi~Chen, Dorota Glowacka, and Samuel Kaski.
@@ -279,9 +294,10 @@ Tomi Peltola.
   laskennallisia menetelmiä ja sovelluksia epidemiologiassa, 2014.
 
 \bibitem{peltola2019machine}
-Tomi Peltola, Mustafa~Mert Çelikok, Pedram Daee, and Samuel Kaski.
+Tomi Peltola, Mustafa~Mert {\c{C}}elikok, Pedram Daee, and Samuel Kaski.
 \newblock Machine teaching of active sequential learners.
-\newblock In {\em Advances in neural information processing systems}, 2019.
+\newblock In {\em Advances in Neural Information Processing Systems}, pages
+  11202--11213, 2019.
 
 \bibitem{horseshoe_2017}
 Juho Piironen and Aki Vehtari.
